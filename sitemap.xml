@@ -2,10 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nonmodernist.github.io/</loc>
+    <loc>http://nonmodernist.com/docs/courses/</loc>
   </url><url>
-    <loc>https://nonmodernist.github.io/categories/</loc>
+    <loc>http://nonmodernist.com/docs/courses/anarchist-nonfiction-across-genres/collapsed/reading-list/</loc>
   </url><url>
-    <loc>https://nonmodernist.github.io/tags/</loc>
+    <loc>http://nonmodernist.com/docs/courses/anarchist-nonfiction-across-genres/collapsed/statement-of-goals/</loc>
+  </url><url>
+    <loc>http://nonmodernist.com/docs/courses/anarchist-nonfiction-across-genres/collapsed/collaborative-mutual-aid-project-proposal/</loc>
+  </url><url>
+    <loc>http://nonmodernist.com/docs/courses/anarchist-nonfiction-across-genres/collapsed/midterm-self-assessment/</loc>
+  </url><url>
+    <loc>http://nonmodernist.com/docs/courses/anarchist-nonfiction-across-genres/collapsed/final-self-assessment/</loc>
+  </url><url>
+    <loc>http://nonmodernist.com/docs/courses/anarchist-nonfiction-across-genres/</loc>
+  </url><url>
+    <loc>http://nonmodernist.com/</loc>
+  </url><url>
+    <loc>http://nonmodernist.com/categories/</loc>
+  </url><url>
+    <loc>http://nonmodernist.com/docs/</loc>
+  </url><url>
+    <loc>http://nonmodernist.com/tags/</loc>
   </url>
 </urlset>
