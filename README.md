@@ -1,0 +1,1 @@
+this is a frankenstein version of my personal site that includes stuff from v1 (hugo book) and v2 (zola apollo) all mashed together. it should be PRESERVED until i finish moving everything over to v2. 
