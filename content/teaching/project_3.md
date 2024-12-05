@@ -5,5 +5,5 @@ weight = 3
 
 [extra]
 link_to = "https://docs.google.com/document/d/1OQWI46e4Q3D0AT-dy1kFJfKsGqpSD0SRzsJTOCOvnII/edit"
-remote_image = "https://nonmodernist.com/weird.png"
+remote_image = "https://nonmodernist.com/weird.png&auto=format&fit=crop&h=450&q=80"
 +++
