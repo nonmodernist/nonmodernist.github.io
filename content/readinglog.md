@@ -998,8 +998,8 @@ title = "reading list by year"
 - Wilderness Watercolor Landscapes by Kolbie Blume 
 - Geninne's Art: Birds in Watercolor, Collage, and Ink by Geninne D. Zlatkis 
 - ***Nature Obscura: A City's Hidden Natural World*** by Kelly Brenner
-- ***The Curious Nature Guide*: Explore the Natural Wonders All Around You by Clare Walker Leslie
-- ***Keeping a Nature Journal, 3rd Edition*: Deepen Your Connection with the Natural World All Around You by Clare Walker Leslie
+- ***The Curious Nature Guide: Explore the Natural Wonders All Around You*** by Clare Walker Leslie
+- ***Keeping a Nature Journal, 3rd Edition: Deepen Your Connection with the Natural World All Around You*** by Clare Walker Leslie
 - Creative Watercolor by Ana Victoria Calderón 
 - ***Mutual Aid: Building Solidarity in This Crisis (And the Next)*** by Dean Spade 
 - ***God Save Texas: A Journey Into the Soul of the Lone Star State*** by Lawrence Wright 
