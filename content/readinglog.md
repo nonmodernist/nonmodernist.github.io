@@ -200,7 +200,7 @@ title = "reading list by year"
 - ***The Sleepwalkers: A History of Man's Changing Vision of the Universe*** by Herbert Butterfield and Arthur Koestler 
 - ***Finding Serenity: Anti-Heroes, Lost Shepherds, and Space Hookers in Joss Whedon's Firefly*** by Jennifer Goltz et al.
 - ***Handwriting*** by Michael Ondaatje   
-- <mark>*Anil's Ghost*** by Michael Ondaatje</mark>   
+- <mark>***Anil's Ghost*** by Michael Ondaatje</mark>   
 - ***Extremely Loud and Incredibly Close*** by Jonathan Safran Foer   
 - ***The Aeneid*** by Virgil and Robert Fitzgerald 
 - ***Violent Cases*** by Dave McKean and Neil Gaiman 
@@ -323,7 +323,7 @@ title = "reading list by year"
 - Specials by Scott Westerfeld
 - The Stone Gods by Jeanette Winterson   
 - Lyric Poems by John Keats 
-- French Women for All Seasons: A Year of Secrets, Recipes, and Pleasure by Mireille Guiliano #📚Book/food 
+- French Women for All Seasons: A Year of Secrets, Recipes, and Pleasure by Mireille Guiliano
 
 
 ## 2008
@@ -632,7 +632,7 @@ title = "reading list by year"
 - ***One Art*** by Elizabeth Bishop 
 - ***Edgar Allan Poe & The Juke-Box: Uncollected Poems, Drafts, and Fragments*** by Elizabeth Bishop 
 - ***Elizabeth Bishop and The New Yorker: The Complete Correspondence*** by Elizabeth Bishop
-- <mark>*Bluets*** by Maggie Nelson</mark> 
+- <mark>***Bluets*** by Maggie Nelson</mark> 
 - ***Something Bright, Then Holes*** by Maggie Nelson 
 - ***Women, the New York School, and Other True Abstractions*** by Maggie Nelson
 - ***Selected Poems*** by John Ashbery 
@@ -708,9 +708,9 @@ title = "reading list by year"
 - ***Selected Poems*** by Rita Dove 
 - ***Selected Poems*** by Gwendolyn Brooks 
 - ***Montage of a Dream Deferred*** by Langston Hughes 
-- <mark>*Mumbo Jumbo*** by Ishmael Reed</mark>  
+- <mark>***Mumbo Jumbo*** by Ishmael Reed</mark>  
 - ***The Nature Principle: Human Restoration and the End of Nature-Deficit Disorder*** by Richard Louv
-- <mark>*Tripmaster Monkey: His Fake Book*** by Maxine Hong Kingston</mark>  
+- <mark>***Tripmaster Monkey: His Fake Book*** by Maxine Hong Kingston</mark>  
 - ***The Left Hand of Darkness*** by Ursula K. Le Guin   
 - ***An Altar in the World: A Geography of Faith*** by Barbara Brown Taylor
 - ***The Permaculture Garden*** by Graham Bell
@@ -728,17 +728,17 @@ title = "reading list by year"
 - ***Earthly Delights: Gardening by the Seasons the Easy Way*** by Margot Rochester
 - ***The Morville Hours*** by Katherine Swift 
 - ***The Twelve Wild Swans: A Journey to the Realm of Magic, Healing, and Action*** by Hillary Valentine, Starhawk
-- ***Cross Creek Cookery*** by Marjorie Kinnan Rawlings #📚Book/food 
-- <mark>*The Bridge of Beyond*** by Simone Schwarz-Bart</mark>  
+- ***Cross Creek Cookery*** by Marjorie Kinnan Rawlings
+- <mark>***The Bridge of Beyond*** by Simone Schwarz-Bart</mark>  
 - ***The Dead Ladies Project: Exiles, Expats, and Ex-Countries*** by Jessa Crispin 
 - ***The Art of Slow Writing: Reflections on Time, Craft, and Creativity*** by Louise DeSalvo
 - ***Ex Libris: Confessions of a Common Reader*** by Anne Fadiman  
 - ***Acedia & Me: A Marriage, Monks, and a Writer's Life*** by Kathleen Norris 
 - ***Pastrix: The Cranky and Beautiful Faith of a Sinner & Saint*** by Nadia Bolz-Weber 
-- ***The Kitchn Cookbook*** by Faith Durand, Sara Kate Gillingham-Ryan #📚Book/food 
+- ***The Kitchn Cookbook*** by Faith Durand, Sara Kate Gillingham-Ryan
 - ***The Journal, 1837-1861*** by Henry David Thoreau, John R. Stilgoe, Damion Searls
 - ***Highland Fling*** by Nancy Mitford  
-- ***Finding Yourself in the Kitchen: Kitchen Meditations and Inspired Recipes from a Mindful Cook*** by Dana Velden #📚Book/food 
+- ***Finding Yourself in the Kitchen: Kitchen Meditations and Inspired Recipes from a Mindful Cook*** by Dana Velden
 - ***Check, Please!: Year One*** by Ngozi Ukazu 
 - ***Cassandra at the Wedding*** by Dorothy Baker  
 - ***Book by Book: Notes on Reading and Life*** by Michael Dirda  
@@ -749,13 +749,13 @@ title = "reading list by year"
 - ***The Weather*** by Lisa Robertson 
 - ***Spending*** by Mary Gordon  
 - ***Get in Trouble*** by Kelly Link  
-- <mark>*84, Charing Cross Road*** by Helene Hanff</mark>   
+- <mark>***84, Charing Cross Road*** by Helene Hanff</mark>   
 - ***Don't Look Now and Other Stories*** by Daphne du Maurier  
 - ***Fic: Why Fanfiction is Taking Over the World*** by Anne Jamison
 - ***Collected Poems, 1912-1944*** by H.D. 
 - ***My Ántonia*** by Willa Cather  
 - ***When Books Went to War: The Stories that Helped Us Win World War II*** by Molly Guptill Manning 
-- <mark>*Hauntings and Other Fantastic Tales*** by Vernon Lee</mark>  
+- <mark>***Hauntings and Other Fantastic Tales*** by Vernon Lee</mark>  
 
 
 ## 2016
@@ -773,7 +773,7 @@ title = "reading list by year"
 - ***Writing out of Place: Regionalism, Women, and American Literary Culture*** by Judith Fetterley and Marjorie Pryse
 - ***Dawn Light: Dancing with Cranes and Other Ways to Start the Day*** by Diane Ackerman
 - ***Teaching to Transgress: Education as the Practice of Freedom*** by bell hooks 
-- <mark>*Miss Buncle's Book*** by D.E. Stevenson</mark>  
+- <mark>***Miss Buncle's Book*** by D.E. Stevenson</mark>  
 - ***Between the World and Me*** by Ta-Nehisi Coates 
 - ***The Art of Stillness: Adventures in Going Nowhere*** by Pico Iyer
 - ***Men Explain Things to Me*** by Rebecca Solnit
@@ -797,7 +797,7 @@ title = "reading list by year"
 - ***The Creative Tarot: A Modern Guide to an Inspired Life*** by Jessa Crispin
 - ***Pretty Deadly Vol. 1: The Shrike*** by Emma Ríos, Kelly Sue DeConnick 
 - ***March: Book One*** by John Lewis, Andrew Aydin 
-- ***Cooked: A Natural History of Transformation*** by Michael Pollan #📚Book/food 
+- ***Cooked: A Natural History of Transformation*** by Michael Pollan
 - ***Alif the Unseen*** by G. Willow Wilson
 - ***Gratitude*** by Oliver Sacks
 - ***Whose Body?*** by Dorothy L. Sayers 
@@ -943,8 +943,8 @@ title = "reading list by year"
 - ***The I-5 Killer*** by Ann Rule
 - ***Queens' Play*** by Dorothy Dunnett   
 - ***Chase Darkness with Me: How One True-Crime Writer Started Solving Murders*** by Billy Jensen
-- ***Dust Tracks on a Road*** by Zora Neale Hurston #📚Book/memoir
-- ***The Art of Simple Food: Notes, Lessons, and Recipes from a Delicious Revolution*** by Alice Waters #📚Book/food 
+- ***Dust Tracks on a Road*** by Zora Neale Hurston
+- ***The Art of Simple Food: Notes, Lessons, and Recipes from a Delicious Revolution*** by Alice Waters 
 - ***Nature*** by Ralph Waldo Emerson
 - ***Sew Many Dresses, Sew Little Time: The Ultimate Dressmaking Guide*** by Tanya Whelan 
 - ***Writing with Scissors: American Scrapbooks from the Civil War to the Harlem Renaissance*** by Ellen Gruber Garvey 
