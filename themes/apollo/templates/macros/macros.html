@@ -111,7 +111,7 @@
 
                 <div class="meta">
                     {% if page.date %}
-                        Posted on <time class="dt-published"> {{ page.date | date(format="%Y-%m-%d") }}</time>
+                        Posted <span class="hidden">by <a rel="author" class="p-author h-card" href="https://nonmodernist.com">alexandra edwards</a></span> on <time class="dt-published"> {{ page.date | date(format="%Y-%m-%d") }}</time>
                     {% endif %}
 
                     {% if page.updated %}
