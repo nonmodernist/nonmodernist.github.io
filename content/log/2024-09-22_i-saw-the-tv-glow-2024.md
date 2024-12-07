@@ -1,6 +1,6 @@
 +++
 title = "I Saw the TV Glow, 2024 - ★★★★½"
-date: 2024-09-22
+date = 2024-09-22
 
 [taxonomies]
 tags=["letterboxd"]
