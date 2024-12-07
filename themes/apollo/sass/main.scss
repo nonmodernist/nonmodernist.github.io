@@ -54,3 +54,18 @@ html {
     font-size: 18px;
   }
 }
+
+/* add minimal styling for footnotes */
+
+.footnote-definition {
+  margin: 0 0 0 .125rem;
+}
+
+.footnote-definition-label {
+  color: var();
+}
+
+.footnote-definition p {
+  display: inline;
+  margin: .625rem 0 0 .1rem;
+}
