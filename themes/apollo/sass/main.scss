@@ -33,6 +33,10 @@ html {
   word-wrap: break-word;
 }
 
+.hidden {
+  display: none;
+}
+
 @media all and (min-width:640px) {
   html {
     font-size: 16.5px;
