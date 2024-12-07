@@ -29,6 +29,7 @@ p {
 hr {
   border: 0;
   border-top: 3px solid var(--border-color);
+  border-style: dotted; // made hr dotted instead of solid
   margin: 1em 0;
 }
 
