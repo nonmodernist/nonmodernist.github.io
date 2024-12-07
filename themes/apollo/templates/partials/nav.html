@@ -1,6 +1,6 @@
 <header>
     <div class="main">
-        <a class="h-card p-author" href={{ config.base_url }}>{{ config.title }}</a>
+        <a rel="author" class="h-card p-author" href={{ config.base_url }}>{{ config.title }}</a>
 
         <div class="socials">
             {% for social in config.extra.socials | default(value=[]) %}
