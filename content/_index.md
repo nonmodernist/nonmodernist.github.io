@@ -8,5 +8,6 @@ insert_anchor_links = "heading"
 
 - Learn more [about me](./about).
 - See the [research](./research) I publish and the [courses](./teaching) I teach.
-- Read my little [notes](./notes) to myself. 
+- Read my little [notes](./notes) to myself.
+- See what [movies](./log) I've been watching recently. 
 
