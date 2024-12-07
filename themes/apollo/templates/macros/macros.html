@@ -104,18 +104,18 @@
 
 {% macro content(page) %}
 <main>
-    <article>
+    <article class="h-entry">
         <div class="title">
-            {#<h1 class="title">{{ page.title }}</h1>#}
+            {#<h1 class="title p-name">{{ page.title }}</h1>#}
             {{ post_macros::page_header(title=page.title) }}
 
                 <div class="meta">
                     {% if page.date %}
-                        Posted on <time>{{ page.date | date(format="%Y-%m-%d") }}</time>
+                        Posted on <time class="dt-published"> {{ page.date | date(format="%Y-%m-%d") }}</time>
                     {% endif %}
 
                     {% if page.updated %}
-                        :: Updated on <time>{{ page.updated | date(format="%Y-%m-%d") }}</time>
+                        :: Updated on <time class="dt-updated">{{ page.updated | date(format="%Y-%m-%d") }}</time>
                     {% endif %}
 
                     {% if page.extra.read_time %}
@@ -157,7 +157,7 @@
         </div>
 
         {% if page.extra.tldr %}
-            <div class="tldr">
+            <div class="tldr p-summary">
                 <strong>tl;dr:</strong>
                 {{ page.extra.tldr }}
             </div>
@@ -198,7 +198,7 @@
         {% endif %}
         {% endif %}
 
-        <section class="body">
+        <section class="body e-content">
             {{ page.content | safe }}
         </section>
     </article>
