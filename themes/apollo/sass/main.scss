@@ -26,12 +26,14 @@ html {
   line-height: 1.6em;
 }
 
-.content {
+.content, .footer {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 24px;
   word-wrap: break-word;
 }
+
+.footer p {text-align: right;}
 
 .hidden {
   display: none;
