@@ -1,0 +1,80 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "taxonomies",
+          "name": "taxonomies",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "tags",
+              "name": "tags",
+              "type": "tags"
+            }
+          ]
+        },
+        {
+          "title": "extra",
+          "name": "extra",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "tldr",
+              "name": "tldr",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "frontMatter.framework.id": "hugo",
+  "frontMatter.content.publicFolder": "static",
+  "frontMatter.preview.host": "http://127.0.0.1:1111",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "content",
+      "path": "[[workspace]]/content"
+    },
+    {
+      "title": "teaching",
+      "path": "[[workspace]]/content/teaching"
+    },
+    {
+      "title": "notes",
+      "path": "[[workspace]]/content/notes"
+    },
+    {
+      "title": "research",
+      "path": "[[workspace]]/content/research"
+    },
+    {
+      "title": "log",
+      "path": "[[workspace]]/content/log"
+    }
+  ],
+  "frontMatter.git.enabled": true,
+  "frontMatter.framework.startCommand": "zola serve"
+}
