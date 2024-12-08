@@ -1,5 +1,5 @@
 +++
-title = "Deadpool &amp; Wolverine, 2024 - ★★★★"
+title = "Deadpool & Wolverine, 2024 - ★★★★"
 date = "2024-11-15"
 
 [taxonomies]
