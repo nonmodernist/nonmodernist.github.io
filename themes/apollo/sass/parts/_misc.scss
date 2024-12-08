@@ -28,15 +28,14 @@ p {
 
 hr {
   border: 0;
-  border-top: 3px solid var(--border-color);
-  border-style: dotted; // made hr dotted instead of solid
+  border-top: 3px dotted var(--border-color); // made hr dotted instead of solid
   margin: 1em 0;
 }
 
 blockquote {
   border-left: 3px solid var(--primary-color);
   color: #737373;
-  margin: 0;
+  margin: 2rem; // increase margin from 0
   padding-left: 1em;
 }
 
