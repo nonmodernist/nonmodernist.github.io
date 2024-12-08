@@ -71,3 +71,13 @@ html {
   display: inline;
   margin: .625rem 0 0 .1rem;
 }
+
+
+/* add styling for tldr */
+
+.tldr {
+  margin: .725rem 2rem;
+  border-left: 3px dashed var(--primary-color);
+  color: #737373;
+  padding: .5rem ;
+}
