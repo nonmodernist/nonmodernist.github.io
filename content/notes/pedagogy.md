@@ -5,6 +5,8 @@ date = "2024-10-01"
 [taxonomies]
 tags=["teaching"]
 
+[extra]
+tldr = "My teaching philosophy is about a commitment to transform the world, side by side with my students."
 +++
 
 <span class="og">✨</span>
