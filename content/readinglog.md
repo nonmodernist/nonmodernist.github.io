@@ -1,5 +1,6 @@
 +++
 title = "reading list by year"
+description = "a list of books i've read from 1993 to now"
 +++
 
 I've been keeping track of the books I read since the early 2000s, but pre-1999 is incomplete. For example, I don't have a list of the hundreds of Babysitters Club books I read as a pre-teen. 
@@ -1044,11 +1045,13 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***I’d Rather Be Reading*** by Anne Bogel  
 - ***Easy Riders, Raging Bulls*** by Peter Biskind 
 - ***13 Ways of Looking at the Novel*** by Jane Smiley  
+- ***Political Animals*** by So Mayer
 
 ## 2023
 - ***Devil House*** by John Darnielle   
 - ***Prairie*** by Candace Savage 
 - ***The Hollywood Studios*** by Ethan Mordden 
+- ***Radical Hope: A Teaching Manifesto*** by Kevin Gannon
 
 ## 2024
 - ***The Haunting of Hill House*** by Shirley Jackson   
@@ -1062,5 +1065,6 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***Almost Home*** by Damien Echols 
 - ***The Haunting of Hill House*** by Shirley Jackson (reread)
 - ***Annihilation*** by Jeff VanderMeer (reread) 
+- ***New Queer Cinema*** by B. Ruby Rich
 
 [Back to top](#)

@@ -1,5 +1,9 @@
 +++
-title = "now"
+title = "/ now"
+description = "what i'm thinking about and working on right now"
+
+[extra]
+tldr = "what i'm thinking about and working on right now"
 +++
 
 {% timeline() %}

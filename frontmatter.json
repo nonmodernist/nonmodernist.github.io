@@ -46,6 +46,39 @@
               "type": "string"
             }
           ]
+        },
+        {
+          "title": "description",
+          "name": "description",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "Description",
+      "pageBundle": false,
+      "fields": [
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "extra",
+          "name": "extra",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "tldr",
+              "name": "tldr",
+              "type": "string"
+            }
+          ]
         }
       ]
     }
