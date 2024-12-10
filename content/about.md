@@ -20,3 +20,17 @@ Alexandra previously [co-hosted a podcast about college and coronavirus](https:/
 This site is built with Zola and uses [Apollo](https://www.getzola.org/themes/apollo/), with modifications by me. It lives on GitHub and is deployed with GitHub Pages. The [super cute emojis](https://meowni.ca/posts/og-emoji-font/) were created by Monica Dinculescu and are based on the original Docomo emoji set from 2001. Images are dithered using [Dither Me This](https://doodad.dev/dither-me-this/), making their file sizes smaller. Patterns are generated using [Doodad.dev's Pattern Generator](https://doodad.dev/pattern-generator/). The [movie log](@/log/_index.md) is echoed from Letterboxd with [EchoFeed](https://echofeed.app). 
 
 The philosophy behind the site is inspired by the <span class="og">📟</span> small web movement and <span class="og">☀</span> solarpunk.
+
+## <span class="og">🎪</span> Sitemap
+
+Looking for something specific? Try this list of the site's pages: 
+
+- [Home](@/_index.md)
+- About (that's this page!)
+- [Now](@/now.md)
+- [Notes](@/notes/_index.md)
+- [RSS feed](./notes/atom.xml)
+- [Reading list by year](@/readinglog.md)
+- [Movie log](@/log/_index.md)
+- [Research](@/research/index.md)
+- [Teaching](@/teaching/_index.md)
