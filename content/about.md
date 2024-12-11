@@ -7,7 +7,7 @@ path = "about"
 
 Alexandra teaches in the English department at Texas Christian University. Her research focuses on the intersections of literature, film, and other media in the early 20th century, with a special interest in the historical recovery of neglected women writers and filmmakers.
 
-Her first book, [*Before Fanfiction: Recovering the Literary History of American Media Fandom*](https://beforefanfiction.com), was released by LSU Press in October 2023.
+Her first book, [*Before Fanfiction: Recovering the Literary History of American Media Fandom*](https://beforefanfiction.com), was released by LSU Press in October 2023, and recently received an honorable mention for the biennial [MLA Prize for Contingent Faculty and Independent Scholars](https://www.mla.org/Resources/Career/MLA-Grants-and-Awards/Winners-of-MLA-Prizes/Biennial-Prize-and-Award-Winners/MLA-Prize-for-Contingent-Faculty-and-Independent-Scholars-Winners). 
 
 Alexandra’s current project, [*Hollywood Regionalism*](http://hollywoodregionalism.com), investigates how the studio system adapted, revised, and transformed dozens of regional novels by American women writers from 1910-1961. She and her students have researched hundreds of these film adaptations, many lost or forgotten, and are working to bring them back into public view.
 
