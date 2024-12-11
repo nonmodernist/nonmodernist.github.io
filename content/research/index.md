@@ -5,7 +5,7 @@ path = "research"
 
 # <span class="og">📖</span> Monographs
 
-- *[Before Fanfiction: Recovering the Literary History of American Media Fandom](http://beforefanfiction.com/)*, LSU Press, 2023. Honorable mention, 2022-23 MLA Prize for Contingent Faculty and Independent Scholars. 
+- *[Before Fanfiction: Recovering the Literary History of American Media Fandom](http://beforefanfiction.com/)*, LSU Press, 2023. <span style="color: #737373"> Honorable mention, 2022-23 MLA Prize for Contingent Faculty and Independent Scholars.</span> 
 
 - *[Hollywood Regionalism](http://hollywoodregionalism.com)*, in progress
 
@@ -13,7 +13,7 @@ path = "research"
 
 - “Orlando: A Fanfiction; Or, Virginia Woolf in the Archive of One’s Own.” Journal of Modern Literature 44.3 (July 2021): 49-62.
 
-- “Hollywood Regionalism: What the Studio System Did with Gene Stratton- Porter’s Nature Novels.” Feminist Media Histories 6.2, Special Issue on Media and the Environment (April 2020): 16-42.
+- “Hollywood Regionalism: What the Studio System Did with Gene Stratton-Porter’s Nature Novels.” Feminist Media Histories 6.2, Special Issue on Media and the Environment (April 2020): 16-42.
 
 - “‘Entre Nous’: Marjorie Kinnan Rawlings’s Pre-World War II Fan Mail.” The Journal of Florida Literature 25 (2017).
 
@@ -25,6 +25,6 @@ path = "research"
 
 - [Hotel Florida](http://hotel-florida.ghost.io), occasional dispatches on the three-way fight
 
-- "[A Walk Through Weelaunee Forest](https://www.thexylom.com/post/perspective-a-walk-through-weelaunee-forest)," *The Xylom* (Finalist for the Atlanta Press Club Award for Best Photo Essay, 2024)
+- "[A Walk Through Weelaunee Forest](https://www.thexylom.com/post/perspective-a-walk-through-weelaunee-forest)," *The Xylom*. <span style="color: #737373">Finalist for the Atlanta Press Club Award for Best Photo Essay, 2024.</span>
 
 - [Next Lunar Baedeker](https://nonmodernist.com/next-lunar-baedeker/), an interactive text adventure
