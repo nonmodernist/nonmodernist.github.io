@@ -15,6 +15,7 @@ tldr = "a page about the tools i use most often"
 ## For teaching
 
 - Google Drive, Docs, and Slides for creating syllabi and providing materials
+- Canva for spicing things up
 - Brightspace D2L, though I try to use it as little as possible
 
 ## For building websites

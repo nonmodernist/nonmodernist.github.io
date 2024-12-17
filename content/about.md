@@ -5,6 +5,8 @@ path = "about"
 
 # <span class="og">❤</span> About Alexandra
 
+<img src="/headshot-bw.png" alt="alexandra standing on a street, wearing a black tshirt, jeans, and black boots" style="float:right">
+
 Alexandra teaches in the English department at Texas Christian University. Her research focuses on the intersections of literature, film, and other media in the early 20th century, with a special interest in the historical recovery of neglected women writers and filmmakers.
 
 Her first book, [*Before Fanfiction: Recovering the Literary History of American Media Fandom*](https://beforefanfiction.com), was released by LSU Press in October 2023, and recently received an honorable mention for the biennial [MLA Prize for Contingent Faculty and Independent Scholars](https://www.mla.org/Resources/Career/MLA-Grants-and-Awards/Winners-of-MLA-Prizes/Biennial-Prize-and-Award-Winners/MLA-Prize-for-Contingent-Faculty-and-Independent-Scholars-Winners). 
@@ -27,10 +29,11 @@ Looking for something specific? Try this list of the site's pages:
 
 - [Home](@/_index.md)
 - About (that's this page!)
-- [Now](@/now.md)
+- [Uses](@/uses.md)
 - [Notes](@/notes/_index.md)
-- [RSS feed](./notes/atom.xml)
-- [Reading list by year](@/readinglog.md)
+    - [RSS feed](./notes/atom.xml)
 - [Movie log](@/log/_index.md)
+- [Tags](../tags)
+- [Reading list by year](@/readinglog.md)
 - [Research](@/research/index.md)
 - [Teaching](@/teaching/_index.md)
