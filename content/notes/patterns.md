@@ -1,5 +1,5 @@
 +++
-title = "Generating patterns with Doodad.dev" 
+title = "generating patterns with doodad.dev" 
 date = "2024-12-05"
 
 [taxonomies] 

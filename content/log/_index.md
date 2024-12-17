@@ -1,6 +1,6 @@
 +++
 paginate_by = 20
-title = "log"
+title = "movie log"
 sort_by = "date"
 
 insert_anchor_links = "heading"
