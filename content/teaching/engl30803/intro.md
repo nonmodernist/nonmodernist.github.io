@@ -1,5 +1,5 @@
 +++
-title = "ENGL 30803 Week 1"
+title = "Theories of Cinema, Week 1"
 +++
 # Introduction: Women, Cinema, Nation	
 

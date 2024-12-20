@@ -1,5 +1,5 @@
 +++
-title = "ENGL 30803 Film and Reading List"
+title = "Theories of Cinema Film and Reading List"
 +++
 
 

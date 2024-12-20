@@ -10,6 +10,26 @@
 }
 
 @font-face {
+  font-family: 'MintsodaLimeGreen';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/MintsodaLimeGreen/MintsodaLimeGreen.ttf'), local('ttf');
+  font-display: swap;
+}
+
+.mint {font-family: MintsodaLimeGeen, sans-serif;
+}
+
+@font-face {
+  font-family: 'Ameda';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Ameda/Ameda.otf'), local('otf');
+  font-display: swap;
+}
+
+
+@font-face {
   font-family: 'Jetbrains Mono';
   font-style: normal;
   font-weight: 400;

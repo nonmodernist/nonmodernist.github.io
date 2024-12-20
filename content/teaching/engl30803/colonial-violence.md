@@ -1,5 +1,5 @@
 ---
-title: ENGL 30803 Week 7
+title: Theories of Cinema, Week 7
 ---
 # Picturing Colonial Violence
 

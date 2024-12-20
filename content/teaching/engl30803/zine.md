@@ -1,5 +1,5 @@
 +++
-title = "ENGL 30803 Collaborative Film Zine"
+title = "Theories of Cinema Collaborative Film Zine"
 +++
 
 ## Read the Zine!

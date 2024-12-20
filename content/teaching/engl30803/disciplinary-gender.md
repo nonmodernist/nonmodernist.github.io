@@ -1,5 +1,5 @@
 ---
-title: ENGL 30803 Week 5
+title: Theories of Cinema, Week 5
 ---
 # Discinplinary Gender
 

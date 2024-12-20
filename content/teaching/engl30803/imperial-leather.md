@@ -1,5 +1,5 @@
 ---
-title: ENGL 30803 Week 6
+title: Theories of Cinema, Week 6
 
 ---
 # Imperial Leather

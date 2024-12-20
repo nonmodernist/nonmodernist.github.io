@@ -1,5 +1,5 @@
 ---
-title: ENGL 30803 Week 4
+title: Theories of Cinema, Week 4
 ---
 # Penetrating Looks
 

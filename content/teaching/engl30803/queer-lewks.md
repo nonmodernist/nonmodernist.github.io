@@ -1,5 +1,5 @@
 ---
-title: ENGL 30803 Week 12
+title: Theories of Cinema, Week 12
 
 ---
 # Queer Lewks

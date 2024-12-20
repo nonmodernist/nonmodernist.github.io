@@ -1,5 +1,5 @@
 ---
-title: ENGL 30803 Week 2
+title: Theories of Cinema, Week 2
 ---
 
 # The Male Gaze
