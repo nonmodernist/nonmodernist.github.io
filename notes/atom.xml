@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>alexandra edwards, phd - notes</title>
+    <subtitle>the internet homebase of dr. alexandra edwards</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://nonmodernist.com/notes/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-12-20T15:47:59.861+00:00</updated>
+    <id>https://nonmodernist.com/notes/atom.xml</id>
+    <entry xml:lang="en">
+        <title>do you ever have an idea?</title>
+        <published>2024-12-20T15:47:59.861+00:00</published>
+        <updated>2024-12-20T15:47:59.861+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/2024-12-20-do-you-ever-have-an-idea/"/>
+        <id>https://nonmodernist.com/notes/2024-12-20-do-you-ever-have-an-idea/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/2024-12-20-do-you-ever-have-an-idea/">&lt;p&gt;there&#x27;s this idea rattling around in my brain, and i can&#x27;t figure out how to make it work. do you know that feeling? it&#x27;s exceptionally frustrating.&lt;&#x2F;p&gt;
+&lt;p&gt;the idea is simple: i want to build a wiki that collects the various &lt;em&gt;stuff&lt;&#x2F;em&gt; i use to teach different classes. things like: the &lt;a href=&quot;https:&#x2F;&#x2F;nonmodernist.my.canva.site&#x2F;optical-toys&quot;&gt;timeline of optical toys&lt;&#x2F;a&gt; that i give my multimedia authoring students, or the list of folk horror tropes that i developed after teaching a genre in film course on the topic.&lt;&#x2F;p&gt;
+&lt;p&gt;there are any number of solutions to this problem, but i can&#x27;t seem to sort out which works best. they all have some kind of friction that prevents me from feeling like, &quot;ah yes, this is right, this works.&quot;&lt;&#x2F;p&gt;
+&lt;p&gt;maybe the trouble is that i want to skip ahead to the part where i have pages and pages of material, enough that it feels hefty and substantial. i long for my own &lt;a href=&quot;http:&#x2F;&#x2F;filmsite.org&quot;&gt;filmsite.org&lt;&#x2F;a&gt;. and i&#x27;m certainly not there yet.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>owning my data</title>
+        <published>2024-12-07T00:00:00+00:00</published>
+        <updated>2024-12-07T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/owning-my-data/"/>
+        <id>https://nonmodernist.com/notes/owning-my-data/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/owning-my-data/">&lt;p&gt;&lt;span class=&quot;og&quot;&gt;📝&lt;&#x2F;span&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;one project i have been working on slowly over the past couple of years is &quot;owning my own data&quot;—in other words, making sure that i have local &amp;amp; backed up copies of the stuff i post to the internet. it started when i got off goodreads. first i switched to storygraph, and then i decided that i wasn&#x27;t using any of the site&#x27;s features, and that i was better off just keeping my &lt;a href=&quot;https:&#x2F;&#x2F;nonmodernist.com&#x2F;readinglog&#x2F;&quot;&gt;reading log&lt;&#x2F;a&gt; in a text file. it has lived in my obsidian notes for a long while, but now it also lives here on this website. since i don&#x27;t finish many books these days, it&#x27;s easy enough to update the file when i do.&lt;sup class=&quot;footnote-reference&quot; id=&quot;fr-1-1&quot;&gt;&lt;a href=&quot;#fn-1&quot;&gt;[1]&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;i have a .csv of my historical letterboxd data too, but it&#x27;s going to take me a while to get it into a useful format that can be shared outside their platform. but today while poking around the indieweb, i discovered that letterboxd creates an rss feed of a user&#x27;s recent activity, which means i can &lt;a href=&quot;https:&#x2F;&#x2F;nonmodernist.com&#x2F;log&#x2F;&quot;&gt;echo that feed here&lt;&#x2F;a&gt;. i&#x27;m using &lt;a href=&quot;https:&#x2F;&#x2F;echofeed.app&quot;&gt;echofeed&lt;&#x2F;a&gt; to accomplish this. the service will grab any new movies i log; we&#x27;ll see how much historical data i end up wanting to add by hand. i am going to guess it will not be the full 1,350 movies in my letterboxd diary.&lt;&#x2F;p&gt;
+&lt;hr&gt;&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn-1&quot;&gt;
+&lt;p&gt;at first i wrote &quot;since i don&#x27;t read a lot these days,&quot; but that&#x27;s not true. i don&#x27;t read as much as when i was in grad school, but i do read a lot. it&#x27;s mostly for work, though, which means it&#x27;s mostly hunting and gathering for what i need to teach a class or write an essay. i rarely finish a whole book, and i rarely log the dozens of books i one-third read for work reasons. &lt;a href=&quot;#fr-1-1&quot;&gt;↩&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>generating patterns with doodad.dev</title>
+        <published>2024-12-05T00:00:00+00:00</published>
+        <updated>2024-12-05T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/patterns/"/>
+        <id>https://nonmodernist.com/notes/patterns/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/patterns/">&lt;p&gt;I&#x27;ve been fighting with images on the &lt;a href=&quot;https:&#x2F;&#x2F;nonmodernist.com&#x2F;teaching&#x2F;&quot;&gt;teaching&lt;&#x2F;a&gt; page of this site (mostly related to sizing and having things look nice yet be responsive), so I decided to replace them with svg patterns generated at &lt;a href=&quot;http:&#x2F;&#x2F;doodad.dev&quot;&gt;Doodad.dev&lt;&#x2F;a&gt;. Since the Apollo theme used for this site allows me to call any URL as an image on a page with &quot;cards,&quot; I was able to replace the images I had been hosting with the URI generated by the &quot;CSS background image&quot; selection on the &lt;a href=&quot;https:&#x2F;&#x2F;doodad.dev&#x2F;pattern-generator&#x2F;&quot;&gt;pattern generator&lt;&#x2F;a&gt;. I don&#x27;t totally understand the &lt;a href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;SVG&#x2F;Tutorial&#x2F;Introduction&quot;&gt;magic of svg&lt;&#x2F;a&gt;, but that&#x27;s okay.&lt;&#x2F;p&gt;
+&lt;p&gt;The pattern generator itself is fun to play with, and I&#x27;ve been amazed by how a small change to the components can create an entirely new pattern.&lt;&#x2F;p&gt;
+&lt;p&gt;For example, dots in circles become flowers, just by increasing the size of each dot.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;data:image&#x2F;svg+xml,%3Csvg xmlns=&#x27;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&#x27; height=&#x27;100%25&#x27; width=&#x27;100%25&#x27;%3E%3Cdefs%3E%3Cpattern id=&#x27;doodad&#x27; width=&#x27;100&#x27; height=&#x27;100&#x27; viewBox=&#x27;0 0 40 40&#x27; patternUnits=&#x27;userSpaceOnUse&#x27; patternTransform=&#x27;rotate(45)&#x27;%3E%3Crect width=&#x27;100%25&#x27; height=&#x27;100%25&#x27; fill=&#x27;%232d3748&#x27;&#x2F;%3E%3Ccircle cx=&#x27;34&#x27; cy=&#x27;20&#x27; r=&#x27;4&#x27; fill=&#x27;%234a5568&#x27;&#x2F;%3E%3Ccircle cx=&#x27;6&#x27; cy=&#x27;20&#x27; r=&#x27;4&#x27; fill=&#x27;%234a5568&#x27;&#x2F;%3E%3Ccircle cx=&#x27;20&#x27; cy=&#x27;34&#x27; r=&#x27;4&#x27; fill=&#x27;%234a5568&#x27;&#x2F;%3E%3Ccircle cx=&#x27;20&#x27; cy=&#x27;6&#x27; r=&#x27;4&#x27; fill=&#x27;%234a5568&#x27;&#x2F;%3E%3Ccircle cx=&#x27;27&#x27; cy=&#x27;13&#x27; r=&#x27;4&#x27; fill=&#x27;%231a202c&#x27;&#x2F;%3E%3Ccircle cx=&#x27;13&#x27; cy=&#x27;27&#x27; r=&#x27;4&#x27; fill=&#x27;%231a202c&#x27;&#x2F;%3E%3Ccircle cx=&#x27;27&#x27; cy=&#x27;27&#x27; r=&#x27;4&#x27; fill=&#x27;%231a202c&#x27;&#x2F;%3E%3Ccircle cx=&#x27;13&#x27; cy=&#x27;13&#x27; r=&#x27;4&#x27; fill=&#x27;%231a202c&#x27;&#x2F;%3E%3C&#x2F;pattern%3E%3C&#x2F;defs%3E%3Crect fill=&#x27;url(%23doodad)&#x27; height=&#x27;200%25&#x27; width=&#x27;200%25&#x27;&#x2F;%3E%3C&#x2F;svg%3E &quot; alt=&quot;a pattern of dots arranged in circles, all in shades of blue&quot;&gt; &lt;img src=&quot;data:image&#x2F;svg+xml,%3Csvg xmlns=&#x27;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&#x27; height=&#x27;100%25&#x27; width=&#x27;100%25&#x27;%3E%3Cdefs%3E%3Cpattern id=&#x27;doodad&#x27; width=&#x27;73&#x27; height=&#x27;73&#x27; viewBox=&#x27;0 0 40 40&#x27; patternUnits=&#x27;userSpaceOnUse&#x27; patternTransform=&#x27;rotate(45)&#x27;%3E%3Crect width=&#x27;100%25&#x27; height=&#x27;100%25&#x27; fill=&#x27;%232d3748&#x27;&#x2F;%3E%3Ccircle cx=&#x27;35&#x27; cy=&#x27;20&#x27; r=&#x27;9&#x27; fill=&#x27;%234a5568&#x27;&#x2F;%3E%3Ccircle cx=&#x27;5&#x27; cy=&#x27;20&#x27; r=&#x27;9&#x27; fill=&#x27;%234a5568&#x27;&#x2F;%3E%3Ccircle cx=&#x27;20&#x27; cy=&#x27;35&#x27; r=&#x27;9&#x27; fill=&#x27;%234a5568&#x27;&#x2F;%3E%3Ccircle cx=&#x27;20&#x27; cy=&#x27;5&#x27; r=&#x27;9&#x27; fill=&#x27;%234a5568&#x27;&#x2F;%3E%3Ccircle cx=&#x27;27&#x27; cy=&#x27;13&#x27; r=&#x27;9&#x27; fill=&#x27;%231a202c&#x27;&#x2F;%3E%3Ccircle cx=&#x27;13&#x27; cy=&#x27;27&#x27; r=&#x27;9&#x27; fill=&#x27;%231a202c&#x27;&#x2F;%3E%3Ccircle cx=&#x27;27&#x27; cy=&#x27;27&#x27; r=&#x27;9&#x27; fill=&#x27;%231a202c&#x27;&#x2F;%3E%3Ccircle cx=&#x27;13&#x27; cy=&#x27;13&#x27; r=&#x27;9&#x27; fill=&#x27;%231a202c&#x27;&#x2F;%3E%3C&#x2F;pattern%3E%3C&#x2F;defs%3E%3Crect fill=&#x27;url(%23doodad)&#x27; height=&#x27;200%25&#x27; width=&#x27;200%25&#x27;&#x2F;%3E%3C&#x2F;svg%3E &quot; alt=&quot;a pattern of dots arranged to look like four-petal flowers, all in shades of blue&quot;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>A pedagogy of transformative works</title>
+        <published>2024-10-01T00:00:00+00:00</published>
+        <updated>2024-10-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/pedagogy/"/>
+        <id>https://nonmodernist.com/notes/pedagogy/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/pedagogy/">&lt;p&gt;&lt;span class=&quot;og&quot;&gt;✨&lt;&#x2F;span&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;In my campus office, I keep an archive of my students’ work. It’s not just a filing cabinet stuffed with papers; it’s more like a gallery collection displayed all around me, and it grows each year. On one wall, large posters describe the careers of Anita Loos, Vera Caspary, and Edna Ferber, and on a ledge nearby, a 3D-printed model of a 1950s film camera is accompanied by a tag explaining that this model camera was used to film the Ferber adaptation &lt;em&gt;Giant&lt;&#x2F;em&gt;. My bookshelves are filled with students’ handmade accordion books containing hand-drawn data visualizations. There’s also a board game about student debt, a &lt;a href=&quot;https:&#x2F;&#x2F;nonmodernist.com&#x2F;docs&#x2F;teaching&#x2F;theories-of-cinema&#x2F;zine&#x2F;&quot;&gt;100-page feminist film theory mega-zine&lt;&#x2F;a&gt;, and a plastic box that contains the components and instructions for assembling an emergency off-grid intranet that can be used to share information during natural disasters. I never design a class without considering what I can invite my students to make next.&lt;&#x2F;p&gt;
+&lt;p&gt;I model my classroom on the cultural networks I research—for example, the transformative fan communities and creators that I wrote about in &lt;a href=&quot;http:&#x2F;&#x2F;beforefanfiction.com&quot;&gt;my first book&lt;&#x2F;a&gt;. Transformative fandom lives in spaces of possibility, where the smallest detail of a text can become a window into a new universe. My students and I crawl through such windows together: conducting stealth missions into the landscapes of film and literature, gleaning insights and resistances, and bringing them back to our campus and our lives to be shared, and, ultimately, transformed.&lt;&#x2F;p&gt;
+&lt;p&gt;In past years, those windows have taken us into the history of Hollywood film adaptation, where my students have been hunting for lost films and forgotten women writers. This research and writing project turns students loose with the goal of recovering as much information as possible about one film adapted from the work of an American woman writer. In the process, students have a chance to design a research question, practice broadly transferable research and writing skills, and contribute their recovered knowledge to the public commons through platforms like Wikipedia, hand-coded web archives, and on-campus exhibitions. Sometimes, they stumble onto mysteries that would flummox even the hardest-boiled film detective and end up writing blog posts with titles like, “Sylvia Tate: Does She Even Exist?”&lt;&#x2F;p&gt;
+&lt;p&gt;Students are thrilled by the prospect of writing to expand or transform public knowledge, because it makes their effort and experiences reverberate beyond the walls of the classroom. As one of my students wrote in a reflection essay,&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For the first time, I felt like a course had a greater purpose that went far beyond what was on the syllabus. When I learned that we would be editing Wikipedia pages, I thought to myself, ‘Why is my professor so excited about this?’ I later realized that we were slowly adding to and changing something greater than us. We were shining a light back onto the lives and stories of forgotten female authors and screenwriters who helped change the film industry. By adding those Wikipedia pages, we were sharing their stories and making sure they were not forgotten… Although the 300 words I added did not seem like much, it was reassuring to know that people after me will add to what I contributed and together we will rewrite the story of some amazing female authors.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Valuing student labor in and beyond the classroom is a central tenet of my pedagogy; the “work” of “transformative works” is just as important as the “transformative.” This means that students themselves often get to define what they want to create and how they’ll go about it, which ensures that they have the chance to use their existing skillsets and to connect their work to their other courses and interests. To conclude such self-directed projects, I ask students to write up detailed self-assessments that help them articulate their strengths and consider how they might improve upon their weaknesses in the future.&lt;&#x2F;p&gt;
+&lt;p&gt;Several of my students have gone on to win competitive scholarships and join distinguished graduate programs, but more importantly to me, all of them have had a chance to see their writing matter in the context of a global scholarly conversation about literature, media, and culture. They have updated hundreds of Wikipedia articles and made connections with scholars and local historians across the country. Their research has also inspired and assisted my work outside the classroom; &lt;em&gt;Feminist Media Histories&lt;&#x2F;em&gt; published my article based on the research of nine of my students into the film adaptations of Gene Stratton-Porter. Seeing their names in print was among my proudest moments as an educator.&lt;&#x2F;p&gt;
+&lt;p&gt;Practicing a pedagogy of transformative works also helps me to intentionally align my teaching with the “transformative pedagogy” of teacher-scholars around the world who build on the critical pedagogy of Paolo Friere and the transgressive, engaged pedagogy of bell hooks. My commitment to transformation as classroom methodology is a commitment to the transformation of our entire world—a commitment to build something, not just for my students, but side by side with them.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
