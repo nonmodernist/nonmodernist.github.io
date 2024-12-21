@@ -10,7 +10,8 @@ tldr = "a page about the tools i use most often"
 
 - MacBook Air with M3 chip (provided by work)
 - Obsidian
-- Arc browser
+- <del>Arc browser</del> Vivaldi browser
+
 
 ## For teaching
 
