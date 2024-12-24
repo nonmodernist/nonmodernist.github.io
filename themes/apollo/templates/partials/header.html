@@ -7,10 +7,6 @@
     <link rel="me" href="https://github.com/nonmodernist" />
     <link rel="me" href="https://bsky.app/profile/nonmodernist.bsky.social" />
     <link rel="webmention" href="https://webmention.io/nonmodernist.com/webmention" />
-    <link rel="apple-touch-icon" sizes="180x180" href={{ config.extra.favicon }}>
-    <link rel="alternate" type="application/atom+xml" title="nonmodernist" href="https://nonmodernist.com/feed.atom">
-    <link rel="alternate" type="application/atom+xml" title="nonmodernist.com - notes only" href="https://nonmodernist.com/notes/feed.atom">
-
 
     {% if page.extra.meta %}
          <!-- the meta data config goes here  -->
@@ -75,6 +71,8 @@
     {% if config.extra.favicon %}
         <link rel="icon" type="image/png" href={{ config.extra.favicon }} />
     {% endif %}
+    <link rel="apple-touch-icon" sizes="180x180" href={{ config.extra.favicon }}>
+
 
     {# Font from cdn or disk #}
     {% if config.extra.use_cdn | default(value=false) %}
@@ -146,6 +144,8 @@
 
     {# RSS #}
     <link rel="alternate" type="application/atom+xml" title="{{ config.title }}" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
+    <link rel="alternate" type="application/atom+xml" title="nonmodernist.com - notes only" href="https://nonmodernist.com/notes/feed.atom">
+
 
 
     {% set theme = config.extra.theme | default(value="toggle") %}
