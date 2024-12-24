@@ -13,5 +13,5 @@
 
 
 
-Until next week,
-<span class="og">✌︎</span>
+
+# <span class="og">✌︎</span> the weekly goodbye
