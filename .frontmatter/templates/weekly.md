@@ -1,14 +1,15 @@
-# the weekly links
+# <span class="og">➰</span> the weekly links
 
 
 
 
-# the weekly watch
+# <span class="og">📺</span> the weekly watch
 
 
 
 
-# the weekly grump
+
+# <span class="og">😠</span> the weekly grump
 
 
 
