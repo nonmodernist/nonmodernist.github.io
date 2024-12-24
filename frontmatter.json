@@ -2,9 +2,10 @@
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
   "frontMatter.taxonomy.contentTypes": [
     {
-      "name": "default",
-      "pageBundle": false,
+      "name": "blogpost",
       "previewPath": null,
+      "pageBundle": false,
+      "clearEmpty": true,
       "fields": [
         {
           "title": "Title",
@@ -19,9 +20,25 @@
           "isPublishDate": true
         },
         {
+          "title": "Updated date",
+          "name": "updated",
+          "type": "datetime",
+          "isModifiedDate": true
+        },
+        {
+          "title": "Article preview",
+          "name": "preview",
+          "type": "image"
+        },
+        {
           "title": "Is in draft",
           "name": "draft",
           "type": "draft"
+        },
+        {
+          "title": "fmContentType",
+          "name": "fmContentType",
+          "type": "string"
         },
         {
           "title": "taxonomies",
@@ -46,44 +63,11 @@
               "type": "string"
             }
           ]
-        },
-        {
-          "title": "description",
-          "name": "description",
-          "type": "string"
-        }
-      ]
-    },
-    {
-      "name": "Description",
-      "pageBundle": false,
-      "fields": [
-        {
-          "title": "title",
-          "name": "title",
-          "type": "string"
-        },
-        {
-          "title": "description",
-          "name": "description",
-          "type": "string"
-        },
-        {
-          "title": "extra",
-          "name": "extra",
-          "type": "fields",
-          "fields": [
-            {
-              "title": "tldr",
-              "name": "tldr",
-              "type": "string"
-            }
-          ]
         }
       ]
     }
   ],
-  "frontMatter.framework.id": "hugo",
+  "frontMatter.framework.id": "zola",
   "frontMatter.content.publicFolder": "static",
   "frontMatter.preview.host": "http://127.0.0.1:1111",
   "frontMatter.content.pageFolders": [
@@ -97,7 +81,10 @@
     },
     {
       "title": "notes",
-      "path": "[[workspace]]/content/notes"
+      "path": "[[workspace]]/content/notes",
+      "contentTypes": [
+        "blogpost"
+      ]
     },
     {
       "title": "research",
@@ -109,5 +96,5 @@
     }
   ],
   "frontMatter.git.enabled": true,
-  "frontMatter.framework.startCommand": "zola serve"
+  "frontMatter.framework.startCommand": "zola serve --drafts"
 }
