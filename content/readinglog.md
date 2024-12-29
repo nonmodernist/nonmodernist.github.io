@@ -1066,5 +1066,6 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***The Haunting of Hill House*** by Shirley Jackson (reread)
 - ***Annihilation*** by Jeff VanderMeer (reread) 
 - ***New Queer Cinema*** by B. Ruby Rich
+- ***Little Boy Lost*** by Marghanita Laski
 
 [Back to top](#)
