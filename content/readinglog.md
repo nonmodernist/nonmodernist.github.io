@@ -1068,4 +1068,8 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***New Queer Cinema*** by B. Ruby Rich
 - ***Little Boy Lost*** by Marghanita Laski
 
+## 2025
+
+- ***I Lost My Girlish Laughter*** by Jane Allen
+
 [Back to top](#)
