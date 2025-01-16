@@ -31,7 +31,7 @@ Looking for something specific? Try this list of the site's pages:
 - About (that's this page!)
 - [Uses](@/uses.md)
 - [Notes](@/notes/_index.md)
-    - [RSS feed](./notes/atom.xml)
+    - [RSS feed](../notes/atom.xml)
 - [Movie log](@/log/_index.md)
 - [Tags](../tags)
 - [Reading list by year](@/readinglog.md)
