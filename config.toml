@@ -14,10 +14,14 @@ generate_feeds = true
 minify_html = false 
 feed_limit = 20
 author = "Alexandra Edwards"
-
-
-
 taxonomies = [{ name = "tags" }]
+
+[search]
+include_title = true
+include_description = true
+include_path = true
+include_content = true
+index_format = "elasticlunr_json"
 
 [markdown]
 # Whether to do syntax highlighting
