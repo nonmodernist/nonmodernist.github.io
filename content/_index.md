@@ -9,4 +9,4 @@ insert_anchor_links = "heading"
 - Learn more [about me](./about), the [research](./research) I publish, and the [courses](./teaching) I teach.
 - See the [book log](@/readinglog.md) I've been keeping for almost 30 years.
 - Find out what [movies](./log) I've been watching recently. 
-- Read my [blog](./notes) (or subscribe to the [feed](https://nonmodernist.com/notes/atom.xml)).
+- Read my [notes](./tags/notes/).
