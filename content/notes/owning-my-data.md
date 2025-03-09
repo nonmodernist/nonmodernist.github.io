@@ -3,7 +3,7 @@ title = "owning my data"
 date = "2024-12-07"
 
 [taxonomies] 
-tags=["blog"]
+tags=["notes"]
 +++
 
 <span class="og">📝</span>

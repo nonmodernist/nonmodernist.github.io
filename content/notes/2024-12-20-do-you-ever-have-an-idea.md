@@ -3,7 +3,7 @@ title: do you ever have an idea?
 date: 2024-12-20T15:47:59.861Z
 draft: false
 taxonomies:
-  tags: [blog]
+  tags: [notes]
 extra:
   tldr: ""
 description: ""
