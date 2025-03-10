@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>alexandra edwards, phd - alexandra is</title>
+    <subtitle>the internet homebase of dr. alexandra edwards</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://nonmodernist.com/is/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://nonmodernist.com/is/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-03-10T11:55:00+00:00</updated>
+    <id>https://nonmodernist.com/is/atom.xml</id>
+    <entry xml:lang="en">
+        <title> enjoying the sunshine</title>
+        <published>2025-03-10T11:55:00+00:00</published>
+        <updated>2025-03-10T11:55:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/is/03-10-2025t11-55/"/>
+        <id>https://nonmodernist.com/is/03-10-2025t11-55/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/is/03-10-2025t11-55/">&lt;p&gt;&lt;small&gt;this status update is echoed from &lt;a href=&quot;https:&#x2F;&#x2F;bsky.app&#x2F;profile&#x2F;nonmodernist-is.bsky.social&#x2F;post&#x2F;3ljzzfehvug25&quot;&gt;bsky&lt;&#x2F;a&gt;&lt;&#x2F;small&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title> listening to the house sparrows </title>
+        <published>2025-03-10T07:57:00+00:00</published>
+        <updated>2025-03-10T07:57:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/is/03-10-2025t07-57/"/>
+        <id>https://nonmodernist.com/is/03-10-2025t07-57/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/is/03-10-2025t07-57/">&lt;p&gt;&lt;small&gt;this status update is echoed from &lt;a href=&quot;https:&#x2F;&#x2F;bsky.app&#x2F;profile&#x2F;nonmodernist-is.bsky.social&#x2F;post&#x2F;3ljzm3e5cvw24&quot;&gt;bsky&lt;&#x2F;a&gt;&lt;&#x2F;small&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title> getting this little experiment all sorted out</title>
+        <published>2025-03-09T20:08:00+00:00</published>
+        <updated>2025-03-09T20:08:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/is/03-09-2025t20-08/"/>
+        <id>https://nonmodernist.com/is/03-09-2025t20-08/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/is/03-09-2025t20-08/">&lt;p&gt;&lt;small&gt;this status update is echoed from &lt;a href=&quot;https:&#x2F;&#x2F;bsky.app&#x2F;profile&#x2F;nonmodernist-is.bsky.social&#x2F;post&#x2F;3ljyeicksrt23&quot;&gt;bsky&lt;&#x2F;a&gt;&lt;&#x2F;small&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>not sure about this tbh</title>
+        <published>2025-03-09T16:48:00+00:00</published>
+        <updated>2025-03-09T16:48:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/is/test/"/>
+        <id>https://nonmodernist.com/is/test/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/is/test/">&lt;p&gt;&lt;small&gt;this status update is echoed from &lt;a href=&quot;https:&#x2F;&#x2F;bsky.app&#x2F;profile&#x2F;nonmodernist-is.bsky.social&quot;&gt;bsky&lt;&#x2F;a&gt;&lt;&#x2F;small&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
