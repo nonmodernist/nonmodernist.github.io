@@ -11,6 +11,7 @@ compile_sass = true
 build_search_index = true
 
 generate_feeds = true
+
 minify_html = false 
 feed_limit = 20
 author = "Alexandra Edwards"
@@ -52,5 +53,9 @@ menu = [
     { name = "/about", url = "/about", weight = 4 },
 
 ]
+socials = [
 
-custom_css = []
+]
+stylesheets = [
+    #"custom.css"    # at /static/custom.css
+]
