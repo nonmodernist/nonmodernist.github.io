@@ -45,6 +45,7 @@ favicon = "/favicon.png"
 theme = "toggle"              # light, dark, auto, toggle
 fancy_code = true
 dynamic_note = true           # a note that can be toggled
+list_pages = false
 
 menu = [
     { name = "/blog", url = "/blog", weight = 1 },

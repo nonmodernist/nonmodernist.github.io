@@ -8,4 +8,7 @@ insert_anchor_links = "heading"
 
 - Learn more [about me](./about), the [research](./research) I publish, and the [courses](./teaching) I teach.
 - Check out the [book log](@/readinglog.md) I've been keeping for almost 30 years, or see what [movies](./log) I've been watching recently. 
-- Read my [status updates](./is) or [blog](./blog/).
+- Read my [blog](./blog/) or subscribe to the [feed](https://nonmodernist.com/blog/index.xml).
+
+
+# [what is alexandra doing right now?](./is/)
