@@ -46,7 +46,7 @@ fancy_code = true
 dynamic_note = true           # a note that can be toggled
 
 menu = [
-    { name = "/notes", url = "/notes", weight = 1 },
+    { name = "/blog", url = "/blog", weight = 1 },
     { name = "/teaching", url = "/teaching", weight = 2 },
     { name = "/research", url = "/research", weight = 3 },
     { name = "/about", url = "/about", weight = 4 },
