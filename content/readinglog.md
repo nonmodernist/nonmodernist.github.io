@@ -103,7 +103,7 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - *The Sandman Vol. 5: A Game of You* by Neil Gaiman 
 - *The Sandman Vol. 6: Fables & Reflections* by Neil Gaiman 
 - *The Sandman Vol. 7: Brief Lives* by Neil Gaiman 
-- <mark>***The Celluloid Closet*** by Vito Russell</mark>
+- <mark>***The Celluloid Closet*** by Vito Russo</mark>
 
 ## 2002
 
