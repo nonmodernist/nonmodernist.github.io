@@ -73,7 +73,9 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***The Rose and the Beast: Fairy Tales Retold*** by Francesca Lia Block 
 - ***I Was a Teenage Fairy*** by Francesca Lia Block 
 - ***Girl*** by Blake Nelson 
-- ***Art & Lies: A Piece for Three Voices and a Bawd*** by Jeanette Winterson   
+- ***Art & Lies: A Piece for Three Voices and a Bawd*** by Jeanette Winterson
+
+[Back to top](#) 
 
 ## 2001
 
@@ -104,6 +106,8 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - *The Sandman Vol. 6: Fables & Reflections* by Neil Gaiman 
 - *The Sandman Vol. 7: Brief Lives* by Neil Gaiman 
 - <mark>***The Celluloid Closet*** by Vito Russo</mark>
+
+[Back to top](#)
 
 ## 2002
 
@@ -136,7 +140,9 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***The Odyssey*** by Homer 
 - ***Confessions*** by Augustine 
 - ***Pride and Prejudice*** by Jane Austen
-- ***Tess of the D’Urbervilles*** by Thomas Hardy   
+- ***Tess of the D’Urbervilles*** by Thomas Hardy
+
+[Back to top](#)
 
 ## 2003
 
@@ -167,7 +173,9 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***Paradise*** by Toni Morrison   
 - ***Neon Vernacular: New and Selected Poems*** by Yusef Komunyakaa 
 - <mark>***Ada, or Ardor: A Family Chronicle*** by Vladimir Nabokov</mark> 
-- ***The World and Other Places: Stories*** by Jeanette Winterson   
+- ***The World and Other Places: Stories*** by Jeanette Winterson
+
+[Back to top](#)
 
 
 ## 2004
@@ -194,7 +202,9 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***Time's Magpie: A Walk in Prague*** by Myla Goldberg
 - ***Possession*** by A.S. Byatt   
 - ***Fences and Windows: Dispatches from the Front Lines of the Globalization Debate*** by Naomi Klein
-- ***The Djinn in the Nightingale's Eye*** by A.S. Byatt   
+- ***The Djinn in the Nightingale's Eye*** by A.S. Byatt
+
+[Back to top](#)
 
 ## 2005
 
@@ -221,7 +231,9 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***Little Black Book of Stories*** by A.S. Byatt   
 - *The Couriers Volume 1* by Brian Wood and Rob Goodridge 
 - ***Zero Girl*** by Sam Kieth 
-- ***Sir Gawain and the Green Knight, Pearl, and Sir Orfeo*** by Unknown, J.R.R. Tolkien, Christopher Tolkien 
+- ***Sir Gawain and the Green Knight, Pearl, and Sir Orfeo*** by Unknown, J.R.R. Tolkien, Christopher Tolkien
+
+[Back to top](#)
 
 ## 2006
 
@@ -268,7 +280,9 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***A Walk in the Woods: Rediscovering America on the Appalachian Trail*** by Bill Bryson 
 - ***Blankets*** by Craig Thompson 
 - ***Severance*** by Robert Olen Butler   
-- ***The Ladies of Grace Adieu and Other Stories*** by Susanna Clarke   
+- ***The Ladies of Grace Adieu and Other Stories*** by Susanna Clarke
+
+[Back to top](#)
 
 ## 2007 
 
@@ -350,6 +364,8 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***Lyric Poems*** by John Keats 
 - ***French Women for All Seasons: A Year of Secrets, Recipes, and Pleasure*** by Mireille Guiliano
 
+[Back to top](#)
+
 
 ## 2008
 
@@ -386,6 +402,8 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***Eclipse*** by Stephenie Meyer  
 - ***Pretty Monsters: Stories*** by Kelly Link   
 - ***Jane Austen: A Life*** by Carol Shields
+
+[Back to top](#)
 
 ## 2009
 
@@ -457,7 +475,9 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***Willful Creatures*** by Aimee Bender   
 - ***The Oxford Book of Modern Fairy Tales*** by Alison Lurie  
 - ***A Study in Scarlet*** by Arthur Conan Doyle 
-- ***The Mammoth Book of Fairy Tales*** by Mike Ashley  
+- ***The Mammoth Book of Fairy Tales*** by Mike Ashley
+
+[Back to top](#)
 
 
 ## 2010
@@ -531,6 +551,8 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***Macbeth*** by Gareth Hinds
 - ***Romeo and Juliet*** by William Shakespeare (reread)
 
+[Back to top](#)
+
 ## 2011
 
 - ***Sula*** by Toni Morrison   
@@ -586,6 +608,8 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***Gentlemen Prefer Blondes*** and ***But Gentlemen Marry Brunettes*** by Anita Loos  
 - ***Innocence and Rapture: The Erotic Child in Pater, Wilde, James, and Nabokov*** by Kevin Ohi
 
+[Back to top](#)
+
 
 ## 2012
 
@@ -629,7 +653,9 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***A Tramp Abroad*** by Mark Twain 
 - ***Go Down, Moses*** by William Faulkner  
 - ***The Hamlet*** by William Faulkner  
-- ***A Connecticut Yankee in King Arthur's Court*** by Mark Twain  
+- ***A Connecticut Yankee in King Arthur's Court*** by Mark Twain
+
+[Back to top](#)
 
 ## 2013
 
@@ -654,7 +680,9 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***Selected Poems*** by John Ashbery 
 - ***The Selected Letters*** by Marianne Moore
 - ***Complete Poems*** by Marianne Moore 
-- ***The Day of the Locust*** by Nathanael West  
+- ***The Day of the Locust*** by Nathanael West
+
+[Back to top](#)
 
 
 ## 2014
@@ -701,7 +729,9 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***The Souls of Black Folk*** by W.E.B. Du Bois
 - ***Citizen: An American Lyric*** by Claudia Rankine 
 - ***Your Illustrated Guide to Becoming One with the Universe*** by Yumi Sakugawa 
-- ***Busman's Honeymoon*** by Dorothy L. Sayers 
+- ***Busman's Honeymoon*** by Dorothy L. Sayers
+
+[Back to top](#)
 
 ## 2015
 
@@ -773,6 +803,7 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***When Books Went to War: The Stories that Helped Us Win World War II*** by Molly Guptill Manning 
 - <mark>***Hauntings and Other Fantastic Tales*** by Vernon Lee</mark>  
 
+[Back to top](#)
 
 ## 2016
 
@@ -831,7 +862,9 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***Three Guineas*** by Virginia Woolf
 - ***Ghost Stories of an Antiquary*** by M.R. James  
 - ***The Scrapbook in American Culture*** by Susan Tucker, Katherine Ott
-- ***Scrapbooks: An American History*** by Jessica Helfand 
+- ***Scrapbooks: An American History*** by Jessica Helfand
+
+[Back to top](#)
 
 ## 2017
 
@@ -894,6 +927,8 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - *Young Avengers Volume 1: Style > Substance* by Kieron Gillen 
 - ***The Gentleman's Guide to Vice and Virtue*** by Mackenzi Lee
 
+[Back to top](#)
+
 
 ## 2018
 - <mark>***The Mushroom at the End of the World: On the Possibility of Life in Capitalist Ruins*** by Anna Lowenhaupt Tsing</mark>
@@ -942,7 +977,9 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***In Calabria*** by Peter S. Beagle  
 - ***A Thin Ghost and Others*** by M.R. James  
 - ***The Mysterious Affair at Styles*** by Agatha Christie 
-- Love at First Stitch: Demystifying Dressmaking by Tilly Walnes 
+- Love at First Stitch: Demystifying Dressmaking by Tilly Walnes
+
+[Back to top](#)
 
 
 ## 2019
@@ -979,7 +1016,9 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***The Quirt*** by B.M. Bower (western)
 - ***Black Spire*** by Delilah S. Dawson  
 - Art Before Breakfast by Danny Gregory 
-- ***More Was Lost*** by Eleanor Perenyi 
+- ***More Was Lost*** by Eleanor Perenyi
+
+[Back to top](#)
 
 ## 2020
 
@@ -1004,7 +1043,9 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***How to Know the Birds: The Art and Adventure of Birding*** by Ted Floyd
 - <mark>***The Last Samurai*** by Helen DeWitt</mark>   
 - ***Piranesi*** by Susanna Clarke   
-- Get Started with Gouache by Emma Block 
+- Get Started with Gouache by Emma Block
+
+[Back to top](#)
 
 ## 2021
 
@@ -1036,7 +1077,9 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***W.E.B. Du Bois's Data Portraits: Visualizing Black America*** by Silas Munro 
 - ***Why We Fight: Essays on Fascism, Resistance, and Surviving the Apocalypse*** by Shane Burley 
 - ***Memoir of a Race Traitor*** by Mab Segrest 
-- ***Our Word is Our Weapon*** by Subcomandante Marcos 
+- ***Our Word is Our Weapon*** by Subcomandante Marcos
+
+[Back to top](#)
 
 ## 2022
 - Paint With Thread by Emillie Ferris 
@@ -1053,6 +1096,8 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 - ***Prairie*** by Candace Savage 
 - ***The Hollywood Studios*** by Ethan Mordden 
 - ***Radical Hope: A Teaching Manifesto*** by Kevin Gannon
+
+[Back to top](#)
 
 ## 2024
 - ***The Haunting of Hill House*** by Shirley Jackson   
@@ -1074,5 +1119,6 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 
 - ***I Lost My Girlish Laughter*** by Jane Allen
 - ***The Arclight Guidebook to Media History and the Digital Humanities*** edited by Charles R. Acland and Eric Hoyt
+- ***More Than Words: How to Think About Writing in the Age of AI*** by John Warner
 
 [Back to top](#)
