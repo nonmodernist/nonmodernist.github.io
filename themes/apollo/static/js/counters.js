@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     // Always set default values first, so at least something shows
     setDefaultCounters();
@@ -19,8 +20,8 @@ function setDefaultCounters() {
     const movieCounter = document.getElementById('movies-counter');
     const launchCounter = document.getElementById('launch-counter');
     
-    if (bookCounter) bookCounter.textContent = '5';
-    if (movieCounter) movieCounter.textContent = '10';
+    if (bookCounter) bookCounter.textContent = '973';
+    if (movieCounter) movieCounter.textContent = '2736';
     
     // Calculate days since launch (this should always work)
     if (launchCounter) {
@@ -40,6 +41,9 @@ function updateMovieCounter() {
     // Your existing movie counter code
 }
 
+
+
 function calculateDaysSinceLaunch() {
     // Your existing launch counter code
 }
+
