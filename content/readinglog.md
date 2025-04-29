@@ -1119,6 +1119,8 @@ Look for the <mark>highlighted</mark> titles—those are my all-time favorites.
 
 - ***I Lost My Girlish Laughter*** by Jane Allen
 - ***The Arclight Guidebook to Media History and the Digital Humanities*** edited by Charles R. Acland and Eric Hoyt
+- ***The Sacred Band*** by James Romm
 - ***More Than Words: How to Think About Writing in the Age of AI*** by John Warner
+- ***The Disorderly Knights*** by Dorothy Dunnett
 
 [Back to top](#)
