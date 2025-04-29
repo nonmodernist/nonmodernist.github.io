@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+    {% block title %}
+        {{ post_macros::page_header(title=section.title) }}
+    {% endblock title %}
+
+    <p class="garden-intro">{{ section.content | safe }}</p>
+
+    <div class="moon-phase-legend">
+        <div class="legend-item">
+            <span class="moon-emoji">🌑</span> New idea
+        </div>
+        <div class="legend-item">
+            <span class="moon-emoji">🌙</span> Beginning to take shape
+        </div>
+        <div class="legend-item">
+            <span class="moon-emoji">🌓</span> Half-developed
+        </div>
+        <div class="legend-item">
+            <span class="moon-emoji">🌔</span> Mostly formed
+        </div>
+        <div class="legend-item">
+            <span class="moon-emoji">🌕</span> Complete thought
+        </div>
+        <!--
+        <div class="legend-item">
+            <span class="moon-emoji">🌖</span> Being revised
+        </div>
+        <div class="legend-item">
+            <span class="moon-emoji">🌗</span> Major revision
+        </div>
+        <div class="legend-item">
+            <span class="moon-emoji">🌘</span> Fading/archiving
+        </div>
+        -->
+    </div>
+
+    <div class="garden-grid">
+        {% for page in section.pages %}
+        {% set moon_phase = "new" %}
+        {% if page.extra and page.extra.moon_phase %}
+            {% set moon_phase = page.extra.moon_phase %}
+        {% endif %}
+        
+        <div class="garden-note moon-phase-{{ moon_phase }}">
+            <div class="note-header">
+                <h3><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
+
+
+                <span class="moon-phase-indicator">
+                    {% if moon_phase == "new" %}🌑
+                    {% elif moon_phase == "waxing_crescent" %}🌙
+                    {% elif moon_phase == "first_quarter" %}🌓
+                    {% elif moon_phase == "waxing_gibbous" %}🌔
+                    {% elif moon_phase == "full" %}🌕
+                    {% elif moon_phase == "waning_gibbous" %}🌖
+                    {% elif moon_phase == "last_quarter" %}🌗
+                    {% elif moon_phase == "waning_crescent" %}🌘
+                    {% else %}🌑
+                    {% endif %}
+                </span>
+            </div>
+            
+
+            {% if page.description %}
+            <p class="note-excerpt">{{ page.description }}</p>
+            {% elif page.summary %}
+            <p class="note-excerpt">{{ page.summary | safe }}</p>
+            {% endif %}
+            
+            {% if page.taxonomies and page.taxonomies.tags %}
+            <div class="note-tags">
+                {% for tag in page.taxonomies.tags %}
+                <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}" class="note-tag">#{{ tag }}</a>
+                {% endfor %}
+            </div>
+            {% endif %}
+            
+            <div class="note-meta">
+                <span class="note-date">{{ page.date | date(format="%Y-%m-%d") }}</span>
+                {% if page.word_count %}
+                <span class="note-wordcount">{{ page.word_count }} words</span>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    {% if paginator %}
+        <ul class="pagination">
+            {% if paginator.previous %}
+                <span class="page-item page-prev">
+                    <a href={{ paginator.previous }} class="page-link" aria-label="Previous"><span aria-hidden="true">← Prev</span></a>
+                </span>
+            {% endif %}
+
+            {% if paginator.next %}
+                <span class="page-item page-next">
+                    <a href={{ paginator.next }} class="page-link" aria-label="Next"><span aria-hidden="true">Next →</span></a>
+                </span>
+            {% endif %}
+        </ul>
+    {% endif %}
+{% endblock main_content %}

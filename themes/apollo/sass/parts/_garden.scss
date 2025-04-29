@@ -121,3 +121,165 @@
       border-left: 3px solid #ccc;
     }
   }
+
+  // Digital Garden with Moon Phases
+
+.garden-intro {
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .moon-phase-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 1rem;
+    background: var(--bg-1);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .moon-emoji {
+    font-size: 1.2rem;
+    font-family: var(--emoji-font);
+  }
+  
+  .garden-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+  
+  .garden-note {
+    background: var(--bg-1);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.25rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .note-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.75rem;
+      padding: 10px 5px;
+      background-color: transparent; /* or specify a valid color value */
+      
+      h3 {
+        margin: 0;
+        font-size: 1.2rem;
+      }
+    }
+    
+    .moon-phase-indicator {
+      font-size: 1.5rem;
+      font-family: var(--emoji-font);
+    }
+    
+    .note-excerpt {
+      font-size: 0.9rem;
+      color: var(--text-1);
+      margin: 0.5rem 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+    
+    .note-tags {
+      margin: 0.75rem 0;
+      
+      .note-tag {
+        display: inline-block;
+        font-size: 0.8rem;
+        background: var(--bg-2);
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        border-bottom: none;
+        
+        &:hover {
+          background: var(--primary-color);
+          color: var(--hover-color);
+        }
+      }
+    }
+    
+    .note-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0.75rem;
+      font-size: 0.8rem;
+      color: var(--text-1);
+    }
+/*
+    // Custom border colors for each moon phase
+    &.moon-phase-new {
+      border-left: 4px solid #333333;
+    }
+    
+    &.moon-phase-waxing_crescent {
+      border-left: 4px solid #495057;
+    }
+    
+    &.moon-phase-first_quarter {
+      border-left: 4px solid #6c757d;
+    }
+    
+    &.moon-phase-waxing_gibbous {
+      border-left: 4px solid #adb5bd;
+    }
+    
+    &.moon-phase-full {
+    border-left: 4px solid #fffbea;
+    }
+    
+    &.moon-phase-waning_gibbous {
+      border-left: 4px solid #adb5bd;
+    }
+    
+    &.moon-phase-last_quarter {
+      border-left: 4px solid #6c757d;
+    }
+    
+    &.moon-phase-waning_crescent {
+      border-left: 4px solid #495057;
+    }
+*/
+
+  }
+ 
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    .garden-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .moon-phase-legend {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+
+  h3::before{color:var(--primary-color);content:"";}
