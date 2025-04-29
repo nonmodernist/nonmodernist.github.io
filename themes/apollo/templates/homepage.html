@@ -2,4 +2,6 @@
 
 {% block main_content %}
     {{ post_macros::home_page(section=section) }}
+    
+    {% include "partials/recent_activity.html" %}
 {% endblock main_content %}

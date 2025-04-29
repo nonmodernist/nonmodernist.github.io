@@ -1,0 +1,64 @@
+{% import "macros/macros.html" as post_macros %}
+
+{% set log_section = get_section(path="log/_index.md") %}
+{% set is_section = get_section(path="is/_index.md") %}
+{% set notes_section = get_section(path="notes/_index.md") %}
+
+{% set log_pages = log_section.pages %}
+{% set is_pages = is_section.pages %}
+{% set notes_pages = notes_section.pages %}
+
+{% set latest_movie = log_pages | sort(attribute="date") | reverse | first %}
+{% set latest_status = is_pages | sort(attribute="date") | reverse | first %}
+{% set latest_note = notes_pages | sort(attribute="date") | reverse | first %}
+
+<div class="recent-activity">
+    <h2><span class="og">💓</span> Recent Activity</h2>
+    
+    <div class="activity-grid">
+        {% if latest_status %}
+        <div class="activity-item">
+            <h3><span class="og">💡</span> Latest Status</h3>
+            <div class="activity-content">
+                <a href="{{ latest_status.permalink }}">{{ latest_status.title }}</a>
+                <span class="activity-date">{{ latest_status.date | date(format="%Y-%m-%d") }}</span>
+<!--                {% if latest_status.taxonomies and latest_status.taxonomies.tags %}
+                <div class="activity-tags">
+                    {{ post_macros::tags(page=latest_status, short=true) }}
+                </div>
+                {% endif %} -->
+            </div>
+        </div>
+        {% endif %}
+
+        {% if latest_movie %}
+        <div class="activity-item">
+            <h3><span class="og">📺</span> Latest Movie</h3>
+            <div class="activity-content">
+                <a href="{{ latest_movie.permalink }}">{{ latest_movie.title }}</a>
+                <span class="activity-date">{{ latest_movie.date | date(format="%Y-%m-%d") }}</span>
+<!--                {% if latest_movie.taxonomies and latest_movie.taxonomies.tags %}
+                <div class="activity-tags">
+                    {{ post_macros::tags(page=latest_movie, short=true) }}
+                </div>
+                {% endif %} -->
+            </div>
+        </div>
+        {% endif %}
+        
+        {% if latest_note %}
+        <div class="activity-item">
+            <h3><span class="og">📝</span> Latest Note</h3>
+            <div class="activity-content">
+                <a href="{{ latest_note.permalink }}">{{ latest_note.title }}</a>
+                <span class="activity-date">{{ latest_note.date | date(format="%Y-%m-%d") }}</span>
+<!--                {% if latest_note.taxonomies and latest_note.taxonomies.tags %}
+                <div class="activity-tags">
+                    {{ post_macros::tags(page=latest_note, short=true) }}
+                </div>
+                {% endif %} -->
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
