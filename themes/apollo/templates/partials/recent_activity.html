@@ -18,7 +18,7 @@
     <div class="activity-grid">
         {% if latest_status %}
         <div class="activity-item">
-            <h3><span class="og">💡</span> Latest Status</h3>
+            <h3><span class="og">💡</span> alexandra is</h3>
             <div class="activity-content">
                 <a href="{{ latest_status.permalink }}">{{ latest_status.title }}</a>
                 <span class="activity-date">{{ latest_status.date | date(format="%Y-%m-%d") }}</span>
@@ -33,7 +33,7 @@
 
         {% if latest_movie %}
         <div class="activity-item">
-            <h3><span class="og">📺</span> Latest Movie</h3>
+            <h3><span class="og">📺</span> latest movie</h3>
             <div class="activity-content">
                 <a href="{{ latest_movie.permalink }}">{{ latest_movie.title }}</a>
                 <span class="activity-date">{{ latest_movie.date | date(format="%Y-%m-%d") }}</span>
@@ -48,7 +48,7 @@
         
         {% if latest_note %}
         <div class="activity-item">
-            <h3><span class="og">📝</span> Latest Note</h3>
+            <h3><span class="og">📝</span> latest note</h3>
             <div class="activity-content">
                 <a href="{{ latest_note.permalink }}">{{ latest_note.title }}</a>
                 <span class="activity-date">{{ latest_note.date | date(format="%Y-%m-%d") }}</span>
