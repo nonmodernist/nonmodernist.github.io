@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     // Always set default values first, so at least something shows
     setDefaultCounters();
