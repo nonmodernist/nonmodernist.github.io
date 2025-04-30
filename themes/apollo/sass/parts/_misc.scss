@@ -49,10 +49,6 @@ a {
   z-index: 1;
 }
 
-a.zola-anchor {
-  border-bottom: none;
-}
-
 a:hover {
   background-color: var(--primary-color);
   color: var(--hover-color);
@@ -129,4 +125,41 @@ del {
 .MathJax_SVG_Display {
   overflow-x: auto;
   overflow-y: hidden;
+}
+
+/* Base link styling */
+a {
+  border-bottom: 2px dotted var(--primary-color);
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
+/* Internal link styling - links to your domain or local development server */
+a[href*="nonmodernist.com"],
+a[href*="127.0.0.1:1111"],
+a[href^="/"],
+a[href^="#"] {
+  border-bottom: 2px dotted var(--primary-color);
+  /* Any other specific styling for internal links */
+}
+
+/* External link styling - all other links */
+a:not([href*="nonmodernist.com"]):not([href*="127.0.0.1:1111"]):not([href^="/"]):not([href^="#"]) {
+  border-bottom: 2px dashed var(--primary-color);
+  padding-right: 1.2em;
+  
+  &:after {
+    content: "↗"; /* External link indicator */
+    position: absolute;
+    font-size: 0.8em;
+    margin-left: 0.3em;
+    color: var(--primary-color);
+  }
+}
+
+
+a.zola-anchor {
+  border-bottom: none;
 }
