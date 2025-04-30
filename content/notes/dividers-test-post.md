@@ -12,7 +12,7 @@ This is the end of one section.
 
 This is the beginning of a new section.
 
-{{ divider(style="ornate", symbol="☙") }}
+{{ divider(style="ornate") }}
 
 You can customize the symbol.
 
