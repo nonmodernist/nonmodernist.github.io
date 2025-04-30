@@ -1,4 +1,4 @@
-<div class="note-container">
+<div class="note-container {% if type %}{{ type }}{% endif %}">
   {% if clickable | default(value=false) %}
     <button class="note-toggle">
       {% if center | default(value=false) %}

@@ -96,5 +96,15 @@
     }
   ],
   "frontMatter.git.enabled": true,
-  "frontMatter.framework.startCommand": "zola serve --drafts"
+  "frontMatter.framework.startCommand": "zola serve --drafts",
+  "frontMatter.content.snippets": {
+    "Callouts": {
+      "description": "callout shortcode in zola/apollo",
+      "body": [
+        "{{ note(clickable=true, hidden = true, header=\"TEXT\", body=\"TEXT\") }}",
+        ""
+      ],
+      "fields": []
+    }
+  }
 }
