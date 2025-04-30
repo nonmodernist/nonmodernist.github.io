@@ -67,3 +67,20 @@
   src: url('fonts/SpaceGrotesk/SpaceGrotesk-Bold.ttf'), local('ttf');
   font-display: swap;
 }
+
+// Add to themes/apollo/sass/fonts.scss
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/Atkinson/Atkinson-Hyperlegible-Regular-102.ttf'), local('ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Atkinson-Hyperlegible';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/Atkinson/Atkinson-Hyperlegible-Bold-102.ttf'), local('ttf');
+  font-display: swap;
+}

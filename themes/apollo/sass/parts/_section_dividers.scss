@@ -1,0 +1,101 @@
+// Section dividers styling
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+  text-align: center;
+  user-select: none;
+  
+  // Default style
+  &.section-divider-default {
+    .divider-symbol {
+      display: inline-block;
+      font-size: 1.5rem;
+      color: var(--primary-color);
+      position: relative;
+      
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 5rem;
+        background: var(--text-0);
+        position: absolute;
+        top: 50%;
+      }
+      
+      &::before {
+        right: 100%;
+        margin-right: 1rem;
+      }
+      
+      &::after {
+        left: 100%;
+        margin-left: 1rem;
+      }
+    }
+  }
+  
+  // Ornate style
+  &.section-divider-ornate {
+    .divider-symbol {
+      display: inline-block;
+      font-size: 2rem;
+      color: var(--primary-color);
+      transform: rotate(0deg);
+      position: relative;
+      
+      &::before,
+      &::after {
+        content: "✿";
+        display: inline-block;
+        font-size: 1.2rem;
+        color: var(--text-0);
+        opacity: 0.5;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      
+      &::before {
+        right: 100%;
+        margin-right: 1.5rem;
+      }
+      
+      &::after {
+        left: 100%;
+        margin-left: 1.5rem;
+      }
+    }
+  }
+  
+  // Minimal style
+  &.section-divider-minimal {
+    .divider-symbol {
+      display: inline-block;
+      letter-spacing: 0.5rem;
+      color: var(--text-1);
+      font-size: 1rem;
+    }
+  }
+  
+  // Line style
+  &.section-divider-line {
+    height: 1px;
+    background: var(--border-color);
+    background: linear-gradient(to right, transparent, var(--border-color) 20%, var(--border-color) 80%, transparent);
+  }
+  
+
+}
+
+// Dark mode adjustments
+html.dark {
+  .section-divider {
+    &.section-divider-line {
+      background: linear-gradient(to right, transparent, var(--border-color) 20%, var(--border-color) 80%, transparent);
+    }
+  }
+}

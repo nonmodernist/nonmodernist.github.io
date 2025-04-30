@@ -145,6 +145,16 @@ a[href^="#"] {
   /* Any other specific styling for internal links */
 }
 
+/* Add to your _misc.scss or create a new partial for links */
+a[href^="/notes/"] {
+  &::after {
+    content: "♦";
+    font-family: var(--emoji-font);
+    font-size: 0.8em;
+    vertical-align: middle;
+  }
+}
+
 /* External link styling - all other links */
 a:not([href*="nonmodernist.com"]):not([href*="127.0.0.1:1111"]):not([href^="/"]):not([href^="#"]) {
   border-bottom: 2px dashed var(--primary-color);
@@ -163,3 +173,4 @@ a:not([href*="nonmodernist.com"]):not([href*="127.0.0.1:1111"]):not([href^="/"])
 a.zola-anchor {
   border-bottom: none;
 }
+

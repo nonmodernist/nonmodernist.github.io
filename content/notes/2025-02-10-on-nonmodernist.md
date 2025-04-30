@@ -8,7 +8,7 @@ taxonomies:
 extra:
   moon_phase: waxing_crescent
 ---
-recently i've been considering launching a dedicated film blog, as an alternative to the [teaching wiki idea](@/notes/2024-12-20-do-you-ever-have-an-idea.md) that i've been mulling over since last year. two immediate problems arise in my mind: 1) where do i put it? and 2) what do i call it?
+recently i've been considering launching a dedicated film blog, as an alternative to the [teaching wiki idea](/notes/2024-12-20-do-you-ever-have-an-idea) that i've been mulling over since last year. two immediate problems arise in my mind: 1) where do i put it? and 2) what do i call it?
 
 brainstorming possible names got me thinking about my online identities and how i do or don't manage what gets included under their umbrellas. so here are some disorganized thoughts about it.
 

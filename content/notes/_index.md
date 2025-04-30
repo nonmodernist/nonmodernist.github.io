@@ -9,4 +9,4 @@ template = "notes_garden.html"
 comment = false
 +++
 
-Welcome to my digital moon garden - a space where ideas grow and evolve like the phases of the moon. Unlike a traditional blog, these notes develop organically over time.
+Welcome to my digital (moon) garden - a space where ideas grow and evolve like the phases of the moon. Unlike a traditional blog, these notes develop organically over time.

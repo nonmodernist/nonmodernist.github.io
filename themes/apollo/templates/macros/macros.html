@@ -126,7 +126,7 @@
 
 {% macro content(page) %}
 <main>
-    <article class="h-entry">
+    <article class="h-entry readable-content">
         <div class="title">
             {#<h1 class="title p-name">{{ page.title }}</h1>#}
             {{ post_macros::page_header(title=page.title) }}
@@ -226,9 +226,11 @@
         {% endif %}
         {% endif %}
 
-        <section class="body">
+        <section class="body"></section>
+        <div class="readable-content">
             {{ page.content | safe }}
-        </section>
+        </div> 
+    </section>
     </article>
 </main>
 {% endmacro content %}
