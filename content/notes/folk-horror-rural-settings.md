@@ -78,6 +78,6 @@ While rare, some folk horror films adapt the genre's tropes to urban settings. *
 
 Folk horror's focus on rurality connects to the 19th-century origins of folklore studies, when European ethnographers traveled to rural areas to collect folklore from illiterate, poor communities. This history informs the genre's frequent use of the outsider/ethnographer figure observing rural customs.
 
-{{ section_divider() }}
+{{ divider() }}
 
 *This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](/notes/folk-horror-overview) to explore other tropes.*

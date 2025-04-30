@@ -72,6 +72,6 @@ The outsider character serves several important functions in folk horror narrati
 
 The prevalence of ethnographers and academics in folk horror reflects the genre's connection to the history of folklore studies. The "ethnographic gaze" - the perspective of an outside observer documenting "primitive" customs - often becomes inverted in these films, with the observer becoming the observed, the documenter becoming the documented.
 
-{{ section_divider() }}
+{{ divider() }}
 
 *This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](/notes/folk-horror-overview) to explore other tropes.*

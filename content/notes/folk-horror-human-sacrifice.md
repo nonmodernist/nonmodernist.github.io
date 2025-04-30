@@ -80,6 +80,6 @@ Beyond its plot significance, human sacrifice in folk horror serves several narr
 3. **Metaphorical commentary** - Can represent broader social critiques about how societies sacrifice individuals
 4. **Violation of taboo** - Creates horror through the transgression of fundamental moral boundaries
 
-{{ section_divider( )}}
+{{ divider( )}}
 
 *This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](/notes/folk-horror-overview) to explore other tropes.*

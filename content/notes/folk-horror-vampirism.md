@@ -72,6 +72,6 @@ Contemporary folk horror continues to explore vampirism through folkloric lenses
 
 These films blend traditional folk elements with modern concerns, demonstrating the continuing vitality of the folk vampire as distinct from mainstream vampire imagery.
 
-{{ section_divider() }}
+{{ divider() }}
 
 *This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](/notes/folk-horror-overview) to explore other tropes.*

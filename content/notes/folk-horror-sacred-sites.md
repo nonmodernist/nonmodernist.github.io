@@ -89,6 +89,6 @@ The treatment of sacred sites in folk horror often reflects colonial attitudes t
 
 At the same time, these sites represent continuity - places where the past remains present and ancient forces continue to exert influence despite attempts to relegate them to history.
 
-{{ section_divider() }}
+{{ divider() }}
 
 *This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](/notes/folk-horror-overview) to explore other tropes.*

@@ -93,6 +93,6 @@ Some modern folk horror films have begun to subvert these dynamics, presenting w
 
 The witch trials of early modern Europe and colonial America cast a long shadow over folk horror's treatment of witchcraft. Films like *Witchfinder General* (1968, UK) and *The Witch* (2015, US) directly engage with this historical context, exploring how religious fear, gender politics, and social control intersected in the persecution of supposed witches.
 
-{{ section_divider() }}
+{{ divider() }}
 
 *This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](/notes/folk-horror-overview) to explore other tropes.*

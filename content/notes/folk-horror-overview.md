@@ -40,7 +40,7 @@ Here are the key tropes that define folk horror films:
 - [Vampirism in folk contexts](/notes/folk-horror-vampirism)
 - [Culturally-specific vengeful ghosts](/notes/folk-horror-vengeful-ghosts)
 
-{{ section_divider(style="minimal") }}
+{{ divider(style="minimal") }}
 
 ## The Folk Horror Chain
 
@@ -64,6 +64,6 @@ In contrast to the above tropes, Adam Scovell's "folk horror chain" is a narrati
 - *La Llorona* (2019, Guatemala)
 - *The Medium* (2021, Thailand)
 
-{{ section_divider() }}
+{{ divider() }}
 
 *This note is part of a series exploring folk horror in cinema. Click the links above to explore specific tropes in more detail.*

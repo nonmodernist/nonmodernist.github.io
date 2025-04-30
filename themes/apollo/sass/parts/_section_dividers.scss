@@ -1,101 +1,404 @@
-// Section dividers styling
-.section-divider {
+/* Pixel Dividers for nonmodernist.com with Animations */
+
+/* Base divider styles (keeping the unchanged ones from before) */
+.divider-default {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 3rem 0;
-  text-align: center;
-  user-select: none;
-  
-  // Default style
-  &.section-divider-default {
-    .divider-symbol {
-      display: inline-block;
-      font-size: 1.5rem;
-      color: var(--primary-color);
-      position: relative;
-      
-      &::before,
-      &::after {
-        content: "";
-        display: block;
-        height: 1px;
-        width: 5rem;
-        background: var(--text-0);
-        position: absolute;
-        top: 50%;
-      }
-      
-      &::before {
-        right: 100%;
-        margin-right: 1rem;
-      }
-      
-      &::after {
-        left: 100%;
-        margin-left: 1rem;
-      }
-    }
-  }
-  
-  // Ornate style
-  &.section-divider-ornate {
-    .divider-symbol {
-      display: inline-block;
-      font-size: 2rem;
-      color: var(--primary-color);
-      transform: rotate(0deg);
-      position: relative;
-      
-      &::before,
-      &::after {
-        content: "✿";
-        display: inline-block;
-        font-size: 1.2rem;
-        color: var(--text-0);
-        opacity: 0.5;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-      
-      &::before {
-        right: 100%;
-        margin-right: 1.5rem;
-      }
-      
-      &::after {
-        left: 100%;
-        margin-left: 1.5rem;
-      }
-    }
-  }
-  
-  // Minimal style
-  &.section-divider-minimal {
-    .divider-symbol {
-      display: inline-block;
-      letter-spacing: 0.5rem;
-      color: var(--text-1);
-      font-size: 1rem;
-    }
-  }
-  
-  // Line style
-  &.section-divider-line {
-    height: 1px;
-    background: var(--border-color);
-    background: linear-gradient(to right, transparent, var(--border-color) 20%, var(--border-color) 80%, transparent);
-  }
-  
-
+  height: 20px;
+  width: 100%;
+  margin: 2rem 0;
 }
 
-// Dark mode adjustments
-html.dark {
-  .section-divider {
-    &.section-divider-line {
-      background: linear-gradient(to right, transparent, var(--border-color) 20%, var(--border-color) 80%, transparent);
-    }
+.divider-default::before,
+.divider-default::after {
+  content: "";
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--primary-color) 50%,
+    transparent
+  );
+  flex-grow: 1;
+}
+
+.divider-default .moon-phases {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.divider-default .pixel-moon {
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+  position: relative;
+  background-color: transparent;
+  box-sizing: border-box;
+  border: 2px solid var(--primary-color);
+  
+  /* Animation for subtle pulsing effect on all moons */
+  animation: moonPulse 4s infinite ease-in-out;
+}
+
+/* Each moon pulses at a slightly different time */
+.divider-default .pixel-moon:nth-child(1) { animation-delay: 0s; }
+.divider-default .pixel-moon:nth-child(2) { animation-delay: 0.8s; }
+.divider-default .pixel-moon:nth-child(3) { animation-delay: 1.6s; }
+.divider-default .pixel-moon:nth-child(4) { animation-delay: 2.4s; }
+.divider-default .pixel-moon:nth-child(5) { animation-delay: 3.2s; }
+
+/* Full moon */
+.divider-default .pixel-moon:nth-child(1) {
+  background-color: var(--primary-color);
+}
+
+/* Waning gibbous */
+.divider-default .pixel-moon:nth-child(2) {
+  position: relative;
+}
+.divider-default .pixel-moon:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 4px;
+  background-color: transparent;
+}
+
+/* Half moon */
+.divider-default .pixel-moon:nth-child(3) {
+  position: relative;
+}
+.divider-default .pixel-moon:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--primary-color);
+}
+
+/* Crescent */
+.divider-default .pixel-moon:nth-child(4) {
+  position: relative;
+}
+.divider-default .pixel-moon:nth-child(4)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 6px;
+  height: 100%;
+  background-color: var(--primary-color);
+}
+
+/* New moon */
+.divider-default .pixel-moon:nth-child(5) {
+  background-color: transparent;
+}
+
+/* Ornate divider - More detailed celestial design with animation */
+.divider-ornate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 100%;
+  position: relative;
+  margin: 2rem 0;
+}
+
+.divider-ornate::before,
+.divider-ornate::after {
+  content: "";
+  height: 4px;
+  background: repeating-linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--primary-color) 4px,
+    transparent 4px,
+    transparent 8px
+  );
+  flex-grow: 1;
+}
+
+.divider-ornate .center-element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  position: relative;
+  width: 100px;
+  height: 32px;
+}
+
+/* Center big star with twinkling animation */
+.divider-ornate .big-star {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  margin: 0 8px;
+  animation: twinkle 3s infinite ease-in-out;
+}
+
+.divider-ornate .big-star::before,
+.divider-ornate .big-star::after {
+  content: "";
+  position: absolute;
+  background-color: var(--primary-color);
+}
+
+.divider-ornate .big-star::before {
+  width: 4px;
+  height: 16px;
+  left: 6px;
+  top: 0;
+}
+
+.divider-ornate .big-star::after {
+  width: 16px;
+  height: 4px;
+  left: 0;
+  top: 6px;
+}
+
+/* Small stars with twinkling animations at different intervals */
+.divider-ornate .small-star {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  animation: twinkle 3s infinite ease-in-out;
+}
+
+.divider-ornate .small-star:nth-of-type(1) {
+  top: 0;
+  left: 10px;
+  animation-delay: 0.5s;
+}
+
+.divider-ornate .small-star:nth-of-type(2) {
+  bottom: 0;
+  left: 75px;
+  animation-delay: 1.5s;
+}
+
+.divider-ornate .small-star:nth-of-type(3) {
+  top: 5px;
+  right: 10px;
+  animation-delay: 1s;
+}
+
+.divider-ornate .small-star::before,
+.divider-ornate .small-star::after {
+  content: "";
+  position: absolute;
+  background-color: var(--primary-color);
+}
+
+.divider-ornate .small-star::before {
+  width: 2px;
+  height: 8px;
+  left: 3px;
+  top: 0;
+}
+
+.divider-ornate .small-star::after {
+  width: 8px;
+  height: 2px;
+  left: 0;
+  top: 3px;
+}
+
+/* Crescent moons */
+.divider-ornate .pixel-crescent {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+
+.divider-ornate .pixel-crescent::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--primary-color);
+  box-sizing: border-box;
+}
+
+.divider-ornate .pixel-crescent::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: var(--primary-color);
+  top: 2px;
+  left: 2px;
+}
+
+.divider-ornate .pixel-crescent:nth-of-type(4) {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: crescentPulse 4s infinite ease-in-out;
+}
+
+.divider-ornate .pixel-crescent:nth-of-type(5) {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+  animation: crescentPulse 4s infinite ease-in-out;
+  animation-delay: 2s;
+}
+
+/* Simple divider - Just a crescent moon */
+.divider-simple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16px;
+  width: 100%;
+  position: relative;
+  margin: 2rem 0;
+}
+
+.divider-simple::before,
+.divider-simple::after {
+  content: "";
+  height: 2px;
+  background-color: var(--primary-color);
+  flex-grow: 1;
+}
+
+.divider-simple .pixel-crescent {
+  width: 12px;
+  height: 12px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.divider-simple .pixel-crescent::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 2px solid var(--primary-color);
+  border-radius: 0;
+  box-sizing: border-box;
+}
+
+.divider-simple .pixel-crescent::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: var(--primary-color);
+  top: 4px;
+  left: 4px;
+}
+
+/* Line divider - Clear pixel stars */
+.divider-line {
+  display: flex;
+  align-items: center;
+  height: 16px;
+  width: 100%;
+  position: relative;
+  margin: 2rem 0;
+}
+
+.divider-line .pixel-line {
+  height: 2px;
+  background-color: var(--primary-color);
+  flex-grow: 1;
+  position: relative;
+}
+
+.divider-line .pixel-star {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: var(--primary-color);
+}
+
+.divider-line .pixel-star:nth-child(5n+1) {
+  top: -4px;
+  left: calc(10% + 5px);
+}
+
+.divider-line .pixel-star:nth-child(5n+2) {
+  bottom: -4px;
+  left: calc(30% + 5px);
+}
+
+.divider-line .pixel-star:nth-child(5n+3) {
+  top: -4px;
+  left: calc(50% + 5px);
+}
+
+.divider-line .pixel-star:nth-child(5n+4) {
+  bottom: -4px;
+  left: calc(70% + 5px);
+}
+
+.divider-line .pixel-star:nth-child(5n+5) {
+  top: -4px;
+  left: calc(90% + 5px);
+}
+
+.divider-line .pixel-star:before,
+.divider-line .pixel-star:after {
+  content: '';
+  position: absolute;
+  background-color: var(--primary-color);
+}
+
+.divider-line .pixel-star:before {
+  top: 2px;
+  left: 0;
+  height: 1px;
+  width: 5px;
+}
+
+.divider-line .pixel-star:after {
+  left: 2px;
+  top: 0;
+  width: 1px;
+  height: 5px;
+}
+
+/* Animation keyframes */
+
+/* Twinkle animation for stars */
+@keyframes twinkle {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+/* Pulse animation for moons */
+@keyframes moonPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.8); }
+  100% { transform: scale(1); }
+}
+
+/* Special pulse for crescent moons */
+@keyframes crescentPulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+/* Reduce animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .divider-default .pixel-moon,
+  .divider-ornate .big-star,
+  .divider-ornate .small-star,
+  .divider-ornate .pixel-crescent {
+    animation: none !important;
   }
 }

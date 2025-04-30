@@ -78,6 +78,6 @@ Contemporary folk horror often reinterprets animal transformation through metaph
 - As allegories for social marginalization
 - As explorations of environmental themes and humanity's relationship to nature
 
-{{ section_divider() }}
+{{ divider() }}
 
 *This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](/notes/folk-horror-overview) to explore other tropes.*

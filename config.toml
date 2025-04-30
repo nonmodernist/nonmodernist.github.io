@@ -38,7 +38,7 @@ paths_keep_dates = true
 # Put all your custom variables here
 toc = true
 sidenotes = true
-section_dividers = true
+dividers = true
 
 # setting cdn to true breaks something so leave it false
 use_cdn = false
@@ -50,7 +50,7 @@ dynamic_note = true           # a note that can be toggled
 list_pages = false
 
 menu = [
-    { name = "/blog", url = "/blog", weight = 1 },
+    { name = "/notes", url = "/notes", weight = 1 },
     { name = "/teaching", url = "/teaching", weight = 2 },
     { name = "/research", url = "/research", weight = 3 },
     { name = "/about", url = "/about", weight = 4 },

@@ -1,0 +1,52 @@
+{% if style %}
+  {% set divider_style = style %}
+{% else %}
+  {% set divider_style = "default" %}
+{% endif %}
+
+{% if divider_style == "default" %}
+<div class="divider-default">
+  <div class="moon-phases">
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+  </div>
+</div>
+{% elif divider_style == "ornate" %}
+<div class="divider-ornate">
+  <div class="center-element">
+    <div class="big-star"></div>
+    <div class="small-star"></div>
+    <div class="small-star"></div>
+    <div class="small-star"></div>
+    <div class="pixel-crescent"></div>
+    <div class="pixel-crescent"></div>
+  </div>
+</div>
+{% elif divider_style == "simple" %}
+<div class="divider-simple">
+  <div class="pixel-crescent"></div>
+</div>
+{% elif divider_style == "line" %}
+<div class="divider-line">
+  <div class="pixel-line">
+    <div class="pixel-star"></div>
+    <div class="pixel-star"></div>
+    <div class="pixel-star"></div>
+    <div class="pixel-star"></div>
+    <div class="pixel-star"></div>
+  </div>
+</div>
+{% else %}
+<div class="divider-default">
+  <div class="moon-phases">
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+  </div>
+</div>
+{% endif %}

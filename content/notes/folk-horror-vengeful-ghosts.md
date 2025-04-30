@@ -83,6 +83,6 @@ Female vengeful spirits frequently highlight issues of gendered violence and pat
 
 Similarly, the Thai film *Rang Song* (*The Medium*, 2021) uses traditional beliefs about spirit possession to explore intergenerational trauma and the tensions between traditional practices and modernity in northern Thailand.
 
-{{ section_divider() }}
+{{ divider() }}
 
 *This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](/notes/folk-horror-overview) to explore other tropes.*

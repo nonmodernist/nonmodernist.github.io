@@ -8,18 +8,18 @@ tags:
 
 This is the end of one section.
 
-{{ section_divider() }}
+{{ divider() }}
 
 This is the beginning of a new section.
 
-{{ section_divider(style="ornate", symbol="☙") }}
+{{ divider(style="ornate", symbol="☙") }}
 
 You can customize the symbol.
 
-{{ section_divider(style="minimal") }}
+{{ divider(style="simple") }}
 
 Or use a minimal style.
 
-{{ section_divider(style="line") }}
+{{ divider(style="line") }}
 
 A simple line also works well.

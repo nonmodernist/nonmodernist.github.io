@@ -82,6 +82,6 @@ Folk horror cults can be interpreted as expressions of anxiety about:
 - **Cultural tradition** - The tension between preserving tradition and embracing progress
 - **Authority** - The dangers of unquestioning obedience to charismatic leaders
 
-{{ section_divider() }}
+{{ divider() }}
 
 *This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](/notes/folk-horror-overview) to explore other tropes.*
