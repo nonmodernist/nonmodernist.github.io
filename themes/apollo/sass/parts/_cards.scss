@@ -1,19 +1,16 @@
+// Refactored using mixins
 .cards {
     display: grid;
     grid-template-rows: auto;
     gap: 24px;
     padding: 12px 0;
-}
-
-@media all and (min-width: 640px) {
-    .cards {
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    }
-}
-
-@media all and (max-width: 640px) {
-    .cards {
+    
+    @include mobile-only {
         grid-template-columns: repeat(auto-fill, 1fr);
+    }
+    
+    @include tablet-up {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     }
 }
 

@@ -1,0 +1,52 @@
+// _mixins.scss
+
+// Breakpoint variables
+$breakpoint-small: 640px;  // Mobile
+$breakpoint-medium: 720px; // Tablet
+$breakpoint-large: 960px;  // Desktop
+
+// Media query mixins
+@mixin mobile-only {
+  @media all and (max-width: #{$breakpoint-small - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet-up {
+  @media all and (min-width: #{$breakpoint-small}) {
+    @content;
+  }
+}
+
+@mixin desktop-up {
+  @media all and (min-width: #{$breakpoint-medium}) {
+    @content;
+  }
+}
+
+@mixin large-desktop-up {
+  @media all and (min-width: #{$breakpoint-large}) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media all and (min-width: #{$breakpoint-small}) and (max-width: #{$breakpoint-medium - 1px}) {
+    @content;
+  }
+}
+
+// Optional: Custom range mixin
+@mixin screen-between($min, $max) {
+  @media all and (min-width: #{$min}) and (max-width: #{$max}) {
+    @content;
+  }
+}
+
+// Prevent animations for users who prefer reduced motion
+@mixin respect-motion-preferences {
+  @media (prefers-reduced-motion: reduce) {
+    animation: none !important;
+    transition: none !important;
+  }
+}

@@ -153,12 +153,20 @@
     font-family: var(--emoji-font);
   }
   
-  .garden-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem 0;
+// Refactored using mixins
+.garden-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  
+  @include mobile-only {
+    grid-template-columns: 1fr;
   }
+  
+  @include tablet-up {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
   
   .garden-note {
     background: var(--bg-1);
@@ -274,9 +282,6 @@
  
   // Responsive adjustments
   @media (max-width: 768px) {
-    .garden-grid {
-      grid-template-columns: 1fr;
-    }
     
     .moon-phase-legend {
       flex-direction: column;

@@ -15,13 +15,23 @@
     font-size: 4em;
 }
 
+// Refactored using mixins
 header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1em 0;
-}
+    
+    @include mobile-only {
+      flex-direction: column;
+      align-items: center;
+      
+      .main a {
+        font-size: 20px;
+      }
+    }
+  }
 
 header .main {
     display: flex;
@@ -75,18 +85,6 @@ header .socials {
     height: 24px;
 }
 
-/* Mobile-specific adjustments */
-@media (max-width: 600px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 1em 0;
-    }
-
-    header .main a {
-        font-size: 20px;
-    }
-}
 
 .meta {
     color: #999;

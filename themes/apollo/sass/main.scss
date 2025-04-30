@@ -1,3 +1,4 @@
+@import "parts/mixins.scss";
 @import "parts/_cards.scss";
 @import "parts/_code.scss";
 @import "parts/_header.scss";
@@ -50,20 +51,19 @@ nav, .meta, .footer, time, .tldr, .toc-container, h1, h2, h3, h4, h5, h6 {
   font-family: var(--text-font);
 }
 
-@media all and (min-width:640px) {
-  html {
+// Refactored using mixins
+html {
+  font-size: 16px; // Base font size
+  
+  @include tablet-up {
     font-size: 16.5px;
   }
-}
-
-@media all and (min-width:720px) {
-  html {
+  
+  @include desktop-up {
     font-size: 17px;
   }
-}
-
-@media all and (min-width:960px) {
-  html {
+  
+  @include large-desktop-up {
     font-size: 18px;
   }
 }
