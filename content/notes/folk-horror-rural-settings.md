@@ -3,7 +3,7 @@ title: "Folk Horror: Rural Settings"
 date: 2025-04-29
 draft: false
 taxonomies:
-  tags: ["film", "folk horror", "rural settings", "landscape", "notes"]
+  tags: ["film", "folk horror", "rural settings", "landscape"]
 extra:
   moon_phase: waxing_gibbous
   tldr: "Exploring how rural isolation forms the backbone of folk horror narratives."
@@ -35,8 +35,6 @@ Agricultural settings link folk horror to fertility rituals, seasonal cycles, an
 - *Blood on Satan's Claw* (1971, UK)
 - *Children of the Corn* (1984, US)
 - *A Field in England* (2013, UK)
-
-![Blood on Satan's Claw, 1971](Blood_on_Satans_Claw_028.jpg)
 
 ### Forests
 
@@ -79,5 +77,7 @@ While rare, some folk horror films adapt the genre's tropes to urban settings. *
 ## Historical Context
 
 Folk horror's focus on rurality connects to the 19th-century origins of folklore studies, when European ethnographers traveled to rural areas to collect folklore from illiterate, poor communities. This history informs the genre's frequent use of the outsider/ethnographer figure observing rural customs.
+
+{{ section_divider() }}
 
 *This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](/notes/folk-horror-overview) to explore other tropes.*

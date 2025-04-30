@@ -3,7 +3,7 @@ title: "Folk Horror: Cults and Extreme Religious Practices"
 date: 2025-04-29
 draft: false
 taxonomies:
-  tags: ["film", "folk horror", "ritual", "notes"]
+  tags: ["film", "folk horror", "ritual", "cults"]
 extra:
   moon_phase: waxing_gibbous
   tldr: "Isolated religious communities with extreme beliefs are a central component of many folk horror narratives."
@@ -71,8 +71,7 @@ Folk horror cults reflect the cultural contexts in which they appear:
 - **British folk horror** often features neo-pagan revivals in rural communities
 - **American folk horror** frequently explores religious extremism and fundamentalism
 - **East Asian folk horror** commonly depicts ancestral cults and familial obligations
-
-**Latin American folk horror** often blends indigenous beliefs with Catholicism
+- **Latin American folk horror** often blends indigenous beliefs with Catholicism
 
 ## Sociological Readings
 

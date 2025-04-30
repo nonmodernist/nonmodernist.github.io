@@ -3,13 +3,11 @@ title: "Folk Horror: Human Sacrifice"
 date: 2025-04-29
 draft: false
 taxonomies:
-  tags: ["film", "folk horror", "ritual", "notes"]
+  tags: ["film", "folk horror", "ritual", "cults"]
 extra:
   moon_phase: waxing_gibbous
   tldr: "Human sacrifice in folk horror represents the ultimate expression of a community's devotion to traditional beliefs."
 ---
-
-# Human Sacrifice
 
 <span class="og">✂︎</span> Human sacrifice represents one of the most extreme expressions of folk belief in horror cinema. As a trope, it embodies the tension between individual rights and communal needs, modern values and ancient practices. The ritualistic killing of humans for the perceived benefit of the community appears consistently across folk horror from different cultures and eras.
 
@@ -26,6 +24,7 @@ These sacrifices are typically performed to ensure good harvests or end periods 
 ### Appeasement of Supernatural Forces
 
 Sacrifice as a means to placate gods, spirits, or monsters:
+- *Blood on Satan's Claw* (1971, UK)
 - *Tumbbad* (2018, India)
 - *The Ritual* (2017, UK)
 
@@ -35,11 +34,8 @@ These narratives often involve entities that demand regular tributes in exchange
 
 Sacrifice as a means of cleansing the community of perceived impurity:
 - *Witchfinder General* (1968, UK)
-- *Blood on Satan's Claw* (1971, UK)
 
 These films often reflect historical witch hunts and moral panics.
-
-![Blood on Satan's Claw, 1971](Blood_on_Satans_Claw_028.jpg)
 
 ## Choice of Victims
 
@@ -50,6 +46,7 @@ The selection of sacrificial victims in folk horror follows several patterns:
 The most common sacrificial victim is the outsider who has entered the community:
 - *The Wicker Man* (1972, UK)
 - *Apostle* (2018, US)
+- *Midsommar* (2019, US/Sweden)
 
 Using outsiders as victims reinforces the community's boundaries and cohesion.
 
@@ -57,7 +54,6 @@ Using outsiders as victims reinforces the community's boundaries and cohesion.
 
 Some films depict randomized selection processes:
 - *The Lottery* (1969, US), based on Shirley Jackson's story
-- *Midsommar* (2019, US/Sweden)
 
 These systems distribute the burden of sacrifice across the community.
 
@@ -83,5 +79,7 @@ Beyond its plot significance, human sacrifice in folk horror serves several narr
 2. **Moral confrontation** - Forces characters (and audiences) to confront different value systems
 3. **Metaphorical commentary** - Can represent broader social critiques about how societies sacrifice individuals
 4. **Violation of taboo** - Creates horror through the transgression of fundamental moral boundaries
+
+{{ section_divider( )}}
 
 *This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](/notes/folk-horror-overview) to explore other tropes.*

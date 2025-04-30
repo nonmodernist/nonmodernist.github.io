@@ -3,7 +3,7 @@ title: "Folk Horror: The Outsider"
 date: 2025-04-29
 draft: false
 taxonomies:
-  tags: ["film", "folk horror", "outsider", "ethnographer", "notes"]
+  tags: ["film", "folk horror", "outsider", "ethnographer"]
 extra:
   moon_phase: waxing_gibbous
   tldr: "The outsider perspective is a key narrative device in folk horror, often through academics, tourists, or skeptics."
@@ -43,8 +43,6 @@ Folk horror frequently features scholars studying the very communities that beco
 - *Candyman* (1992, US)
 - *The Medium* (2021, Thailand)
 
-![Candyman, 1992](Candyman_020.jpg)
-
 In *Candyman*, academic Helen Lyle researches urban legends in Chicago's Cabrini-Green housing project, embodying the ethnographer trope in an urban setting.
 
 ### The Archaeologist
@@ -73,5 +71,7 @@ The outsider character serves several important functions in folk horror narrati
 ## The Ethnographic Gaze
 
 The prevalence of ethnographers and academics in folk horror reflects the genre's connection to the history of folklore studies. The "ethnographic gaze" - the perspective of an outside observer documenting "primitive" customs - often becomes inverted in these films, with the observer becoming the observed, the documenter becoming the documented.
+
+{{ section_divider() }}
 
 *This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](/notes/folk-horror-overview) to explore other tropes.*

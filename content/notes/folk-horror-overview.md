@@ -3,7 +3,7 @@ title: "Folk Horror: An Overview"
 date: 2025-04-29
 draft: false
 taxonomies:
-  tags: ["film", "folk horror", "genre", "notes"]
+  tags: ["film", "folk horror", "genre"]
 extra:
   moon_phase: waxing_gibbous
   tldr: "An exploration of folk horror as a film genre, its international manifestations, and common tropes."

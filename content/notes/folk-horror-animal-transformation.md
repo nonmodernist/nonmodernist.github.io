@@ -3,7 +3,7 @@ title: "Folk Horror: Animal Transformation"
 date: 2025-04-29
 draft: false
 taxonomies:
-  tags: ["film", "folk horror", "notes"]
+  tags: ["film", "folk horror"]
 extra:
   moon_phase: waxing_gibbous
   tldr: "Transformation into animals represents the blurring of boundaries between the human and natural worlds in folk horror."

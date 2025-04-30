@@ -3,7 +3,7 @@ title: "Folk Horror: Ancient Sacred Sites"
 date: 2025-04-29
 draft: false
 taxonomies:
-  tags: ["film", "folk horror", "sacred sites", "ancient monuments", "notes"]
+  tags: ["film", "folk horror", "sacred sites", "landscape"]
 extra:
   moon_phase: waxing_gibbous
   tldr: "Sacred sites in folk horror serve as conduits between past and present, often becoming focal points for supernatural occurrences."
@@ -37,7 +37,8 @@ Visitors to sacred sites as tourists or casual explorers:
 - *Picnic at Hanging Rock* (1975, Australia)
 - *Lake Mungo* (2008, Australia)
 
-![Picnic at Hanging Rock, 1975](picnic.jpg)
+<div class="pixel-corners--wrapper"><img src="/picnic.jpg" alt="A girl dressed in Victorian clothing stands atop a rock formation." width="100%">
+</div>
 
 In *Picnic at Hanging Rock*, the imposing geological formation becomes a mysterious force that consumes several schoolgirls during an outing.
 
@@ -52,7 +53,7 @@ Many horror films from settler colonial countries feature the problematic "India
 - *Pet Sematary* (1989, US)
 - *Grim Prairie Tales* (1990, US)
 
-As Jesse Wente notes, "there is no such thing as an Indian burial ground… [that is] a figment of the Western imagination." This trope reduces diverse indigenous nations into one fictional category, "Indian," while appropriating and distorting cultural beliefs for shock value.
+As Jesse Wente notes, "there is no such thing as an Indian burial ground… [That is] a figment of the Western imagination." This trope reduces diverse indigenous nations into one fictional category, "Indian," while appropriating and distorting cultural beliefs for shock value.
 
 ## Types of Sacred Sites
 
@@ -77,8 +78,9 @@ Distinctive natural features considered sacred:
 
 ### Sacred Trees and Groves
 
-Trees and forests with religious significance:
+Trees and forests with religious or cultural significance:
 - *The Guardian* (1990, US)
+- *Clearcut* (1991, US)
 - *The Ritual* (2017, UK)
 
 ## Cultural Context
@@ -86,5 +88,7 @@ Trees and forests with religious significance:
 The treatment of sacred sites in folk horror often reflects colonial attitudes toward indigenous beliefs and sacred spaces. The desecration of these sites - whether through academic study, tourism, or development - frequently triggers supernatural retribution, which can be read as a metaphor for cultural guilt or anxiety about the destruction of traditional ways of life.
 
 At the same time, these sites represent continuity - places where the past remains present and ancient forces continue to exert influence despite attempts to relegate them to history.
+
+{{ section_divider() }}
 
 *This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](/notes/folk-horror-overview) to explore other tropes.*

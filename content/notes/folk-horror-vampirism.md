@@ -3,7 +3,7 @@ title: "Folk Horror: Vampirism"
 date: 2025-04-29
 draft: false
 taxonomies:
-  tags: ["film", "folk horror", "vampirism", "notes"]
+  tags: ["film", "folk horror", "vampirism"]
 extra:
   moon_phase: waxing_gibbous
   tldr: "Folk horror's vampires draw more from local folkloric traditions than the urbane Dracula archetype."
@@ -11,7 +11,7 @@ extra:
 
 # Vampirism in Folk Contexts
 
-<span class="og">💋</span> Vampires in folk horror differ significantly from the urbane, aristocratic vampire popularized by Bram Stoker's Dracula. Instead, they draw more directly from regional folkloric traditions of the undead, presenting beings that are more monstrous, animalistic, and deeply tied to specific cultural contexts.
+<span class="og">💋</span> Vampires in folk horror differ significantly from the urbane, aristocratic vampire popularized by Bram Stoker's *Dracula*. Instead, they draw more directly from regional folkloric traditions of the undead, presenting beings that are more monstrous, animalistic, and deeply tied to specific cultural contexts.
 
 ## Folkloric Vampires vs. Gothic Vampires
 
@@ -67,10 +67,11 @@ In some contexts, vampirism metaphorically addresses colonial relationships, wit
 
 Contemporary folk horror continues to explore vampirism through folkloric lenses:
 
-- *Let the Right One In* (2008, Sweden)
 - *A Girl Walks Home Alone at Night* (2014, US/Iran)
 - *The Field Guide to Evil* (2018, anthology) - particularly the "Cobblers' Lot" segment
 
 These films blend traditional folk elements with modern concerns, demonstrating the continuing vitality of the folk vampire as distinct from mainstream vampire imagery.
+
+{{ section_divider() }}
 
 *This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](/notes/folk-horror-overview) to explore other tropes.*

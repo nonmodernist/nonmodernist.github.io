@@ -3,13 +3,11 @@ title: "Folk Horror: Witchcraft and Folk Magic"
 date: 2025-04-29
 draft: false
 taxonomies:
-  tags: ["film", "folk horror", "witchcraft", "shamanism", "folk magic", "notes"]
+  tags: ["film", "folk horror", "witchcraft", "shamanism", "folk magic"]
 extra:
   moon_phase: waxing_gibbous
   tldr: "Witchcraft, shamanism, and folk magic traditions form a core element of folk horror across cultures."
 ---
-
-# Witchcraft, Shamanism, and Folk Magic
 
 <span class="og">✨</span> Magical practices form a cornerstone of folk horror, representing the survival of pre-modern beliefs into contemporary times. These traditions take different forms across cultures but share common themes of hidden knowledge, power derived from nature or spirits, and practices that exist outside mainstream religious institutions.
 
@@ -94,5 +92,7 @@ Some modern folk horror films have begun to subvert these dynamics, presenting w
 ## Historical Context
 
 The witch trials of early modern Europe and colonial America cast a long shadow over folk horror's treatment of witchcraft. Films like *Witchfinder General* (1968, UK) and *The Witch* (2015, US) directly engage with this historical context, exploring how religious fear, gender politics, and social control intersected in the persecution of supposed witches.
+
+{{ section_divider() }}
 
 *This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](/notes/folk-horror-overview) to explore other tropes.*

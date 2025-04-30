@@ -3,13 +3,11 @@ title: "Folk Horror: Vengeful Ghosts"
 date: 2025-04-29
 draft: false
 taxonomies:
-  tags: ["film", "folk horror", "ghosts", "vengeful spirits", "notes"]
+  tags: ["film", "folk horror", "ghosts", "vengeful spirits"]
 extra:
   moon_phase: waxing_gibbous
   tldr: "Culturally-specific vengeful ghosts in folk horror often represent historical trauma and unresolved injustice."
 ---
-
-# Culturally-Specific Vengeful Ghosts
 
 <span class="og">😠</span> Vengeful ghosts appear across global folk horror traditions, but what distinguishes them within the genre is their deep connection to specific cultural contexts. These spirits typically emerge from local folkloric traditions and often represent historical traumas or unresolved injustices particular to their regions of origin.
 
@@ -84,5 +82,7 @@ Female vengeful spirits frequently highlight issues of gendered violence and pat
 *La Llorona* (2019, Guatemala) exemplifies the political potential of the vengeful ghost trope. Director Jayro Bustamante reimagines the traditional Weeping Woman as the spirit of an indigenous woman killed during Guatemala's civil war, haunting a former military general responsible for genocide. The film uses folk horror conventions to address historical trauma and the ongoing struggle for justice.
 
 Similarly, the Thai film *Rang Song* (*The Medium*, 2021) uses traditional beliefs about spirit possession to explore intergenerational trauma and the tensions between traditional practices and modernity in northern Thailand.
+
+{{ section_divider() }}
 
 *This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](/notes/folk-horror-overview) to explore other tropes.*
