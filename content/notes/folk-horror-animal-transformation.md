@@ -3,23 +3,21 @@ title: "Folk Horror: Animal Transformation"
 date: 2025-04-29
 draft: false
 taxonomies:
-  tags: ["film", "folk horror", "shapeshifting", "animal transformation", "notes"]
+  tags: ["film", "folk horror", "notes"]
 extra:
   moon_phase: waxing_gibbous
-  tldr: "Transformation into animals represents the blurring of boundaries between human and natural worlds in folk horror."
+  tldr: "Transformation into animals represents the blurring of boundaries between the human and natural worlds in folk horror."
 ---
-
-# Animal Transformation
 
 <span class="og">🐶</span> The transformation of humans into animals is a recurring motif in folk horror, drawing on widespread folkloric traditions of shapeshifting. Unlike the modern werewolf narrative (typically triggered by moonlight and transmitted through bites), folk horror's transformations often result from curses, spells, or spiritual practices deeply embedded in local cultural traditions.
 
 ## Types of Animal Transformations
 
-### Bear Transformations
+### Bears
 
 - *Lokis* (1970, Poland), based on Prosper Mérimée's novella, follows a man who may be the result of his mother's assault by a bear, displaying a dual human-bear nature
 
-### Cat Transformations
+### Cats
 
 The Japanese ghost cat (*bakeneko*) tradition has spawned numerous films:
 - *Black Cat Mansion* (1958, Japan)
@@ -28,11 +26,11 @@ The Japanese ghost cat (*bakeneko*) tradition has spawned numerous films:
 
 These films typically feature women who, after death, return as cat spirits seeking vengeance.
 
-### Reindeer Transformations
+### Reindeer
 
 - *The White Reindeer* (1952, Finland) depicts a young bride who transforms into a vampiric white reindeer, drawing on Sámi shamanic traditions
 
-### Wolf Transformations
+### Wolves
 
 - *Nazareno Cruz and the Wolf* (1975, Argentina)
 - *She-Wolf* (1983, Poland)
@@ -79,5 +77,7 @@ Contemporary folk horror often reinterprets animal transformation through metaph
 - As expressions of mental illness or psychological states
 - As allegories for social marginalization
 - As explorations of environmental themes and humanity's relationship to nature
+
+{{ section_divider() }}
 
 *This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](/notes/folk-horror-overview) to explore other tropes.*

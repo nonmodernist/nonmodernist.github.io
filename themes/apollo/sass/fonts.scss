@@ -80,7 +80,7 @@
 @font-face {
   font-family: 'Atkinson-Hyperlegible';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 700; // Increased font-weight for maximum boldness
   src: url('fonts/Atkinson/Atkinson-Hyperlegible-Bold-102.ttf'), local('ttf');
   font-display: swap;
 }

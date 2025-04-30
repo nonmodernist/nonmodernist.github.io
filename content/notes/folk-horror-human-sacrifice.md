@@ -3,7 +3,7 @@ title: "Folk Horror: Human Sacrifice"
 date: 2025-04-29
 draft: false
 taxonomies:
-  tags: ["film", "folk horror", "human sacrifice", "ritual", "notes"]
+  tags: ["film", "folk horror", "ritual", "notes"]
 extra:
   moon_phase: waxing_gibbous
   tldr: "Human sacrifice in folk horror represents the ultimate expression of a community's devotion to traditional beliefs."

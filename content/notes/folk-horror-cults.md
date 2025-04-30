@@ -3,7 +3,7 @@ title: "Folk Horror: Cults and Extreme Religious Practices"
 date: 2025-04-29
 draft: false
 taxonomies:
-  tags: ["film", "folk horror", "cults", "religious practices", "notes"]
+  tags: ["film", "folk horror", "ritual", "notes"]
 extra:
   moon_phase: waxing_gibbous
   tldr: "Isolated religious communities with extreme beliefs are a central component of many folk horror narratives."
@@ -37,7 +37,8 @@ In *Children of the Corn* (1984, US), based on Stephen King's story, rural child
 
 *Midsommar* (2019, US/Sweden) depicts the Hårga community, whose seemingly benign midsummer celebrations mask disturbing rituals including human sacrifice and eugenics.
 
-![The Wicker Man, 1972](wicker-man.jpg)
+<div class="pixel-corners--wrapper"><img src="/Midsommar_045.jpg" alt="Girls dressed in white face the camera." width="100%">
+</div>
 
 ## Common Narrative Patterns
 
@@ -70,7 +71,8 @@ Folk horror cults reflect the cultural contexts in which they appear:
 - **British folk horror** often features neo-pagan revivals in rural communities
 - **American folk horror** frequently explores religious extremism and fundamentalism
 - **East Asian folk horror** commonly depicts ancestral cults and familial obligations
-- **Latin American folk horror** often blends indigenous beliefs with Catholicism
+
+**Latin American folk horror** often blends indigenous beliefs with Catholicism
 
 ## Sociological Readings
 
@@ -80,5 +82,7 @@ Folk horror cults can be interpreted as expressions of anxiety about:
 - **Modern alienation** - The appeal of belonging to something larger than oneself
 - **Cultural tradition** - The tension between preserving tradition and embracing progress
 - **Authority** - The dangers of unquestioning obedience to charismatic leaders
+
+{{ section_divider() }}
 
 *This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](/notes/folk-horror-overview) to explore other tropes.*

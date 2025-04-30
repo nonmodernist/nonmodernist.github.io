@@ -53,3 +53,150 @@ svg {
   border-width:  28px;
   border-style:  solid;
 }
+
+
+.pixel-corners,
+.pixel-corners--wrapper {
+  clip-path: polygon(0px calc(100% - 16px),
+    4px calc(100% - 16px),
+    4px calc(100% - 8px),
+    8px calc(100% - 8px),
+    8px calc(100% - 4px),
+    16px calc(100% - 4px),
+    16px 100%,
+    calc(100% - 16px) 100%,
+    calc(100% - 16px) calc(100% - 4px),
+    calc(100% - 8px) calc(100% - 4px),
+    calc(100% - 8px) calc(100% - 8px),
+    calc(100% - 4px) calc(100% - 8px),
+    calc(100% - 4px) calc(100% - 16px),
+    100% calc(100% - 16px),
+    100% 16px,
+    calc(100% - 4px) 16px,
+    calc(100% - 4px) 8px,
+    calc(100% - 8px) 8px,
+    calc(100% - 8px) 4px,
+    calc(100% - 16px) 4px,
+    calc(100% - 16px) 0px,
+    16px 0px,
+    16px 4px,
+    8px 4px,
+    8px 8px,
+    4px 8px,
+    4px 16px,
+    0px 16px);
+  position: relative;
+}
+.pixel-corners {
+  border: 8px solid transparent;
+}
+
+.pixel-corners--wrapper {
+  width: fit-content;
+  height: fit-content;
+}
+
+.pixel-corners--wrapper .pixel-corners {
+  display: block;
+  clip-path: polygon(8px 20px,
+    12px 20px,
+    12px 12px,
+    20px 12px,
+    20px 8px,
+    calc(100% - 20px) 8px,
+    calc(100% - 20px) 12px,
+    calc(100% - 12px) 12px,
+    calc(100% - 12px) 20px,
+    calc(100% - 8px) 20px,
+    calc(100% - 8px) calc(100% - 20px),
+    calc(100% - 12px) calc(100% - 20px),
+    calc(100% - 12px) calc(100% - 12px),
+    calc(100% - 20px) calc(100% - 12px),
+    calc(100% - 20px) calc(100% - 8px),
+    20px calc(100% - 8px),
+    20px calc(100% - 12px),
+    12px calc(100% - 12px),
+    12px calc(100% - 20px),
+    8px calc(100% - 20px));
+}
+.pixel-corners::after,
+.pixel-corners--wrapper::after {
+  content: "";
+  position: absolute;
+  clip-path: polygon(0px calc(100% - 16px),
+    4px calc(100% - 16px),
+    4px calc(100% - 8px),
+    8px calc(100% - 8px),
+    8px calc(100% - 4px),
+    16px calc(100% - 4px),
+    16px 100%,
+    calc(100% - 16px) 100%,
+    calc(100% - 16px) calc(100% - 4px),
+    calc(100% - 8px) calc(100% - 4px),
+    calc(100% - 8px) calc(100% - 8px),
+    calc(100% - 4px) calc(100% - 8px),
+    calc(100% - 4px) calc(100% - 16px),
+    100% calc(100% - 16px),
+    100% 16px,
+    calc(100% - 4px) 16px,
+    calc(100% - 4px) 8px,
+    calc(100% - 8px) 8px,
+    calc(100% - 8px) 4px,
+    calc(100% - 16px) 4px,
+    calc(100% - 16px) 0px,
+    16px 0px,
+    16px 4px,
+    8px 4px,
+    8px 8px,
+    4px 8px,
+    4px 16px,
+    0px 16px,
+    0px 50%,
+    8px 50%,
+    8px 20px,
+    12px 20px,
+    12px 12px,
+    20px 12px,
+    20px 8px,
+    calc(100% - 20px) 8px,
+    calc(100% - 20px) 12px,
+    calc(100% - 12px) 12px,
+    calc(100% - 12px) 20px,
+    calc(100% - 8px) 20px,
+    calc(100% - 8px) calc(100% - 20px),
+    calc(100% - 12px) calc(100% - 20px),
+    calc(100% - 12px) calc(100% - 12px),
+    calc(100% - 20px) calc(100% - 12px),
+    calc(100% - 20px) calc(100% - 8px),
+    20px calc(100% - 8px),
+    20px calc(100% - 12px),
+    12px calc(100% - 12px),
+    12px calc(100% - 20px),
+    8px calc(100% - 20px),
+    8px 50%,
+    0px 50%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--border-color);
+  display: block;
+  pointer-events: none;
+}
+
+.pixel-corners, .pixel-corners--wrapper {
+  /* Add these lines */
+  display: inline-block;
+  line-height: 0; /* Remove extra space created by line-height */
+  font-size: 0; /* Remove extra space potentially created by font-size */
+}
+
+.pixel-corners img {
+  /* Add this to ensure images display properly */
+  display: block;
+  line-height: 0;
+  margin: 0;
+}
+.pixel-corners::after {
+  margin: -8px;
+}
