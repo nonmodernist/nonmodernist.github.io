@@ -1,0 +1,27 @@
+{% if page.extra.related_notes_links %}
+<div class="related-notes">
+  <h2><span class="og">♦</span> Related Notes</h2>
+  <ul class="related-notes-list">
+    {% for note in page.extra.related_notes_links %}
+      <li class="related-note-item">
+        <a href="{{ note.url }}" class="related-note-link">{{ note.title }}</a>
+        {% if note.moon_phase %}
+        <span class="moon-phase moon-phase-{{ note.moon_phase }}">
+          {% if note.moon_phase == "new" %}🌑
+          {% elif note.moon_phase == "waxing_crescent" %}🌙
+          {% elif note.moon_phase == "first_quarter" %}🌓
+          {% elif note.moon_phase == "waxing_gibbous" %}🌔
+          {% elif note.moon_phase == "full" %}🌕
+          {% else %}🌑
+          {% endif %}
+        </span>
+        {% endif %}
+        
+        {% if note.description %}
+        <p class="related-note-description">{{ note.description }}</p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}

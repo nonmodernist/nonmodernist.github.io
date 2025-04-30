@@ -7,6 +7,20 @@ taxonomies:
 extra:
   moon_phase: waxing_gibbous
   tldr: "An exploration of folk horror as a film genre, its international manifestations, and common tropes."
+  related_notes_links: [
+    {
+      "url": "/notes/folk-horror-rural-settings/",
+      "title": "Rural Settings",
+      "description": "Exploring how rural isolation forms the backbone of folk horror narratives.",
+      "moon_phase": "waxing_gibbous"
+    },
+    {
+      "url": "/notes/folk-horror-outsider/",
+      "title": "The Outsider",
+      "description": "The outsider perspective is a key narrative device in folk horror.",
+      "moon_phase": "waxing_gibbous"
+    }
+  ]
 ---
 
 <span class="og">🎄</span> Though the "folk horror" genre dates back to the silent era (*Häxan*, 1922, Sweden), recent films like *Midsommar* (2019, US/Sweden), *La Llorona* (2019, Guatemala), and *The Medium*/ร่างทรง *Rang Song* (2021, Thailand) demonstrate a renewed interest in folkloric horror stories from around the world.

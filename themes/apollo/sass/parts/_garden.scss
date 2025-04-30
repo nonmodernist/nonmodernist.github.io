@@ -285,7 +285,6 @@
   }
 
 
-  /* Add to your _garden.scss or create a new partial */
 .readable-content {
   line-height: 1.8;
   font-size: 1.1rem;
@@ -311,5 +310,98 @@
   /* Slightly larger first paragraph */
   > p:first-of-type {
     font-size: 1.3em;
+  }
+}
+
+.related-notes {
+  margin: 3rem 0 1.5rem 0;
+  padding-top: 1.5rem;
+  border-top: 2px dotted var(--border-color);
+  
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+  }
+}
+
+.related-notes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.related-note-item {
+  background: var(--bg-1);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: transform 0.2s ease-in-out;
+  
+  &:hover {
+    transform: translateY(-3px);
+  }
+  
+  a {
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    border-bottom: none;
+    
+    }
+  }
+  
+  .moon-phase {
+    font-size: 1rem;
+  }
+  
+  .related-note-description {
+    font-size: 0.9rem;
+    color: var(--text-1);
+    margin: 0.5rem 0 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+
+/* Related notes specific link styling */
+.related-note-link {
+  border-bottom: 2px dotted var(--primary-color) !important;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 0; /* Reduce or remove padding at the bottom */
+  margin-bottom: 0; /* Ensure no margin is adding space */
+  display: inline-block; /* This helps control spacing more precisely */
+  line-height: 1.1; /* Reduce line height to bring the border closer */
+  
+  /* Override the default styles that add the ♦ symbol */
+  &::after {
+    content: none !important;
+  }
+  
+  &:hover {
+    background-color: var(--primary-color);
+    color: var(--hover-color);
+  }
+}
+
+/* Make sure we override any external link styling as well */
+.related-note-link:not([href*="nonmodernist.com"]):not([href*="127.0.0.1:1111"]):not([href^="/"]):not([href^="#"]) {
+  padding-right: initial;
+  
+  &:after {
+    content: none !important;
   }
 }
