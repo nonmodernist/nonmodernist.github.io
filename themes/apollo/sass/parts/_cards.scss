@@ -1,4 +1,4 @@
-// Refactored using mixins
+// 
 .cards {
     display: grid;
     grid-template-rows: auto;
@@ -14,12 +14,12 @@
     }
 }
 
+
 .card {
+    @include card-style;
     min-height: 100px;
-    background: var(--bg-1);
-    border: 2px solid var(--border-color);
-    border-radius: 10px;
     overflow: hidden;
+    padding: 0;
 }
 
 .card-info {
@@ -45,8 +45,67 @@
     overflow: hidden;
 }
 
-@media all and (max-width:720px) {
+@include desktop-up {
     .cards {
         gap: 18px;
     }
 }
+
+
+
+/* add styling for recent activity */
+.recent-activity {
+    margin: 2rem 0;
+    
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  .activity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    
+    @include mobile-only {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .activity-item {
+    @include card-style;
+    
+    h3 {
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      font-size: 1.3rem;
+    }
+  }
+  
+  .activity-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    
+    a {
+      font-weight: bold;
+      border-bottom: none !important;
+      
+      &:hover {
+        background-color: var(--primary-color);
+        color: var(--hover-color);
+      }
+    }
+  }
+  
+  .activity-date {
+    color: var(--text-1);
+    font-size: 0.9rem;
+  }
+  
+  .activity-tags {
+    margin-top: 0.3rem;
+    font-size: smaller;
+  }
+  

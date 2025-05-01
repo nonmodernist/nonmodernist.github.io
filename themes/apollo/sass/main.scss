@@ -1,10 +1,11 @@
-@import "parts/mixins.scss";
+@import "parts/_variables.scss";
+@import "parts/_mixins.scss";
 @import "parts/_cards.scss";
 @import "parts/_code.scss";
 @import "parts/_header.scss";
 @import "parts/_image.scss";
 @import "parts/_toc.scss";
-@import "parts/_note.scss";
+@import "parts/_callout.scss";
 @import "parts/_search.scss";
 @import "parts/misc.scss";
 @import "parts/table.scss";
@@ -12,48 +13,14 @@
 @import "parts/_garden.scss";
 @import "parts/_section_dividers.scss";
 
-:root {
-  /* Used for: block comment, hr, ... */
-  --border-color: var(--border-color);
-
-  /* Fonts */
-  --text-font: 'Jetbrains Mono';
-  --header-font: 'Unifont', 'Helvetica', sans-serif;
-  --code-font: 'Jetbrains Mono';
-  --emoji-font: 'og-emoji';
-  --paragraph-font: 'Atkinson Hyperlegible', sans-serif; /* New variable for paragraphs */
-
-}
 
 html {
   background-color: var(--bg-0);
   color: var(--text-0);
   font-family: var(--text-font);
   line-height: 1.6em;
-}
 
-.content, .footer {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 24px;
-  word-wrap: break-word;
-}
-
-.footer p {text-align: right;}
-
-.hidden {
-  display: none;
-}
-
-
-/* Keep monospace for UI elements */
-nav, .meta, .footer, time, .tldr, .toc-container, h1, h2, h3, h4, h5, h6 {
-  font-family: var(--text-font);
-}
-
-// Refactored using mixins
-html {
-  font-size: 16px; // Base font size
+  font-size: 16px; /* Base font size */
   
   @include tablet-up {
     font-size: 16.5px;
@@ -68,92 +35,19 @@ html {
   }
 }
 
-/* add minimal styling for footnotes */
+// Footer styling
 
-.footnote-definition {
-  margin: 0 0 0 .125rem;
+.content, .footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+  word-wrap: break-word;
 }
 
-.footnote-definition-label {
-  color: var();
-}
-
-.footnote-definition p {
-  display: inline;
-  margin: .625rem 0 0 .1rem;
-}
+.footer p {text-align: right;}
 
 
-/* add styling for tldr */
 
-.tldr {
-  margin: .725rem 2rem;
-  border-left: 3px dashed var(--primary-color);
-  color: #737373;
-  padding: .5rem ;
-}
-
-
-/* add styling for recent activity */
-.recent-activity {
-  margin: 2rem 0;
-  
-  h2 {
-    font-size: 1.8em;
-    margin-bottom: 1rem;
-  }
-}
-
-.activity-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-  
-  @media all and (max-width: 640px) {
-    grid-template-columns: 1fr;
-  }
-}
-
-.activity-item {
-  background: var(--bg-1);
-  border: 2px solid var(--border-color);
-  border-radius: 10px;
-  padding: 1rem;
-  transition: transform 0.2s ease-in-out;
-  
-  &:hover {
-    transform: translateY(-3px);
-  }
-  
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0.75rem;
-    font-size: 1.2rem;
-  }
-}
-
-.activity-content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  
-  a {
-    font-weight: bold;
-    border-bottom: none;
-    
-    &:hover {
-      background-color: transparent;
-      color: var(--primary-color);
-    }
-  }
-}
-
-.activity-date {
-  color: var(--text-1);
-  font-size: 0.9rem;
-}
-
-.activity-tags {
-  margin-top: 0.3rem;
-  font-size: smaller;
+.hidden {
+  display: none;
 }

@@ -9,17 +9,16 @@
   }
 
   a {
-    border-bottom: 1.5px solid var(--primary-color);
+    border-bottom: none;
     font-family: var(--text-font);
+  &:hover {
+    background-color: var(--primary-color) !important;
+    color: var(--hover_color) !important;
   }
-
-  a:hover {
-    color: var(--hover_color);
-    background-color: var(--primary-color);
   }
-
   a::before {
-    content: "🏷 "; /* Ensure there's a space after the emoji for spacing */
+    font-family: var(--emoji-font);
+    content: "🎫 "; /* Ensure there's a space after the emoji for spacing */
     display: inline;
     white-space: nowrap !important;
   }

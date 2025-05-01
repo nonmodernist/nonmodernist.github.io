@@ -5,98 +5,48 @@
     font-family: var(--emoji-font);
    // margin-left: 0.5rem;
   }
-  
-  // Style variations for different phases
-  .moon-phase-new {
-    position: relative;
-    &:hover::after {
-      content: "New idea";
-      font-family: var(--text-font);
-      position: absolute;
-      bottom: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      background: var(--bg-2);
-      padding: 0.2rem 0.5rem;
-      border-radius: 4px;
-      font-size: 0.8rem;
-      white-space: nowrap;
-      pointer-events: none;
-    }
+
+// Create a mixin for the hover tooltip
+@mixin moon-phase-tooltip($text) {
+  position: relative;
+  &:hover::after {
+    content: $text;
+    font-family: var(--text-font);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg-2);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    pointer-events: none;
   }
-  
-  .moon-phase-waxing_crescent {
-    position: relative;
-    &:hover::after {
-      content: "Growing idea";
-      font-family: var(--text-font);
-      position: absolute;
-      bottom: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      background: var(--bg-2);
-      padding: 0.2rem 0.5rem;
-      border-radius: 4px;
-      font-size: 0.8rem;
-      white-space: nowrap;
-      pointer-events: none;
-    }
-  }
-  
-  .moon-phase-first_quarter {
-    position: relative;
-    &:hover::after {
-      content: "Half-formed";
-      font-family: var(--text-font);
-      position: absolute;
-      bottom: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      background: var(--bg-2);
-      padding: 0.2rem 0.5rem;
-      border-radius: 4px;
-      font-size: 0.8rem;
-      white-space: nowrap;
-      pointer-events: none;
-    }
-  }
-  
-  .moon-phase-waxing_gibbous {
-    position: relative;
-    &:hover::after {
-      content: "Nearly complete";
-      font-family: var(--text-font);
-      position: absolute;
-      bottom: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      background: var(--bg-2);
-      padding: 0.2rem 0.5rem;
-      border-radius: 4px;
-      font-size: 0.8rem;
-      white-space: nowrap;
-      pointer-events: none;
-    }
-  }
-  
-  .moon-phase-full {
-    position: relative;
-    &:hover::after {
-      content: "Complete note";
-      font-family: var(--text-font);
-      position: absolute;
-      bottom: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      background: var(--bg-2);
-      padding: 0.2rem 0.5rem;
-      border-radius: 4px;
-      font-size: 0.8rem;
-      white-space: nowrap;
-      pointer-events: none;
-    }
-  }
-  
+}
+
+// Apply to different phases
+.moon-phase-new {
+  @include moon-phase-tooltip("New idea");
+}
+
+.moon-phase-waxing_crescent {
+  @include moon-phase-tooltip("Growing idea");
+}
+
+.moon-phase-first_quarter {
+  @include moon-phase-tooltip("Half-formed");
+}
+
+.moon-phase-waxing_gibbous {
+  @include moon-phase-tooltip("Nearly complete");
+}
+
+.moon-phase-full {
+  @include moon-phase-tooltip("Complete note");
+}
+
+
   // Optional: Style the notes themselves based on phase
   .note-card {
     position: relative;
@@ -169,17 +119,9 @@
 }
   
   .garden-note {
-    background: var(--bg-1);
-    border: 2px solid var(--border-color);
+    @include card-style;
     border-radius: 8px;
     padding: 1.25rem;
-    transition: transform 0.2s, box-shadow 0.2s;
-    position: relative;
-    
-    &:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
     
     .garden-note-header {
       display: flex;
@@ -194,7 +136,6 @@
         font-size: 1.2rem;
 
       }
-      h3::before{color:var(--primary-color);content:"";}
 
     }
     
@@ -264,18 +205,6 @@
     &.moon-phase-full {
     border-left: 4px solid #fffbea;
     }
-    
-    &.moon-phase-waning_gibbous {
-      border-left: 4px solid #adb5bd;
-    }
-    
-    &.moon-phase-last_quarter {
-      border-left: 4px solid #6c757d;
-    }
-    
-    &.moon-phase-waning_crescent {
-      border-left: 4px solid #495057;
-    }
 */
 
   }
@@ -336,8 +265,9 @@
   padding: 0;
   margin: 0;
   list-style: none;
+
   
-  @media (max-width: 640px) {
+@include mobile-only {
     grid-template-columns: 1fr;
   }
 }
