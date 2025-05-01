@@ -1,6 +1,6 @@
 ---
 title: "Folk Horror: Witchcraft and Folk Magic"
-date: 2025-04-29
+date: 2024-11-10
 draft: false
 taxonomies:
   tags: ["film", "folk horror", "witchcraft", "shamanism", "folk magic"]

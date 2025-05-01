@@ -1,6 +1,6 @@
 ---
 title: "Folk Horror: Vengeful Ghosts"
-date: 2025-04-29
+date: 2024-11-09
 draft: false
 taxonomies:
   tags: ["film", "folk horror", "ghosts", "vengeful spirits"]

@@ -1,6 +1,6 @@
 ---
 title: "Folk Horror: Animal Transformation"
-date: 2025-04-29
+date: 2024-11-05
 draft: false
 taxonomies:
   tags: ["film", "folk horror"]

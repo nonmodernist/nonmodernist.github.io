@@ -10,7 +10,7 @@ taxonomies:
     - narrative structure
 extra:
   moon_phase: first_quarter
-  tldr: How the pre-code musical Gold Diggers of 1933 uses contrasting narrative structures.
+  tldr: How the pre-code musical Gold Diggers of 1933 uses contrasting narrative structures to comment on Depression-era economics.
   related_notes_links:
     - url: /notes/busby-berkeley-choreography/
       title: Busby Berkeley's Choreographic Vision
@@ -25,8 +25,6 @@ extra:
       description: The brief era of creative freedom before strict enforcement of the Production Code.
       moon_phase: waxing_crescent
 updated: 2025-05-01T16:35:06.757Z
-description: Explore the narrative structure of *Gold Diggers of 1933*, revealing its commentary on romance and economics during the Great Depression.
-preview: /golddiggers1933.png
 ---
 
 <span class="og">🎪</span> The pre-code, backstage, Depression-era musical *Gold Diggers of 1933* employs a fascinating *contrapposto* structure where the film's romance plot and the show-within-the-show travel in opposite directions. This creates a narrative in the shape of an X, with interesting implications for how we understand the film's commentary on economics during the Great Depression.

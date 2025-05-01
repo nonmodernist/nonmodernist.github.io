@@ -1,6 +1,6 @@
 ---
 title: "Folk Horror: Rural Settings"
-date: 2025-04-29
+date: 2024-11-03
 draft: false
 taxonomies:
   tags: ["film", "folk horror", "rural settings", "landscape"]

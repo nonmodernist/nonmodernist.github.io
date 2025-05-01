@@ -107,6 +107,9 @@ del {
 
       a {
         border-bottom: none;
+        &::after {
+          content: "" !important; }
+          
       }
     }
   }
@@ -138,6 +141,9 @@ a[href^="#"] {
   /* Any other specific styling for internal links */
 }
 
+/* Specific styling for notes section links */
+a[href*="nonmodernist.com/notes/"],
+a[href*="127.0.0.1:1111/notes/"],
 a[href^="/notes/"] {
   &::after {
     content: "♦";

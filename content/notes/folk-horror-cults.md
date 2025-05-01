@@ -1,12 +1,17 @@
 ---
 title: "Folk Horror: Cults"
-date: 2025-04-29
+date: 2024-11-05T06:00:00.000Z
 draft: false
 taxonomies:
-  tags: ["film", "folk horror", "ritual", "cults"]
+  tags:
+    - film
+    - folk horror
+    - ritual
+    - cults
 extra:
   moon_phase: waxing_gibbous
-  tldr: "Isolated religious communities with extreme beliefs are a central component of many folk horror narratives."
+  tldr: Isolated religious communities with extreme beliefs are a central component of many folk horror narratives.
+description: Isolated religious communities with extreme beliefs are a central component of many folk horror narratives.
 ---
 
 # Cults and Extreme Religious Practices
@@ -37,8 +42,11 @@ In *Children of the Corn* (1984, US), based on Stephen King's story, rural child
 
 *Midsommar* (2019, US/Sweden) depicts the Hårga community, whose seemingly benign midsummer celebrations mask disturbing rituals including human sacrifice and eugenics.
 
-<div class="pixel-corners--wrapper"><img src="/Midsommar_045.jpg" alt="Girls dressed in white face the camera." width="100%">
-</div>
+<figure class="center">
+  <div class="pixel-corners--wrapper">
+    <img src="/Midsommar_045.jpg" alt="Girls dressed in white face the camera." width="550px">
+  </div>
+</figure>
 
 ## Common Narrative Patterns
 

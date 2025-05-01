@@ -1,6 +1,6 @@
 ---
 title: "Folk Horror: Ancient Sacred Sites"
-date: 2025-04-29
+date: 2024-11-10
 draft: false
 taxonomies:
   tags: ["film", "folk horror", "sacred sites", "landscape"]

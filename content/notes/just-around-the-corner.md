@@ -1,26 +1,27 @@
 ---
 title: "Just Around the Corner: Frances Marion's Directorial Debut"
-date: 2025-04-30
+date: 2022-10-02
 draft: false
 taxonomies:
-  tags: ["film", "silent film", "Frances Marion", "directed by women", "Fannie Hurst"]
+  tags:
+    - film
+    - silent film
+    - Frances Marion
+    - directed by women
+    - Fannie Hurst
 extra:
   moon_phase: waxing_gibbous
-  tldr: "A review of Frances Marion's 1921 directorial debut, a Fannie Hurst adaptation about working-class women in New York City."
-  related_notes_links: [
-    {
-      "url": "/notes/folk-horror-overview/",
-      "title": "Folk Horror: An Overview",
-      "description": "An exploration of folk horror as a film genre, its international manifestations, and common tropes.",
-      "moon_phase": "waxing_gibbous"
-    },
-    {
-      "url": "/notes/gold-diggers-1933/",
-      "title": "Gold Diggers of 1933: Narrative Structure",
-      "description": "How the pre-code musical Gold Diggers of 1933 uses contrasting narrative structures to comment on Depression-era economics.",
-      "moon_phase": "first_quarter"
-    }
-  ]
+  tldr: A review of Frances Marion's 1921 directorial debut, a Fannie Hurst adaptation about working-class women in New York City.
+  related_notes_links:
+    - url: /notes/folk-horror-overview/
+      title: "Folk Horror: An Overview"
+      description: An exploration of folk horror as a film genre, its international manifestations, and common tropes.
+      moon_phase: waxing_gibbous
+    - url: /notes/gold-diggers-1933/
+      title: "Gold Diggers of 1933: Narrative Structure"
+      description: How the pre-code musical uses contrasting narrative structures.
+      moon_phase: first_quarter
+description: A review of Frances Marion's 1921 directorial debut, a Fannie Hurst adaptation about working-class women in New York City.
 ---
 
 <span class="og">🎥</span> *Just Around the Corner* (1921) is a recently restored film that I watched during the online version of *[Le Giornate del cinema muto](https://www.giornatedelcinemamuto.it/en/)* (also known as the Pordenone Silent Film Festival). It was stitched together from two different prints intended for two different markets.

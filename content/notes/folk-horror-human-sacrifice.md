@@ -1,6 +1,6 @@
 ---
 title: "Folk Horror: Human Sacrifice"
-date: 2025-04-29
+date: 2024-11-06
 draft: false
 taxonomies:
   tags: ["film", "folk horror", "ritual", "cults"]

@@ -134,8 +134,10 @@
       h3 {
         margin: 0;
         font-size: 1.2rem;
+        a::after {
+          content: "" !important; // Remove the diamond symbol on garden grid
+        }}
 
-      }
 
     }
     

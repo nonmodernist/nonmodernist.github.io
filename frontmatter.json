@@ -2,14 +2,18 @@
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
   "frontMatter.taxonomy.contentTypes": [
     {
-      "name": "blogpost",
-      "previewPath": null,
+      "name": "default",
       "pageBundle": false,
-      "clearEmpty": true,
+      "previewPath": null,
       "fields": [
         {
           "title": "Title",
           "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
           "type": "string"
         },
         {
@@ -20,13 +24,7 @@
           "isPublishDate": true
         },
         {
-          "title": "Updated date",
-          "name": "updated",
-          "type": "datetime",
-          "isModifiedDate": true
-        },
-        {
-          "title": "Article preview",
+          "title": "Content preview",
           "name": "preview",
           "type": "image"
         },
@@ -34,11 +32,6 @@
           "title": "Is in draft",
           "name": "draft",
           "type": "draft"
-        },
-        {
-          "title": "fmContentType",
-          "name": "fmContentType",
-          "type": "string"
         },
         {
           "title": "taxonomies",
@@ -58,18 +51,36 @@
           "type": "fields",
           "fields": [
             {
+              "title": "moon_phase",
+              "name": "moon_phase",
+              "type": "string"
+            },
+            {
               "title": "tldr",
               "name": "tldr",
               "type": "string"
+            },
+            {
+              "title": "related_notes_links",
+              "name": "related_notes_links",
+              "type": "block",
+              "fieldGroup": [
+                "related_notes_links_group"
+              ]
             }
           ]
+        },
+        {
+          "title": "updated",
+          "name": "updated",
+          "type": "datetime"
         }
       ]
     }
   ],
-  "frontMatter.framework.id": "zola",
+  "frontMatter.framework.id": "hugo",
   "frontMatter.content.publicFolder": "static",
-  "frontMatter.preview.host": "http://127.0.0.1:1111",
+  "frontMatter.preview.host": "http://localhost:1313",
   "frontMatter.content.pageFolders": [
     {
       "title": "content",
@@ -105,6 +116,78 @@
         ""
       ],
       "fields": []
+    },
+    "Image with Styling": {
+  "description": "Insert an image with positioning options (center, float-left, float-right)",
+  "body": [
+    "<figure class=\"[[position]]\">",
+    "  <div class=\"pixel-corners--wrapper\">",
+    "    <img src=\"[[&mediaUrl]]\" alt=\"[[alt]]\" width=\"[[width]]px\">",
+    "  </div>",
+    "  <figcaption>[[caption]]</figcaption>",
+    "</figure>"
+  ],
+  "fields": [
+    {
+      "name": "position",
+      "title": "Image Position",
+      "type": "choice",
+      "choices": [
+        "center",
+        "float-left",
+        "float-right"
+      ],
+      "default": "center"
+    },
+    {
+      "name": "width",
+      "title": "Image Width (in px)",
+      "type": "string",
+      "default": "200"
+    },
+    {
+      "name": "caption",
+      "title": "Image Caption",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "alt",
+      "title": "Alt Text (for accessibility)",
+      "type": "string",
+      "default": ""
     }
-  }
+  ],
+  "isMediaSnippet": true
+}
+  },
+
+  
+  "frontMatter.taxonomy.fieldGroups": [
+    {
+      "id": "related_notes_links_group",
+      "fields": [
+        {
+          "title": "url",
+          "name": "url",
+          "type": "string"
+        },
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "moon_phase",
+          "name": "moon_phase",
+          "type": "string"
+        }
+      ]
+    }
+  ]
 }

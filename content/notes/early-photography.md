@@ -1,32 +1,28 @@
 ---
-title: "Early Photography and Motion Studies"
-date: 2025-01-05
+title: Early Photography and Motion Studies
+date: 2024-08-12T05:00:00.000Z
 draft: false
 taxonomies:
-  tags: ["film history", "technology", "photography"]
+  tags:
+    - film history
+    - technology
+    - photography
 extra:
   moon_phase: first_quarter
-  tldr: "The development of photography and its evolution toward capturing motion, culminating in the motion studies that directly preceded cinema."
-  related_notes_links: [
-    {
-      "url": "/notes/pre-cinema-technologies/",
-      "title": "Pre-Cinema Technologies: An Overview",
-      "description": "An exploration of the technologies that preceded and laid the groundwork for cinema.",
-      "moon_phase": "first_quarter"
-    },
-    {
-      "url": "/notes/optical-toys/",
-      "title": "Optical Toys: Early Animation Technologies",
-      "description": "Exploring the 19th century optical toys that laid the groundwork for cinematic animation.",
-      "moon_phase": "first_quarter"
-    },
-    {
-      "url": "/notes/early-sound-recording/",
-      "title": "Early Sound Recording Technologies",
-      "description": "The parallel development of sound recording that would eventually merge with moving images.",
-      "moon_phase": "first_quarter"
-    }
-  ]
+  tldr: The development of photography and its evolution toward capturing motion, culminating in the motion studies that directly preceded cinema.
+  related_notes_links:
+    - url: /notes/pre-cinema-technologies/
+      title: "Pre-Cinema Technologies: An Overview"
+      description: An exploration of the technologies that preceded and laid the groundwork for cinema.
+      moon_phase: first_quarter
+    - url: /notes/optical-toys/
+      title: "Optical Toys: Early Animation Technologies"
+      description: Exploring the 19th century optical toys that laid the groundwork for cinematic animation.
+      moon_phase: first_quarter
+    - url: /notes/early-sound-recording/
+      title: Early Sound Recording Technologies
+      description: The parallel development of sound recording that would eventually merge with moving images.
+      moon_phase: first_quarter
 ---
 
 <span class="og">👀</span> The possibility for photography rests on two combined principles: the ability of an image to be projected via a camera obscura and the fact that certain materials change when they are exposed to light. In the early 19th century, artists and inventors worked to perfect the process of combining these principles to create photographic images.

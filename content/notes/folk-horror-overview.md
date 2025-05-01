@@ -1,6 +1,6 @@
 ---
 title: "Folk Horror: An Overview"
-date: 2025-04-29
+date: 2024-11-01
 draft: false
 taxonomies:
   tags: ["film", "folk horror", "genre"]

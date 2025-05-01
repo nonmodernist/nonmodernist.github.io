@@ -1,13 +1,12 @@
 ---
 title: do you ever have an idea?
 date: 2024-12-20T15:47:59.861Z
-draft: false
+draft: true
 
 taxonomies:
   tags: [notes]
 extra:
   tldr: ""
-  moon_phase: "new"
 description: ""
 ---
 there's this idea rattling around in my brain, and i can't figure out how to make it work. do you know that feeling? it's exceptionally frustrating. 
