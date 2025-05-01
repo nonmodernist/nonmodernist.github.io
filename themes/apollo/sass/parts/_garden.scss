@@ -284,17 +284,16 @@
   }
   
   a {
-    display: inline-block;
     font-weight: bold;
-    margin-right: 0.5rem;
+    margin-right: 0.3rem;
     border-bottom: none;
     }
-  }
+
   
   .moon-phase {
-    font-size: 1rem;
+    font-size: .9rem;
   }
-  
+} 
   .related-note-description {
     font-size: 0.9rem;
     color: var(--text-1);
@@ -317,7 +316,6 @@
   z-index: 1;
   padding-bottom: 0; /* Reduce or remove padding at the bottom */
   margin-bottom: 0; /* Ensure no margin is adding space */
-  display: inline-block; /* This helps control spacing more precisely */
   line-height: 1.1; /* Reduce line height to bring the border closer */
   
   /* Override the default styles that add the ♦ symbol */

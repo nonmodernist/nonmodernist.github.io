@@ -3,10 +3,30 @@ title: "Gold Diggers of 1933: Narrative Structure"
 date: 2025-04-30
 draft: false
 taxonomies:
-  tags: ["film", "musicals", "pre-code", "narrative structure", "depression era"]
+  tags: ["film", "musicals", "pre-code", "narrative structure"]
 extra:
   moon_phase: first_quarter
   tldr: "How the pre-code musical Gold Diggers of 1933 uses contrasting narrative structures to comment on Depression-era economics."
+  related_notes_links: [
+    {
+      "url": "/notes/busby-berkeley-choreography/",
+      "title": "Busby Berkeley's Choreographic Vision",
+      "description": "How Berkeley transformed screen choreography through geometric patterns and overhead shots.",
+      "moon_phase": "waxing_gibbous"
+    },
+    {
+      "url": "/notes/depression-era-cinema/",
+      "title": "Great Depression in American Film",
+      "description": "Economic realities and their representation in 1930s Hollywood productions.",
+      "moon_phase": "full"
+    },
+    {
+      "url": "/notes/pre-code-hollywood/",
+      "title": "Pre-Code Hollywood",
+      "description": "The brief era of creative freedom before strict enforcement of the Production Code.",
+      "moon_phase": "waxing_crescent"
+    }
+  ]
 ---
 
 <span class="og">🎪</span> The pre-code, backstage, Depression-era musical *Gold Diggers of 1933* employs a fascinating *contrapposto* structure where the film's romance plot and the show-within-the-show travel in opposite directions. This creates a narrative in the shape of an X, with interesting implications for how we understand the film's commentary on economics during the Great Depression.
@@ -15,11 +35,15 @@ extra:
 
 My high school playwriting teacher once gave us an analytical exercise: take the first and last image of any film and demonstrate how those two images alone tell the story.
 
-![The first shot after the credits](golddiggers1933first.png)
+<div class="pixel-corners--wrapper">
+  <img src="/golddiggers1933first.png" alt="The first shot after the credits showing an oversized coin featuring a woman's profile">
+</div>
 
 The film opens with a close-up on an oversized coin featuring a woman's profile—clearly a prop for the opening musical number "[We're in the Money](https://www.youtube.com/watch?v=Bm9hySTVKtY)." This number is promptly interrupted when police arrive to repossess everything, including the chorus girls' costumes.
 
-![The final shot of the film](golddiggers1933.png)
+<div class="pixel-corners--wrapper">
+  <img src="/golddiggers1933.png" alt="The final shot of the film showing Joan Blondell as a street sex worker surrounded by downtrodden people">
+</div>
 
 In contrast, the final shot shows Joan Blondell as a street sex worker surrounded by downtrodden people representing Depression-era suffering. Behind them, World War I soldiers appear in silhouette on arched platforms, with the theatre curtain barely visible at the top of the frame.
 
@@ -51,12 +75,14 @@ Only when all romantic obstacles are overcome can the film conclude with the "[F
 
 The finale serves as more than just a musical spectacle. Despite the romantic plot resolution, the film is "suffused with Depression panic" and closes with "a Berkeley phantasmagoria on the socially disinherited war veteran."
 
-<!-- FM:Snippet:End -->The contrasting narratives comment on each other throughout. The finale isn't just about men who returned injured from WWI only to face bread lines during the Depression—it's also about women with even fewer options for economic stability. As Etta Moten sings, "forgetting him, you see / means you're forgetting me."
+The contrasting narratives comment on each other throughout. The finale isn't just about men who returned injured from WWI only to face bread lines during the Depression—it's also about women with even fewer options for economic stability. As Etta Moten sings, "forgetting him, you see / means you're forgetting me."
 
-![Etta Moten sings in the finale](golddiggers1933remember.png)
+<div class="pixel-corners--wrapper">
+  <img src="/golddiggers1933remember.png" alt="Etta Moten sings in the finale of Gold Diggers of 1933">
+</div>
 
 While it's entertaining to watch chorus girls manipulate wealthy men, the film's structure reminds us of the devastating consequences of America's inadequate social safety net. The gold digger and the street sex worker are two sides of the same big, flat, fake coin that opens the film—both strategies women employed to survive economic hardship.
 
 {{ divider() }}
 
-*Note: This analysis was inspired by a film teaching exercise where students examine how a film's opening and closing images can reveal its thematic structure.*
+*Note: This analysis was inspired by a film teaching exercise where students examine how a film's opening and closing images can reveal its narrative and thematic structure.*
