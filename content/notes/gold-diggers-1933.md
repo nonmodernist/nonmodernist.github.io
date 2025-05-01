@@ -1,6 +1,6 @@
 ---
 title: "Gold Diggers of 1933: Narrative Structure"
-date: 2025-04-30
+date: 2025-02-15
 draft: false
 taxonomies:
   tags: ["film", "musicals", "pre-code", "narrative structure"]
@@ -35,15 +35,21 @@ extra:
 
 My high school playwriting teacher once gave us an analytical exercise: take the first and last image of any film and demonstrate how those two images alone tell the story.
 
-<div class="pixel-corners--wrapper">
-  <img src="/golddiggers1933first.png" alt="The first shot after the credits showing an oversized coin featuring a woman's profile">
-</div>
+<figure class="center">
+  <div class="pixel-corners--wrapper">
+    <img src="/golddiggers1933first.png" alt="The first shot after the credits showing an oversized coin featuring a woman's profile" width="450px">
+  </div>
+  <figcaption>The first shot after the credits</figcaption>
+</figure>
 
 The film opens with a close-up on an oversized coin featuring a woman's profile—clearly a prop for the opening musical number "[We're in the Money](https://www.youtube.com/watch?v=Bm9hySTVKtY)." This number is promptly interrupted when police arrive to repossess everything, including the chorus girls' costumes.
 
+<figure class="center">
 <div class="pixel-corners--wrapper">
-  <img src="/golddiggers1933.png" alt="The final shot of the film showing Joan Blondell as a street sex worker surrounded by downtrodden people">
+  <img src="/golddiggers1933.png" alt="The final shot of the film showing Joan Blondell as a street sex worker surrounded by downtrodden people" width="450px">
 </div>
+  <figcaption>The final shot of the film</figcaption>
+</figure>
 
 In contrast, the final shot shows Joan Blondell as a street sex worker surrounded by downtrodden people representing Depression-era suffering. Behind them, World War I soldiers appear in silhouette on arched platforms, with the theatre curtain barely visible at the top of the frame.
 
@@ -73,13 +79,13 @@ Only when all romantic obstacles are overcome can the film conclude with the "[F
 > 
 > —Ethan Mordden, *The Hollywood Studios* p. 236
 
-The finale serves as more than just a musical spectacle. Despite the romantic plot resolution, the film is "suffused with Depression panic" and closes with "a Berkeley phantasmagoria on the socially disinherited war veteran."
-
-The contrasting narratives comment on each other throughout. The finale isn't just about men who returned injured from WWI only to face bread lines during the Depression—it's also about women with even fewer options for economic stability. As Etta Moten sings, "forgetting him, you see / means you're forgetting me."
-
+The finale serves as more than just a musical spectacle. Despite the romantic plot resolution, the film is "suffused with Depression panic" and closes with "a Berkeley phantasmagoria on the socially disinherited war veteran."<figure class="float-right">
 <div class="pixel-corners--wrapper">
-  <img src="/golddiggers1933remember.png" alt="Etta Moten sings in the finale of Gold Diggers of 1933">
+  <  <img src="/golddiggers1933remember.png" alt="Etta Moten sings in the finale of Gold Diggers of 1933"
+ width="450px">
 </div>
+  <figcaption>Etta Moten performs her solo</figcaption>
+</figure>The contrasting narratives comment on each other throughout. The finale isn't just about men who returned injured from WWI only to face bread lines during the Depression—it's also about women with even fewer options for economic stability. As Etta Moten sings, "forgetting him, you see / means you're forgetting me."
 
 While it's entertaining to watch chorus girls manipulate wealthy men, the film's structure reminds us of the devastating consequences of America's inadequate social safety net. The gold digger and the street sex worker are two sides of the same big, flat, fake coin that opens the film—both strategies women employed to survive economic hardship.
 

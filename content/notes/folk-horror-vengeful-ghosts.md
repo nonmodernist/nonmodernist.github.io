@@ -85,4 +85,4 @@ Similarly, the Thai film *Rang Song* (*The Medium*, 2021) uses traditional belie
 
 {{ divider() }}
 
-*This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](/notes/folk-horror-overview) to explore other tropes.*
+*This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](@/notes/folk-horror-overview.md) to explore other tropes.*

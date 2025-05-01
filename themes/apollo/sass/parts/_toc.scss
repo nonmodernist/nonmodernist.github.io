@@ -2,18 +2,19 @@
   .toc-title {
     cursor: pointer;
     position: relative;
-    padding-left: 20px; // Space for the arrow
+    padding-left: 40px; // Space for the arrow
+    font-size: 1.2rem; // Adjusted font size for better visibility
 
     &:before {
-      content: '▼'; // Down arrow
+      content: '💠'; // replace Down arrow
+      font-family: var(--emoji-font);
       position: absolute;
       left: 0;
       transition: transform 0.3s ease; // Smooth transformation
     }
 
-    &:hover:before,
-    &.expanded:before {
-      transform: rotate(180deg); // Arrow points up when expanded or on hover
+    &:hover:before {
+      transform: rotate(90deg); // Arrow points up when expanded or on hover
     }
   }
 

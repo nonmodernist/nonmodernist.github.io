@@ -111,6 +111,9 @@ h5,
 h6 {
     font-size: 1.2rem;
     margin-top: 2em;
+    &::before {
+        color: var(--primary-color);
+    }
 }
 
 h1::before {

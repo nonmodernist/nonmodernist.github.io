@@ -4,7 +4,7 @@
 
 
 /* Keep monospace for UI elements */
-nav, .meta, .footer, time, .tldr, .toc-container, h1, h2, h3, h4, h5, h6 {
+nav, .meta, .footer, time, .tldr, .toc-container, h1, h2, h3, h4, h5, h6, strong {
   font-family: var(--text-font);
 }
 
@@ -31,6 +31,10 @@ nav, .meta, .footer, time, .tldr, .toc-container, h1, h2, h3, h4, h5, h6 {
 
 p {
   line-height: 1.5;
+}
+
+strong {
+  font-weight: 900;
 }
 
 hr {

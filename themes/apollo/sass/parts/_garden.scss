@@ -222,7 +222,7 @@
 .readable-content {
   line-height: 1.8;
   font-size: 1.1rem;
-  max-width: 38rem;
+  max-width: 43rem;
   margin: 0 auto;
   font-family: var(--paragraph-font);
   
@@ -254,6 +254,7 @@
   
   h2 {
     font-size: 1.5em;
+    margin-top: 0;
     margin-bottom: 1rem;
   }
 }
@@ -336,4 +337,114 @@
   &:after {
     content: none !important;
   }
+}
+/* Backlinks section */
+.backlinks {
+  margin: 3rem 0 1.5rem 0;
+  padding: 1rem 1.5rem;
+  background: var(--bg-1);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  
+  h2 {
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+    &::before {
+      content: "";
+    }
+    
+  }
+}
+
+.backlinks-list {
+  /* Explicitly set to a two-column layout */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Force exactly two columns */
+  column-gap: 2rem;
+  row-gap: 0.75rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.backlink-item {
+  /* Add these properties to ensure proper flow */
+  width: 100%;
+  box-sizing: border-box;
+  
+  a {
+    position: relative;
+    display: block;
+    padding: 0.25rem 0;
+    padding-left: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    border-bottom: none;
+    transition: transform 0.2s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    &::before {
+      content: "♦";
+      font-family: var(--emoji-font);
+      position: absolute;
+      left: 0;
+      color: var(--primary-color);
+    }
+    
+    &:hover {
+      transform: translateX(3px);
+      color: var(--primary-color);
+      background-color: transparent;
+    }
+  }
+}
+
+/* Responsive adjustment - switch to single column on smaller screens */
+@media (max-width: 700px) {
+  .backlinks-list {
+    grid-template-columns: 1fr;
+  }
+}
+/* Collapsible backlinks styling */
+.backlinks .note-toggle {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  padding: 0;
+  color: var(--text-0);
+  display: flex;
+  align-items: center;
+}
+
+.backlinks .note-toggle h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  width: 100%;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.backlinks .note-toggle::after {
+  content: '▾';
+  font-size: 0.9rem;
+  margin-left: auto;
+  transition: transform 0.2s ease;
+}
+
+.backlinks .note-toggle[aria-expanded="true"]::after {
+  transform: rotate(180deg);
+
+}
+
+.backlinks-content {
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border-color);
 }

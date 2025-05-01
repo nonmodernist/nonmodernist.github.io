@@ -74,4 +74,4 @@ These films blend traditional folk elements with modern concerns, demonstrating 
 
 {{ divider() }}
 
-*This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](/notes/folk-horror-overview) to explore other tropes.*
+*This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](@/notes/folk-horror-overview.md) to explore other tropes.*

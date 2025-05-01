@@ -1,5 +1,5 @@
 ---
-title: "Folk Horror: Cults and Extreme Religious Practices"
+title: "Folk Horror: Cults"
 date: 2025-04-29
 draft: false
 taxonomies:
@@ -84,4 +84,4 @@ Folk horror cults can be interpreted as expressions of anxiety about:
 
 {{ divider() }}
 
-*This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](/notes/folk-horror-overview) to explore other tropes.*
+*This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](@/notes/folk-horror-overview.md) to explore other tropes.*

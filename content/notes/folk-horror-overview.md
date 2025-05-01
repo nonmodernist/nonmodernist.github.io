@@ -44,15 +44,15 @@ Rather than a rigid genre definition, folk horror may be better understood as a 
 
 Here are the key tropes that define folk horror films:
 
-- [Rural communities and isolated locations](/notes/folk-horror-rural-settings)
-- [The Outsider, Skeptic, or Ethnographer](/notes/folk-horror-outsider)
-- [Ancient sacred sites](/notes/folk-horror-sacred-sites)
-- [Witchcraft, shamanism, and folk magic](/notes/folk-horror-witchcraft)
-- [Cults and extreme religious practices](/notes/folk-horror-cults)
-- [Human sacrifice](/notes/folk-horror-human-sacrifice)
-- [Animal transformation](/notes/folk-horror-animal-transformation)
-- [Vampirism in folk contexts](/notes/folk-horror-vampirism)
-- [Culturally-specific vengeful ghosts](/notes/folk-horror-vengeful-ghosts)
+- [Rural communities and isolated locations](@/notes/folk-horror-rural-settings.md)
+- [The Outsider, Skeptic, or Ethnographer](@/notes/folk-horror-outsider.md)
+- [Ancient sacred sites](@/notes/folk-horror-sacred-sites.md)
+- [Witchcraft, shamanism, and folk magic](@/notes/folk-horror-witchcraft.md)
+- [Cults and extreme religious practices](@/notes/folk-horror-cults.md)
+- [Human sacrifice](@/notes/folk-horror-human-sacrifice.md)
+- [Animal transformation](@/notes/folk-horror-animal-transformation.md)
+- [Vampirism in folk contexts](@/notes/folk-horror-vampirism.md)
+- [Culturally-specific vengeful ghosts](@/notes/folk-horror-vengeful-ghosts.md)
 
 {{ divider(style="minimal") }}
 

@@ -1,14 +1,45 @@
 img {
   max-width: 100%;
-
+  height: auto; /* Maintain aspect ratio */
+  vertical-align: middle; /* Removes unwanted space under images */
 }
 
-.center {
+/* Center images (already in your code) */
+.center, img.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Text wrapping options */
+.float-left, img.float-left {
+  float: left;
+  margin: 0 1.5rem 1rem 0; /* Add space between image and text */
+  max-width: 50%; /* Prevent images from taking too much width on small screens */
+}
+
+.float-right, img.float-right {
+  float: right;
+  margin: 0 0 1rem 1.5rem;
+  max-width: 50%;
+}
+
+/* Clear floating on the next element (useful after float sections) */
+.clear-float {
+  clear: both;
+}
+
+/* Make sure floated images work well on mobile */
+@media screen and (max-width: 600px) {
+  .float-left, .float-right, img.float-left, img.float-right {
+    float: none;
+    margin: 1rem auto;
+    max-width: 100%;
+    display: block;
+  }
+}
+
+/* Your existing figure styles */
 figure {
   box-sizing: border-box;
   display: inline-block;
@@ -16,30 +47,72 @@ figure {
   max-width: 100%;
 }
 
-figure img {
-  max-height: 500px;
+/* Improved figure and figcaption styling */
+figure.center {
+  display: block;
+  text-align: center; /* Center all content within the figure */
+  width: 100%;
+  margin: 1.5rem auto;
 }
 
+figure.center .pixel-corners--wrapper {
+  display: inline-block; /* Keep the wrapper inline */
+  margin: 0 auto; /* Center the wrapper */
+}
+
+figure.center figcaption {
+  display: block;
+  width: auto; /* Allow caption to size naturally */
+  margin: 0.5rem auto 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-1);
+  max-width: 100%; /* Ensure caption doesn't exceed figure width */
+}
+
+/* For floating figures, ensure caption stays with image */
+figure.float-left figcaption,
+figure.float-right figcaption {
+  width: 100%; /* Make caption width match its container */
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-1);
+}
+
+
+/* Figure variations with text wrapping */
+figure.float-left {
+  float: left;
+  margin: 0 1.5rem 1rem 0;
+  max-width: 50%;
+}
+
+figure.float-right {
+  float: right;
+  margin: 0 0 1rem 1.5rem;
+  max-width: 50%;
+}
+
+/* Ensure images in figures don't overflow */
+figure img {
+  max-height: 500px;
+  max-width: 100%;
+}
+
+/* Your existing media query for figures */
 @media screen and (min-width: 600px) {
   figure {
     padding: 0 40px;
   }
+  
+  /* Adjust padding for floated figures */
+  figure.float-left, figure.float-right {
+    padding: 0 20px;
+  }
 }
 
-figure h4 {
-  font-size: 1rem;
-  margin: 0;
-  margin-bottom: 1em;
-}
-
-figure h4::before {
-  content: "↳ ";
-}
-
-svg {
-  max-height: 15px;
-}
-
+/* Keep your existing pixel border styles unchanged */ 
 /* pixel borders */
 
 .dam {
@@ -187,6 +260,8 @@ svg {
 .pixel-corners, .pixel-corners--wrapper {
   /* Add these lines */
   display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 0; /* Remove extra space created by line-height */
   font-size: 0; /* Remove extra space potentially created by font-size */
 }

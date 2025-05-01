@@ -1,0 +1,25 @@
+{% if page.backlinks and page.backlinks | length > 0 %}
+<div class="backlinks">
+  <button class="note-toggle">
+    <div class="note-icon">
+      <h2> Backlinks ({{ page.backlinks | length }})</h2>
+    </div>
+  </button>
+  
+  <div class="backlinks-content" style="display: none;">
+    <ul class="backlinks-list">
+      {% for backlink in page.backlinks %}
+        <li class="backlink-item">
+          <a href="{{ backlink.permalink }}">
+            {% if backlink.title %}
+              {{ backlink.title }}
+            {% else %}
+              Untitled Link
+            {% endif %}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endif %}

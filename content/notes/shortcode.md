@@ -9,6 +9,13 @@ tags=["example"]
 comment = true
 +++
 
+## markdown
+
+this is some **bold** text.
+
+this is some **bold text** that is not in the first paragraph of a page. 
+
+
 
 ## Note
 

@@ -80,4 +80,4 @@ Contemporary folk horror often reinterprets animal transformation through metaph
 
 {{ divider() }}
 
-*This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](/notes/folk-horror-overview) to explore other tropes.*
+*This note is part of a series exploring folk horror in cinema. Return to the [main Folk Horror overview](@/notes/folk-horror-overview.md) to explore other tropes.*
