@@ -37,7 +37,6 @@ paths_keep_dates = true
 [extra]
 # Put all your custom variables here
 toc = true
-sidenotes = true
 dividers = true
 
 # setting cdn to true breaks something so leave it false
