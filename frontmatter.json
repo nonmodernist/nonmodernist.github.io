@@ -80,26 +80,15 @@
   ],
   "frontMatter.framework.id": "hugo",
   "frontMatter.content.publicFolder": "static",
-  "frontMatter.preview.host": "http://localhost:1313",
+  "frontMatter.preview.host": "http://127.0.0.1:1111",
   "frontMatter.content.pageFolders": [
     {
       "title": "content",
       "path": "[[workspace]]/content"
     },
     {
-      "title": "teaching",
-      "path": "[[workspace]]/content/teaching"
-    },
-    {
       "title": "notes",
-      "path": "[[workspace]]/content/notes",
-      "contentTypes": [
-        "blogpost"
-      ]
-    },
-    {
-      "title": "research",
-      "path": "[[workspace]]/content/research"
+      "path": "[[workspace]]/content/notes"
     },
     {
       "title": "log",
@@ -110,59 +99,109 @@
   "frontMatter.framework.startCommand": "zola serve --drafts",
   "frontMatter.content.snippets": {
     "Callouts": {
-      "description": "callout shortcode in zola/apollo",
+      "description": "HTML callouts",
       "body": [
-        "{{ note(clickable=true, hidden = true, header=\"TEXT\", body=\"TEXT\") }}",
+        "<div class=\"callout [[type]]\">",
+        "  <h3 class=\"callout-title\">[[title]]</h3>",
+        "  <div class=\"callout-content\">",
+        "    [[content]]",
+        "  </div>",
+        "</div>",
         ""
       ],
-      "fields": []
+      "fields": [
+        {
+          "name": "type",
+          "title": "type",
+          "type": "choice",
+          "choices": [
+            "info",
+            "alert",
+            "success",
+            "warning"
+          ],
+          "default": "info"
+        },
+        {
+          "name": "title",
+          "title": "title",
+          "type": "string",
+          "single": true,
+          "default": ""
+        },
+        {
+          "name": "content",
+          "title": "content",
+          "type": "string",
+          "single": true,
+          "default": ""
+        }
+      ]
     },
     "Image with Styling": {
-  "description": "Insert an image with positioning options (center, float-left, float-right)",
-  "body": [
-    "<figure class=\"[[position]]\">",
-    "  <div class=\"pixel-corners--wrapper\">",
-    "    <img src=\"[[&mediaUrl]]\" alt=\"[[alt]]\" width=\"[[width]]px\">",
-    "  </div>",
-    "  <figcaption>[[caption]]</figcaption>",
-    "</figure>"
-  ],
-  "fields": [
-    {
-      "name": "position",
-      "title": "Image Position",
-      "type": "choice",
-      "choices": [
-        "center",
-        "float-left",
-        "float-right"
+      "description": "Insert an image with positioning options (center, float-left, float-right)",
+      "body": [
+        "<figure class=\"[[position]]\">",
+        "  <div class=\"pixel-corners--wrapper\">",
+        "    <img src=\"[[&mediaUrl]]\" alt=\"[[alt]]\" width=\"[[width]]px\">",
+        "  </div>",
+        "  <figcaption>[[caption]]</figcaption>",
+        "</figure>"
       ],
-      "default": "center"
+      "fields": [
+        {
+          "name": "position",
+          "title": "Image Position",
+          "type": "choice",
+          "choices": [
+            "center",
+            "float-left",
+            "float-right"
+          ],
+          "default": "center"
+        },
+        {
+          "name": "width",
+          "title": "Image Width (in px)",
+          "type": "string",
+          "default": "400"
+        },
+        {
+          "name": "caption",
+          "title": "Image Caption",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "alt",
+          "title": "Alt Text (for accessibility)",
+          "type": "string",
+          "default": ""
+        }
+      ],
+      "isMediaSnippet": true
     },
-    {
-      "name": "width",
-      "title": "Image Width (in px)",
-      "type": "string",
-      "default": "200"
-    },
-    {
-      "name": "caption",
-      "title": "Image Caption",
-      "type": "string",
-      "default": ""
-    },
-    {
-      "name": "alt",
-      "title": "Alt Text (for accessibility)",
-      "type": "string",
-      "default": ""
+    "Dividers": {
+      "description": "Insert a divider with different styles",
+      "body": "{{ divider[[style]] }}",
+      "fields": [
+        {
+          "name": "style",
+          "title": "style",
+          "type": "choice",
+          "choices": [
+            "()",
+            "(style=\"line\")",
+            "(style=\"new_moon\")",
+            "(style=\"simple\")",
+            "(style=\"quarter\")",
+            "(style=\"ornate\")"
+          ],
+          "default": ""
+        }
+      ]
     }
-  ],
-  "isMediaSnippet": true
-}
   },
-
-  
   "frontMatter.taxonomy.fieldGroups": [
     {
       "id": "related_notes_links_group",

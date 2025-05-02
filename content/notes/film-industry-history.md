@@ -3,7 +3,7 @@ title: "Film Industry History: Subscription Models Aren't New"
 date: 2024-12-24
 draft: false
 taxonomies:
-  tags: ["film", "film history", "paramount decree", "netflix", "the grump"]
+  tags: ["film", "paramount decree", "netflix", "the grump"]
 extra:
   moon_phase: waxing_gibbous
   tldr: "The claim that Netflix's subscription model is unprecedented ignores film industry history, particularly pre-1948 block booking practices."
@@ -41,6 +41,10 @@ When the US won its Supreme Court case against Paramount in 1948, the resulting 
 
 The studios loved this pre-1948 arrangement, because it meant they could produce mostly forgettable garbage (film prints were literally thrown away once they had been screened enough times) alongside a small handful of big budget, quality pictures with big stars that were guaranteed to draw audiences. Small theatre chains and independent exhibitors, on the other hand, were trapped in a deal with the devil: if they wanted the big pictures that equaled big ticket sales, they had to junk up their schedules with the dreck, too. Again, this was such a problem that *the US Supreme Court had to step in*.
 
+<!-- FM:Snippet:Start data:{"id":"Dividers","fields":[{"name":"style","value":""}]} -->
+{{ divider() }}
+<!-- FM:Snippet:End -->
+
 ## Quality vs. Quantity in Studio Output
 
 Tavlin goes on to write that "high output alone can't account for Netflix's garbage quality. In the 1920s and '30s, studios like Paramount and Warner Bros. put out as many as seventy movies per year," without asking whether or not all 70 movies in a year would have been good, successful, or even marginally memorable.
@@ -53,8 +57,8 @@ There's also the brutal William Faulkner adaptation ***The Story of Temple Drake
 
 ## The Mythical Golden Age of Exhibition
 
-I've grumped too long already but it's also worth mentioning that our idea of a quiet, respectful, fully-engaged moviegoing experience (as opposed to the distracted viewing we do at home) is fundamentally ahistorical as well. For most of moviegoing history, the theatre was not a place where we viewed movies without distractions. Quite the opposite, especially in the era when a movie ran back-to-back all day long and patrons could enter and exit at any point.
+I've grumped too long already but it's also worth mentioning that our idea of a quiet, respectful, fully-engaged moviegoing experience (as opposed to the distracted viewing we do at home) is fundamentally ahistorical as well. For most of moviegoing history, the theatre was not a place where we viewed movies without distractions. Quite the opposite, especially in the era when a movie ran back-to-back all day long and patrons could enter and exit at any point. (And then there was the porn theatre era...)
 
-{{ divider(style="ornate") }}
+{{ divider() }}
 
 With all of that said, ["Tide Pod cinema"](@/notes/streaming-cinema-quality.md) is a wonderful phrase, and I do think it describes something important about contemporary streaming cinema. But I maintain that the point could be made without lapsing into ahistoricism!

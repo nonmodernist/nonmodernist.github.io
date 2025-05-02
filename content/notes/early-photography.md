@@ -41,7 +41,7 @@ Women also experimented with photography from its earliest era. The first known 
 <div class="pixel-corners--wrapper"><img src="/womensphotos.png" alt="From left to right: Sarah Anne Bright's Quillan Leaf (1839); Anna Atkins's photogram of algae (1843); Franziska Möllinger's daguerreotype of Thun Castle (c. 1844); Genevieve Elisabeth Disdéri's interior of St. Mathieu (1869)" width="100%">
 </div>
 
-In the United States, portrait photography became especially popular, leading to portrait studios in every city. Augustus Washington, a free person of color born in New Jersey, opened his own photography studio in Hartford, Connecticut, in 1846. He took the first photographs of his fellow abolitionist John Brown in 1846 or 1847.
+In the United States, portrait photography became especially popular, leading to portrait studios in every city. Augustus Washington, a free man of color born in New Jersey, opened his own photography studio in Hartford, Connecticut, in 1846. He took the first photographs of his fellow abolitionist John Brown in 1846 or 1847.
 
 ## Motion Studies and Chronophotography
 

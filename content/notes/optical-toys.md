@@ -3,7 +3,7 @@ title: "Optical Toys: Early Animation Technologies"
 date: 2025-01-05
 draft: false
 taxonomies:
-  tags: ["film history", "technology", "animation"]
+  tags: ["film", "technology", "animation"]
 extra:
   moon_phase: first_quarter
   tldr: "Exploring the 19th century optical toys that laid the groundwork for cinematic animation."

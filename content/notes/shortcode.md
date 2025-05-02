@@ -1,5 +1,5 @@
 +++
-title = "Shortcode Example"
+title = "Callouts"
 date = "2024-06-14"
 draft = true
 [taxonomies]

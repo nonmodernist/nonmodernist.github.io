@@ -1,16 +1,14 @@
 ---
-title: "testing out dividers"
+title: "Dividers"
 date: 2025-04-29
 draft: true
-tags:
-    - notes
 ---
 
-This is the end of one section.
+The divider below is the default.
 
 {{ divider() }}
 
-This is the beginning of a new section.
+The divider below this is the most ornate.
 
 {{ divider(style="ornate") }}
 
@@ -23,3 +21,14 @@ Or use a minimal style.
 {{ divider(style="line") }}
 
 A simple line also works well.
+
+
+
+{{ divider(style="quarter") }}
+
+this is my new divider above. 
+
+
+{{ divider(style="new_moon") }}
+
+simplest of all. 

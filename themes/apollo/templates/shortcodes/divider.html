@@ -17,6 +17,9 @@
 {% elif divider_style == "ornate" %}
 <div class="divider-ornate">
   <div class="center-element">
+    <div class="small-star"></div>
+    <div class="small-star"></div>
+    <div class="small-star"></div>
     <div class="big-star"></div>
     <div class="small-star"></div>
     <div class="small-star"></div>
@@ -27,7 +30,9 @@
 </div>
 {% elif divider_style == "simple" %}
 <div class="divider-simple">
-  <div class="pixel-crescent"></div>
+  <div class="pixel-crescent">
+    <div class="hidden-rays"></div>
+  </div>
 </div>
 {% elif divider_style == "line" %}
 <div class="divider-line">
@@ -37,6 +42,19 @@
     <div class="pixel-star"></div>
     <div class="pixel-star"></div>
     <div class="pixel-star"></div>
+  </div>
+</div>
+{% elif divider_style == "quarter" %}
+<div class="divider-quarter">
+  <div class="quarter-moon-container">
+    <div class="quarter-moon"></div>
+  </div>
+</div>
+{% elif divider_style == "new_moon" %}
+<div class="divider-new-moon">
+  <div class="stars-container">
+    <div class="new-moon-outline"></div>
+    <div class="hidden-star"></div>
   </div>
 </div>
 {% else %}

@@ -34,7 +34,7 @@ Here's how a movie magazine summarized the film's plot in 1921:
 
 ## Frances Marion's Directorial Debut
 
-<span class="og">💡</span> Frances Marion wrote and directed this Fannie Hurst adaptation, after having written the adaptation of Hurst's *Humoresque* the previous year. That film was directed by Frank Borzage, who was originally set to direct this one as well, according to the [AFI's movie magazine research](https://catalog.afi.com/Film/10040-JUST-AROUNDTHECORNER?sid=85b49cc5-c023-4414-8590-1469a76e6720&sr=13.23113&cp=1&pos=1). Instead Marion took over, making this her directorial debut. She would go on to direct two more films, *The Love Light* (1921) and *The Song of Love* (1923).
+Frances Marion wrote and directed this Fannie Hurst adaptation, after having written the adaptation of Hurst's *Humoresque* the previous year. That film was directed by Frank Borzage, who was originally set to direct this one as well, according to the [AFI's movie magazine research](https://catalog.afi.com/Film/10040-JUST-AROUNDTHECORNER?sid=85b49cc5-c023-4414-8590-1469a76e6720&sr=13.23113&cp=1&pos=1). Instead Marion took over, making this her directorial debut. She would go on to direct two more films, *The Love Light* (1921) and *The Song of Love* (1923).
 
 *Just Around the Corner*, based on a short story titled "The Superman," is a Fannie Hurst tale through and through—the story of working poor New Yorkers crowded into a [tenement](https://exhibitions.library.columbia.edu/exhibits/show/urban_films/just-around-the-corner), struggling to lead lives that matter, with family tragedy just around the corner.
 
@@ -42,7 +42,7 @@ Here's how a movie magazine summarized the film's plot in 1921:
 
 ## Women's Labor and Exploitation
 
-<span class="og">💢</span> The hat shop scene early on is a fascinating representation of women's material labor at the time (and maybe a nod to Edith Wharton's *The House of Mirth*?). Hurst and Marion are bold in their pro-labor feminist politics, deftly showing-not-telling that bosses exploit both women's labor and their bodies, and that poor women are forced to accept both the illegal working conditions and the sexual assault because they need money to survive.
+The hat shop scene early on is a fascinating representation of women's material labor at the time (and maybe a nod to Edith Wharton's *The House of Mirth*?). Hurst and Marion are bold in their pro-labor feminist politics, deftly showing-not-telling that bosses exploit both women's labor and their bodies, and that poor women are forced to accept both the illegal working conditions and the sexual assault because they need money to survive.
 
 Ironically, when Essie wants to take a job as a theatre usher for better pay, her mother and brother object because of the job's connotations of prostitution. "It's night work!" Ma Birdsong exclaims. As though Essie wasn't already getting her breasts groped by her aggressive sweatshop boss!
 
@@ -54,8 +54,8 @@ The pace picks up somewhat towards the end thanks to the intervention of a big s
 
 ## Preservation Status
 
-<span class="og">📝</span> *Just Around the Corner* is held in the Library of Congress, but is not available for home viewing. Sigrid Holmquist, called "the Mary Pickford of Sweden," made her American film debut in this movie. The restoration work that made this screening possible highlights the ongoing importance of film preservation, especially for works by early women directors.
+*Just Around the Corner* is held in the Library of Congress, but is not available for home viewing. Sigrid Holmquist, called "the Mary Pickford of Sweden," made her American film debut in this movie. The restoration work that made this screening possible highlights the ongoing importance of film preservation, especially for works by early women directors.
 
-{{ divider() }}
+{{ divider(simple) }}
 
 *This note is part of my exploration of early women filmmakers.*

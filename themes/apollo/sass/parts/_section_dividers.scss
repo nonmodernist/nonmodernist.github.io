@@ -83,18 +83,70 @@
   background-color: var(--primary-color);
 }
 
-/* Crescent */
-.divider-default .pixel-moon:nth-child(4) {
+/* Enhanced Simple Crescent Moon Divider */
+.divider-simple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16px;
+  width: 100%;
   position: relative;
+  margin: 2rem 0;
 }
-.divider-default .pixel-moon:nth-child(4)::after {
+
+.divider-simple::before,
+.divider-simple::after {
+  content: "";
+  height: 1px;
+  background-color: var(--primary-color);
+  flex-grow: 1;
+  opacity: 0.5;
+  width: 5px;
+  margin: 0 15px;
+}
+
+
+.divider-simple .pixel-crescent {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  margin: 0 10px;
+}
+
+.divider-simple .pixel-crescent::before {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--primary-color);
+  box-sizing: border-box;
+}
+
+.divider-simple .pixel-crescent::after {
+  content: "";
+  position: absolute;
   width: 6px;
-  height: 100%;
+  height: 6px;
   background-color: var(--primary-color);
+  left: 0;
+  top: 0;
+}
+
+/* Hover effects */
+
+.divider-simple:hover::before,
+.divider-simple:hover::after {
+  opacity: 0.8;
+}
+
+/* For users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .divider-simple .pixel-crescent,
+  .divider-simple .pixel-crescent::before,
+  .divider-simple .pixel-crescent::after
+{
+    transition: none;
+  }
 }
 
 /* New moon */
@@ -255,51 +307,7 @@
   animation-delay: 2s;
 }
 
-/* Simple divider - Just a crescent moon */
-.divider-simple {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 16px;
-  width: 100%;
-  position: relative;
-  margin: 2rem 0;
-}
 
-.divider-simple::before,
-.divider-simple::after {
-  content: "";
-  height: 2px;
-  background-color: var(--primary-color);
-  flex-grow: 1;
-}
-
-.divider-simple .pixel-crescent {
-  width: 12px;
-  height: 12px;
-  margin: 0 10px;
-  position: relative;
-}
-
-.divider-simple .pixel-crescent::before {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border: 2px solid var(--primary-color);
-  border-radius: 0;
-  box-sizing: border-box;
-}
-
-.divider-simple .pixel-crescent::after {
-  content: "";
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  background-color: var(--primary-color);
-  top: 4px;
-  left: 4px;
-}
 
 /* Line divider - Clear pixel stars */
 .divider-line {
@@ -401,5 +409,154 @@
   .divider-ornate .small-star,
   .divider-ornate .pixel-crescent {
     animation: none !important;
+  }
+}
+
+/* First Quarter Moon Divider */
+.divider-quarter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 100%;
+  position: relative;
+  margin: 2rem 0;
+}
+
+.quarter-moon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.quarter-moon {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  margin: 0 10px;
+}
+
+.quarter-moon::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--primary-color);
+  box-sizing: border-box;
+}
+
+.quarter-moon::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 12px;
+  background-color: var(--primary-color);
+  left: 0;
+  top: 0;
+}
+
+/* Optional dotted lines on either side if you decide to keep them */
+.divider-quarter::before,
+.divider-quarter::after {
+  content: "";
+  height: 2px;
+  border-top: 2px dotted var(--primary-color);
+  width: 100px;
+  margin: 0 15px;
+}
+/* New Moon Divider - Simple but with a twist */
+.divider-new-moon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 100%;
+  position: relative;
+  margin: 1.8rem 0;
+}
+
+.divider-new-moon::before,
+.divider-new-moon::after {
+  content: "";
+  height: 1px;
+  background: var(--primary-color);
+  width: 50px;
+  opacity: 0.5;
+}
+
+.stars-container {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.new-moon-outline {
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--primary-color);
+  box-sizing: border-box;
+  border-radius: 0;
+  background: transparent;
+  position: relative;
+  z-index: 2;
+  /* Transition for opacity and transform */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* The creative twist - hidden star that appears on hover */
+.hidden-star {
+  position: absolute;
+  opacity: 0;
+  width: 16px;
+  height: 16px;
+  z-index: 1;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: scale(0.5);
+}
+
+.hidden-star::before,
+.hidden-star::after {
+  content: "";
+  position: absolute;
+  background-color: var(--primary-color);
+  opacity: 0.4;
+}
+
+.hidden-star::before {
+  width: 2px;
+  height: 16px;
+  left: 7px;
+  top: 0;
+}
+
+.hidden-star::after {
+  width: 16px;
+  height: 2px;
+  left: 0;
+  top: 7px;
+}
+
+/* Enhanced hover effect - moon fades out while star appears */
+.divider-new-moon:hover .hidden-star {
+  opacity: 1;
+  transform: scale(1.2);
+  z-index: 3;
+}
+
+.divider-new-moon:hover .new-moon-outline {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+/* For users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .new-moon-outline,
+  .hidden-star {
+    transition: none;
   }
 }

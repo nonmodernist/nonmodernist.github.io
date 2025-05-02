@@ -353,7 +353,8 @@ pointer-events: none;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--border-color);
     &::before {
-      content: "";
+      content: "✨";
+      font-family: var(--emoji-font);
     }
     
   }
@@ -389,7 +390,7 @@ pointer-events: none;
     text-overflow: ellipsis;
     
     &::before {
-      content: "♦";
+      content: "↩";
       font-family: var(--emoji-font);
       position: absolute;
       left: 0;

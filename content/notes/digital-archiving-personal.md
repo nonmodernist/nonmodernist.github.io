@@ -8,6 +8,7 @@ taxonomies:
     - digital archiving
     - digital gardens
     - memory
+    - identity
 extra:
   moon_phase: new
   tldr: Maintaining connections to our past selves through digital archives.

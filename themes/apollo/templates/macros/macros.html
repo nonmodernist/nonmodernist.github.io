@@ -232,10 +232,13 @@
         </div> 
     </section>
 
+    {% if page.backlinks and page.backlinks | length > 0 %}
 {% include "partials/backlinks.html" %}
-
+{% else %}
     {% include "partials/related_notes.html" %}
+{% endif %}
 
+    
     
     </article>
 </main>

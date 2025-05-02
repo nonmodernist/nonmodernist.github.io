@@ -3,10 +3,10 @@ title: "The Quality Question in Streaming Cinema"
 date: 2024-12-24
 draft: false
 taxonomies:
-  tags: ["film", "streaming", "netflix", "film criticism", "digital distribution"]
+  tags: ["film", "streaming", "netflix"]
 extra:
   moon_phase: waxing_crescent
-  tldr: "Examining the 'Tide Pod cinema' phenomenon and thoughtful approaches to critiquing streaming content quality."
+  summary: "A critical look at the 'Tide Pod cinema' concept, exploring nuanced approaches to critique."
   related_notes_links: [
     {
       "url": "/notes/film-industry-history",
@@ -17,9 +17,9 @@ extra:
   ]
 ---
 
-<span class="og">💡</span> "Tide Pod cinema" is a wonderful phrase coined by Will Tavlin in his essay "Casual Viewing" for n+1 magazine. I do think it describes something important about contemporary streaming cinema—content that appears colorful and attractive but offers little substantive nourishment and might even be harmful to a healthy film culture when consumed in large quantities.
+"Tide Pod cinema" is a delightfully bitchy phrase coined by Will Tavlin in his otherwise frustrating essay "Casual Viewing". I think it describes something important about contemporary streaming cinema—content that appears colorful and attractive but is poisonous to a healthy film culture.
 
-Tavlin uses the phrase to describe Netflix's output of "movies that go down best when you're not paying attention" or films made "to half-watch while doing laundry." The term cleverly captures several qualities I've noticed in many streaming-exclusive films:
+Tavlin uses the phrase to describe Netflix's output of "movies that go down best when you're not paying attention" or films made "to half-watch while doing laundry." The term cleverly captures several qualities of streaming-exclusive films:
 
 1. **Algorithmic Optimization**: Movies that feel designed to satisfy platform metrics instead of artistic vision
    
