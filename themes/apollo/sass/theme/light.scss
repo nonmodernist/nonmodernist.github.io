@@ -5,6 +5,7 @@ $bg-2: darken($bg-1, 8%);
 $text-0: darken($bg-0, 87%);
 $text-1: darken($bg-0, 60%);
 
+// Variables update
 :root.light {
   --text-0: #{$text-0};
   --text-1: #{$text-1};
@@ -15,12 +16,21 @@ $text-1: darken($bg-0, 60%);
 
   --border-color: var(--bg-2);
 
-  --primary-color: #ef5350;
+  --primary-color: #FFC107; // Amber as primary
+  --primary-light: #FFECB3;  // Light amber
+  --primary-dark: #FF8F00;   // Dark amber
   --hover-color: white;
 
+    /* Callout Colors */
+    --callout-info: #007FFF;
+    --callout-alert: #fb706e;
+    --callout-success: #AAD6A0;
+    --callout-warning: #fcb388;
 
   // invert colour on hover for consistency 
   .social :hover {
     filter: invert(1)
   }
 }
+
+

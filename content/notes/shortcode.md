@@ -6,7 +6,7 @@ draft = true
 tags=["example"]
 
 [extra]
-comment = true
+comment = false
 +++
 
 ## markdown
@@ -16,81 +16,31 @@ this is some **bold** text.
 this is some **bold text** that is not in the first paragraph of a page. 
 
 
-
-## Note
-
-{{ note(type="info", header="Test", body="Test test test test.") }}
-
-{{ note(type="tip", header="Test", body="Test test test test.") }}
-
-
-
-{{ note(type="warning", header="Test", body="Test test test test.") }}
-
-Here is an example of the `note` shortcode:
-
-This one is static!
-{{ note(header="Note!", body="This blog assumes basic terminal maturity") }}
-
-This one is clickable!
-{{ note(clickable=true, hidden = true, header="Quiz!", body="The answer to the quiz!") }}
+<div class="callout info">
+  <h3 class="callout-title">Information Title</h3>
+  <div class="callout-content">
+    This is some informational content.
+  </div>
+</div>
 
 
-Syntax:
-```
-{{/* note(header="Note!", body="This blog assumes basic terminal maturity") */}}
-{{/* note(clickable=true, hidden = true, header="Quiz!", body="The answer to the quiz!") */}}
-```
+<div class="callout alert">
+  <h3 class="callout-title">Alerta!</h3>
+  <div class="callout-content">
+    This is some alert content.
+  </div>
+</div>
 
-You can also use some HTML in the text:
-{{ note(header="Note!", body="<h1>This blog assumes basic terminal maturity</h1>") }}
+<div class="callout success">
+  <h3 class="callout-title">Success!</h3>
+  <div class="callout-content">
+    This is some successful content.
+  </div>
+</div>
 
-
-Literal shortcode:
-```
-{{/* note(header="Note!", body="<h1>This blog assumes basic terminal maturity</h1>") */}}
-```
-
-Pretty cool, right?
-
-Finally, you can do something like this (hopefully):
-
-{% note(clickable=true, header="Quiz!") %}
-
-# Hello this is markdown inside a note shortcode
-
-```rust
-fn main() {
-    println!("Hello World");
-}
-```
-
-We can't call another shortcode inside a shortcode, but this is good enough.
-
-{% end %}
-
-Here is the raw markdown:
-
-```markdown
-{{/* note(clickable=true, header="Quiz!") */}}
-
-# Hello this is markdown inside a note shortcode
-
-\`\`\`rust
-fn main() {
-    println!("Hello World");
-}
-\`\`\`
-
-We can't call another shortcode inside a shortcode, but this is good enough.
-
-{{/* end */}}
-```
-
-Finally, we have center
-{{ note(center=true, header="Centered Text", body="This is centered text") }}
-
-```markdown
-{{/* note(center=true, header="Centered Text", body="This is centered text") */}}
-```
-It works good enough for me!
+<div class="callout warning">
+  <h3 class="callout-title">Warning!</h3>
+  <div class="callout-content">
+    This is some warning content.
+  </div>
+</div>

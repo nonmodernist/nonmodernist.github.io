@@ -6,24 +6,26 @@
    // margin-left: 0.5rem;
   }
 
-// Create a mixin for the hover tooltip
+
+  
+// mixin for the hover tooltip
 @mixin moon-phase-tooltip($text) {
   position: relative;
   &:hover::after {
-    content: $text;
+ //   content: $text;
     font-family: var(--text-font);
     position: absolute;
     bottom: 100%;
     left: 50%;
-    transform: translateX(-50%);
-    background: var(--bg-2);
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    white-space: nowrap;
-    pointer-events: none;
+transform: translateX(-50%);
+background: var(--bg-2);
+  //  padding: 0.2rem 0.5rem;
+   // border-radius: 4px;
+  font-size: 0.8rem;
+white-space: nowrap;
+pointer-events: none;
   }
-}
+ }
 
 // Apply to different phases
 .moon-phase-new {
@@ -47,30 +49,7 @@
 }
 
 
-  // Optional: Style the notes themselves based on phase
-  .note-card {
-    position: relative;
-    
-    &.phase-new {
-      border-left: 3px solid #333;
-    }
-    
-    &.phase-waxing_crescent {
-      border-left: 3px solid #555;
-    }
-    
-    &.phase-first_quarter {
-      border-left: 3px solid #777;
-    }
-    
-    &.phase-waxing_gibbous {
-      border-left: 3px solid #999;
-    }
-    
-    &.phase-full {
-      border-left: 3px solid #ccc;
-    }
-  }
+
 
   // Digital Garden with Moon Phases
 
@@ -117,100 +96,9 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
-  
-  .garden-note {
-    @include card-style;
-    border-radius: 8px;
-    padding: 1.25rem;
-    
-    .garden-note-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 0.75rem;
-      padding: 10px 5px;
-      background-color: transparent; /* or specify a valid color value */
-      
-      h3 {
-        margin: 0;
-        font-size: 1.2rem;
-        a::after {
-          content: "" !important; // Remove the diamond symbol on garden grid
-        }}
 
-
-    }
-    
-    .moon-phase-indicator {
-      font-size: 1.5rem;
-      font-family: var(--emoji-font);
-    }
-    
-    .note-excerpt {
-      font-size: 0.9rem;
-      color: var(--text-1);
-      margin: 0.5rem 0;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      line-clamp: 3;
-      -webkit-box-orient: vertical;
-    }
-    
-    .note-tags {
-      margin: 0.75rem 0;
-      
-      .note-tag {
-        display: inline-block;
-        font-size: 0.8rem;
-        background: var(--bg-2);
-        padding: 0.2rem 0.5rem;
-        border-radius: 4px;
-        margin-right: 0.5rem;
-        margin-bottom: 0.5rem;
-        border-bottom: none;
-        
-        &:hover {
-          background: var(--primary-color);
-          color: var(--hover-color);
-        }
-      }
-    }
-    
-    .note-meta {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 0.75rem;
-      font-size: 0.8rem;
-      color: var(--text-1);
-    }
-/*
-    // Custom border colors for each moon phase
-    &.moon-phase-new {
-      border-left: 4px solid #333333;
-    }
-    
-    &.moon-phase-waxing_crescent {
-      border-left: 4px solid #495057;
-    }
-    
-    &.moon-phase-first_quarter {
-      border-left: 4px solid #6c757d;
-    }
-    
-    &.moon-phase-waxing_gibbous {
-      border-left: 4px solid #adb5bd;
-    }
-    
-    &.moon-phase-full {
-    border-left: 4px solid #fffbea;
-    }
-*/
-
-  }
  
+  
   // Responsive adjustments
   @media (max-width: 768px) {
     
@@ -220,6 +108,110 @@
     }
   }
 
+
+// NEW PIXEL ART GARDEN NOTE STYLES
+
+.garden-note {
+  @include card-style;
+  border-radius: 8px;
+  padding: 1.25rem;
+  position: relative;
+  
+  // Pixel art corners (optional)
+  &::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color);
+    top: -4px;
+    left: -4px;
+    box-shadow: 
+      calc(100% + 0px) 0 0 var(--primary-color),
+      0 calc(100% + 0px) 0 var(--primary-color),
+      calc(100% + 0px) calc(100% + 0px) 0 var(--primary-color);
+  }
+  
+  .garden-note-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+    padding: 10px 5px;
+
+    
+    h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      
+      &::before {
+        color: var(--primary-color);
+
+      }
+      a::after {
+        content: "" !important; // Remove the diamond symbol on garden grid
+      }
+    }
+  }
+  
+  .note-meta {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    color: var(--text-1);
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+// Moon phase indicators with amber accents
+.moon-phase-indicator {
+  font-size: 1.5rem;
+  font-family: var(--emoji-font);
+  color: var(--primary-color);
+  margin-left: 0.5rem;
+}
+
+// Note tags with amber theme
+.note-tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  background: var(--bg-2);
+  color: var(--text-0);
+  border-left: 3px solid var(--primary-color);
+  border-bottom: none !important;
+  padding: 0.2rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0 4px 4px 0;
+  
+  &:hover {
+    background: var(--primary-color);
+    color: var(--hover-color);
+  }
+
+
+    
+  .note-excerpt {
+    font-size: 0.9rem;
+    color: var(--text-1);
+    margin: 0.5rem 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
+
+
+
+
+
+
+ /* READABLE CONTENT SECTION */ 
 
 .readable-content {
   line-height: 1.8;
@@ -248,6 +240,9 @@
     font-size: 1.3em;
   }
 }
+
+
+/*RELATED NOTES SECTION */
 
 .related-notes {
   margin: 3rem 0 1.5rem 0;
@@ -340,6 +335,9 @@
     content: none !important;
   }
 }
+
+
+
 /* Backlinks section */
 .backlinks {
   margin: 3rem 0 1.5rem 0;

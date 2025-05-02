@@ -25,7 +25,7 @@ extra:
       description: The brief era of creative freedom before strict enforcement of the Production Code.
       moon_phase: waxing_crescent
 updated: 2025-05-01T16:35:06.757Z
-description: Explore the narrative structure of *Gold Diggers of 1933*, revealing its commentary on romance and economics during the Great Depression.
+description: Plot in the shape of an X.
 preview: /golddiggers1933.png
 ---
 

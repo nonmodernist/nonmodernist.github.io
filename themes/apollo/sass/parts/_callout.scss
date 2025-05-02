@@ -1,168 +1,62 @@
-:root {
-  --note-bg: var(--bg-0);
-  --note-border: var(--primary-color);
-  --note-text: var(--text-0);
-}
-
-.note-container {
-  margin: 1rem 0; /* Reduced margin */
-  position: relative;
-  font-family: var(--paragraph-font);
-  border: none;
-  box-shadow: 3px 3px 0 var(--note-border); /* Smaller shadow */
-  background: var(--bg-1);
-  overflow: hidden;
+.callout {
+  margin: 2rem 0;
   padding: 0;
+  background: var(--bg-1);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.note-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0;
-  padding: 0.4rem 0.6rem; /* Reduced padding */
-  font-size: 1.1rem; /* Smaller font */
+.callout-title {
+  padding: 0.75rem 1rem;
+  margin: 0;
+  border-bottom: 1px solid var(--border-color);
   font-weight: 700;
-  letter-spacing: 0.02em;
-  border-bottom: 1px dotted var(--note-border); /* Thinner border */
-  text-transform: uppercase;
+  position: relative;
 }
 
-.note-icon {
-  display: flex;
-  align-items: baseline;
-}
-
-.note-icon::before {
-  content: '✨';
+.callout-title::before {
+  margin-right: 0.5rem;
   font-family: var(--emoji-font);
-  margin-right: 0.4rem; /* Less space */
-  font-size: 1.1rem; /* Smaller icon */
-  color: var(--note-border);
 }
 
-.note-center {
-  text-align: center;
-  width: 100%;
-  font-weight: 700;
+.callout-content {
+  padding: 1rem;
 }
 
-.note-content {
-  padding: 0.6rem 0.8rem; /* Reduced padding */
-  font-size: 0.95rem; /* Slightly smaller text */
-  line-height: 1.4; /* Tighter line height */
-  letter-spacing: 0.01em;
+.callout.info .callout-title::before {
+  content: "💡";
+  color: var(--callout-info);
 }
 
-/* First paragraph styling */
-.note-content p:first-child {
-  margin-top: 0;
-  margin-bottom: 0.5em; /* Reduced margin */
-  font-weight: 500;
+.callout.alert .callout-title::before {
+  content: "⚡︎";
+  color: var(--callout-alert);
+  font-family: var(--emoji-font);
+
+}
+.callout.success .callout-title::before {
+  content: "🚥";
+  color: var(--callout-success);
+  font-family: var(--emoji-font);
+
 }
 
-/* Make paragraphs more compact */
-.note-content p {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+.callout.warning .callout-title::before {
+  content: "❗";
+  color: var(--callout-warning);
+  font-family: var(--emoji-font);
+
 }
 
-/* Make headings within notes more compact */
-.note-content h3, 
-.note-content h4 {
-  margin-top: 0.6em;
-  margin-bottom: 0.3em;
-  font-weight: 700;
-}
 
-/* Style links inside notes */
+// Links within callouts
 .note-content a {
-  border-bottom: 1px dotted var(--note-border); /* Thinner underline */
-  font-weight: 600;
-}
-
-/* Style code inside notes */
-.note-content code {
-  font-size: 0.9em;
-  background: var(--bg-0);
-  padding: 0.15em 0.3em; /* Smaller padding */
-  border-radius: 2px; /* Smaller radius */
-  font-weight: 600;
-}
-
-.note-toggle {
-  background: none;
-  border: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  padding: 0.4rem 0.6rem; /* Reduced padding */
-  font-size: 0.95rem; /* Smaller text */
-  font-weight: 700;
-  color: var(--note-text);
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  border-bottom: 1px dotted var(--note-border); /* Thinner border */
-}
-
-.note-toggle::before {
-//  content: '▾';
-  position: absolute;
-  right: 0.6rem; /* Less space */
-  font-size: 0.7rem; /* Smaller arrow */
-  transition: transform 0.2s ease;
-}
-
-.note-toggle[aria-expanded="true"]::before {
-  transform: rotate(180deg);
-}
-
-/* Note types with compact styling but maintaining color identity */
-.note-container.info {
-  box-shadow: 3px 3px 0 #3B82F6;
-}
-.note-container.info .note-icon::before {
-  content: '💡';
-  color: #3B82F6;
-}
-.note-container.info .note-header,
-.note-container.info .note-toggle {
-  border-bottom: 1px dotted #3B82F6;
-}
-
-.note-container.warning {
-  box-shadow: 3px 3px 0 #EF4444;
-}
-.note-container.warning .note-icon::before {
-  content: '💢';
-  color: #EF4444;
-}
-.note-container.warning .note-header,
-.note-container.warning .note-toggle {
-  border-bottom: 1px dotted #EF4444;
-}
-
-.note-container.tip {
-  box-shadow: 3px 3px 0 #10B981;
-}
-.note-container.tip .note-icon::before {
-  content: '✌︎';
-  color: #10B981;
-}
-.note-container.tip .note-header,
-.note-container.tip .note-toggle {
-  border-bottom: 1px dotted #10B981;
-}
-
-.note-container.important {
-  box-shadow: 3px 3px 0 #F59E0B;
-}
-.note-container.important .note-icon::before {
-  content: '❗';
-  color: #F59E0B;
-}
-.note-container.important .note-header,
-.note-container.important .note-toggle {
-  border-bottom: 1px dotted #F59E0B;
+  color: var(--text-0);
+  border-bottom: 1px dotted var(--primary-color);
+  
+  &:hover {
+    color: var(--primary-color);
+    background-color: transparent;
+  }
 }

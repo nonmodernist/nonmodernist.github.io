@@ -16,9 +16,18 @@ $text-1: lighten($bg-0, 60%);
   --bg-2: #{$bg-2};
 
   --border-color: var(--bg-2);
-
-  --primary-color: #ef5350;
-  --hover-color: white;
+  
+  /* Primary Colors */
+  --primary-light: #26A69A;
+  --primary-color: #64D8CB; //lightest teal for contrast
+  --primary-dark: #00766C;
+  --hover-color: #121212;
+  
+  /* Callout Colors */
+  --callout-info: #64b5f6;
+  --callout-alert: #ef5350;
+  --callout-success: #26A69A;
+  --callout-warning: #ffd54f;
 
   .social>img {
     filter: invert(1);
