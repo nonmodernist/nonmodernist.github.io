@@ -46,7 +46,9 @@
         <div class="garden-note moon-phase-{{ moon_phase }}">
             <div class="garden-note-header">
                 <h3><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
-
+                {% if page.draft %}
+                <span class="draft-label">[Draft]</span>
+                {% endif %}
 
                 <span class="moon-phase-indicator">
                     {% if moon_phase == "new" %}🌑

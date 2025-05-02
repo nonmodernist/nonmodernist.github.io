@@ -1,15 +1,18 @@
 table {
   border-spacing: 0;
   border-collapse: collapse;
+  margin: var(--space-m) 0;
 }
 
 table th {
-  padding: 6px 13px;
-  border: 1px solid #dfe2e5;
+  padding: var(--space-2xs) var(--space-s);
+  border: 1px solid var(--border-color);
   font-size: large;
+  line-height: var(--line-height-tight);
 }
 
 table td {
-  padding: 6px 13px;
-  border: 1px solid #dfe2e5;
+  padding: var(--space-2xs) var(--space-s);
+  border: 1px solid var(--border-color);
+  line-height: var(--line-height-normal);
 }

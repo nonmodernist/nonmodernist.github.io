@@ -3,7 +3,7 @@
     font-size: 1.1rem;
     vertical-align: top;
     font-family: var(--emoji-font);
-   // margin-left: 0.5rem;
+    // margin-left: var(--space-2xs);
   }
 
 
@@ -17,13 +17,13 @@
     position: absolute;
     bottom: 100%;
     left: 50%;
-transform: translateX(-50%);
-background: var(--bg-2);
-  //  padding: 0.2rem 0.5rem;
-   // border-radius: 4px;
-  font-size: 0.8rem;
-white-space: nowrap;
-pointer-events: none;
+    transform: translateX(-50%);
+    background: var(--bg-2);
+  //  padding: var(--space-3xs) var(--space-2xs);
+  //  border-radius: 4px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    pointer-events: none;
   }
  }
 
@@ -54,17 +54,17 @@ pointer-events: none;
   // Digital Garden with Moon Phases
 
 .garden-intro {
-    margin: 1.5rem 0;
+    margin: var(--space-m) 0;
     font-size: 1.1rem;
-    line-height: 1.6;
+    line-height: var(--line-height-loose);
   }
   
   .moon-phase-legend {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    margin: 2rem 0;
-    padding: 1rem;
+    gap: var(--space-s);
+    margin: var(--space-l) 0;
+    padding: var(--space-s);
     background: var(--bg-1);
     border-radius: 8px;
     border: 1px solid var(--border-color);
@@ -73,7 +73,7 @@ pointer-events: none;
   .legend-item {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: var(--space-2xs);
     font-size: 0.9rem;
   }
   
@@ -85,8 +85,8 @@ pointer-events: none;
 // Refactored using mixins
 .garden-grid {
   display: grid;
-  gap: 1.5rem;
-  margin: 2rem 0;
+  gap: var(--space-m);
+  margin: var(--space-l) 0;
   
   @include mobile-only {
     grid-template-columns: 1fr;
@@ -104,7 +104,7 @@ pointer-events: none;
     
     .moon-phase-legend {
       flex-direction: column;
-      gap: 0.5rem;
+      gap: var(--space-2xs);
     }
   }
 
@@ -114,7 +114,7 @@ pointer-events: none;
 .garden-note {
   @include card-style;
   border-radius: 8px;
-  padding: 1.25rem;
+  padding: var(--space-m);
   position: relative;
   
   // Pixel art corners (optional)
@@ -136,18 +136,19 @@ pointer-events: none;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 0.75rem;
-    padding: 10px 5px;
+    margin-bottom: var(--space-xs);
+    padding: var(--space-xs) var(--space-2xs);
 
     
     h3 {
       margin: 0;
       font-size: 1.2rem;
+      line-height: var(--line-height-tight);
       
       &::before {
         color: var(--primary-color);
-
       }
+      
       a::after {
         content: "" !important; // Remove the diamond symbol on garden grid
       }
@@ -157,11 +158,11 @@ pointer-events: none;
   .note-meta {
     justify-content: space-between;
     align-items: center;
-    margin-top: 0.75rem;
+    margin-top: var(--space-xs);
     font-size: 0.8rem;
     color: var(--text-1);
     display: flex;
-    gap: 1rem;
+    gap: var(--space-s);
   }
 }
 
@@ -170,7 +171,7 @@ pointer-events: none;
   font-size: 1.5rem;
   font-family: var(--emoji-font);
   color: var(--primary-color);
-  margin-left: 0.5rem;
+  margin-left: var(--space-2xs);
 }
 
 // Note tags with amber theme
@@ -181,9 +182,9 @@ pointer-events: none;
   color: var(--text-0);
   border-left: 3px solid var(--primary-color);
   border-bottom: none !important;
-  padding: 0.2rem 0.5rem;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
+  padding: var(--space-3xs) var(--space-2xs);
+  margin-right: var(--space-2xs);
+  margin-bottom: var(--space-2xs);
   border-radius: 0 4px 4px 0;
   
   &:hover {
@@ -196,13 +197,14 @@ pointer-events: none;
   .note-excerpt {
     font-size: 0.9rem;
     color: var(--text-1);
-    margin: 0.5rem 0;
+    margin: var(--space-2xs) 0;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     line-clamp: 3;
     -webkit-box-orient: vertical;
+    line-height: var(--line-height-normal);
   }
 }
 
@@ -214,25 +216,29 @@ pointer-events: none;
  /* READABLE CONTENT SECTION */ 
 
 .readable-content {
-  line-height: 1.8;
+  line-height: var(--line-height-loose);
   font-size: 1.1rem;
   max-width: 43rem;
   margin: 0 auto;
   font-family: var(--paragraph-font);
   
   p {
-    margin-bottom: 1.5em;
+    margin-bottom: var(--space-m);
   }
   
   h1 {
     font-size: 1.5em;
+    line-height: var(--line-height-tight);
   }
 
   h2 {
     font-size: 1.4em;
+    line-height: var(--line-height-tight);
   }
+  
   h3 {
     font-size: 1.3em;
+    line-height: var(--line-height-tight);
   }
 
   /* Slightly larger first paragraph */
@@ -245,21 +251,22 @@ pointer-events: none;
 /*RELATED NOTES SECTION */
 
 .related-notes {
-  margin: 3rem 0 1.5rem 0;
-  padding-top: 1.5rem;
+  margin: var(--space-xl) 0 var(--space-m) 0;
+  padding-top: var(--space-m);
   border-top: 2px dotted var(--border-color);
   
   h2 {
     font-size: 1.5em;
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: var(--space-s);
+    line-height: var(--line-height-tight);
   }
 }
 
 .related-notes-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
+  gap: var(--space-m);
   padding: 0;
   margin: 0;
   list-style: none;
@@ -274,7 +281,7 @@ pointer-events: none;
   background: var(--bg-1);
   border: 2px solid var(--border-color);
   border-radius: 8px;
-  padding: 1rem;
+  padding: var(--space-s);
   transition: transform 0.2s ease-in-out;
   
   &:hover {
@@ -283,7 +290,7 @@ pointer-events: none;
   
   a {
     font-weight: bold;
-    margin-right: 0.3rem;
+    margin-right: var(--space-2xs);
     border-bottom: none;
     }
 
@@ -295,13 +302,14 @@ pointer-events: none;
   .related-note-description {
     font-size: 0.9rem;
     color: var(--text-1);
-    margin: 0.5rem 0 0 0;
+    margin: var(--space-2xs) 0 0 0;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     line-clamp: 2;
     -webkit-box-orient: vertical;
+    line-height: var(--line-height-normal);
   }
 
 
@@ -314,7 +322,7 @@ pointer-events: none;
   z-index: 1;
   padding-bottom: 0; /* Reduce or remove padding at the bottom */
   margin-bottom: 0; /* Ensure no margin is adding space */
-  line-height: 1.1; /* Reduce line height to bring the border closer */
+  line-height: var(--line-height-tight); /* Reduce line height to bring the border closer */
   
   /* Override the default styles that add the ♦ symbol */
   &::after {
@@ -340,8 +348,8 @@ pointer-events: none;
 
 /* Backlinks section */
 .backlinks {
-  margin: 3rem 0 1.5rem 0;
-  padding: 1rem 1.5rem;
+  margin: var(--space-xl) 0 var(--space-m) 0;
+  padding: var(--space-s) var(--space-m);
   background: var(--bg-1);
   border: 1px solid var(--border-color);
   border-radius: 8px;
@@ -349,14 +357,15 @@ pointer-events: none;
   h2 {
     font-size: 1.3rem;
     margin-top: 0;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
+    margin-bottom: var(--space-s);
+    padding-bottom: var(--space-2xs);
     border-bottom: 1px solid var(--border-color);
+    line-height: var(--line-height-tight);
+    
     &::before {
       content: "✨";
       font-family: var(--emoji-font);
     }
-    
   }
 }
 
@@ -364,8 +373,8 @@ pointer-events: none;
   /* Explicitly set to a two-column layout */
   display: grid;
   grid-template-columns: 1fr 1fr; /* Force exactly two columns */
-  column-gap: 2rem;
-  row-gap: 0.75rem;
+  column-gap: var(--space-l);
+  row-gap: var(--space-xs);
   padding: 0;
   margin: 0;
   list-style: none;
@@ -379,10 +388,10 @@ pointer-events: none;
   a {
     position: relative;
     display: block;
-    padding: 0.25rem 0;
-    padding-left: 1.5rem;
+    padding: var(--space-3xs) 0;
+    padding-left: var(--space-m);
     font-size: 1rem;
-    line-height: 1.4;
+    line-height: var(--line-height-normal);
     border-bottom: none;
     transition: transform 0.2s ease;
     white-space: nowrap;
@@ -411,6 +420,7 @@ pointer-events: none;
     grid-template-columns: 1fr;
   }
 }
+
 /* Collapsible backlinks styling */
 .backlinks .note-toggle {
   background: none;
@@ -430,6 +440,7 @@ pointer-events: none;
   width: 100%;
   border-bottom: none;
   padding-bottom: 0;
+  line-height: var(--line-height-tight);
 }
 
 .backlinks .note-toggle::after {
@@ -441,11 +452,10 @@ pointer-events: none;
 
 .backlinks .note-toggle[aria-expanded="true"]::after {
   transform: rotate(180deg);
-
 }
 
 .backlinks-content {
-  margin-top: 1rem;
-  padding-top: 0.5rem;
+  margin-top: var(--space-s);
+  padding-top: var(--space-2xs);
   border-top: 1px solid var(--border-color);
 }

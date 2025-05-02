@@ -1,5 +1,5 @@
 .callout {
-  margin: 2rem 0;
+  margin: var(--space-l) 0;
   padding: 0;
   background: var(--bg-1);
   border: 1px solid var(--border-color);
@@ -8,20 +8,22 @@
 }
 
 .callout-title {
-  padding: 0.75rem 1rem;
+  padding: var(--space-xs) var(--space-s);
   margin: 0;
   border-bottom: 1px solid var(--border-color);
   font-weight: 700;
   position: relative;
+  line-height: var(--line-height-tight);
 }
 
 .callout-title::before {
-  margin-right: 0.5rem;
+  margin-right: var(--space-2xs);
   font-family: var(--emoji-font);
 }
 
 .callout-content {
-  padding: 1rem;
+  padding: var(--space-s);
+  line-height: var(--line-height-normal);
 }
 
 .callout.info .callout-title::before {
@@ -33,22 +35,19 @@
   content: "⚡︎";
   color: var(--callout-alert);
   font-family: var(--emoji-font);
-
 }
+
 .callout.success .callout-title::before {
   content: "🚥";
   color: var(--callout-success);
   font-family: var(--emoji-font);
-
 }
 
 .callout.warning .callout-title::before {
   content: "❗";
   color: var(--callout-warning);
   font-family: var(--emoji-font);
-
 }
-
 
 // Links within callouts
 .note-content a {

@@ -2,8 +2,8 @@
 .cards {
     display: grid;
     grid-template-rows: auto;
-    gap: 24px;
-    padding: 12px 0;
+    gap: var(--space-m);
+    padding: var(--space-xs) 0;
     
     @include mobile-only {
         grid-template-columns: repeat(auto-fill, 1fr);
@@ -23,11 +23,12 @@
 }
 
 .card-info {
-    padding: 0 24px 24px 24px;
+    padding: 0 var(--space-m) var(--space-m) var(--space-m);
 }
 
 .card-title {
-    margin-top: 0.7em;
+    margin-top: var(--text-spacing-s);
+    line-height: var(--line-height-tight);
 }
 
 .card-image {
@@ -36,18 +37,19 @@
 }
 
 .card-image-placeholder {
-    height: 12px;
+    height: var(--space-xs);
     width: 100%;
 }
 
 .card-description {
-    margin-top: 0.5em;
+    margin-top: var(--text-spacing-s);
     overflow: hidden;
+    line-height: var(--line-height-normal);
 }
 
 @include desktop-up {
     .cards {
-        gap: 18px;
+        gap: var(--space-s);
     }
 }
 
@@ -55,18 +57,19 @@
 
 /* add styling for recent activity */
 .recent-activity {
-    margin: 2rem 0;
+    margin: var(--space-l) 0;
     
     h2 {
       font-size: 1.8em;
-      margin-bottom: 1rem;
+      margin-bottom: var(--space-s);
+      line-height: var(--line-height-tight);
     }
   }
   
   .activity-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
+    gap: var(--space-m);
     
     @include mobile-only {
       grid-template-columns: 1fr;
@@ -78,15 +81,16 @@
     
     h3 {
       margin-top: 0;
-      margin-bottom: 0.75rem;
+      margin-bottom: var(--space-xs);
       font-size: 1.3rem;
+      line-height: var(--line-height-tight);
     }
   }
   
   .activity-content {
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
+    gap: var(--space-2xs);
     
     a {
       font-weight: bold;
@@ -105,7 +109,7 @@
   }
   
   .activity-tags {
-    margin-top: 0.3rem;
+    margin-top: var(--space-2xs);
     font-size: smaller;
   }
   

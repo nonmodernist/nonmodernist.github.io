@@ -21,7 +21,7 @@ extra:
       title: "Gold Diggers of 1933: Narrative Structure"
       description: How the pre-code musical uses contrasting narrative structures.
       moon_phase: first_quarter
-description: A review of Frances Marion's 1921 directorial debut, a Fannie Hurst adaptation about working-class women in New York City.
+description: On Frances Marion's 1921 film, from a Fannie Hurst story about working-class women in NYC.
 ---
 
 <span class="og">🎥</span> *Just Around the Corner* (1921) is a recently restored film that I watched during the online version of *[Le Giornate del cinema muto](https://www.giornatedelcinemamuto.it/en/)* (also known as the Pordenone Silent Film Festival). It was stitched together from two different prints intended for two different markets.

@@ -9,6 +9,26 @@
     --emoji-font: 'og-emoji'; /* For emojis */
     --paragraph-font: 'Atkinson Hyperlegible', sans-serif; /* For better readability */
 
+    /* Spacing System - based on 8px grid */
+    --space-3xs: 0.25rem;  /*  4px */
+    --space-2xs: 0.5rem;   /*  8px */
+    --space-xs: 0.75rem;   /* 12px */
+    --space-s: 1rem;       /* 16px - base */
+    --space-m: 1.5rem;     /* 24px */
+    --space-l: 2rem;       /* 32px */
+    --space-xl: 3rem;      /* 48px */
+    --space-2xl: 4rem;     /* 64px */
+    --space-3xl: 6rem;     /* 96px */
+    
+    /* Vertical Rhythm */
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    --line-height-loose: 1.8;
+    
+    /* Typography Spacing */
+    --text-spacing-s: 0.5em;
+    --text-spacing-m: 1em;
+    --text-spacing-l: 1.5em;
   }
 
 

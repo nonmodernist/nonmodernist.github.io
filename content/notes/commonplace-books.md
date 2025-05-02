@@ -1,12 +1,16 @@
 ---
-title: "Commonplace Books as Gardens of Thought"
+title: Commonplace Books as Gardens of Thought
 date: 2025-05-02
-draft: true
+draft: false
 taxonomies:
-  tags: ["history", "digital gardens", "commonplace books", "florilegia"]
+    tags:
+        - history
+        - digital gardens
+        - commonplace books
+        - florilegia
 extra:
-  moon_phase: first_quarter
-  tldr: "Exploring the connections between historical commonplace books and modern digital gardens as tools for cultivating and organizing knowledge."
+    moon_phase: first_quarter
+    tldr: Exploring the connections between historical commonplace books and modern digital gardens as tools for cultivating and organizing knowledge.
 ---
 <span class="og">📖</span> My relationship with commonplace books began during my master's program, where I worked on transcribing these fascinating historical documents at the library. This interest deepened in 2016 when I participated in an NEH summer seminar focused on commonplace books and scrapbooks while writing my dissertation. That experience fundamentally shaped how I think about knowledge organization and curation—concepts that inform this digital garden.
 

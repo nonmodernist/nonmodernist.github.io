@@ -2,24 +2,31 @@
   ul {
     margin-left: 0;
     padding-left: 0;
+    margin-bottom: var(--space-m);
   }
 
   li {
     list-style-type: none;
+    margin-bottom: var(--space-xs);
   }
 
   a {
     border-bottom: none;
     font-family: var(--text-font);
-  &:hover {
-    background-color: var(--primary-color) !important;
-    color: var(--hover_color) !important;
+    line-height: var(--line-height-normal);
+    padding: var(--space-3xs) var(--space-2xs);
+    
+    &:hover {
+      background-color: var(--primary-color) !important;
+      color: var(--hover_color) !important;
+    }
   }
-  }
+  
   a::before {
     font-family: var(--emoji-font);
     content: "🎫 "; /* Ensure there's a space after the emoji for spacing */
     display: inline;
     white-space: nowrap !important;
+    margin-right: var(--space-3xs);
   }
 }

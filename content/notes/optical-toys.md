@@ -29,16 +29,20 @@ extra:
   ]
 ---
 
-<span class="og">🎠</span> Also known as "philosophical toys," optical toys represent some of the earliest animation technologies available to the public. These devices exploited a phenomenon known as "persistence of vision" to create the illusion of continuous motion from a series of static images.
+<span class="og">🎠</span> Also known as "philosophical toys," optical toys represent some of the earliest animation technologies available to the public. These devices exploited a phenomenon known as "apparent motion" to create the illusion of continuous motion from a series of static images.
 
 ## Common Optical Toys
 
 ### Magic Lantern
-The magic lantern used light shined through transparent colored material to project images onto a surface. While not technically an animation device in its basic form, more advanced versions used movable glass slides to create simple animations.
+The magic lantern used light shined through transparent colored material to project images onto a surface. While not technically an animation device in its basic form, more advanced versions used movable glass slides to create simple animations. It also became the foundation for optical toys and moving pictures that projected their images on a surface. 
 
 ### Phénakisticope (1832)
-<div class="pixel-corners--wrapper"><img src="/Phenakistoscope.jpg" alt="Phenakistoscope disc with illustrated figures that create the illusion of motion when spun" width="100%">
-</div>
+
+<figure class="center">
+  <div class="pixel-corners--wrapper">
+    <img src="/Phenakistoscope.jpg" alt="An illustration of a person holding a Phenakisticope up to use it." width="500px">
+  </div>
+</figure>
 
 Invented by Joseph Plateau, the phénakisticope consisted of a disc with slits and a succession of images. When the disc was spun and the viewer looked through the slits into a mirror, the succession of images appeared to merge into a single moving image—an early demonstration of apparent motion.
 

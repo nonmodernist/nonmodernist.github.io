@@ -1,8 +1,9 @@
 .page-header {
     font-size: 2.5em;
-    line-height: 100%;
+    line-height: var(--line-height-tight);
     font-family: var(--header-font);
-    margin: 4rem 0px 1rem 0px;
+    margin: var(--space-2xl) 0 var(--space-s) 0;
+    text-wrap: balance;
 }
 
 .centered-header {
@@ -21,7 +22,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 1em 0;
+    padding: var(--space-s) 0;
     
     @include mobile-only {
       flex-direction: column;
@@ -109,6 +110,7 @@ h3,
 h4,
 h5,
 h6 {
+    text-wrap: balance;
     font-size: 1.2rem;
     margin-top: 2em;
     &::before {

@@ -3,8 +3,10 @@
   .toc-title {
     cursor: pointer;
     position: relative;
-    padding-left: 40px; // Space for the arrow
+    padding-left: var(--space-xl); // Space for the arrow
     font-size: 1.2rem; // Adjusted font size for better visibility
+    line-height: var(--line-height-tight);
+    margin-bottom: var(--space-s);
 
     &:before {
       content: '💠'; // replace Down arrow
@@ -22,11 +24,13 @@
   .toc-list {
     display: none; // ToC is hidden by default
     // Removed transition on display, not effective
+    margin-top: var(--space-xs);
+    margin-bottom: var(--space-m);
 
-  a { 
-    &::after {
-    content: "" !important;
-}
-  }
+    a { 
+      &::after {
+        content: "" !important;
+      }
+    }
   }
 }

@@ -15,7 +15,7 @@ nav, .meta, .footer, time, .tldr, .toc-container, h1, h2, h3, h4, h5, h6, strong
   padding: 2px 4px;
   border-radius: 4px;
   margin-left: 6px;
-  background-color: var(--primary-color);
+  background-color: var(--callout-alert);
 }
 
 ::-moz-selection {
@@ -30,7 +30,8 @@ nav, .meta, .footer, time, .tldr, .toc-container, h1, h2, h3, h4, h5, h6, strong
 }
 
 p {
-  line-height: 1.5;
+  line-height: var(--line-height-normal);
+  margin-bottom: var(--space-m);
 }
 
 strong {
@@ -39,8 +40,8 @@ strong {
 
 hr {
   border: 0;
-  border-top: 3px dotted var(--border-color); // made hr dotted instead of solid
-  margin: 1em 0;
+  border-top: 3px dotted var(--border-color);
+  margin: var(--space-m) 0;
 }
 
 blockquote {
@@ -182,7 +183,7 @@ a.zola-anchor {
 }
 
 .footnote-definition-label {
-  color: var();
+  color: var(--primary-color);
 }
 
 .footnote-definition p {
