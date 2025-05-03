@@ -2,7 +2,7 @@
 base_url = "https://nonmodernist.com"
 title = "alexandra edwards, phd"
 description = "the internet homebase of dr. alexandra edwards"
-theme = "apollo"
+theme = "artemis"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
