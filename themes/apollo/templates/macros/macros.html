@@ -1,3 +1,26 @@
+{# 
+    MACROS.HTML
+    This file contains reusable template components (macros) used throughout the site.
+    These macros handle core display logic for lists, tags, content, and other elements.
+    
+    TABLE OF CONTENTS:
+    - list_tag_posts: Displays posts with a specific tag
+    - list_posts: Core listing logic for displaying posts in a list format
+    - list_terms: Displays taxonomy terms (like tags)
+    - tags: Renders tags for a page, with optional compact format
+    - page_header: Renders page headers with moon phase indicators
+    - home_page: Renders the homepage content
+    - content: Renders a single content page with metadata
+    - cards_posts: Renders posts in a card-based grid layout
+  #}
+  
+  {# 
+    MACRO: list_tag_posts
+    Purpose: Displays all posts with a specific tag, with an appropriate header
+    Parameters:
+    - pages: Collection of pages to list
+    - tag_name: Optional tag name to display in the header
+  #}
 {% macro list_tag_posts(pages, tag_name=false) %}
     {% if tag_name %}
     <div class="page-header">
@@ -10,21 +33,36 @@
     {% endif %}
 
     <main class="list">
+      {# Use the list_posts macro to render the actual list of posts #}
     {{ post_macros::list_posts(pages=pages) }}
     </main>
 {% endmacro %}
 
+  {# 
+    MACRO: list_posts
+    Purpose: Core macro for displaying posts in a list format
+    Parameters:
+    - pages: Collection of pages to display
+    Notes:
+    - Handles formatting of post dates, titles, descriptions
+    - Supports special cases like moon phases and draft indicators
+    - Manages "read more" link visibility based on content
+  #}
 {% macro list_posts(pages) %}
 <ul>
     {%- for page in pages %}
     <li class="list-item">
     <section>
         <div class="post-header">
+              {# Display date in YYYY-MM-DD format #}
             <time>{{ page.date | date(format="%Y-%m-%d") }}</time>
 
             <div>
                 <h1 class="title">
-                    <a href={{ page.permalink | safe }}>{{page.title}}</a>         {% if page.extra.moon_phase %}
+                      <a href={{ page.permalink | safe }}>{{page.title}}</a>
+                      
+                      {# Display moon phase indicator if specified in frontmatter #}
+                      {% if page.extra.moon_phase %}
                     <span class="moon-phase moon-phase-{{ page.extra.moon_phase }}">
                        {% if page.extra.moon_phase == "new" %}🌑
                        {% elif page.extra.moon_phase == "waxing_crescent" %}🌙
@@ -34,6 +72,7 @@
                             {% endif %}</span>
                             {% endif %}
 
+                      {# Show draft label for unpublished content #}
                     {% if page.draft %}
                     <span class="draft-label">DRAFT</span>
                     {% endif %}
@@ -41,6 +80,7 @@
 
                 <div class="meta">
                     <div class="description">
+                          {# Choose the best description source with fallbacks #}
                         {% if page.description %}
                         {{ page.description }}
                         {% elif page.summary %}
@@ -50,6 +90,7 @@
                         {% endif %}
                     </div>
 
+                      {# Only show "Read more" when we have a description or summary #}
                     {% if not hide_read_more %}
                     <a class="readmore" href={{ page.permalink | safe }}>Read more ⟶</a>
                     {% endif %}
@@ -62,6 +103,12 @@
 </ul>
 {% endmacro list_posts %}
 
+  {# 
+    MACRO: list_terms
+    Purpose: Displays a list of taxonomy terms (like tag categories)
+    Parameters:
+    - terms: Collection of taxonomy terms to display
+  #}
 {% macro list_terms(terms) %}
     <ul>
     {%- for term in terms %}
@@ -75,13 +122,25 @@
     </ul>
 {% endmacro list_terms %}
 
+  {# 
+    MACRO: tags
+    Purpose: Renders a page's tags with appropriate formatting
+    Parameters:
+    - page: The page object whose tags should be displayed
+    - short: Boolean flag for compact display (default: false)
+    Notes:
+    - Uses different separators and prefixes based on short parameter
+    - Ensures proper taxonomy URL generation
+  #}
 {% macro tags(page, short=false) %}
     {%- if page.taxonomies and page.taxonomies.tags %}
         <span class="post-tags-inline">
             {%- if short %}
+                  {# Compact format for constrained spaces #}
                 ::
                 {%- set sep = "," -%}
             {% else %}
+                  {# Standard format with explicit "tags:" label #}
                 :: tags:&nbsp;
                 {%- set sep = "&nbsp;" -%}
             {% endif -%}
@@ -93,6 +152,15 @@
     {% endif -%}
 {% endmacro tags %}
 
+  {# 
+    MACRO: page_header
+    Purpose: Renders consistent page headers with moon phase indicators
+    Parameters:
+    - title: The title text to display
+    Notes:
+    - Adds moon phase indicator for notes if specified
+    - Falls back to decorative arrow indicator if no moon phase
+  #}
 {% macro page_header(title) %}
     <div class="page-header">
         {{ title }}
@@ -107,12 +175,17 @@
           </span>
           {% else %}    
           <span class="og" style="font-size: .4em">⤵</span>
-
     {% endif %}
     
     </div>
 {% endmacro content %}
 
+  {# 
+    MACRO: home_page
+    Purpose: Renders the homepage content section
+    Parameters:
+    - section: The section object containing the homepage content
+  #}
 {% macro home_page(section) %}
 <main>
     <article>
@@ -124,6 +197,17 @@
 </main>
 {% endmacro home_page %}
 
+  {# 
+    MACRO: content
+    Purpose: Renders a single content page with complete metadata
+    Parameters:
+    - page: The page object to display
+    Notes:
+    - Includes h-entry microformat classes for IndieWeb compatibility
+    - Handles complex conditional metadata like dates, reading time, tags
+    - Supports table of contents generation
+    - Includes backlinks and related notes
+  #}
 {% macro content(page) %}
 <main>
     <article class="h-entry readable-content">
@@ -133,6 +217,7 @@
 
                 <div class="meta">
                     {% if page.date %}
+                          {# IndieWeb microformat classes for better interoperability #}
                         Posted <span class="hidden">by <a rel="author" class="p-author h-card" href="https://nonmodernist.com">alexandra edwards</a></span> on <time class="dt-published"> {{ page.date | date(format="%Y-%m-%d") }}</time>
                     {% endif %}
 
@@ -158,9 +243,7 @@
                             </span>
                     {% endif %}
 
-
-
-                    {# View the page on GitHub #}
+                      {# View the page on GitHub if repo_view is enabled #}
                     {% if page.extra.repo_view | default(value=config.extra.repo_view) | default(value=false) %}
                         {# Use the page's repo_url if defined, otherwise use the global edit_repo_url #}
                         {% if page.extra.repo_url is defined %}
@@ -184,6 +267,7 @@
                 </div>
         </div>
 
+          {# Display TL;DR summary if provided #}
         {% if page.extra.tldr %}
             <div class="tldr p-summary">
                 <strong>tl;dr:</strong>
@@ -191,7 +275,7 @@
             </div>
         {% endif %}
 
-        {# Optional table of contents #}
+          {# Optional table of contents - only shown if enabled in config and page has TOC #}
         {% if config.extra.toc | default(value=false) %}
         {% if page.toc %}
             <div class="toc-container">
@@ -244,10 +328,21 @@
 </main>
 {% endmacro content %}
 
+  {# 
+    MACRO: cards_posts
+    Purpose: Renders posts in a card-based grid layout
+    Parameters:
+    - pages: Collection of pages to display as cards
+    Notes: 
+    - Supports both local and remote images
+    - Falls back to placeholder if no image is specified
+    - Handles special case of external links via page.extra.link_to
+  #}
 {% macro cards_posts(pages) %}
     <div class="cards">
     {%- for page in pages %}
         <div class="card">
+              {# Handle different image sources with appropriate fallbacks #}
             {% if page.extra.local_image %}
                 <img class="card-image" alt={{ page.extra.local_image }} src="{{ get_url(path=page.extra.local_image) }}" />
             {% elif page.extra.remote_image %}
@@ -258,6 +353,7 @@
 
             <div class="card-info">
                 <h1 class="card-title">
+                      {# Support linking to external URLs if specified #}
                     {% if page.extra.link_to %}
                     <a href={{ page.extra.link_to }}>{{page.title}}</a>
                     {% else %}
