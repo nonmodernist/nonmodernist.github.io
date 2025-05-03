@@ -9,7 +9,7 @@ extra:
   tldr: "Exploring digital gardens as a return to the creative, exploratory spirit of the pre-blog web and their connection to ecological thinking."
 ---
 
-<span class="og">🌱</span> I stumbled onto the idea of the digital garden while trying to answer a question about Obsidian. It immediately made me think of the pre-blog web in a way that sparked my curiosity and imagination. Thinking on it further, I was reminded of [commonplace books](@/notes/commonplace-books.md), Twine games, and self-replicating web art projects like [Trash Robot](https://trashrobot.org/). I love gardens. I wanted to try it out.
+I stumbled onto the idea of the digital garden while trying to answer a question about Obsidian. It immediately made me think of the pre-blog web in a way that sparked my curiosity and imagination. Thinking on it further, I was reminded of [commonplace books](@/notes/commonplace-books.md), Twine games, and self-replicating web art projects like [Trash Robot](https://trashrobot.org/). I love gardens. I wanted to try it out.
 
 ## Why a "digital garden"?
 

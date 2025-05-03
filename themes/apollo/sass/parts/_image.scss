@@ -67,7 +67,8 @@ figure.center figcaption {
   text-align: center;
   font-size: 0.9rem;
   color: var(--text-1);
-  max-width: 100%; /* Ensure caption doesn't exceed figure width */
+  max-width: 90%; /* Ensure caption doesn't exceed figure width */
+  text-wrap: balance;
 }
 
 /* For floating figures, ensure caption stays with image */

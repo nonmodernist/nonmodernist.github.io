@@ -45,9 +45,9 @@ The practice of commonplacing connects directly to the medieval tradition of the
 
 <figure class="center">
   <div class="pixel-corners--wrapper">
-    <img src="/florilegium.png" alt="An illustration of flowers appearing to emerge from a book. " width="550px">
+    <img src="/florilegium.png" alt="AI-generated illustration of an open antique book displaying botanical drawings of daisies and wildflowers in a vintage engraving style with decorative borders. The detailed black and white illustration includes fully blooming flowers, stems, and leaves, with subtle touches of yellow in some smaller blooms." width="550px">
   </div>
-  <figcaption>Adobe Text to Image depiction of a florilegium. </figcaption>
+  <figcaption>This botanical book illustration was created using Adobe Express's 'Generate Image' feature. I provided the prompt 'florilegia - a commonplace book of flowers' and selected the style modifiers 'nostalgic,' 'beautiful,' and 'line drawing' to achieve this vintage engraving-style result with its delicate botanical details and decorative borders. </figcaption>
 </figure>
 
 The metaphor of gathering flowers—selecting the most beautiful or useful parts—perfectly captures the essence of both commonplace books and digital gardens. We cultivate ideas, collect the most vibrant specimens, and arrange them in ways that create new meaning through juxtaposition.
