@@ -153,6 +153,7 @@ del {
 /* Internal link styling - links to your domain or local development server */
 a[href*="nonmodernist.com"],
 a[href*="127.0.0.1:1111"],
+a[href*="127.0.0.1:1025"],
 a[href^="/"],
 a[href^="#"] {
   border-bottom: 2px dotted var(--primary-color);

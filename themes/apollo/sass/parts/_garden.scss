@@ -31,7 +31,6 @@
 // Apply to different phases
 .moon-phase-new {
   @include moon-phase-tooltip("New idea");
-  position: absolute;
 }
 
 .moon-phase-waxing_crescent {
