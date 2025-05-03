@@ -1,11 +1,18 @@
 ---
-title: Digital Garden Lunar System Reference
+title: Lunar Style Reference Sheet
 weight: 20
+fmContentType: meta
+date: 2025-05-03T21:36:43.777Z
+description: Style guide for applying lunar-themed design, covering growth stages, dividers, and color systems.
+taxonomies:
+    tags:
+        - meta
+extra:
+    moon_phase: waxing_gibbous
+    tldr: Style guide for applying lunar-themed design, covering growth stages, dividers, and color systems.
 ---
 
-# 🌙 Digital Garden Lunar System Reference
-
-This guide provides a quick reference for applying the lunar-themed design system to your digital garden.
+This guide provides a quick reference for applying the lunar-themed design system to this digital garden.
 
 ## Growth Stages & Moon Phases
 

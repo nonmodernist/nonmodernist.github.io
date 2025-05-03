@@ -1,12 +1,15 @@
 ---
-title: "Do you ever have an idea?"
+title: Do you ever have an idea?
 date: 2024-12-20
 draft: false
 taxonomies:
-  tags: ["teaching", "digital garden", "projects"]
+  tags:
+    - teaching
+    - digital garden
 extra:
-  moon_phase: "waxing_crescent"
-  tldr: "The frustration of having an idea but struggling to find the right implementation approach."
+  moon_phase: waxing_crescent
+  tldr: The frustration of having an idea but struggling to find the right implementation approach.
+fmContentType: garden-note
 ---
 
 <span class="og">💡</span> There's this idea rattling around in my brain, and I can't figure out how to make it work. Do you know that feeling? It's exceptionally frustrating.

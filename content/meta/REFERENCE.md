@@ -2,9 +2,18 @@
 title = "Site Documentation"
 weight = 1
 insert_anchor_links = "heading"
+fmContentType = "meta"
+description = "Essential site documentation for Zola and the Artemis theme, including commands, templates, and troubleshooting tips."
+date = "2025-05-03T22:13:44.274Z"
+
+[taxonomies]
+tags = [ "meta", "zola" ]
+
+[extra]
+moon_phase = "full"
 +++
 
-This document contains essential information for maintaining and developing my personal site built with Zola and a heavily modified version of the Apollo theme.
+This document contains essential information for maintaining and developing my personal site built with Zola and the Artemis theme.
 
 ## Common Commands
 
@@ -62,34 +71,9 @@ For a basic reference, see the table below. For complete design guidelines, see 
 | Waxing Gibbous | 🌔 | `moon-phase-waxing_gibbous` | Mostly formed |
 | Full Moon | 🌕 | `moon-phase-full` | Complete thought |
 
-# Shortcodes
+# Shortcodes and Snippets
 
-## Divider Shortcode
-
-See the [Lunar Style Guide](@/meta/lunar-system-reference.md#dividers-by-complexity) for more information on divider styles.
-
-# HTML Classes for Special Formatting
-
-```html
-<!-- Center an image -->
-<figure class="center">
-  <div class="pixel-corners--wrapper">
-    <img src="/path/to/image.jpg" alt="Description" width="450px">
-  </div>
-  <figcaption>Caption text</figcaption>
-</figure>
-
-<!-- Float image right -->
-<figure class="float-right">
-  <div class="pixel-corners--wrapper">
-    <img src="/path/to/image.jpg" alt="Description" width="450px">
-  </div>
-  <figcaption>Caption text</figcaption>
-</figure>
-
-<!-- OG Emoji styling -->
-<span class="og">🆕</span>
-```
+See the [Shortcode Examples](@/meta/shortcode-examples.md) for quick reference and the [Lunar Style Guide](@/meta/lunar-system-reference.md) for more information on divider styles.
 
 ## Valid OG Emojis
 For a complete list of emojis that work with the og class, see the [Lunar Style Guide](@/meta/lunar-system-reference.md).

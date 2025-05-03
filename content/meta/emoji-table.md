@@ -1,7 +1,22 @@
 ---
-title: "OG Emoji Reference Table"
+title: OG Emoji Reference Table
 weight: 30
+fmContentType: meta
+tags:
+    - meta
+    - emoji
+date: 2025-05-03T22:09:12.293Z
+description: Comprehensive OG Emoji Reference Table, detailing meanings and uses for each emoji.
 ---
+
+<!-- FM:Snippet:Start data:{"id":"Callouts","fields":[{"name":"type","value":"info"},{"name":"title","value":"Credit"},{"name":"content","value":""}]} -->
+<div class="callout info">
+  <h3 class="callout-title">Credit</h3>
+  <div class="callout-content">
+    OG Emoji font created by Monica Dinculescu.
+  </div>
+</div>
+
 
 | Emoji | Description | Additional Uses/Meanings |
 |-------|-------------|--------------------------|

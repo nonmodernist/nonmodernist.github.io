@@ -136,7 +136,9 @@ Created several divider styles with moon and star motifs to support the celestia
 
 ```
 ### Related Notes Section and Backlinks {.design-decision}
+
 **Date:** 2025-05-01
+
 Implemented "related notes" and "backlinks" sections on the note pages to show links to other notes with similar tags or content.
 
 **Why:** This encourages exploration of related content and helps users discover more of my notes.
