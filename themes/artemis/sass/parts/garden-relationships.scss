@@ -108,73 +108,87 @@
   
   // Backlinks section styling
   // Shows pages that link to the current note
-  .backlinks {
-    margin: 3rem 0 1.5rem 0;
-    padding: 1rem 1.5rem;
-    background: var(--bg-1);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    
-    h2 {
-      font-size: 1.3rem;
-      margin-top: 0;
-      margin-bottom: 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid var(--border-color);
-      &::before {
-        content: "";
-      }
+  // Backlinks section styling
+.backlinks {
+  margin: 3rem 0 1.5rem 0;
+  padding: 1rem 1.5rem;
+  background: var(--bg-1);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  width: 100%; // Ensure it takes full width of parent
+  box-sizing: border-box; // Include padding in width calculation
+  
+  h2 {
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+    &::before {
+      content: "";
     }
   }
+}
+
+// Backlinks list with improved responsive behavior
+.backlinks-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); // More flexible columns
+  gap: 0.75rem 2rem; // Row gap, column gap
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%; // Ensure full width
+  box-sizing: border-box; // Include padding in width calculation
   
-  // Two-column layout for backlinks list
-  .backlinks-list {
-    // Explicitly set to a two-column layout
-    display: grid;
-    grid-template-columns: 1fr 1fr; // Force exactly two columns
-    column-gap: 2rem;
-    row-gap: 0.75rem;
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  // Force two columns maximum on larger screens
+  @media (min-width: 700px) {
+    grid-template-columns: repeat(2, 1fr);
   }
   
-  // Individual backlink items
-  .backlink-item {
-    // Add these properties to ensure proper flow
-    width: 100%;
-    box-sizing: border-box;
+  // Force single column on mobile
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+    gap: 0.5rem 1rem; // Reduce gap on mobile
+  }
+}
+
+// Individual backlink items
+.backlink-item {
+  width: 100%; // Ensure items take full width of their grid cell
+  box-sizing: border-box; // Include any padding in width calculation
+  overflow: hidden; // Prevent overflow
+  
+  a {
+    position: relative;
+    display: block;
+    padding: 0.25rem 0;
+    padding-left: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    border-bottom: none;
+    transition: transform 0.2s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     
-    a {
-      position: relative;
-      display: block;
-      padding: 0.25rem 0;
-      padding-left: 1.5rem;
-      font-size: 1rem;
-      line-height: 1.4;
-      border-bottom: none;
-      transition: transform 0.2s ease;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      
-      // Diamond icon before backlinks
-      &::before {
-        content: "♦";
-        font-family: var(--emoji-font);
-        position: absolute;
-        left: 0;
-        color: var(--primary-color);
-      }
-      
-      // Subtle animation on hover
-      &:hover {
-        transform: translateX(3px);
-        color: var(--primary-color);
-        background-color: transparent;
-      }
+    // Diamond icon before backlinks
+    &::before {
+      content: "♦";
+      font-family: var(--emoji-font);
+      position: absolute;
+      left: 0;
+      color: var(--primary-color);
+    }
+    
+    // Subtle animation on hover
+    &:hover {
+      transform: translateX(3px);
+      color: var(--primary-color);
+      background-color: transparent;
     }
   }
+}
   
   // Collapsible backlinks styling for toggle functionality
   .backlinks .note-toggle {

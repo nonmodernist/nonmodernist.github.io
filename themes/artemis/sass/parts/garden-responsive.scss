@@ -32,20 +32,9 @@
       }
     }
   }
-  
-  // Backlinks responsive behavior
-  @media (max-width: 700px) {
-    // Switch to single column on smaller screens
-    .backlinks-list {
-      grid-template-columns: 1fr;
-    }
-    
-    // Adjust backlinks padding
-    .backlinks {
-      padding: 0.75rem 1rem;
-    }
-  }
-  
+
+
+
   // Print styles for garden content
   @media print {
     // Remove interactive elements when printing
