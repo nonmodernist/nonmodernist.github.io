@@ -182,14 +182,10 @@ Implemented "related notes" and "backlinks" sections on the note pages to show l
 
 ## Future Improvements
 
-### Add dark mode toggle animation {.future-idea}
+### Invert moon phase indications in dark mode {.future-idea}
 
-**Planned:** Create a smooth animation for the dark mode toggle between sun and moon icons.
+**Planned:** When in dark mode, invert the moon phase icons being called so that they maintain their meaning. 
 
-**Ideas:**
-- Use CSS transitions for the icon swap
-- Add a rotation effect
-- Consider using SVG for more complex animation
 
 ### Create custom 404 page with moon theme {.future-idea}
 
