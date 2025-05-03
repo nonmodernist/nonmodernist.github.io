@@ -192,6 +192,11 @@ a.zola-anchor {
   border-bottom: none;
 }
 
+a.readmore {
+  @include truncate-internal-links;
+}
+
+
 
 /* add minimal styling for footnotes */
 

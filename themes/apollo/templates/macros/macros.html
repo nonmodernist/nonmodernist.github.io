@@ -81,8 +81,10 @@
                   <div class="meta">
                       <div class="description">
                           {# Choose the best description source with fallbacks #}
-                          {% if page.description %}
-                          {{ page.description }}
+                          {% if page.extra.tldr %}
+                          {{ page.extra.tldr | safe }}
+                          {% elif page.description %}
+                          {{ page.description | safe }}&hellip;
                           {% elif page.summary %}
                           {{ page.summary | safe }}&hellip;
                           {% else %}
