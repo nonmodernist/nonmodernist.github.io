@@ -76,6 +76,86 @@
           "type": "datetime"
         }
       ]
+    },
+    {
+      "name": "meta",
+      "pageBundle": false,
+      "fields": [
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "weight",
+          "name": "weight",
+          "type": "number"
+        },
+        {
+          "title": "date",
+          "name": "date",
+          "type": "datetime"
+        },
+        {
+          "title": "insert_anchor_links",
+          "name": "insert_anchor_links",
+          "type": "string"
+        },
+        {
+          "title": "template",
+          "name": "template",
+          "type": "string"
+        },
+        {
+          "title": "taxonomies",
+          "name": "taxonomies",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "tags",
+              "name": "tags",
+              "type": "tags"
+            }
+          ]
+        },
+        {
+          "title": "extra",
+          "name": "extra",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "moon_phase",
+              "name": "moon_phase",
+              "type": "string"
+            },
+            {
+              "title": "tldr",
+              "name": "tldr",
+              "type": "string"
+            },
+            {
+              "title": "decision_count",
+              "name": "decision_count",
+              "type": "number"
+            },
+            {
+              "title": "problem_count",
+              "name": "problem_count",
+              "type": "number"
+            },
+            {
+              "title": "future_count",
+              "name": "future_count",
+              "type": "number"
+            },
+            {
+              "title": "breaking_count",
+              "name": "breaking_count",
+              "type": "number"
+            }
+          ]
+        }
+      ]
     }
   ],
   "frontMatter.framework.id": "hugo",

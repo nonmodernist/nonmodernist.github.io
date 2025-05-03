@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<main class="dev-journal">
+    <article class="h-entry readable-content">
+        <div class="title">
+            <h1 class="title p-name">
+                <span class="dev-icon">👓</span> {{ page.title }}
+            </h1>
+            
+            <div class="meta">
+                {% if page.date %}
+                    Last updated: <time class="dt-published">{{ page.date | date(format="%Y-%m-%d") }}</time>
+                {% endif %}
+                
+                {% if page.word_count %}
+                    :: {{ page.word_count }} Words
+                {% endif %}
+                
+                {% if page.taxonomies and page.taxonomies.tags %}
+                    <span class="tags-label"> :: Tags:</span>
+                    <span class="tags">
+                        {%- for tag in page.taxonomies.tags %}
+                            <a href="{{ get_taxonomy_url(kind='tags', name=tag, lang=page.lang) }}" class="post-tag">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                    </span>
+                {% endif %}
+            </div>
+        </div>
+
+        {% if page.extra.tldr %}
+            <div class="tldr p-summary">
+                <strong>tl;dr:</strong> {{ page.extra.tldr }}
+            </div>
+        {% endif %}
+        
+        <div class="dev-tracker">
+            <div class="dev-tracker-item">
+                <span class="dev-count">{{ page.extra.decision_count | default(value=0) }}</span>
+                <span class="dev-label">Decisions</span>
+            </div>
+            <div class="dev-tracker-item">
+                <span class="dev-count">{{ page.extra.solution_count | default(value=0) }}</span>
+                <span class="dev-label">Problems Solved</span>
+            </div>
+            <div class="dev-tracker-item">
+                <span class="dev-count">{{ page.extra.future_count | default(value=0) }}</span>
+                <span class="dev-label">Future Ideas</span>
+            </div>
+            <div class="dev-tracker-item">
+                <span class="dev-count">{{ page.extra.breaking_count | default(value=0) }}</span>
+                <span class="dev-label">Breaking Changes</span>
+            </div>
+        </div>
+
+        <section class="body">
+            <div class="readable-content">
+                {{ page.content | safe }}
+            </div>
+        </section>
+    </article>
+</main>
+{% endblock main_content %}

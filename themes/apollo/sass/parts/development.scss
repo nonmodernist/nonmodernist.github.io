@@ -1,0 +1,160 @@
+// Development Journal Styles
+// Add this to your _parts directory as _development.scss and import in main.scss
+
+.dev-journal {
+  // Special styling for development journal
+  
+  .title {
+    position: relative;
+    
+    h1 {
+      font-family: var(--header-font);
+      margin-bottom: 1rem;
+      
+      &::before {
+        content: ""; // Override the default # prefix
+      }
+    }
+    
+    .dev-icon {
+      font-family: var(--emoji-font);
+      margin-right: 0.5rem;
+    }
+  }
+  
+  // Development tracker cards
+  .dev-tracker {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+    
+    .dev-tracker-item {
+      background: var(--bg-1);
+      border: 2px solid var(--border-color);
+      border-left: 4px solid var(--primary-color);
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      
+      .dev-count {
+        display: block;
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--primary-color);
+      }
+      
+      .dev-label {
+        font-size: 0.9rem;
+        color: var(--text-1);
+      }
+    }
+  }
+  
+  // Custom header styling to fix indentation issues
+  h1, h2, h3, h4, h5, h6 {
+    position: relative;
+    // Remove default padding/margin that might be causing indentation
+    padding-left: 0;
+    margin-left: 0;
+  }
+  
+  // Style the different sections - override the default # prefixes
+  h1 {
+    font-size: 2.2rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+    
+    &::before {
+      content: "" !important; // Remove the # prefix
+    }
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    position: relative;
+    padding-left: 0; // Ensure no indentation
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    &::before {
+      content: "✨" !important;
+      font-family: var(--emoji-font);
+      margin-right: 0.75rem;
+      color: var(--primary-color);
+    }
+    
+    &::after {
+      content: "✨" !important;
+      font-family: var(--emoji-font);
+      margin-left: 0.75rem;
+      color: var(--primary-color);
+    }
+  }
+  
+  h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 2rem; // Space for icon
+    font-size: 1.4rem;
+    
+    &::before {
+      content: "" !important; // Remove the ### prefix
+      font-family: var(--emoji-font);
+      position: absolute;
+      left: 0;
+      font-size: 1.2rem;
+    }
+    
+    &::after {
+      content: "";
+      flex-grow: 1;
+      height: 2px;
+      background: linear-gradient(to right, var(--primary-color), transparent);
+      margin-left: 1rem;
+    }
+  }
+  
+  // Special styling for different types of journal entries - icons added directly to h3
+  h3.design-decision::before {
+    content: "🎨" !important;
+  }
+  
+  h3.problem-solved::before {
+    content: "🆗" !important;
+  }
+  
+  h3.future-idea::before {
+    content: "💡" !important;
+  }
+  
+  h3.breaking-change::before {
+    content: "💣" !important;
+  }
+  
+  // Additional type - default icon if no specific class
+  h3:not(.design-decision):not(.problem-solved):not(.future-idea):not(.breaking-change)::before {
+    content: "✨" !important;
+  }
+}
+
+// Add a special style for completed tasks
+.task-completed {
+  text-decoration: line-through;
+  color: var(--text-1);
+  
+  &::before {
+    content: "✅";
+    margin-right: 0.5rem;
+  }
+}

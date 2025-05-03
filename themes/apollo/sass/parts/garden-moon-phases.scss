@@ -23,13 +23,13 @@
     content: $text;
     font-family: var(--text-font);
     position: absolute;
-    bottom: 100%;
+    bottom: 98%;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--bg-2);
+    background: var(--primary-light);
     padding: 0.2rem 0.5rem;
     border-radius: 4px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     white-space: nowrap;
     pointer-events: none;
   }
