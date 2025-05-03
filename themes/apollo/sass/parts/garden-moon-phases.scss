@@ -1,0 +1,115 @@
+// _garden-moon-phases.scss
+//
+// Styling for the moon phase system used to indicate note development stages
+// Includes tooltips, indicators, and the moon phase legend
+
+// Import mixins first
+@import "mixins";
+
+// Moon phase styles
+// Basic styling for the moon phase indicators shown next to note titles
+.moon-phase {
+    font-size: 1.1rem;
+    vertical-align: top;
+    font-family: var(--emoji-font);
+}
+
+// Create a mixin for the hover tooltip
+// This reusable code generates a tooltip when hovering over moon phase icons
+// that explains what each phase represents in the garden system
+@mixin moon-phase-tooltip($text) {
+  position: relative;
+  &:hover::after {
+    content: $text;
+    font-family: var(--text-font);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg-2);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+}
+
+// Apply the tooltip mixin to different phases
+// Each phase gets its own explanatory text that appears on hover
+.moon-phase-new {
+  @include moon-phase-tooltip("New idea");
+}
+
+.moon-phase-waxing_crescent {
+  @include moon-phase-tooltip("Growing idea");
+}
+
+.moon-phase-first_quarter {
+  @include moon-phase-tooltip("Half-formed");
+}
+
+.moon-phase-waxing_gibbous {
+  @include moon-phase-tooltip("Nearly complete");
+}
+
+.moon-phase-full {
+  @include moon-phase-tooltip("Complete note");
+}
+
+// Optional: Style the notes themselves based on phase
+// These styles can be used to visually differentiate notes
+// at different stages of development using left borders
+.note-card {
+  position: relative;
+  
+  &.phase-new {
+    border-left: 3px solid #333;
+  }
+  
+  &.phase-waxing_crescent {
+    border-left: 3px solid #555;
+  }
+  
+  &.phase-first_quarter {
+    border-left: 3px solid #777;
+  }
+  
+  &.phase-waxing_gibbous {
+    border-left: 3px solid #999;
+  }
+  
+  &.phase-full {
+    border-left: 3px solid #ccc;
+  }
+}
+
+// Legend explaining the moon phase system
+.moon-phase-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 1rem;
+    background: var(--bg-1);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.moon-emoji {
+    font-size: 1.2rem;
+    font-family: var(--emoji-font);
+}
+
+// Moon phase indicator within note cards
+.moon-phase-indicator {
+  font-size: 1.5rem;
+  font-family: var(--emoji-font);
+}

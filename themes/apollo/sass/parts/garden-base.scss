@@ -1,0 +1,50 @@
+// _garden-base.scss
+//
+// Core layout styles for the digital garden
+// Includes grid layout, basic containers, and garden introduction
+
+// Import mixins first
+@import "mixins";
+
+// Garden introduction text styling
+.garden-intro {
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+// Garden grid layout using responsive design
+// Uses the mixins from _mixins.scss to create different layouts
+// for different screen sizes
+.garden-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  
+  @include mobile-only {
+    grid-template-columns: 1fr; // Single column on mobile
+  }
+  
+  @include tablet-up {
+    // Multi-column responsive grid on larger screens
+    // Will create as many columns as fit, with minimum width of 300px
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+// Responsive adjustments for smaller screens
+@media (max-width: 768px) {
+  .moon-phase-legend {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+// Main content styling with improved readability
+.readable-content {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  max-width: 43rem;
+  margin: 0 auto;
+  font-family: var(--paragraph-font);
+}

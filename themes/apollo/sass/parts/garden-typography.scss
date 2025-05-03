@@ -1,0 +1,59 @@
+// _garden-typography.scss
+//
+// Typography styles for garden content
+// Focused on readability and proper hierarchy
+
+// Import mixins first
+@import "mixins";
+
+// Main content typography settings
+.readable-content {
+    // Base paragraph styling
+    p {
+      margin-bottom: 1.5em;
+    }
+    
+    // Heading hierarchy
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    h2 {
+      font-size: 1.4em;
+    }
+    
+    h3 {
+      font-size: 1.3em;
+    }
+  
+    // Slightly larger first paragraph for better reading flow
+    > p:first-of-type {
+      font-size: 1.3em;
+    }
+  }
+  
+  // Typography for garden notes 
+  .garden-note {
+    h3 {
+      a {
+        // Remove the default underline/border from links in headings
+        border-bottom: none;
+        
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+  
+  // Typography for note excerpts
+  .note-excerpt {
+    line-height: 1.4;
+    font-weight: 400;
+  }
+  
+  // Typography for related notes and backlinks
+  .related-notes h2,
+  .backlinks h2 {
+    font-weight: 700;
+  }

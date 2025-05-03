@@ -1,0 +1,99 @@
+// _garden-notes.scss
+//
+// Styling for individual note cards in the digital garden
+// Includes card layout, headers, metadata, tags, and excerpts
+
+// Import mixins first
+@import "mixins";
+
+// Individual note card styling
+.garden-note {
+    @include card-style; // Uses the card-style mixin from _mixins.scss
+    border-radius: 8px;
+    padding: 1.25rem;
+    
+    // Note header with title and moon phase indicator
+    .garden-note-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.75rem;
+      padding: 10px 5px;
+      background-color: transparent;
+      
+      h3 {
+        margin: 0;
+        font-size: 1.2rem;
+      }
+    }
+    
+    // Note excerpt with ellipsis truncation for long content
+    // Uses -webkit-line-clamp to limit to 3 lines of text
+    .note-excerpt {
+      font-size: 0.9rem;
+      color: var(--text-1);
+      margin: 0.5rem 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+    
+    // Tag section styling
+    .note-tags {
+      margin: 0.75rem 0;
+      
+      .note-tag {
+        display: inline-block;
+        font-size: 0.8rem;
+        background: var(--bg-2);
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        border-bottom: none;
+        
+        &:hover {
+          background: var(--primary-color);
+          color: var(--hover-color);
+        }
+      }
+    }
+    
+    // Note metadata footer (date and word count)
+    .note-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0.75rem;
+      font-size: 0.8rem;
+      color: var(--text-1);
+    }
+
+/*
+    // Custom border colors for each moon phase
+    // Currently commented out, but can be enabled to add
+    // visual differentiation based on note stage
+    &.moon-phase-new {
+      border-left: 4px solid #333333;
+    }
+    
+    &.moon-phase-waxing_crescent {
+      border-left: 4px solid #495057;
+    }
+    
+    &.moon-phase-first_quarter {
+      border-left: 4px solid #6c757d;
+    }
+    
+    &.moon-phase-waxing_gibbous {
+      border-left: 4px solid #adb5bd;
+    }
+    
+    &.moon-phase-full {
+    border-left: 4px solid #fffbea;
+    }
+*/
+}

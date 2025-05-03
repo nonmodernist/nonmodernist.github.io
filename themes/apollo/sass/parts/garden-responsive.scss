@@ -1,0 +1,69 @@
+// _garden-responsive.scss
+//
+// Responsive behavior specific to garden components
+// Contains media queries and adaptations for different screen sizes
+
+// Import mixins first
+@import "mixins";
+
+// Responsive layout adjustments
+@media (max-width: 768px) {
+    // Legend becomes vertical on smaller screens
+    .moon-phase-legend {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    // Adjusted spacing for mobile view
+    .garden-note {
+      padding: 1rem;
+      
+      .garden-note-header {
+        padding: 5px 0;
+      }
+    }
+    
+    // Typography adjustments for smaller screens
+    .readable-content {
+      font-size: 1rem;
+      
+      > p:first-of-type {
+        font-size: 1.2em;
+      }
+    }
+  }
+  
+  // Backlinks responsive behavior
+  @media (max-width: 700px) {
+    // Switch to single column on smaller screens
+    .backlinks-list {
+      grid-template-columns: 1fr;
+    }
+    
+    // Adjust backlinks padding
+    .backlinks {
+      padding: 0.75rem 1rem;
+    }
+  }
+  
+  // Print styles for garden content
+  @media print {
+    // Remove interactive elements when printing
+    .moon-phase-tooltip,
+    .backlinks .note-toggle::after {
+      display: none;
+    }
+    
+    // Ensure proper colors for print
+    .garden-note,
+    .related-note-item,
+    .backlinks {
+      border: 1px solid #ddd !important;
+      box-shadow: none !important;
+    }
+    
+    // Force visibility of collapsed sections
+    .backlinks-content {
+      display: block !important;
+    }
+  }
