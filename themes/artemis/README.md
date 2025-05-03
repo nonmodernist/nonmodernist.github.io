@@ -1,71 +1,137 @@
-# apollo
+# Artemis Theme for Zola
 
-Modern and minimalistic blog theme powered by [Zola](https://getzola.org). See a live preview [here](https://not-matthias.github.io/apollo).
-
-<sub><sup>Named after the greek god of knowledge, wisdom and intellect</sup></sub>
-
-<details open>
-  <summary>Dark theme</summary>
-
-  ![blog-dark](./screenshot-dark.png)
-</details>
-
-<details>
-  <summary>Light theme</summary>
-
-![blog-light](./screenshot.png)
-</details>
+Artemis is a lunar-themed digital garden framework for the [Zola](https://www.getzola.org/) static site generator, forked from the [Apollo theme](https://github.com/not-matthias/apollo).
 
 ## Features
 
-- [X] Pagination
-- [X] Themes (light, dark, auto)
-- [X] Projects page
-- [X] Analytics using [GoatCounter](https://www.goatcounter.com/) / [Umami](https://umami.is/)
-- [x] Social Links
-- [x] MathJax Rendering
-- [x] Taxonomies
-- [x] Meta Tags For Individual Pages
-- [x] Custom homepage
-- [x] Comments
-- [ ] Search
-- [ ] Categories
+### 🌙 Moon-Phase Digital Garden
+
+Track the growth and development of your notes using a lunar cycle metaphor:
+
+- **🌑 New Moon** - Brand new ideas, questions, or thoughts
+- **🌙 Waxing Crescent** - Growing ideas with some development
+- **🌓 First Quarter** - Half-formed notes with structure
+- **🌔 Waxing Gibbous** - Nearly complete content
+- **🌕 Full Moon** - Complete, mature notes
+
+### ✨ Enhanced Visual Elements
+
+- **Pixel Art Borders**: Beautiful pixel-perfect borders for images and cards
+- **Custom Dividers**: Multiple divider styles with lunar motifs
+- **OG Emoji Support**: Classic emoji rendering using a custom font created by Monica Dinculescu
+
+### 📝 Digital Garden Features
+
+- **Backlinks**: Automatically display notes that link to the current note
+- **Related Notes**: Manually specify related content with moon phase indicators
+- **Dynamic Callouts**: Collapsible note containers with customizable styling
+- **TLDR Summaries**: Add brief summaries to complex notes
+
+### 🎭 Theme Options
+
+- **Dark/Light Mode Toggle**: Switch between dark and light themes
+- **Responsive Design**: Optimized for all device sizes
 
 ## Installation
 
-1. Download the theme
-```
-git submodule add https://github.com/not-matthias/apollo themes/apollo
-```
+1. Download this theme to your `themes` directory:
+   ```bash
+   git clone https://github.com/yourusername/artemis themes/artemis
+   ```
 
-2. Add the following to the top of your `config.toml`
-
-```toml
-theme = "apollo"
-taxonomies = [{ name = "tags" }]
-
-[extra]
-theme = "auto"
-socials = [
-  # Configure socials here
-]
-menu = [
-  # Configure menu bar here
-]
-
-# See this for more options: https://github.com/not-matthias/apollo/blob/main/config.toml#L14
-```
-
-3. Copy the example content
-
-```
-cp -r themes/apollo/content/* content/
-```
+2. Enable the theme in your `config.toml`:
+   ```toml
+   theme = "artemis"
+   ```
 
 ## Configuration
 
-You can find all the configuration options [here](./content/posts/configuration.md)
+### Basic Configuration
 
-## References
+```toml
+# config.toml
+base_url = "https://yoursite.com"
 
-This theme is based on [archie-zola](https://github.com/XXXMrG/archie-zola/).
+[extra]
+# Theme options
+theme = "toggle"  # Options: "toggle", "light", "dark", "auto"
+favicon = "/favicon.png"
+logo = "/logo.png"
+
+# Menu items
+menu = [
+    { name = "about", url = "/about" },
+    { name = "notes", url = "/notes" },
+    { name = "tags", url = "/tags" },
+]
+
+# Social icons
+socials = [
+    { name = "github", url = "https://github.com/yourusername", icon = "github" },
+    { name = "twitter", url = "https://twitter.com/yourusername", icon = "twitter" },
+]
+```
+
+### Digital Garden Setup
+
+For the digital garden functionality, create a `notes` section with the following front matter:
+
+```toml
+# content/notes/_index.md
++++
+title = "notes"
+sort_by = "update_date"
+insert_anchor_links = "heading"
+generate_feeds = true
+template = "notes_garden.html"
+
+[extra]
+comment = false
++++
+```
+
+### Note Front Matter
+
+For individual notes, use the moon phase to indicate development status:
+
+```toml
++++
+title = "My Digital Garden Note"
+date = 2023-01-01
+taxonomies = { tags = ["example", "digital garden"] }
+
+[extra]
+moon_phase = "waxing_crescent"  # Options: new, waxing_crescent, first_quarter, waxing_gibbous, full
+tldr = "A brief summary of this note's content."
+related_notes_links = [
+  {
+    "url": "/notes/related-note/",
+    "title": "Related Note Title",
+    "description": "Brief description of how this relates",
+    "moon_phase": "full"
+  }
+]
++++
+```
+
+## Shortcodes
+
+### Dividers
+
+Add thematic dividers between sections:
+
+```markdown
+{{ divider() }}  <!-- Default moon phases divider -->
+{{ divider(style="simple") }}  <!-- Simple divider -->
+{{ divider(style="ornate") }}  <!-- Ornate divider -->
+{{ divider(style="line") }}  <!-- Line with stars divider -->
+```
+
+## Credits
+
+- Original [Apollo theme](https://github.com/not-matthias/apollo) by not-matthias
+- Inspired by digital garden concepts and the lunar cycle
+
+## License
+
+MIT License

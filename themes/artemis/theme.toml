@@ -1,16 +1,24 @@
-name = "apollo"
-description = "Modern and minimalistic blog theme"
-min_version = "0.14.0"
+name = "artemis"
+description = "A lunar-themed digital garden framework for Zola"
 license = "MIT"
-homepage = "https://github.com/not-matthias/apollo"
-demo = "https://not-matthias.github.io/apollo"
+min_version = "0.16.0"
 
-# Any variable there can be overridden in the end user `config.toml`
-# You don't need to prefix variables by the theme name but as this will
-# be merged with user data, some kind of prefix or nesting is preferable
-# Use snake_casing to be consistent with the rest of Zola
-[extra]
-
-[author]
+# The original theme creator
+[original]
 name = "not-matthias"
-homepage = "https://github.com/not-matthias"
+homepage = "https://not-matthias.github.io"
+repo = "https://github.com/not-matthias/apollo"
+
+# Your information as the creator of Artemis
+[author]
+name = "alex"
+homepage = "https://nonmodernist.com"
+
+# Features your theme supports
+[extra]
+# These are just suggestions based on what I've seen in your files
+moon_phases = true
+pixel_borders = true
+og_emoji_support = true
+section_dividers = true
+backlinks = true
