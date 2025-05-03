@@ -29,6 +29,10 @@
           &:hover {
             color: var(--hover-color);
           }
+          
+          &::after {
+            content: "" !important;
+          }
         }
       }
     }
