@@ -51,7 +51,13 @@ $breakpoint-large: 960px;  // Desktop
   }
 }
 
+// Truncate internal links to hide content after the link text
+@mixin truncate-internal-links {
+    &::after {
+      content: "" !important;
+    }
 
+  }
 
 // styling for various UI elements
 @mixin card-style {

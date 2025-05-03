@@ -1,12 +1,6 @@
 +++
 title = "Callouts"
-date = "2024-06-14"
-draft = true
-[taxonomies]
-tags=["example"]
-
-[extra]
-comment = false
+weight = 60
 +++
 
 ## markdown

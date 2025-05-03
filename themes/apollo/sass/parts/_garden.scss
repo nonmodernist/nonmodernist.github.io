@@ -1,7 +1,7 @@
 // Moon phase styles
 .moon-phase {
     font-size: 1.1rem;
-    vertical-align: top;
+    vertical-align: middle;
     font-family: var(--emoji-font);
     // margin-left: var(--space-2xs);
   }
@@ -149,8 +149,8 @@
         color: var(--primary-color);
       }
       
-      a::after {
-        content: "" !important; // Remove the diamond symbol on garden grid
+      a {
+        @include truncate-internal-links();
       }
     }
   }
@@ -315,6 +315,7 @@
 
 /* Related notes specific link styling */
 .related-note-link {
+  @include truncate-internal-links();
   border-bottom: 2px dotted var(--primary-color) !important;
   font-weight: bold;
   text-decoration: none;
@@ -323,11 +324,6 @@
   padding-bottom: 0; /* Reduce or remove padding at the bottom */
   margin-bottom: 0; /* Ensure no margin is adding space */
   line-height: var(--line-height-tight); /* Reduce line height to bring the border closer */
-  
-  /* Override the default styles that add the ♦ symbol */
-  &::after {
-    content: none !important;
-  }
   
   &:hover {
     background-color: var(--primary-color);

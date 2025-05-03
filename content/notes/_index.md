@@ -4,6 +4,7 @@ sort_by = "update_date"
 insert_anchor_links = "heading"
 generate_feeds = true
 template = "notes_garden.html"
+paginate_by = 12
 
 [extra]
 comment = false

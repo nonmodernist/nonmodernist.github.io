@@ -1,7 +1,6 @@
 ---
 title: "Dividers"
-date: 2025-04-29
-draft: true
+weight: 50
 ---
 
 The divider below is the default.

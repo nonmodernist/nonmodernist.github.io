@@ -14,7 +14,7 @@ extra:
   tldr: Maintaining connections to our past selves through digital archives.
 ---
 
-I recently found the blog I kept from 2006-2008. I won't link it here, but I am working on copying over some of the less cringe entries. Sometimes it's nice to spend time with the person you used to be. I, for instance, used to be a person who knew a lot about the [18th-century French aristocracy](@/readinglog.md#2008).
+I recently found the blog I kept from 2006-2008. I won't link it here, but I am working on copying over some of the less cringe entries. Sometimes it's nice to spend time with the person you used to be. I, for instance, used to be a person who knew a lot about the [18th-century French aristocracy].
 
 There's something uniquely revealing about encountering your own writing from 15+ years ago. Unlike photographs or physical mementos, personal writing captures not just events but thought processes, priorities, and your particular voice at that time. 
 

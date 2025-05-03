@@ -1,25 +1,35 @@
 {% if page.backlinks and page.backlinks | length > 0 %}
-<div class="backlinks">
-  <button class="note-toggle">
-    <div class="note-icon">
-      <h2> notes that mention this note ({{ page.backlinks | length }})</h2>
-    </div>
-  </button>
+  {% set filtered_backlinks = [] %}
   
-  <div class="backlinks-content" style="display: none;">
-    <ul class="backlinks-list">
-      {% for backlink in page.backlinks %}
-        <li class="backlink-item">
-          <a href="{{ backlink.permalink }}">
-            {% if backlink.title %}
-              {{ backlink.title }}
-            {% else %}
-              Untitled Link
-            {% endif %}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
+  {% for backlink in page.backlinks %}
+    {% if backlink.permalink != page.permalink %}
+      {% set_global filtered_backlinks = filtered_backlinks | concat(with=backlink) %}
+    {% endif %}
+  {% endfor %}
+  
+  {% if filtered_backlinks | length > 0 %}
+    <div class="backlinks">
+      <button class="note-toggle">
+        <div class="note-icon">
+          <h2> notes that mention this note ({{ filtered_backlinks | length }})</h2>
+        </div>
+      </button>
+      
+      <div class="backlinks-content" style="display: none;">
+        <ul class="backlinks-list">
+          {% for backlink in filtered_backlinks %}
+            <li class="backlink-item">
+              <a href="{{ backlink.permalink }}">
+                {% if backlink.title %}
+                  {{ backlink.title }}
+                {% else %}
+                  Untitled Link
+                {% endif %}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endif %}
 {% endif %}

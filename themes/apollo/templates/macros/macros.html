@@ -21,23 +21,23 @@
     - pages: Collection of pages to list
     - tag_name: Optional tag name to display in the header
   #}
-{% macro list_tag_posts(pages, tag_name=false) %}
-    {% if tag_name %}
-    <div class="page-header">
-        entries tagged :: {{ tag_name }} <span class="og" style="font-size: .4em">⤵</span>
-    </div> 
-    {% else %}
-    <div class="page-header">
-        all articles <span class="og" style="font-size: .4em">⤵</span>
-    </div>
-    {% endif %}
-
-    <main class="list">
+  {% macro list_tag_posts(pages, tag_name=false) %}
+      {% if tag_name %}
+      <div class="page-header">
+          entries tagged :: {{ tag_name }} <span class="og" style="font-size: .4em">⤵</span>
+      </div> 
+      {% else %}
+      <div class="page-header">
+          all articles <span class="og" style="font-size: .4em">⤵</span>
+      </div>
+      {% endif %}
+  
+      <main class="list">
       {# Use the list_posts macro to render the actual list of posts #}
-    {{ post_macros::list_posts(pages=pages) }}
-    </main>
-{% endmacro %}
-
+      {{ post_macros::list_posts(pages=pages) }}
+      </main>
+  {% endmacro %}
+  
   {# 
     MACRO: list_posts
     Purpose: Core macro for displaying posts in a list format
@@ -48,80 +48,80 @@
     - Supports special cases like moon phases and draft indicators
     - Manages "read more" link visibility based on content
   #}
-{% macro list_posts(pages) %}
-<ul>
-    {%- for page in pages %}
-    <li class="list-item">
-    <section>
-        <div class="post-header">
+  {% macro list_posts(pages) %}
+  <ul>
+      {%- for page in pages %}
+      <li class="list-item">
+      <section>
+          <div class="post-header">
               {# Display date in YYYY-MM-DD format #}
-            <time>{{ page.date | date(format="%Y-%m-%d") }}</time>
-
-            <div>
-                <h1 class="title">
+              <time>{{ page.date | date(format="%Y-%m-%d") }}</time>
+  
+              <div>
+                  <h1 class="title">
                       <a href={{ page.permalink | safe }}>{{page.title}}</a>
                       
                       {# Display moon phase indicator if specified in frontmatter #}
                       {% if page.extra.moon_phase %}
-                    <span class="moon-phase moon-phase-{{ page.extra.moon_phase }}">
-                       {% if page.extra.moon_phase == "new" %}🌑
-                       {% elif page.extra.moon_phase == "waxing_crescent" %}🌙
-                       {% elif page.extra.moon_phase == "first_quarter" %}🌓
-                       {% elif page.extra.moon_phase == "waxing_gibbous" %}🌔
-                       {% elif page.extra.moon_phase == "full" %}🌕
-                            {% endif %}</span>
-                            {% endif %}
-
+                      <span class="moon-phase moon-phase-{{ page.extra.moon_phase }}">
+                         {% if page.extra.moon_phase == "new" %}🌑
+                         {% elif page.extra.moon_phase == "waxing_crescent" %}🌙
+                         {% elif page.extra.moon_phase == "first_quarter" %}🌓
+                         {% elif page.extra.moon_phase == "waxing_gibbous" %}🌔
+                         {% elif page.extra.moon_phase == "full" %}🌕
+                              {% endif %}</span>
+                              {% endif %}
+  
                       {# Show draft label for unpublished content #}
-                    {% if page.draft %}
-                    <span class="draft-label">DRAFT</span>
-                    {% endif %}
-                </h1>
-
-                <div class="meta">
-                    <div class="description">
+                      {% if page.draft %}
+                      <span class="draft-label">DRAFT</span>
+                      {% endif %}
+                  </h1>
+  
+                  <div class="meta">
+                      <div class="description">
                           {# Choose the best description source with fallbacks #}
-                        {% if page.description %}
-                        {{ page.description }}
-                        {% elif page.summary %}
-                        {{ page.summary | safe }}&hellip;
-                        {% else %}
-                        {% set hide_read_more = true %}
-                        {% endif %}
-                    </div>
-
+                          {% if page.description %}
+                          {{ page.description }}
+                          {% elif page.summary %}
+                          {{ page.summary | safe }}&hellip;
+                          {% else %}
+                          {% set hide_read_more = true %}
+                          {% endif %}
+                      </div>
+  
                       {# Only show "Read more" when we have a description or summary #}
-                    {% if not hide_read_more %}
-                    <a class="readmore" href={{ page.permalink | safe }}>Read more ⟶</a>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
-    </section>
-  </li>
-    {% endfor -%}
-</ul>
-{% endmacro list_posts %}
-
+                      {% if not hide_read_more %}
+                      <a class="readmore" href={{ page.permalink | safe }}>Read more ⟶</a>
+                      {% endif %}
+                  </div>
+              </div>
+          </div>
+      </section>
+    </li>
+      {% endfor -%}
+  </ul>
+  {% endmacro list_posts %}
+  
   {# 
     MACRO: list_terms
     Purpose: Displays a list of taxonomy terms (like tag categories)
     Parameters:
     - terms: Collection of taxonomy terms to display
   #}
-{% macro list_terms(terms) %}
-    <ul>
-    {%- for term in terms %}
-        <section class="list-item">
-            <h1 class="title">
-                <a href={{ term.permalink }}>{{term.name}}</a>
-            </h1>
-        </section>
-
-    {% endfor -%}
-    </ul>
-{% endmacro list_terms %}
-
+  {% macro list_terms(terms) %}
+      <ul>
+      {%- for term in terms %}
+          <section class="list-item">
+              <h1 class="title">
+                  <a href={{ term.permalink }}>{{term.name}}</a>
+              </h1>
+          </section>
+  
+      {% endfor -%}
+      </ul>
+  {% endmacro list_terms %}
+  
   {# 
     MACRO: tags
     Purpose: Renders a page's tags with appropriate formatting
@@ -132,26 +132,26 @@
     - Uses different separators and prefixes based on short parameter
     - Ensures proper taxonomy URL generation
   #}
-{% macro tags(page, short=false) %}
-    {%- if page.taxonomies and page.taxonomies.tags %}
-        <span class="post-tags-inline">
-            {%- if short %}
+  {% macro tags(page, short=false) %}
+      {%- if page.taxonomies and page.taxonomies.tags %}
+          <span class="post-tags-inline">
+              {%- if short %}
                   {# Compact format for constrained spaces #}
-                ::
-                {%- set sep = "," -%}
-            {% else %}
+                  ::
+                  {%- set sep = "," -%}
+              {% else %}
                   {# Standard format with explicit "tags:" label #}
-                :: tags:&nbsp;
-                {%- set sep = "&nbsp;" -%}
-            {% endif -%}
-            {%- for tag in page.taxonomies.tags %}
-                <a class="post-tag" href="{{ get_taxonomy_url(kind='tags', name=tag, lang=page.lang) | safe }}">#{{ tag }}</a>
-                {%- if not loop.last %}{{ sep | safe }}{% endif -%}
-            {% endfor -%}
-        </span>
-    {% endif -%}
-{% endmacro tags %}
-
+                  :: tags:&nbsp;
+                  {%- set sep = "&nbsp;" -%}
+              {% endif -%}
+              {%- for tag in page.taxonomies.tags %}
+                  <a class="post-tag" href="{{ get_taxonomy_url(kind='tags', name=tag, lang=page.lang) | safe }}">#{{ tag }}</a>
+                  {%- if not loop.last %}{{ sep | safe }}{% endif -%}
+              {% endfor -%}
+          </span>
+      {% endif -%}
+  {% endmacro tags %}
+  
   {# 
     MACRO: page_header
     Purpose: Renders consistent page headers with moon phase indicators
@@ -161,42 +161,42 @@
     - Adds moon phase indicator for notes if specified
     - Falls back to decorative arrow indicator if no moon phase
   #}
-{% macro page_header(title) %}
-    <div class="page-header">
-        {{ title }}
-        {% if page.extra.moon_phase %}
-        <span class="moon-phase moon-phase-{{ page.extra.moon_phase }}">
-           {% if page.extra.moon_phase == "new" %}🌑
-           {% elif page.extra.moon_phase == "waxing_crescent" %}🌙
-           {% elif page.extra.moon_phase == "first_quarter" %}🌓
-           {% elif page.extra.moon_phase == "waxing_gibbous" %}🌔
-           {% elif page.extra.moon_phase == "full" %}🌕
-                {% endif %}
-          </span>
-          {% else %}    
-          <span class="og" style="font-size: .4em">⤵</span>
-    {% endif %}
-    
-    </div>
-{% endmacro content %}
-
+  {% macro page_header(title) %}
+      <div class="page-header">
+          {{ title }}
+          {% if page.extra.moon_phase %}
+          <span class="moon-phase moon-phase-{{ page.extra.moon_phase }}">
+             {% if page.extra.moon_phase == "new" %}🌑
+             {% elif page.extra.moon_phase == "waxing_crescent" %}🌙
+             {% elif page.extra.moon_phase == "first_quarter" %}🌓
+             {% elif page.extra.moon_phase == "waxing_gibbous" %}🌔
+             {% elif page.extra.moon_phase == "full" %}🌕
+                  {% endif %}
+            </span>
+            {% else %}    
+            <span class="og" style="font-size: .4em">⤵</span>
+      {% endif %}
+      
+      </div>
+  {% endmacro content %}
+  
   {# 
     MACRO: home_page
     Purpose: Renders the homepage content section
     Parameters:
     - section: The section object containing the homepage content
   #}
-{% macro home_page(section) %}
-<main>
-    <article>
-        <section class="body">
-            {{post_macros::page_header(title=section.title)}}
-            {{ section.content | safe }}
-        </section>
-    </article>
-</main>
-{% endmacro home_page %}
-
+  {% macro home_page(section) %}
+  <main>
+      <article>
+          <section class="body">
+              {{post_macros::page_header(title=section.title)}}
+              {{ section.content | safe }}
+          </section>
+      </article>
+  </main>
+  {% endmacro home_page %}
+  
   {# 
     MACRO: content
     Purpose: Renders a single content page with complete metadata
@@ -208,126 +208,126 @@
     - Supports table of contents generation
     - Includes backlinks and related notes
   #}
-{% macro content(page) %}
-<main>
-    <article class="h-entry readable-content">
-        <div class="title">
+  {% macro content(page) %}
+  <main>
+      <article class="h-entry readable-content">
+          <div class="title">
             {#<h1 class="title p-name">{{ page.title }}</h1>#}
-            {{ post_macros::page_header(title=page.title) }}
-
-                <div class="meta">
-                    {% if page.date %}
+              {{ post_macros::page_header(title=page.title) }}
+  
+                  <div class="meta">
+                      {% if page.date %}
                           {# IndieWeb microformat classes for better interoperability #}
-                        Posted <span class="hidden">by <a rel="author" class="p-author h-card" href="https://nonmodernist.com">alexandra edwards</a></span> on <time class="dt-published"> {{ page.date | date(format="%Y-%m-%d") }}</time>
-                    {% endif %}
-
-                    {% if page.updated %}
-                        :: Updated on <time class="dt-updated">{{ page.updated | date(format="%Y-%m-%d") }}</time>
-                    {% endif %}
-
-                    {% if page.extra.read_time %}
-                        :: <time>{{ page.reading_time }}</time> Min Read
-                    {% endif %}
-
-                    {% if page.word_count %}
-                        :: {{ page.word_count }} Words
-                    {% endif %}
-
-                    {# Inline display of tags directly after the date #}
-                    {% if page.taxonomies and page.taxonomies.tags %}
-                            <span class="tags-label"> :: Tags:</span>
-                            <span class="tags">
-                                {%- for tag in page.taxonomies.tags %}
-                                    <a href="{{ get_taxonomy_url(kind='tags', name=tag, lang=page.lang) }}" class="post-tag">{{ tag }}</a>{% if not loop.last %}, {% endif %}
-                                {% endfor %}
-                            </span>
-                    {% endif %}
-
+                          Posted <span class="hidden">by <a rel="author" class="p-author h-card" href="https://nonmodernist.com">alexandra edwards</a></span> on <time class="dt-published"> {{ page.date | date(format="%Y-%m-%d") }}</time>
+                      {% endif %}
+  
+                      {% if page.updated %}
+                          :: Updated on <time class="dt-updated">{{ page.updated | date(format="%Y-%m-%d") }}</time>
+                      {% endif %}
+  
+                      {% if page.extra.read_time %}
+                          :: <time>{{ page.reading_time }}</time> Min Read
+                      {% endif %}
+  
+                      {% if page.word_count %}
+                          :: {{ page.word_count }} Words
+                      {% endif %}
+  
+                      {# Inline display of tags directly after the date #}
+                      {% if page.taxonomies and page.taxonomies.tags %}
+                              <span class="tags-label"> :: Tags:</span>
+                              <span class="tags">
+                                  {%- for tag in page.taxonomies.tags %}
+                                      <a href="{{ get_taxonomy_url(kind='tags', name=tag, lang=page.lang) }}" class="post-tag">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+                                  {% endfor %}
+                              </span>
+                      {% endif %}
+  
                       {# View the page on GitHub if repo_view is enabled #}
-                    {% if page.extra.repo_view | default(value=config.extra.repo_view) | default(value=false) %}
-                        {# Use the page's repo_url if defined, otherwise use the global edit_repo_url #}
-                        {% if page.extra.repo_url is defined %}
-                            {% set repo_url = page.extra.repo_url %}
-                        {% elif config.extra.repo_url is defined %}
-                            {% set repo_url = config.extra.repo_url %}
-                        {% else %}
-                            {% set repo_url = false %}
-                        {% endif %}
-
-                        {% if repo_url %}
-                            {% set final_url = repo_url ~ page.relative_path %}
-                            :: <a href="{{ final_url }}" target="_blank" rel="noopener noreferrer"> Source Code</a>
-                        {% endif %}
-                    {% endif %}
-
-                    {% if page.draft %}
-                        <span class="draft-label">DRAFT</span>
-                    {% endif %}
-
-                </div>
-        </div>
-
+                      {% if page.extra.repo_view | default(value=config.extra.repo_view) | default(value=false) %}
+                          {# Use the page's repo_url if defined, otherwise use the global edit_repo_url #}
+                          {% if page.extra.repo_url is defined %}
+                              {% set repo_url = page.extra.repo_url %}
+                          {% elif config.extra.repo_url is defined %}
+                              {% set repo_url = config.extra.repo_url %}
+                          {% else %}
+                              {% set repo_url = false %}
+                          {% endif %}
+  
+                          {% if repo_url %}
+                              {% set final_url = repo_url ~ page.relative_path %}
+                              :: <a href="{{ final_url }}" target="_blank" rel="noopener noreferrer"> Source Code</a>
+                          {% endif %}
+                      {% endif %}
+  
+                      {% if page.draft %}
+                          <span class="draft-label">DRAFT</span>
+                      {% endif %}
+  
+                  </div>
+          </div>
+  
           {# Display TL;DR summary if provided #}
-        {% if page.extra.tldr %}
-            <div class="tldr p-summary">
-                <strong>tl;dr:</strong>
-                {{ page.extra.tldr }}
-            </div>
-        {% endif %}
-
+          {% if page.extra.tldr %}
+              <div class="tldr p-summary">
+                  <strong>tl;dr:</strong>
+                  {{ page.extra.tldr }}
+              </div>
+          {% endif %}
+  
           {# Optional table of contents - only shown if enabled in config and page has TOC #}
-        {% if config.extra.toc | default(value=false) %}
-        {% if page.toc %}
-            <div class="toc-container">
-                <h1 class="toc-title">Table of Contents</h1>
-                <ul class="toc-list">
-                    {% for h1 in page.toc %}
-                        <li>
-                            <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
-                            {% if h1.children %}
-                                <ul>
-                                    {% for h2 in h1.children %}
-                                        <li>
-                                            <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
-                                        </li>
-
-                                        {% if h2.children %}
-                                            <ul>
-                                                {% for h3 in h2.children %}
-                                                    <li>
-                                                        <a href="{{ h3.permalink | safe }}">{{ h3.title }}</a>
-                                                    </li>
-                                                {% endfor %}
-                                            </ul>
-                                        {% endif %}
-                                    {% endfor %}
-                                </ul>
-                            {% endif %}
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
-        {% endif %}
-        {% endif %}
-
-        <section class="body"></section>
-        <div class="readable-content">
-            {{ page.content | safe }}
-        </div> 
-    </section>
-
+          {% if config.extra.toc | default(value=false) %}
+          {% if page.toc %}
+              <div class="toc-container">
+                  <h1 class="toc-title">Table of Contents</h1>
+                  <ul class="toc-list">
+                      {% for h1 in page.toc %}
+                          <li>
+                              <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+                              {% if h1.children %}
+                                  <ul>
+                                      {% for h2 in h1.children %}
+                                          <li>
+                                              <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+                                          </li>
+  
+                                          {% if h2.children %}
+                                              <ul>
+                                                  {% for h3 in h2.children %}
+                                                      <li>
+                                                          <a href="{{ h3.permalink | safe }}">{{ h3.title }}</a>
+                                                      </li>
+                                                  {% endfor %}
+                                              </ul>
+                                          {% endif %}
+                                      {% endfor %}
+                                  </ul>
+                              {% endif %}
+                          </li>
+                      {% endfor %}
+                  </ul>
+              </div>
+          {% endif %}
+          {% endif %}
+  
+          <section class="body"></section>
+          <div class="readable-content">
+              {{ page.content | safe }}
+          </div> 
+      </section>
+  
     {% if page.backlinks and page.backlinks | length > 0 %}
-{% include "partials/backlinks.html" %}
+  {% include "partials/backlinks.html" %}
 {% else %}
-    {% include "partials/related_notes.html" %}
+  {% include "partials/related_notes.html" %}
 {% endif %}
 
     
-    
-    </article>
-</main>
-{% endmacro content %}
-
+      
+      </article>
+  </main>
+  {% endmacro content %}
+  
   {# 
     MACRO: cards_posts
     Purpose: Renders posts in a card-based grid layout
@@ -338,46 +338,46 @@
     - Falls back to placeholder if no image is specified
     - Handles special case of external links via page.extra.link_to
   #}
-{% macro cards_posts(pages) %}
-    <div class="cards">
-    {%- for page in pages %}
-        <div class="card">
+  {% macro cards_posts(pages) %}
+      <div class="cards">
+      {%- for page in pages %}
+          <div class="card">
               {# Handle different image sources with appropriate fallbacks #}
-            {% if page.extra.local_image %}
-                <img class="card-image" alt={{ page.extra.local_image }} src="{{ get_url(path=page.extra.local_image) }}" />
-            {% elif page.extra.remote_image %}
-                <img class="card-image" alt={{ page.extra.remote_image }} src="{{ page.extra.remote_image }}" />
-            {% else %}
-                <div class="card-image-placeholder"></div>
-            {% endif %}
-
-            <div class="card-info">
-                <h1 class="card-title">
+              {% if page.extra.local_image %}
+                  <img class="card-image" alt={{ page.extra.local_image }} src="{{ get_url(path=page.extra.local_image) }}" />
+              {% elif page.extra.remote_image %}
+                  <img class="card-image" alt={{ page.extra.remote_image }} src="{{ page.extra.remote_image }}" />
+              {% else %}
+                  <div class="card-image-placeholder"></div>
+              {% endif %}
+  
+              <div class="card-info">
+                  <h1 class="card-title">
                       {# Support linking to external URLs if specified #}
-                    {% if page.extra.link_to %}
-                    <a href={{ page.extra.link_to }}>{{page.title}}</a>
-                    {% else %}
-                    <a href={{ page.permalink | safe }}>{{page.title}}</a>
-                    {% endif %}
-                </h1>
-
-                <div class="meta">
-                    {%- if page.date %}
-                        <time>{{ page.date | date(format="%Y-%m-%d") }}</time>
-                    {% endif -%}
-                    {% if page.draft %}
-                        <span class="draft-label">DRAFT</span>
-                    {% endif %}
-                </div>
-
-                <div class="card-description">
-                    {% if page.description %}
-                        {{ page.description }}
-                    {% endif %}
-                </div>
-            </div>
-        </div>
-
-    {% endfor -%}
-    </div>
-{% endmacro cards_posts %}
+                      {% if page.extra.link_to %}
+                      <a href={{ page.extra.link_to }}>{{page.title}}</a>
+                      {% else %}
+                      <a href={{ page.permalink | safe }}>{{page.title}}</a>
+                      {% endif %}
+                  </h1>
+  
+                  <div class="meta">
+                      {%- if page.date %}
+                          <time>{{ page.date | date(format="%Y-%m-%d") }}</time>
+                      {% endif -%}
+                      {% if page.draft %}
+                          <span class="draft-label">DRAFT</span>
+                      {% endif %}
+                  </div>
+  
+                  <div class="card-description">
+                      {% if page.description %}
+                          {{ page.description }}
+                      {% endif %}
+                  </div>
+              </div>
+          </div>
+  
+      {% endfor -%}
+      </div>
+  {% endmacro cards_posts %}

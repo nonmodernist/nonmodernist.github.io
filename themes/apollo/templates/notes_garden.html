@@ -1,107 +1,177 @@
-{% extends "base.html" %}
-
-{% block main_content %}
-    {% block title %}
-        {{ post_macros::page_header(title=section.title) }}
-    {% endblock title %}
-
-    <p class="garden-intro">{{ section.content | safe }}</p>
-
-    <div class="moon-phase-legend">
-        <div class="legend-item">
-            <span class="moon-emoji">🌑</span> New idea
-        </div>
-        <div class="legend-item">
-            <span class="moon-emoji">🌙</span> Beginning to take shape
-        </div>
-        <div class="legend-item">
-            <span class="moon-emoji">🌓</span> Half-developed
-        </div>
-        <div class="legend-item">
-            <span class="moon-emoji">🌔</span> Mostly formed
-        </div>
-        <div class="legend-item">
-            <span class="moon-emoji">🌕</span> Complete thought
-        </div>
-        <!--
-        <div class="legend-item">
-            <span class="moon-emoji">🌖</span> Being revised
-        </div>
-        <div class="legend-item">
-            <span class="moon-emoji">🌗</span> Major revision
-        </div>
-        <div class="legend-item">
-            <span class="moon-emoji">🌘</span> Fading/archiving
-        </div>
-        -->
-    </div>
-
-    <div class="garden-grid">
-        {% for page in section.pages %}
-        {% set moon_phase = "new" %}
-        {% if page.extra and page.extra.moon_phase %}
-            {% set moon_phase = page.extra.moon_phase %}
-        {% endif %}
-        
-        <div class="garden-note moon-phase-{{ moon_phase }}">
-            <div class="garden-note-header">
-                <h3><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
+{# 
+    NOTES_GARDEN.HTML
+    
+    Purpose: Custom template for the digital garden/notes section
+    This template renders a grid of notes with moon phase indicators
+    to show their stage of development. It's based on the section.html
+    template but with specialized functionality for the digital garden concept.
+    
+    Key components:
+    - Garden introduction text from section content
+    - Moon phase legend explaining the system
+    - Grid layout of note cards
+    - Pagination controls
+  #}
+  
+  {% extends "base.html" %}
+  
+  {% block main_content %}
+      {# Display the section title using the page_header macro #}
+      {% block title %}
+          {{ post_macros::page_header(title=section.title) }}
+      {% endblock title %}
+  
+      {# Display the garden introduction text from the section's content #}
+      <p class="garden-intro">{{ section.content | safe }}</p>
+  
+      {# 
+        MOON PHASE LEGEND
+        Displays a visual explanation of the moon phase system used to indicate
+        the development stage of each note
+      #}
+      <div class="moon-phase-legend">
+          <div class="legend-item">
+              <span class="moon-emoji">🌑</span> New idea
+          </div>
+          <div class="legend-item">
+              <span class="moon-emoji">🌙</span> Beginning to take shape
+          </div>
+          <div class="legend-item">
+              <span class="moon-emoji">🌓</span> Half-developed
+          </div>
+          <div class="legend-item">
+              <span class="moon-emoji">🌔</span> Mostly formed
+          </div>
+          <div class="legend-item">
+              <span class="moon-emoji">🌕</span> Complete thought
+          </div>
+          {# 
+            Additional phases that are commented out, possibly for future use
+            or previously used phases that are currently disabled
+          #}
+          <!--
+          <div class="legend-item">
+              <span class="moon-emoji">🌖</span> Being revised
+          </div>
+          <div class="legend-item">
+              <span class="moon-emoji">🌗</span> Major revision
+          </div>
+          <div class="legend-item">
+              <span class="moon-emoji">🌘</span> Fading/archiving
+          </div>
+          -->
+      </div>
+  
+      {# 
+        GARDEN GRID
+        The main container for note cards, displayed in a responsive grid layout.
+        CSS in _garden.scss controls the responsive behavior.
+      #}
+      <div class="garden-grid">
+          {# Loop through all pages in the section #}
+          {% for page in section.pages %}
+          {# 
+            Set default moon phase to "new" if not specified
+            This ensures every note has a valid phase even if not set in frontmatter
+          #}
+          {% set moon_phase = "new" %}
+          {% if page.extra and page.extra.moon_phase %}
+              {% set moon_phase = page.extra.moon_phase %}
+          {% endif %}
+          
+          {# 
+            GARDEN NOTE CARD
+            Each note is displayed as a card with:
+            - Title with link to full note
+            - Moon phase indicator
+            - Excerpt (from description or summary)
+            - Tags
+            - Metadata (date and word count)
+            
+            The card's class includes the moon phase for potential styling differences
+          #}
+          <div class="garden-note moon-phase-{{ moon_phase }}">
+              <div class="garden-note-header">
+                  <h3><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
                 {% if page.draft %}
                 <span class="draft-label">[Draft]</span>
                 {% endif %}
-
-                <span class="moon-phase-indicator">
-                    {% if moon_phase == "new" %}🌑
-                    {% elif moon_phase == "waxing_crescent" %}🌙
-                    {% elif moon_phase == "first_quarter" %}🌓
-                    {% elif moon_phase == "waxing_gibbous" %}🌔
-                    {% elif moon_phase == "full" %}🌕
-                    {% elif moon_phase == "waning_gibbous" %}🌖
-                    {% elif moon_phase == "last_quarter" %}🌗
-                    {% elif moon_phase == "waning_crescent" %}🌘
-                    {% else %}🌑
-                    {% endif %}
-                </span>
-            </div>
-            
-
-            {% if page.description %}
-            <p class="note-excerpt">{{ page.description }}</p>
-            {% elif page.summary %}
-            <p class="note-excerpt">{{ page.summary | safe }}</p>
-            {% endif %}
-            
-            {% if page.taxonomies and page.taxonomies.tags %}
-            <div class="note-tags">
-                {% for tag in page.taxonomies.tags %}
-                <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}" class="note-tag">#{{ tag }}</a>
-                {% endfor %}
-            </div>
-            {% endif %}
-            
-            <div class="note-meta">
-                <span class="note-date">{{ page.date | date(format="%Y-%m-%d") }}</span>
-                {% if page.word_count %}
-                <span class="note-wordcount">{{ page.word_count }} words</span>
-                {% endif %}
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-
-    {% if paginator %}
-        <ul class="pagination">
-            {% if paginator.previous %}
-                <span class="page-item page-prev">
-                    <a href={{ paginator.previous }} class="page-link" aria-label="Previous"><span aria-hidden="true">← Prev</span></a>
-                </span>
-            {% endif %}
-
-            {% if paginator.next %}
-                <span class="page-item page-next">
-                    <a href={{ paginator.next }} class="page-link" aria-label="Next"><span aria-hidden="true">Next →</span></a>
-                </span>
-            {% endif %}
-        </ul>
-    {% endif %}
-{% endblock main_content %}
+  
+                  {# 
+                    MOON PHASE INDICATOR
+                    Visual indicator showing the note's development stage
+                    Uses conditional logic to display the correct emoji based on phase
+                  #}
+                  <span class="moon-phase-indicator">
+                      {% if moon_phase == "new" %}🌑
+                      {% elif moon_phase == "waxing_crescent" %}🌙
+                      {% elif moon_phase == "first_quarter" %}🌓
+                      {% elif moon_phase == "waxing_gibbous" %}🌔
+                      {% elif moon_phase == "full" %}🌕
+                      {% elif moon_phase == "waning_gibbous" %}🌖
+                      {% elif moon_phase == "last_quarter" %}🌗
+                      {% elif moon_phase == "waning_crescent" %}🌘
+                      {% else %}🌑
+                      {% endif %}
+                  </span>
+              </div>
+              
+              {# 
+                NOTE EXCERPT
+                Shows a preview of the note content
+                Tries description first, then falls back to summary
+              #}
+              {% if page.description %}
+              <p class="note-excerpt">{{ page.description }}</p>
+              {% elif page.summary %}
+              <p class="note-excerpt">{{ page.summary | safe }}</p>
+              {% endif %}
+              
+              {# 
+                NOTE TAGS
+                Display tags if available, linked to their taxonomy pages
+                Each tag is prefixed with # for visual clarity
+              #}
+              {% if page.taxonomies and page.taxonomies.tags %}
+              <div class="note-tags">
+                  {% for tag in page.taxonomies.tags %}
+                  <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}" class="note-tag">#{{ tag }}</a>
+                  {% endfor %}
+              </div>
+              {% endif %}
+              
+              {# 
+                NOTE METADATA
+                Shows date and word count in a footer area
+              #}
+              <div class="note-meta">
+                  <span class="note-date">{{ page.date | date(format="%Y-%m-%d") }}</span>
+                  {% if page.word_count %}
+                  <span class="note-wordcount">{{ page.word_count }} words</span>
+                  {% endif %}
+              </div>
+          </div>
+          {% endfor %}
+      </div>
+  
+      {# 
+        PAGINATION
+        Standard pagination controls for when there are multiple pages
+        Shows Previous/Next links when needed
+      #}
+      {% if paginator %}
+          <ul class="pagination">
+              {% if paginator.previous %}
+                  <span class="page-item page-prev">
+                      <a href={{ paginator.previous }} class="page-link" aria-label="Previous"><span aria-hidden="true">← Prev</span></a>
+                  </span>
+              {% endif %}
+  
+              {% if paginator.next %}
+                  <span class="page-item page-next">
+                      <a href={{ paginator.next }} class="page-link" aria-label="Next"><span aria-hidden="true">Next →</span></a>
+                  </span>
+              {% endif %}
+          </ul>
+      {% endif %}
+  {% endblock main_content %}

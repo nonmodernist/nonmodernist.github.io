@@ -46,7 +46,7 @@ hr {
 
 blockquote {
   border-left: 3px solid var(--primary-color);
-  color: #737373;
+  color: var(--text-2);
   margin: 2rem; // increase margin from 0
   padding-left: 1em;
 }
@@ -57,7 +57,13 @@ a {
 }
 
 time {
-  color: grey;
+  color: var(--text-2);
+  &::before {
+    content: "☀";
+    font-family: var(--emoji-font);
+    font-size: var(--space-xs);
+    padding-right: var(--text-spacing-s);
+  }
 }
 
 /* Remove post list padding */
@@ -123,6 +129,11 @@ del {
   &:hover {
     background-color: transparent;
   }
+}
+
+/* Class to remove content after internal links */
+.truncate-link {
+  @include truncate-internal-links();
 }
 
 .MathJax_Display,
@@ -197,6 +208,6 @@ a.zola-anchor {
 .tldr {
   margin: .725rem 2rem;
   border-left: 3px dashed var(--primary-color);
-  color: #737373;
+  color: var(--text-2);
   padding: .5rem ;
 }
