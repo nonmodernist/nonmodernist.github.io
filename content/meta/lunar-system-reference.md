@@ -13,7 +13,7 @@ This guide provides a quick reference for applying the lunar-themed design syste
 |-------|------|-------|---------|---------|
 | **New Moon** | 🌑 | `.moon-phase-new` | Brand new ideas, questions, or thoughts |  |
 | **Waxing Crescent** | 🌒 | `.moon-phase-waxing_crescent` | Growing ideas with some development |  |
-| **First Quarter** | 🌓 | `.moon-phase-first_quarter` | Half-formed notes with structure |  |
+| **First Quarter** | 🌓 | `.moon-phase-first_quarter` | Half-developed notes with structure |  |
 | **Waxing Gibbous** | 🌔 | `.moon-phase-waxing_gibbous` | Nearly complete content |  |
 | **Full Moon** | 🌕 | `.moon-phase-full` | Complete, mature notes |  |
 

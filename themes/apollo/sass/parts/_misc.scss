@@ -34,6 +34,12 @@ p {
   margin-bottom: var(--space-m);
 }
 
+mark {
+  background-color: var(--primary-light);
+  padding: var(--space-3xs);
+  border-radius: 4px;
+}
+
 strong {
   font-weight: 900;
 }

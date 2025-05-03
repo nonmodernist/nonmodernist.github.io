@@ -34,13 +34,13 @@
               <span class="moon-emoji">🌑</span> New idea
           </div>
           <div class="legend-item">
-              <span class="moon-emoji">🌙</span> Beginning to take shape
+              <span class="moon-emoji">🌙</span> Developing idea
           </div>
           <div class="legend-item">
               <span class="moon-emoji">🌓</span> Half-developed
           </div>
           <div class="legend-item">
-              <span class="moon-emoji">🌔</span> Mostly formed
+              <span class="moon-emoji">🌔</span> Nearly complete
           </div>
           <div class="legend-item">
               <span class="moon-emoji">🌕</span> Complete thought
@@ -68,8 +68,14 @@
         CSS in _garden.scss controls the responsive behavior.
       #}
       <div class="garden-grid">
-          {# Loop through all pages in the section #}
-          {% for page in section.pages %}
+{# Loop through all pages in the section #}
+          {%- if paginator %}
+          {%- set show_pages = paginator.pages -%}
+      {% else %}
+          {%- set show_pages = section.pages -%}
+      {% endif -%}
+      
+      {% for page in show_pages %}
           {# 
             Set default moon phase to "new" if not specified
             This ensures every note has a valid phase even if not set in frontmatter

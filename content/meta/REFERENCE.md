@@ -1,5 +1,5 @@
 +++
-title = "Page Title"
+title = "Site Documentation"
 weight = 1
 insert_anchor_links = "heading"
 +++
