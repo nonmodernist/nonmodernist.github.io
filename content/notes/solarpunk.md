@@ -11,13 +11,19 @@ taxonomies:
 extra:
   moon_phase: waxing_gibbous
   tldr: "Reflections on solarpunk principles: community resilience, critical making, and imagining better worlds beyond capitalism"
-description: "Personal reflections on solarpunk principles: community resilience, critical making, and imagining better worlds beyond capitalism."
 fmContentType: garden-note
 ---
 
 <span class="og">☀</span> Last time I taught a class about solarpunk, my students built an emergency off-grid intranet that I still have sitting in a weatherproof box in my office. Next semester I'll bring it in for a new cohort to play with. I hope that physically handling someone else's prototype of digital infrastructure for climate resilience can make speculative futures feel more tangible for my students.
 
 The box in my office contains more than just wires and circuit boards and a cheap solar panel. It holds the tangible proof that another world is not only possible but already being built, one student project at a time.
+
+<figure class="center">
+  <div class="pixel-corners--wrapper">
+    <img src="/images/ai-digital-garden.png" alt="AI-generated watercolor and linocut-style illustration showing a greenhouse workspace where vintage computers and monitors grow like plants among lush tropical foliage. A modern iMac sits on a wooden desk surrounded by flourishing flowers and vines, while old CRT monitors are mounted on poles like tree trunks. Cables snake across the floor like roots. The arched glass ceiling frames this fusion of technology and nature in pale colors with detailed ink strokes." width="500px">
+  </div>
+  <figcaption>This watercolor and linocut approximation was created using Adobe's text-to-image generator with the prompt &"garden where computers grow." It captures the essence of both botanical abundance and technological resilience that solarpunk embodies. Where plants and computing power intertwine, we find a practical metaphor for building regenerative digital infrastructure within living systems.</figcaption>
+</figure>
 
 ## Solarpunk as Generative Practice
 
@@ -30,6 +36,13 @@ This is what we practiced in class: critical making as a form of applied anarchi
 These weren't just academic exercises; they were working prototypes exploring what life and communication might look like when centralized infrastructure fails.
 
 ## Critical Making as Solarpunk Praxis
+
+<figure class="center">
+  <div class="pixel-corners--wrapper">
+    <img src="/images/ai-computer-garden.png" alt="AI-generated image showing rows of early Macintosh Plus computers arranged like planted crops in garden beds. Pink coral-colored flowers and green foliage grow abundantly alongside and between the computers. Sheets of paper are scattered like leaves on a pale pink pathway that runs between the rows. The scene is rendered in soft pastels with a dreamlike quality, set against a turquoise sky." width="500px">
+  </div>
+  <figcaption>Another AI-generated vision from the prompt "garden where computers grow"—this time with "layered paper" as a style prompt. The scattered pages on the ground suggest autumn maintenance, while the turquoise sky and coral blooms create an optimistic palette that speaks to the harmony between digital tools and natural ecosystems that solarpunk envisions.</figcaption>
+</figure>
 
 Teaching solarpunk means bridging my interests in anarchist theory, nature, and technology. We begin with imagining better futures, and then we practice building them at whatever scale we can. Next semester's class on digital infrastructure and climate change continues this thread of my teaching. When my new students hold the prototypes my former students built, they'll understand that solarpunk isn't just an aesthetic—it's about making things that might actually keep us connected when systems fail.
 
@@ -47,4 +60,4 @@ This connects to my growing interest in more-than-human kin networks. Maria Puig
 
 {{ divider() }}
 
-*This note connects to my explorations of digital gardens and commonplace books.*
+*This note connects to my explorations of [digital gardens](@/notes/digital-gardens.md) and [commonplace books](@/notes/commonplace-books.md).*

@@ -35,7 +35,7 @@ I recently designed a course on genre in film. The theme for the first iteration
   <div class="pixel-corners--wrapper">
     <img src="/images/ai-village-green.png" alt="AI-generated watercolor and linocut illustration of a village green - a large grassy area surrounded by small cottages with pitched roofs. Trees frame the scene, and fluffy clouds fill a blue sky. The illustration uses flowing lines to create a sense of a windy spring day." width="550px">
   </div>
-  <figcaption>A village green in rural England, watercolor and linocut illustration created with Adobe Express. The open communal space surrounded by cottages represents the traditional commons that were central to village life before the enclosure movement.</figcaption>
+  <figcaption>A village green in rural England, watercolor and linocut-style illustration created with Adobe text-to-image. The open communal space surrounded by cottages represents the traditional commons that were central to village life before the enclosure movement.</figcaption>
 </figure>
 
 ## What Is a Village?
