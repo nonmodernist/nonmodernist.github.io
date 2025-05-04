@@ -14,7 +14,7 @@
   font-style: normal;
   font-weight: 400;
   src: url('/fonts/Unifont/subset-UnifontExMono.woff2') format('woff2'),
-       url('/fonts/Unifont/Unifont.ttf') format('truetype'); // fallback
+       url('/fonts/Unifont/subset-UnifontExMono.ttf') format('truetype'); // fallback
   font-display: swap;
 }
 
