@@ -22,7 +22,7 @@ The box in my office contains more than just wires and circuit boards and a chea
   <div class="pixel-corners--wrapper">
     <img src="/images/ai-digital-garden.png" alt="AI-generated watercolor and linocut-style illustration showing a greenhouse workspace where vintage computers and monitors grow like plants among lush tropical foliage. A modern iMac sits on a wooden desk surrounded by flourishing flowers and vines, while old CRT monitors are mounted on poles like tree trunks. Cables snake across the floor like roots. The arched glass ceiling frames this fusion of technology and nature in pale colors with detailed ink strokes." width="500px">
   </div>
-  <figcaption>This watercolor and linocut approximation was created using Adobe's text-to-image generator with the prompt &"garden where computers grow." It captures the essence of both botanical abundance and technological resilience that solarpunk embodies. Where plants and computing power intertwine, we find a practical metaphor for building regenerative digital infrastructure within living systems.</figcaption>
+  <figcaption>This watercolor and linocut approximation was created using Adobe's text-to-image generator with the prompt "garden where computers grow." It captures the essence of both botanical abundance and technological resilience that solarpunk embodies. Where plants and computing power intertwine, we find a practical metaphor for building regenerative digital infrastructure within living systems.</figcaption>
 </figure>
 
 ## Solarpunk as Generative Practice
