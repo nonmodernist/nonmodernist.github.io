@@ -1,6 +1,6 @@
 +++
 title = "Site Development Journal"
-weight = 15
+weight = 5
 date = "2025-05-03"
 insert_anchor_links = "heading"
 template = "development-journal.html"
@@ -15,8 +15,8 @@ moon_phase = "quarter"
 tldr = "A development journal tracking decisions, problems solved, and future plans for my digital moon garden."
 decision_count = 6
 solution_count = 1
-future_count = 4
-breaking_count = 1
+future_count = 6
+breaking_count = 2
 +++
 
 This is my working journal for site development decisions, problems solved, and ideas for future improvements. It serves as both documentation and a reference for my future self.
@@ -224,7 +224,9 @@ Implemented "related notes" and "backlinks" sections on the note pages to show l
 - Use a dropdown or toggle to select the moon phase
 - Filter the notes displayed on the page based on the selected phase
 
-### 
+### Color code emojis {.future-idea}
+
+**Planned:** Implement a system to color code OG emojis based on the original DoCoMo emoji colors.
 
 ## Breaking Changes
 

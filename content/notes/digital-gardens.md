@@ -23,7 +23,7 @@ I miss when we treated more websites a little like text adventure games, when di
 
 I also appreciate the garden metaphor because I spend a lot of time thinking about how computers help or hinder our ability to be in relationship with the ecosystems around us. In 2023, I developed a multimedia authoring course on apps and ebooks called "Shadow Libraries and Solarpunk Futures," where one of the goals was to get students doing this kind of thinking about the relationship between digital technology and "nature."
 
-I focused on solarpunk because I wanted us to find hope for the future. For me, that hope is in the possibility that we can reshape how we think about digital tech to work with, and not against, the natural world.
+I focused on [solarpunk](@/notes/solarpunk.md) because I wanted us to find hope for the future. For me, that hope is in the possibility that we can reshape how we think about digital tech to work with, and not against, the natural world.
 
 {{ divider(style="simple") }}
 

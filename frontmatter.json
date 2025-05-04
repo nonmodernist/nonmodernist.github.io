@@ -2,36 +2,33 @@
   "$schema": "https://frontmatter.codes/frontmatter.schema.json",
   "frontMatter.taxonomy.contentTypes": [
     {
-      "name": "default",
+      "name": "garden-note",
       "pageBundle": false,
-      "previewPath": null,
       "fields": [
         {
-          "title": "Title",
+          "title": "title",
           "name": "title",
           "type": "string"
         },
         {
-          "title": "Description",
-          "name": "description",
-          "type": "string"
-        },
-        {
-          "title": "Publishing date",
+          "title": "date",
           "name": "date",
-          "type": "datetime",
-          "default": "{{now}}",
-          "isPublishDate": true
+          "type": "datetime"
         },
         {
-          "title": "Content preview",
-          "name": "preview",
-          "type": "image"
-        },
-        {
-          "title": "Is in draft",
+          "title": "draft",
           "name": "draft",
           "type": "draft"
+        },
+        {
+          "title": "updated",
+          "name": "updated",
+          "type": "datetime"
+        },
+        {
+          "title": "fmContentType",
+          "name": "fmContentType",
+          "type": "string"
         },
         {
           "title": "taxonomies",
@@ -71,9 +68,9 @@
           ]
         },
         {
-          "title": "updated",
-          "name": "updated",
-          "type": "datetime"
+          "title": "description",
+          "name": "description",
+          "type": "string"
         }
       ]
     },
@@ -104,6 +101,16 @@
         {
           "title": "template",
           "name": "template",
+          "type": "string"
+        },
+        {
+          "title": "fmContentType",
+          "name": "fmContentType",
+          "type": "string"
+        },
+        {
+          "title": "description",
+          "name": "description",
           "type": "string"
         },
         {
@@ -139,8 +146,8 @@
               "type": "number"
             },
             {
-              "title": "problem_count",
-              "name": "problem_count",
+              "title": "solution_count",
+              "name": "solution_count",
               "type": "number"
             },
             {
@@ -154,25 +161,29 @@
               "type": "number"
             }
           ]
+        },
+        {
+          "title": "tags",
+          "name": "tags",
+          "type": "tags"
         }
       ]
     }
   ],
-  "frontMatter.framework.id": "hugo",
+  "frontMatter.content.autoUpdateDate": false,
+  "frontMatter.content.fmHighlight": true,
+  "frontMatter.framework.id": "zola",
   "frontMatter.content.publicFolder": "static",
   "frontMatter.preview.host": "http://127.0.0.1:1111",
+  "frontMatter.taxonomy.tags": [],
   "frontMatter.content.pageFolders": [
     {
-      "title": "content",
+      "title": "pages",
       "path": "[[workspace]]/content"
     },
     {
       "title": "notes",
       "path": "[[workspace]]/content/notes"
-    },
-    {
-      "title": "log",
-      "path": "[[workspace]]/content/log"
     }
   ],
   "frontMatter.git.enabled": true,
@@ -283,6 +294,31 @@
     }
   },
   "frontMatter.taxonomy.fieldGroups": [
+    {
+      "id": "related_notes_links_group",
+      "fields": [
+        {
+          "title": "url",
+          "name": "url",
+          "type": "string"
+        },
+        {
+          "title": "title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "moon_phase",
+          "name": "moon_phase",
+          "type": "string"
+        }
+      ]
+    },
     {
       "id": "related_notes_links_group",
       "fields": [
