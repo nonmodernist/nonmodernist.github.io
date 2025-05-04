@@ -14,7 +14,7 @@ tags = [ "meta", "development", "zola" ]
 moon_phase = "quarter"
 tldr = "A development journal tracking decisions, problems solved, and future plans for my digital moon garden."
 decision_count = 6
-solution_count = 1
+solution_count = 2
 future_count = 6
 breaking_count = 2
 +++
@@ -181,6 +181,17 @@ Implemented "related notes" and "backlinks" sections on the note pages to show l
 
 **Files Modified:**
 - `sass/parts/_image.scss`
+
+### Unifont resized and converted to woff2 {.problem-solved}
+
+**Date:** 2025-05-04
+
+**Problem:** The Unifont font was slowing down the site due to its size. 
+
+**Solution:** Extracted Latin extended characters to new font file and converted to woff2 format for better performance.
+
+**Files Modified:** 
+- `sass/fonts.scss`
 
 ## Future Improvements
 
