@@ -10,29 +10,11 @@
 }
 
 @font-face {
-  font-family: 'MintsodaLimeGreen';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/fonts/MintsodaLimeGreen/MintsodaLimeGreen.ttf'), local('ttf');
-  font-display: swap;
-}
-
-.mint {font-family: MintsodaLimeGeen, sans-serif;
-}
-
-@font-face {
-  font-family: 'Ameda';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/fonts/Ameda/Ameda.otf'), local('otf');
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'Unifont';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/Unifont/Unifont.ttf'), local('ttf');
+  src: url('/fonts/Unifont/subset-UnifontExMono.woff2') format('woff2'),
+       url('/fonts/Unifont/Unifont.ttf') format('truetype'); // fallback
   font-display: swap;
 }
 
