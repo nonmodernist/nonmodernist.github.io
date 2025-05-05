@@ -18,7 +18,7 @@
 // for different screen sizes
 .garden-grid {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.25rem;
   margin: 2rem 0;
   
   @include mobile-only {
@@ -44,7 +44,63 @@
 .readable-content {
   line-height: 1.8;
   font-size: 1.1rem;
-  max-width: 43rem;
+  max-width: 40rem;
   margin: 0 auto;
   font-family: var(--paragraph-font);
+}
+
+// back to top styling 
+
+.back-to-top-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  z-index: 1000;
+}
+
+.back-to-top-button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0.5rem;
+  background: var(--bg-1);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.3s ease;
+  font-family: var(--emoji-font);
+  font-size: 1.5rem;
+  line-height: 1;
+  
+  &:hover {
+    background: var(--primary-color);
+    color: var(--hover-color);
+    border-color: var(--primary-color);
+    transform: translateY(0) scale(1.1);
+  }
+  
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Mobile responsive adjustments
+@media (max-width: 1060px) {
+  .back-to-top-container {
+    bottom: 1rem;
+    right: .3rem;
+  }
+  
+  .back-to-top-button {
+    padding: 0.25rem;
+    font-size: 1.25rem;
+  }
+}
+
+// Ensure button doesn't interfere with footer
+.footer + .back-to-top-container {
+  bottom: 4rem; // Adjust based on your footer height
 }

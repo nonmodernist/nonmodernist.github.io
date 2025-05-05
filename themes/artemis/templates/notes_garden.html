@@ -3,13 +3,13 @@
     
     Purpose: Custom template for the digital garden/notes section
     This template renders a grid of notes with moon phase indicators
-    to show their stage of development. It's based on the section.html
-    template but with specialized functionality for the digital garden concept.
+    to show their stage of development, with moon phase filtering capability.
     
     Key components:
     - Garden introduction text from section content
-    - Moon phase legend explaining the system
+    - Moon phase legend with clickable filters
     - Grid layout of note cards
+    - Back to top button
     - Pagination controls
   #}
   
@@ -25,145 +25,117 @@
       <p class="garden-intro">{{ section.content | safe }}</p>
   
       {# 
-        MOON PHASE LEGEND
-        Displays a visual explanation of the moon phase system used to indicate
-        the development stage of each note
+        MOON PHASE FILTER CONTAINER
+        Contains clickable filter buttons for different moon phases
       #}
-      <div class="moon-phase-legend">
-          <div class="legend-item">
-              <span class="moon-emoji">🌑</span> New idea
+      <div class="moon-phase-filter-container">
+          <div class="moon-phase-legend">
+              <button class="legend-item filter-button" data-phase="new">
+                  <span class="moon-emoji">🌑</span> New idea
+              </button>
+              <button class="legend-item filter-button" data-phase="waxing_crescent">
+                  <span class="moon-emoji">🌙</span> Developing idea
+              </button>
+              <button class="legend-item filter-button" data-phase="first_quarter">
+                  <span class="moon-emoji">🌓</span> Half-developed
+              </button>
+              <button class="legend-item filter-button" data-phase="waxing_gibbous">
+                  <span class="moon-emoji">🌔</span> Nearly complete
+              </button>
+              <button class="legend-item filter-button" data-phase="full">
+                  <span class="moon-emoji">🌕</span> Complete thought
+              </button>
+              <button class="legend-item filter-button filter-all active" data-phase="all">All Notes</button>
           </div>
-          <div class="legend-item">
-              <span class="moon-emoji">🌙</span> Developing idea
-          </div>
-          <div class="legend-item">
-              <span class="moon-emoji">🌓</span> Half-developed
-          </div>
-          <div class="legend-item">
-              <span class="moon-emoji">🌔</span> Nearly complete
-          </div>
-          <div class="legend-item">
-              <span class="moon-emoji">🌕</span> Complete thought
-          </div>
-          {# 
-            Additional phases that are commented out, possibly for future use
-            or previously used phases that are currently disabled
-          #}
-          <!--
-          <div class="legend-item">
-              <span class="moon-emoji">🌖</span> Being revised
-          </div>
-          <div class="legend-item">
-              <span class="moon-emoji">🌗</span> Major revision
-          </div>
-          <div class="legend-item">
-              <span class="moon-emoji">🌘</span> Fading/archiving
-          </div>
-          -->
       </div>
+      
+      {# Notes count display #}
+      <div class="notes-count" id="notes-count"></div>
   
       {# 
         GARDEN GRID
-        The main container for note cards, displayed in a responsive grid layout.
-        CSS in _garden.scss controls the responsive behavior.
+        The main container for note cards, displayed in a responsive grid layout
       #}
       <div class="garden-grid">
-{# Loop through all pages in the section #}
+          {# Loop through all pages in the section #}
           {%- if paginator %}
-          {%- set show_pages = paginator.pages -%}
-      {% else %}
-          {%- set show_pages = section.pages -%}
-      {% endif -%}
-      
-      {% for page in show_pages %}
-          {# 
-            Set default moon phase to "new" if not specified
-            This ensures every note has a valid phase even if not set in frontmatter
-          #}
-          {% set moon_phase = "new" %}
-          {% if page.extra and page.extra.moon_phase %}
-              {% set moon_phase = page.extra.moon_phase %}
-          {% endif %}
+              {%- set show_pages = paginator.pages -%}
+          {% else %}
+              {%- set show_pages = section.pages -%}
+          {% endif -%}
           
-          {# 
-            GARDEN NOTE CARD
-            Each note is displayed as a card with:
-            - Title with link to full note
-            - Moon phase indicator
-            - Excerpt (from description or summary)
-            - Tags
-            - Metadata (date and word count)
-            
-            The card's class includes the moon phase for potential styling differences
-          #}
-          <div class="garden-note moon-phase-{{ moon_phase }}">
-              <div class="garden-note-header">
-                  <h3><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
-                {% if page.draft %}
-                <span class="draft-label">[Draft]</span>
-                {% endif %}
-  
-                  {# 
-                    MOON PHASE INDICATOR
-                    Visual indicator showing the note's development stage
-                    Uses conditional logic to display the correct emoji based on phase
-                  #}
-                  <span class="moon-phase-indicator">
-                      {% if moon_phase == "new" %}🌑
-                      {% elif moon_phase == "waxing_crescent" %}🌙
-                      {% elif moon_phase == "first_quarter" %}🌓
-                      {% elif moon_phase == "waxing_gibbous" %}🌔
-                      {% elif moon_phase == "full" %}🌕
-                      {% elif moon_phase == "waning_gibbous" %}🌖
-                      {% elif moon_phase == "last_quarter" %}🌗
-                      {% elif moon_phase == "waning_crescent" %}🌘
-                      {% else %}🌑
+          {% for page in show_pages %}
+              {# Set default moon phase to "new" if not specified #}
+              {% set moon_phase = "new" %}
+              {% if page.extra and page.extra.moon_phase %}
+                  {% set moon_phase = page.extra.moon_phase %}
+              {% endif %}
+              
+              {# 
+                GARDEN NOTE CARD
+                Each note is displayed as a card with data-phase attribute for filtering
+              #}
+              <div class="garden-note moon-phase-{{ moon_phase }}" data-phase="{{ moon_phase }}">
+                  <div class="garden-note-header">
+                      <h3><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
+                      {% if page.draft %}
+                      <span class="draft-label">[Draft]</span>
                       {% endif %}
-                  </span>
-              </div>
-              
-              {# 
-                NOTE EXCERPT
-                Shows a preview of the note content
-                Tries description first, then falls back to summary
-              #}
-              {% if page.description %}
-              <p class="note-excerpt">{{ page.description }}</p>
-              {% elif page.summary %}
-              <p class="note-excerpt">{{ page.summary | safe }}</p>
-              {% endif %}
-              
-              {# 
-                NOTE TAGS
-                Display tags if available, linked to their taxonomy pages
-                Each tag is prefixed with # for visual clarity
-              #}
-              {% if page.taxonomies and page.taxonomies.tags %}
-              <div class="note-tags">
-                  {% for tag in page.taxonomies.tags %}
-                  <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}" class="note-tag">#{{ tag }}</a>
-                  {% endfor %}
-              </div>
-              {% endif %}
-              
-              {# 
-                NOTE METADATA
-                Shows date and word count in a footer area
-              #}
-              <div class="note-meta">
-                  <span class="note-date">{{ page.date | date(format="%Y-%m-%d") }}</span>
-                  {% if page.word_count %}
-                  <span class="note-wordcount">{{ page.word_count }} words</span>
+  
+                      {# 
+                        MOON PHASE INDICATOR
+                        Visual indicator showing the note's development stage
+                      #}
+                      <span class="moon-phase-indicator">
+                          {% if moon_phase == "new" %}🌑
+                          {% elif moon_phase == "waxing_crescent" %}🌙
+                          {% elif moon_phase == "first_quarter" %}🌓
+                          {% elif moon_phase == "waxing_gibbous" %}🌔
+                          {% elif moon_phase == "full" %}🌕
+                          {% else %}🌑
+                          {% endif %}
+                      </span>
+                  </div>
+                  
+                  {# 
+                    NOTE EXCERPT
+                    Shows a preview of the note content
+                  #}
+                  {% if page.description %}
+                  <p class="note-excerpt">{{ page.description }}</p>
+                  {% elif page.summary %}
+                  <p class="note-excerpt">{{ page.summary | safe }}</p>
                   {% endif %}
+                  
+                  {# 
+                    NOTE TAGS
+                    Display tags if available
+                  #}
+                  {% if page.taxonomies and page.taxonomies.tags %}
+                  <div class="note-tags">
+                      {% for tag in page.taxonomies.tags %}
+                      <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}" class="note-tag">#{{ tag }}</a>
+                      {% endfor %}
+                  </div>
+                  {% endif %}
+                  
+                  {# 
+                    NOTE METADATA
+                    Shows date and word count
+                  #}
+                  <div class="note-meta">
+                      <span class="note-date">{{ page.date | date(format="%Y-%m-%d") }}</span>
+                      {% if page.word_count %}
+                      <span class="note-wordcount">{{ page.word_count }} words</span>
+                      {% endif %}
+                  </div>
               </div>
-          </div>
           {% endfor %}
       </div>
   
       {# 
         PAGINATION
         Standard pagination controls for when there are multiple pages
-        Shows Previous/Next links when needed
       #}
       {% if paginator %}
           <ul class="pagination">
@@ -180,4 +152,103 @@
               {% endif %}
           </ul>
       {% endif %}
-  {% endblock main_content %}
+      
+      {# Back to Top Button #}
+      <div class="back-to-top-container">
+          <button id="back-to-top" class="back-to-top-button" aria-label="Back to top">
+              <span class="og">↑</span>
+          </button>
+      </div>
+    
+    {# Add the filtering and back-to-top JavaScript #}
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterButtons = document.querySelectorAll('.filter-button, .filter-all');
+        const notes = document.querySelectorAll('.garden-note');
+        const notesCount = document.getElementById('notes-count');
+        
+        // Function to update notes count
+        function updateNotesCount() {
+            const visibleNotes = document.querySelectorAll('.garden-note:not([style*="display: none"])');
+            const count = visibleNotes.length;
+            const activeFilter = document.querySelector('.filter-button.active, .filter-all.active');
+            const filterName = activeFilter.dataset.phase === 'all' ? 'All Notes' : 
+                activeFilter.querySelector('.moon-emoji') ? activeFilter.textContent.split(' ').slice(1).join(' ') : 
+                activeFilter.textContent.trim();
+            
+                notesCount.textContent = `Showing ${count} note${count !== 1 ? 's' : ''} (${filterName})`;
+            }
+        
+        // Initial count
+        updateNotesCount();
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const phase = this.dataset.phase;
+                
+                notes.forEach(note => {
+                    if (phase === 'all' || note.dataset.phase === phase) {
+                        note.style.display = '';
+                    } else {
+                        note.style.display = 'none';
+                    }
+                });
+                
+                // Update count after filtering
+                updateNotesCount();
+            });
+        });
+        
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('back-to-top');
+        const footer = document.querySelector('.footer');
+        
+        // Show/hide button and adjust position based on scroll
+        function updateBackToTopPosition() {
+            const scrollPosition = window.pageYOffset;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            
+            // Show button after scrolling 300px
+            if (scrollPosition > 300) {
+                backToTopButton.classList.add('visible');
+                
+                // Calculate distance from bottom
+                const distanceFromBottom = documentHeight - scrollPosition - windowHeight;
+                
+                // Get footer height
+                const footerHeight = footer ? footer.offsetHeight : 0;
+                
+                // If we're close to the footer, adjust the button position
+                if (distanceFromBottom < footerHeight + 20) { // 20px buffer
+                    const pushUp = footerHeight + 20 - distanceFromBottom;
+                    backToTopButton.style.bottom = `${20 + pushUp}px`;
+                } else {
+                    backToTopButton.style.bottom = '2rem'; // Reset to default
+                }
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        }
+        
+        // Update position on scroll
+        window.addEventListener('scroll', updateBackToTopPosition);
+        
+        // Update position on resize (in case viewport changes)
+        window.addEventListener('resize', updateBackToTopPosition);
+        
+        // Scroll to top when button is clicked
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    });
+    </script>
+{% endblock main_content %}

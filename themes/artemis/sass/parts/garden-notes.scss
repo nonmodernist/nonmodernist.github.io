@@ -83,6 +83,26 @@
       color: var(--text-1);
     }
 
+
+// Transition animation for filtering
+.garden-note {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  
+  &[style*="display: none"] {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+// Optional: Show count of visible notes
+.notes-count {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--text-1);
+  font-size: 0.9rem;
+  min-height: 1.5rem; // Reserve space for count
+}
+
 /*
     // Custom border colors for each moon phase
     // Currently commented out, but can be enabled to add
