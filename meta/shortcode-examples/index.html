@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https:&#x2F;&#x2F;nonmodernist.com">
+
+    <link rel="me" href="https://github.com/nonmodernist" />
+    <link rel="me" href="https://bsky.app/profile/nonmodernist.bsky.social" />
+    <link rel="webmention" href="https://webmention.io/nonmodernist.com/webmention" />
+
+    
+
+    
+    
+    
+    <title>
+         Shortcode Examples
+        
+    </title>
+
+        
+            <meta property="og:title" content="Shortcode Examples" />
+        
+     
+
+     
+         
+             <meta property="og:description" content="Shortcode examples for quick reference" />
+         
+     
+
+     
+         
+             <meta name="description" content="Shortcode examples for quick reference" />
+         
+    
+
+    
+    
+        <link rel="icon" type="image/png" href=&#x2F;favicon.png />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href=&#x2F;favicon.png>
+
+
+    
+    
+        <link href=https://nonmodernist.com/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/codeblock.js></script>
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/toc.js></script>
+    
+    
+    
+    
+        <script src=https://nonmodernist.com/js/note.js></script>
+    
+
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="alexandra edwards, phd" href="https://nonmodernist.com/atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="nonmodernist.com - notes only" href="https://nonmodernist.com/notes/atom.xml">
+
+
+
+    
+    
+        <link rel="stylesheet" type="text/css" href=https://nonmodernist.com/theme/light.css />
+        <link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://nonmodernist.com/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+
+    
+    <script src=https://nonmodernist.com/js/themetoggle.js></script>
+
+        
+        <script>setTheme(getSavedTheme());</script>
+    
+    
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://nonmodernist.com/main.css />
+
+    
+
+    
+        <script defer src="https://nonmodernist.com/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script><script src="https://nonmodernist.com/js/counters.js"></script>
+</head>
+
+    
+<!--
+         wWWWw               wWWWw
+   vVVVv (___) wWWWw         (___)  vVVVv
+   (___)  ~Y~  (___)  vVVVv   ~Y~   (___)
+    ~Y~   \|    ~Y~   (___)    |/    ~Y~
+    \|   \ |/   \| /  \~Y~/   \|    \ |/
+   \\|// \\|// \\|/// \\|//  \\|// \\\|///
+jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-->
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main">
+                
+                    <a href=https:&#x2F;&#x2F;nonmodernist.com>alexandra edwards, phd</a>
+                
+
+
+        <div class="socials">
+            
+        </div>
+    </div>
+
+    <nav>
+        
+            <a href=https://nonmodernist.com/notes style="margin-left: 0.25em">&#x2F;notes</a>
+        
+            <a href=https://nonmodernist.com/teaching style="margin-left: 0.25em">&#x2F;teaching</a>
+        
+            <a href=https://nonmodernist.com/research style="margin-left: 0.25em">&#x2F;research</a>
+        
+            <a href=https://nonmodernist.com/about style="margin-left: 0.25em">&#x2F;about</a>
+        
+
+        
+        <button
+            id="search-button"
+            class="search-button"
+            title="$SHORTCUT to open search"
+        >
+            <img
+                src="https://nonmodernist.com/icons/search.svg"
+                alt="Search"
+                class="search-icon"
+            >
+        </button>
+    
+        <div id="searchModal" class="search-modal js" role="dialog" aria-labelledby="modalTitle">
+            <div id="modal-content">
+                <h1 id="modalTitle" class="page-header">Search</h1>
+                <div id="searchBar">
+                    <input
+                        id="searchInput"
+                        role="combobox"
+                        autocomplete="off"
+                        spellcheck="false"
+                        aria-expanded="false"
+                        aria-controls="results-container"
+                        placeholder="Search..."
+                    />
+                    <button
+                        id="clear-search"
+                        class="clear-button"
+                        title="Clear search"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="results-container">
+                    <div id="results-info">
+                        <span id="zero_results" style="display: none;">No results</span>
+                        <span id="one_result" style="display: none;">1 result</span>
+                        <span id="many_results" style="display: none;">$NUMBER results</span>
+                    </div>
+                    <div id="results" role="listbox"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme(); event.preventDefault();" href="#">
+                <img src=https://nonmodernist.com/icons/sun.svg id="sun-icon" style="filter: invert(1);" alt="Light" />
+                <img src=https://nonmodernist.com/icons/moon.svg id="moon-icon" alt="Dark" />
+            </a>
+
+        <!-- Inititialize the theme toggle icons -->
+        <script>updateItemToggleTheme()</script>
+        
+    </nav>
+</header>
+
+
+        
+        
+    
+  <main>
+      <article class="h-entry readable-content">
+          <div class="title">
+            
+              
+      <div class="page-header">
+          Shortcode Examples
+          
+          <span class="moon-phase moon-phase-waxing_gibbous">
+             🌔
+             
+            </span>
+            
+      
+      </div>
+  
+  
+                  <div class="meta">
+                      
+                          
+                          Posted <span class="hidden">by <a rel="author" class="p-author h-card" href="https://nonmodernist.com">alexandra edwards</a></span> on <time class="dt-published"> 2025-05-03</time>
+                      
+  
+                      
+  
+                      
+  
+                      
+                          :: 428 Words
+                      
+  
+                      
+                      
+                              <span class="tags-label"> :: Tags:</span>
+                              <span class="tags">
+                                      <a href="https://nonmodernist.com/tags/design/" class="post-tag">design</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/meta/" class="post-tag">meta</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/shortcodes/" class="post-tag">shortcodes</a>
+                                  
+                              </span>
+                      
+  
+                      
+                      
+  
+                      
+  
+                  </div>
+          </div>
+  
+          
+          
+              <div class="tldr p-summary">
+                  <strong>tl;dr:</strong>
+                  Shortcode examples for quick reference.
+              </div>
+          
+  
+          
+          
+          
+              <div class="toc-container">
+                  <h1 class="toc-title">Table of Contents</h1>
+                  <ul class="toc-list">
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/meta/shortcode-examples/#divider-shortcode">Divider Shortcode</a>
+                              
+                                  <ul>
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/meta/shortcode-examples/#divider-styles">Divider Styles</a>
+                                          </li>
+  
+                                          
+                                      
+                                  </ul>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/meta/shortcode-examples/#working-with-og-emoji">Working with OG Emoji</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/meta/shortcode-examples/#setting-moon-phases-in-content">Setting Moon Phases in Content</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/meta/shortcode-examples/#adding-related-notes">Adding Related Notes</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/meta/shortcode-examples/#adding-a-tl-dr-summary">Adding a TL;DR Summary</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/meta/shortcode-examples/#html-snippets">HTML Snippets</a>
+                              
+                                  <ul>
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/meta/shortcode-examples/#callouts">Callouts</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/meta/shortcode-examples/#image-formatting">Image Formatting</a>
+                                          </li>
+  
+                                          
+                                              <ul>
+                                                  
+                                                      <li>
+                                                          <a href="https://nonmodernist.com/meta/shortcode-examples/#centered-image-with-caption">Centered Image with Caption</a>
+                                                      </li>
+                                                  
+                                                      <li>
+                                                          <a href="https://nonmodernist.com/meta/shortcode-examples/#floating-right-image">Floating Right Image</a>
+                                                      </li>
+                                                  
+                                                      <li>
+                                                          <a href="https://nonmodernist.com/meta/shortcode-examples/#floating-left-image">Floating Left Image</a>
+                                                      </li>
+                                                  
+                                                      <li>
+                                                          <a href="https://nonmodernist.com/meta/shortcode-examples/#pixel-corners-without-figure">Pixel Corners (without figure)</a>
+                                                      </li>
+                                                  
+                                              </ul>
+                                          
+                                      
+                                  </ul>
+                              
+                          </li>
+                      
+                  </ul>
+              </div>
+          
+          
+  
+          <section class="body"></section>
+          <div>
+              <p>This guide demonstrates how to use the shortcodes and other visual elements available.</p>
+<h2 id="divider-shortcode">Divider Shortcode</h2>
+<p>The divider shortcode creates decorative separators with various moon-themed designs.</p>
+<p><strong>Code:</strong></p>
+<ul>
+<li><strong>Default:</strong> {{ divider() }}</li>
+<li><strong>Line:</strong> {{ divider(style="line") }}</li>
+<li><strong>New Moon:</strong> {{ divider(style="new_moon") }}</li>
+<li><strong>Simple:</strong> {{ divider(style="simple") }}</li>
+<li><strong>Quarter:</strong> {{ divider(style="quarter") }}</li>
+<li><strong>Ornate:</strong> {{ divider(style="ornate") }}</li>
+</ul>
+<h3 id="divider-styles">Divider Styles</h3>
+<p>Default/moon phases divider:</p>
+<!-- FM:Snippet:Start data:{"id":"Dividers","fields":[{"name":"style","value":""}]} -->
+
+  
+
+
+
+<div class="divider-default">
+  <div class="moon-phases">
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+  </div>
+</div>
+<!-- FM:Snippet:End -->
+<p>Line/stars divider:</p>
+<!-- FM:Snippet:Start data:{"id":"Dividers","fields":[{"name":"style","value":"line"}]} -->
+
+  
+
+
+
+<div class="divider-line">
+  <div class="pixel-line">
+    <div class="pixel-star"></div>
+    <div class="pixel-star"></div>
+    <div class="pixel-star"></div>
+    <div class="pixel-star"></div>
+    <div class="pixel-star"></div>
+  </div>
+</div>
+<!-- FM:Snippet:End -->
+<p>New moon divider:</p>
+<!-- FM:Snippet:Start data:{"id":"Dividers","fields":[{"name":"style","value":"new_moon"}]} -->
+
+  
+
+
+
+<div class="divider-new-moon">
+  <div class="stars-container">
+    <div class="new-moon-outline"></div>
+    <div class="hidden-star"></div>
+  </div>
+</div>
+<!-- FM:Snippet:End -->
+<p>Simple/crescent moon divider:</p>
+<!-- FM:Snippet:Start data:{"id":"Dividers","fields":[{"name":"style","value":"simple"}]} -->
+
+  
+
+
+
+<div class="divider-simple">
+  <div class="pixel-crescent">
+    <div class="hidden-rays"></div>
+  </div>
+</div>
+<!-- FM:Snippet:End -->
+<p>Quarter moon divider:</p>
+<!-- FM:Snippet:Start data:{"id":"Dividers","fields":[{"name":"style","value":"quarter"}]} -->
+
+  
+
+
+
+<div class="divider-quarter">
+  <div class="quarter-moon-container">
+    <div class="quarter-moon"></div>
+  </div>
+</div>
+<!-- FM:Snippet:End -->
+<p>Ornate/full moon divider:</p>
+<!-- FM:Snippet:Start data:{"id":"Dividers","fields":[{"name":"style","value":"ornate"}]} -->
+
+  
+
+
+
+<div class="divider-ornate">
+  <div class="center-element">
+    <div class="small-star"></div>
+    <div class="small-star"></div>
+    <div class="small-star"></div>
+    <div class="big-star"></div>
+    <div class="small-star"></div>
+    <div class="small-star"></div>
+    <div class="small-star"></div>
+    <div class="pixel-crescent"></div>
+    <div class="pixel-crescent"></div>
+  </div>
+</div>
+<!-- FM:Snippet:End -->
+<h2 id="working-with-og-emoji">Working with OG Emoji</h2>
+<p>The theme includes a special vintage emoji font. To use it, wrap emojis in <code>&lt;span class="og"&gt;</code> tags:</p>
+<p><strong>Code:</strong></p>
+<pre data-lang="html" style="background-color:#fafafa;color:#61676c;" class="language-html "><code class="language-html" data-lang="html"><span style="color:#55b4d490;">&lt;</span><span style="color:#399ee6;">span </span><span style="color:#f29718;">class</span><span style="color:#61676ccc;">=</span><span style="color:#86b300;">&quot;og&quot;</span><span style="color:#55b4d490;">&gt;</span><span>📷</span><span style="color:#55b4d490;">&lt;/</span><span style="color:#399ee6;">span</span><span style="color:#55b4d490;">&gt;</span><span> This text has a vintage camera emoji
+</span></code></pre>
+<p><strong>Output:</strong>
+A vintage-styled camera emoji followed by regular text</p>
+<p>For a complete list of emojis that work with the og class, see the <a href="https://nonmodernist.com/meta/emoji-table/">Emoji Table</a>.</p>
+<h2 id="setting-moon-phases-in-content">Setting Moon Phases in Content</h2>
+<p>To indicate a note's development stage, add moon phase information to the frontmatter:</p>
+<pre data-lang="toml" style="background-color:#fafafa;color:#61676c;" class="language-toml "><code class="language-toml" data-lang="toml"><span style="color:#f51818;">+++
+</span><span style="color:#399ee6;">title </span><span>= </span><span style="color:#86b300;">&quot;My Note Title&quot;
+</span><span style="color:#399ee6;">date </span><span>= </span><span style="color:#86b300;">&quot;2025-05-01&quot;
+</span><span>[</span><span style="color:#399ee6;">extra</span><span>]
+</span><span style="color:#399ee6;">moon_phase </span><span>= </span><span style="color:#86b300;">&quot;waxing_crescent&quot;
+</span><span style="color:#f51818;">+++
+</span></code></pre>
+<p><strong>Valid moon phase values:</strong></p>
+<ul>
+<li><code>new</code> (🌑)</li>
+<li><code>waxing_crescent</code> (🌙)</li>
+<li><code>first_quarter</code> (🌓)</li>
+<li><code>waxing_gibbous</code> (🌔)</li>
+<li><code>full</code> (🌕)</li>
+</ul>
+<h2 id="adding-related-notes">Adding Related Notes</h2>
+<p>To display related notes at the bottom of a page, add this to the frontmatter:</p>
+<pre data-lang="toml" style="background-color:#fafafa;color:#61676c;" class="language-toml "><code class="language-toml" data-lang="toml"><span>[</span><span style="color:#399ee6;">extra</span><span>]
+</span><span style="color:#399ee6;">related_notes_links </span><span>= [
+</span><span>  {
+</span><span>    </span><span style="color:#f51818;">&quot;url&quot;: &quot;/notes/example/&quot;</span><span style="color:#61676ccc;">,
+</span><span>    </span><span style="color:#86b300;">&quot;title&quot;</span><span style="color:#f51818;">: &quot;Example Note&quot;</span><span style="color:#61676ccc;">,
+</span><span>    </span><span style="color:#86b300;">&quot;description&quot;</span><span style="color:#f51818;">: &quot;Description of the related note&quot;</span><span style="color:#61676ccc;">,
+</span><span>    </span><span style="color:#86b300;">&quot;moon_phase&quot;</span><span style="color:#f51818;">: &quot;waxing_crescent&quot;
+</span><span>  </span><span style="color:#f51818;">}</span><span style="color:#61676ccc;">,
+</span><span>  {
+</span><span>    </span><span style="color:#f51818;">&quot;url&quot;: &quot;/notes/another-example/&quot;</span><span style="color:#61676ccc;">,
+</span><span>    </span><span style="color:#86b300;">&quot;title&quot;</span><span style="color:#f51818;">: &quot;Another Example&quot;</span><span style="color:#61676ccc;">,
+</span><span>    </span><span style="color:#86b300;">&quot;description&quot;</span><span style="color:#f51818;">: &quot;Description of another related note&quot;</span><span style="color:#61676ccc;">,
+</span><span>    </span><span style="color:#86b300;">&quot;moon_phase&quot;</span><span style="color:#f51818;">: &quot;full&quot;
+</span><span>  </span><span style="color:#f51818;">}
+</span><span>]
+</span></code></pre>
+<p>This will automatically generate a "Related Notes" section with links and descriptions.</p>
+<h2 id="adding-a-tl-dr-summary">Adding a TL;DR Summary</h2>
+<p>To add a summary box at the top of your content:</p>
+<pre data-lang="toml" style="background-color:#fafafa;color:#61676c;" class="language-toml "><code class="language-toml" data-lang="toml"><span>[</span><span style="color:#399ee6;">extra</span><span>]
+</span><span style="color:#399ee6;">tldr </span><span>= </span><span style="color:#86b300;">&quot;A brief summary of this note&#39;s content.&quot;
+</span></code></pre>
+<p>This will create a highlighted summary box below the title.</p>
+<h2 id="html-snippets">HTML Snippets</h2>
+<p>While not shortcodes, use these HTML snippets for consistent formatting:</p>
+<h3 id="callouts">Callouts</h3>
+<p>Callouts are styled boxes for highlighting important information.</p>
+<p>Available styles:</p>
+<div class="callout info">
+  <h3 class="callout-title">info</h3>
+  <div class="callout-content">
+    Used for informational content, definitions, or reference material.
+  </div>
+</div>
+<div class="callout alert">
+  <h3 class="callout-title">alert</h3>
+  <div class="callout-content">
+    Used for critical information or urgent messages.
+  </div>
+</div>
+<div class="callout success">
+  <h3 class="callout-title">success</h3>
+  <div class="callout-content">
+    Used for successful outcomes or proven methods.
+  </div>
+</div>
+<div class="callout warning">
+  <h3 class="callout-title">warning</h3>
+  <div class="callout-content">
+    Used for cautionary notes or potential issues.
+  </div>
+</div>
+<h3 id="image-formatting">Image Formatting</h3>
+<p>Use the following HTML snippets to format images with captions and pixel corners.</p>
+<h4 id="centered-image-with-caption">Centered Image with Caption</h4>
+<pre data-lang="html" style="background-color:#fafafa;color:#61676c;" class="language-html "><code class="language-html" data-lang="html"><span style="color:#55b4d490;">&lt;</span><span style="color:#399ee6;">figure </span><span style="color:#f29718;">class</span><span style="color:#61676ccc;">=</span><span style="color:#86b300;">&quot;center&quot;</span><span style="color:#55b4d490;">&gt;
+</span><span>  </span><span style="color:#55b4d490;">&lt;</span><span style="color:#399ee6;">div </span><span style="color:#f29718;">class</span><span style="color:#61676ccc;">=</span><span style="color:#86b300;">&quot;pixel-corners--wrapper&quot;</span><span style="color:#55b4d490;">&gt;
+</span><span>    </span><span style="color:#55b4d490;">&lt;</span><span style="color:#399ee6;">img </span><span style="color:#f29718;">src</span><span style="color:#61676ccc;">=</span><span style="color:#86b300;">&quot;/path/to/image.jpg&quot; </span><span style="color:#f29718;">alt</span><span style="color:#61676ccc;">=</span><span style="color:#86b300;">&quot;Description&quot; </span><span style="color:#f29718;">width</span><span style="color:#61676ccc;">=</span><span style="color:#86b300;">&quot;450px&quot;</span><span style="color:#55b4d490;">&gt;
+</span><span>  </span><span style="color:#55b4d490;">&lt;/</span><span style="color:#399ee6;">div</span><span style="color:#55b4d490;">&gt;
+</span><span>  </span><span style="color:#55b4d490;">&lt;</span><span style="color:#399ee6;">figcaption</span><span style="color:#55b4d490;">&gt;</span><span>Caption text</span><span style="color:#55b4d490;">&lt;/</span><span style="color:#399ee6;">figcaption</span><span style="color:#55b4d490;">&gt;
+</span><span style="color:#55b4d490;">&lt;/</span><span style="color:#399ee6;">figure</span><span style="color:#55b4d490;">&gt;
+</span></code></pre>
+<h4 id="floating-right-image">Floating Right Image</h4>
+<pre data-lang="html" style="background-color:#fafafa;color:#61676c;" class="language-html "><code class="language-html" data-lang="html"><span style="color:#55b4d490;">&lt;</span><span style="color:#399ee6;">figure </span><span style="color:#f29718;">class</span><span style="color:#61676ccc;">=</span><span style="color:#86b300;">&quot;float-right&quot;</span><span style="color:#55b4d490;">&gt;
+</span><span>  </span><span style="color:#55b4d490;">&lt;</span><span style="color:#399ee6;">div </span><span style="color:#f29718;">class</span><span style="color:#61676ccc;">=</span><span style="color:#86b300;">&quot;pixel-corners--wrapper&quot;</span><span style="color:#55b4d490;">&gt;
+</span><span>    </span><span style="color:#55b4d490;">&lt;</span><span style="color:#399ee6;">img </span><span style="color:#f29718;">src</span><span style="color:#61676ccc;">=</span><span style="color:#86b300;">&quot;/path/to/image.jpg&quot; </span><span style="color:#f29718;">alt</span><span style="color:#61676ccc;">=</span><span style="color:#86b300;">&quot;Description&quot; </span><span style="color:#f29718;">width</span><span style="color:#61676ccc;">=</span><span style="color:#86b300;">&quot;450px&quot;</span><span style="color:#55b4d490;">&gt;
+</span><span>  </span><span style="color:#55b4d490;">&lt;/</span><span style="color:#399ee6;">div</span><span style="color:#55b4d490;">&gt;
+</span><span>  </span><span style="color:#55b4d490;">&lt;</span><span style="color:#399ee6;">figcaption</span><span style="color:#55b4d490;">&gt;</span><span>Caption text</span><span style="color:#55b4d490;">&lt;/</span><span style="color:#399ee6;">figcaption</span><span style="color:#55b4d490;">&gt;
+</span><span style="color:#55b4d490;">&lt;/</span><span style="color:#399ee6;">figure</span><span style="color:#55b4d490;">&gt;
+</span></code></pre>
+<h4 id="floating-left-image">Floating Left Image</h4>
+<pre data-lang="html" style="background-color:#fafafa;color:#61676c;" class="language-html "><code class="language-html" data-lang="html"><span style="color:#55b4d490;">&lt;</span><span style="color:#399ee6;">figure </span><span style="color:#f29718;">class</span><span style="color:#61676ccc;">=</span><span style="color:#86b300;">&quot;float-left&quot;</span><span style="color:#55b4d490;">&gt;
+</span><span>  </span><span style="color:#55b4d490;">&lt;</span><span style="color:#399ee6;">div </span><span style="color:#f29718;">class</span><span style="color:#61676ccc;">=</span><span style="color:#86b300;">&quot;pixel-corners--wrapper&quot;</span><span style="color:#55b4d490;">&gt;
+</span><span>    </span><span style="color:#55b4d490;">&lt;</span><span style="color:#399ee6;">img </span><span style="color:#f29718;">src</span><span style="color:#61676ccc;">=</span><span style="color:#86b300;">&quot;/path/to/image.jpg&quot; </span><span style="color:#f29718;">alt</span><span style="color:#61676ccc;">=</span><span style="color:#86b300;">&quot;Description&quot; </span><span style="color:#f29718;">width</span><span style="color:#61676ccc;">=</span><span style="color:#86b300;">&quot;450px&quot;</span><span style="color:#55b4d490;">&gt;
+</span><span>  </span><span style="color:#55b4d490;">&lt;/</span><span style="color:#399ee6;">div</span><span style="color:#55b4d490;">&gt;
+</span><span>  </span><span style="color:#55b4d490;">&lt;</span><span style="color:#399ee6;">figcaption</span><span style="color:#55b4d490;">&gt;</span><span>Caption text</span><span style="color:#55b4d490;">&lt;/</span><span style="color:#399ee6;">figcaption</span><span style="color:#55b4d490;">&gt;
+</span><span style="color:#55b4d490;">&lt;/</span><span style="color:#399ee6;">figure</span><span style="color:#55b4d490;">&gt;
+</span></code></pre>
+<h4 id="pixel-corners-without-figure">Pixel Corners (without figure)</h4>
+<pre data-lang="html" style="background-color:#fafafa;color:#61676c;" class="language-html "><code class="language-html" data-lang="html"><span style="color:#55b4d490;">&lt;</span><span style="color:#399ee6;">div </span><span style="color:#f29718;">class</span><span style="color:#61676ccc;">=</span><span style="color:#86b300;">&quot;pixel-corners--wrapper&quot;</span><span style="color:#55b4d490;">&gt;
+</span><span>  </span><span style="color:#55b4d490;">&lt;</span><span style="color:#399ee6;">img </span><span style="color:#f29718;">src</span><span style="color:#61676ccc;">=</span><span style="color:#86b300;">&quot;/path/to/image.jpg&quot; </span><span style="color:#f29718;">alt</span><span style="color:#61676ccc;">=</span><span style="color:#86b300;">&quot;Description&quot; </span><span style="color:#f29718;">width</span><span style="color:#61676ccc;">=</span><span style="color:#86b300;">&quot;100%&quot;</span><span style="color:#55b4d490;">&gt;
+</span><span style="color:#55b4d490;">&lt;/</span><span style="color:#399ee6;">div</span><span style="color:#55b4d490;">&gt;
+</span></code></pre>
+
+          </div> 
+      </section>
+  
+    
+  
+  
+  
+  
+    
+      
+    
+  
+  
+  
+    <div class="backlinks">
+      <button class="note-toggle">
+        <div class="note-icon">
+          <h2> notes that mention this note (1)</h2>
+        </div>
+      </button>
+      
+      <div class="backlinks-content" style="display: none;">
+        <ul class="backlinks-list">
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;meta&#x2F;reference&#x2F;">
+                
+                  Site Documentation
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  
+
+
+
+    
+      
+      </article>
+  </main>
+  
+
+
+        
+            
+        
+
+        
+    </div>
+
+
+    <hr>
+
+    <div class="footer">
+        <p>
+            <span class="og"><a href="https://nonmodernist.com">🏠</a> ☕ 🌁 <span id="launch-counter">875</span> 🎂 ☕ 🌁 🔍 📷 👓 🌁🌁 💠 📩 🌁 🌁🌁 <a href="https://nonmodernist.com/uses">⚡︎</a> 💓 <a href="https://nonmodernist.com/log"><span id="movies-counter">2736</span> 📺</a> 🌁🌁🌁 a 🌁 🌙 <a href="https://nonmodernist.com/readinglog"><span id="books-counter">974</span> 📖</a></span>
+        </p>
+    </div>
+    
+
+
+</html>
