@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https:&#x2F;&#x2F;nonmodernist.com">
+
+    <link rel="me" href="https://github.com/nonmodernist" />
+    <link rel="me" href="https://bsky.app/profile/nonmodernist.bsky.social" />
+    <link rel="webmention" href="https://webmention.io/nonmodernist.com/webmention" />
+
+    
+
+    
+    
+    
+    <title>
+         Folk Horror: Animal Transformation
+        
+    </title>
+
+        
+            <meta property="og:title" content="Folk Horror: Animal Transformation" />
+        
+     
+
+     
+         
+             <meta property="og:description" content="the internet homebase of dr. alexandra edwards" />
+         
+     
+
+     
+         
+             <meta name="description" content="the internet homebase of dr. alexandra edwards" />
+         
+    
+
+    
+    
+        <link rel="icon" type="image/png" href=&#x2F;favicon.png />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href=&#x2F;favicon.png>
+
+
+    
+    
+        <link href=https://nonmodernist.com/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/codeblock.js></script>
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/toc.js></script>
+    
+    
+    
+    
+        <script src=https://nonmodernist.com/js/note.js></script>
+    
+
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="alexandra edwards, phd" href="https://nonmodernist.com/atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="nonmodernist.com - notes only" href="https://nonmodernist.com/notes/atom.xml">
+
+
+
+    
+    
+        <link rel="stylesheet" type="text/css" href=https://nonmodernist.com/theme/light.css />
+        <link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://nonmodernist.com/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+
+    
+    <script src=https://nonmodernist.com/js/themetoggle.js></script>
+
+        
+        <script>setTheme(getSavedTheme());</script>
+    
+    
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://nonmodernist.com/main.css />
+
+    
+
+    
+        <script defer src="https://nonmodernist.com/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script><script src="https://nonmodernist.com/js/counters.js"></script>
+</head>
+
+    
+<!--
+         wWWWw               wWWWw
+   vVVVv (___) wWWWw         (___)  vVVVv
+   (___)  ~Y~  (___)  vVVVv   ~Y~   (___)
+    ~Y~   \|    ~Y~   (___)    |/    ~Y~
+    \|   \ |/   \| /  \~Y~/   \|    \ |/
+   \\|// \\|// \\|/// \\|//  \\|// \\\|///
+jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-->
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main">
+                
+                    <a href=https:&#x2F;&#x2F;nonmodernist.com>alexandra edwards, phd</a>
+                
+
+
+        <div class="socials">
+            
+        </div>
+    </div>
+
+    <nav>
+        
+            <a href=https://nonmodernist.com/notes style="margin-left: 0.25em">&#x2F;notes</a>
+        
+            <a href=https://nonmodernist.com/teaching style="margin-left: 0.25em">&#x2F;teaching</a>
+        
+            <a href=https://nonmodernist.com/research style="margin-left: 0.25em">&#x2F;research</a>
+        
+            <a href=https://nonmodernist.com/about style="margin-left: 0.25em">&#x2F;about</a>
+        
+
+        
+        <button
+            id="search-button"
+            class="search-button"
+            title="$SHORTCUT to open search"
+        >
+            <img
+                src="https://nonmodernist.com/icons/search.svg"
+                alt="Search"
+                class="search-icon"
+            >
+        </button>
+    
+        <div id="searchModal" class="search-modal js" role="dialog" aria-labelledby="modalTitle">
+            <div id="modal-content">
+                <h1 id="modalTitle" class="page-header">Search</h1>
+                <div id="searchBar">
+                    <input
+                        id="searchInput"
+                        role="combobox"
+                        autocomplete="off"
+                        spellcheck="false"
+                        aria-expanded="false"
+                        aria-controls="results-container"
+                        placeholder="Search..."
+                    />
+                    <button
+                        id="clear-search"
+                        class="clear-button"
+                        title="Clear search"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="results-container">
+                    <div id="results-info">
+                        <span id="zero_results" style="display: none;">No results</span>
+                        <span id="one_result" style="display: none;">1 result</span>
+                        <span id="many_results" style="display: none;">$NUMBER results</span>
+                    </div>
+                    <div id="results" role="listbox"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme(); event.preventDefault();" href="#">
+                <img src=https://nonmodernist.com/icons/sun.svg id="sun-icon" style="filter: invert(1);" alt="Light" />
+                <img src=https://nonmodernist.com/icons/moon.svg id="moon-icon" alt="Dark" />
+            </a>
+
+        <!-- Inititialize the theme toggle icons -->
+        <script>updateItemToggleTheme()</script>
+        
+    </nav>
+</header>
+
+
+        
+        
+    
+  <main>
+      <article class="h-entry readable-content">
+          <div class="title">
+            
+              
+      <div class="page-header">
+          Folk Horror: Animal Transformation
+          
+          <span class="moon-phase moon-phase-waxing_gibbous">
+             🌔
+             
+            </span>
+            
+      
+      </div>
+  
+  
+                  <div class="meta">
+                      
+                          
+                          Posted <span class="hidden">by <a rel="author" class="p-author h-card" href="https://nonmodernist.com">alexandra edwards</a></span> on <time class="dt-published"> 2024-11-05</time>
+                      
+  
+                      
+  
+                      
+  
+                      
+                          :: 400 Words
+                      
+  
+                      
+                      
+                              <span class="tags-label"> :: Tags:</span>
+                              <span class="tags">
+                                      <a href="https://nonmodernist.com/tags/film/" class="post-tag">film</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/folk-horror/" class="post-tag">folk horror</a>
+                                  
+                              </span>
+                      
+  
+                      
+                      
+  
+                      
+  
+                  </div>
+          </div>
+  
+          
+          
+              <div class="tldr p-summary">
+                  <strong>tl;dr:</strong>
+                  Transformation into animals represents the blurring of boundaries between the human and natural worlds in folk horror.
+              </div>
+          
+  
+          
+          
+          
+              <div class="toc-container">
+                  <h1 class="toc-title">Table of Contents</h1>
+                  <ul class="toc-list">
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/folk-horror-animal-transformation/#types-of-animal-transformations">Types of Animal Transformations</a>
+                              
+                                  <ul>
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-animal-transformation/#bears">Bears</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-animal-transformation/#cats">Cats</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-animal-transformation/#reindeer">Reindeer</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-animal-transformation/#wolves">Wolves</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-animal-transformation/#other-animal-forms">Other Animal Forms</a>
+                                          </li>
+  
+                                          
+                                      
+                                  </ul>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/folk-horror-animal-transformation/#cultural-significance">Cultural Significance</a>
+                              
+                                  <ul>
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-animal-transformation/#liminality">Liminality</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-animal-transformation/#connection-to-nature">Connection to Nature</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-animal-transformation/#cultural-identity">Cultural Identity</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-animal-transformation/#punishment-or-curse">Punishment or Curse</a>
+                                          </li>
+  
+                                          
+                                      
+                                  </ul>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/folk-horror-animal-transformation/#gendered-dimensions">Gendered Dimensions</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/folk-horror-animal-transformation/#modern-interpretations">Modern Interpretations</a>
+                              
+                          </li>
+                      
+                  </ul>
+              </div>
+          
+          
+  
+          <section class="body"></section>
+          <div>
+              <p><span class="og">🐶</span> The transformation of humans into animals is a recurring motif in folk horror, drawing on widespread folkloric traditions of shapeshifting. Unlike the modern werewolf narrative (typically triggered by moonlight and transmitted through bites), folk horror's transformations often result from curses, spells, or spiritual practices deeply embedded in local cultural traditions.</p>
+<h2 id="types-of-animal-transformations"><a class="zola-anchor" href="#types-of-animal-transformations" aria-label="Anchor link for: types-of-animal-transformations">Types of Animal Transformations</a></h2>
+<h3 id="bears"><a class="zola-anchor" href="#bears" aria-label="Anchor link for: bears">Bears</a></h3>
+<ul>
+<li><em>Lokis</em> (1970, Poland), based on Prosper Mérimée's novella, follows a man who may be the result of his mother's assault by a bear, displaying a dual human-bear nature</li>
+</ul>
+<h3 id="cats"><a class="zola-anchor" href="#cats" aria-label="Anchor link for: cats">Cats</a></h3>
+<p>The Japanese ghost cat (<em>bakeneko</em>) tradition has spawned numerous films:</p>
+<ul>
+<li><em>Black Cat Mansion</em> (1958, Japan)</li>
+<li><em>Bakeneko: A Vengeful Spirit</em> (1968, Japan)</li>
+<li><em>Kuroneko</em> (1968, Japan)</li>
+</ul>
+<p>These films typically feature women who, after death, return as cat spirits seeking vengeance.</p>
+<h3 id="reindeer"><a class="zola-anchor" href="#reindeer" aria-label="Anchor link for: reindeer">Reindeer</a></h3>
+<ul>
+<li><em>The White Reindeer</em> (1952, Finland) depicts a young bride who transforms into a vampiric white reindeer, drawing on Sámi shamanic traditions</li>
+</ul>
+<h3 id="wolves"><a class="zola-anchor" href="#wolves" aria-label="Anchor link for: wolves">Wolves</a></h3>
+<ul>
+<li><em>Nazareno Cruz and the Wolf</em> (1975, Argentina)</li>
+<li><em>She-Wolf</em> (1983, Poland)</li>
+</ul>
+<p>Unlike typical werewolf films, these focus more on folkloric curses and cultural beliefs surrounding transformation.</p>
+<h3 id="other-animal-forms"><a class="zola-anchor" href="#other-animal-forms" aria-label="Anchor link for: other-animal-forms">Other Animal Forms</a></h3>
+<ul>
+<li><em>The Light on the Hill</em> (2016, Peru) features transformation into llamas, drawing on Andean folklore</li>
+</ul>
+<h2 id="cultural-significance"><a class="zola-anchor" href="#cultural-significance" aria-label="Anchor link for: cultural-significance">Cultural Significance</a></h2>
+<p>Animal transformation in folk horror often represents:</p>
+<h3 id="liminality"><a class="zola-anchor" href="#liminality" aria-label="Anchor link for: liminality">Liminality</a></h3>
+<p>The ability to move between human and animal forms represents the liminal nature of certain individuals - neither fully part of the human community nor completely separate from it.</p>
+<h3 id="connection-to-nature"><a class="zola-anchor" href="#connection-to-nature" aria-label="Anchor link for: connection-to-nature">Connection to Nature</a></h3>
+<p>Transformation symbolizes humanity's connection to the natural world and the potential for reconnecting with primal aspects of existence.</p>
+<h3 id="cultural-identity"><a class="zola-anchor" href="#cultural-identity" aria-label="Anchor link for: cultural-identity">Cultural Identity</a></h3>
+<p>Many transformations are tied to specific cultural contexts, representing local beliefs and traditions that resist universal or colonial narratives.</p>
+<h3 id="punishment-or-curse"><a class="zola-anchor" href="#punishment-or-curse" aria-label="Anchor link for: punishment-or-curse">Punishment or Curse</a></h3>
+<p>Transformation frequently serves as a punishment for transgression or the result of a curse, embodying cultural taboos and boundaries.</p>
+<h2 id="gendered-dimensions"><a class="zola-anchor" href="#gendered-dimensions" aria-label="Anchor link for: gendered-dimensions">Gendered Dimensions</a></h2>
+<p>Animal transformation in folk horror often has gendered dimensions:</p>
+<ul>
+<li>Female transformations frequently relate to sexuality, fertility, or vengeance</li>
+<li>Male transformations often connect to violence, power, or inheritance</li>
+</ul>
+<p>These patterns reflect historical gender roles and anxieties in different cultural contexts.</p>
+<h2 id="modern-interpretations"><a class="zola-anchor" href="#modern-interpretations" aria-label="Anchor link for: modern-interpretations">Modern Interpretations</a></h2>
+<p>Contemporary folk horror often reinterprets animal transformation through metaphorical lenses:</p>
+<ul>
+<li>As expressions of mental illness or psychological states</li>
+<li>As allegories for social marginalization</li>
+<li>As explorations of environmental themes and humanity's relationship to nature</li>
+</ul>
+
+  
+
+
+
+<div class="divider-default">
+  <div class="moon-phases">
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+  </div>
+</div>
+<p><em>This note is part of a series exploring folk horror in cinema. Return to the <a href="https://nonmodernist.com/notes/folk-horror-overview/">main Folk Horror overview</a> to explore other tropes.</em></p>
+
+          </div> 
+      </section>
+  
+    
+  
+  
+  
+  
+    
+      
+    
+  
+  
+  
+    <div class="backlinks">
+      <button class="note-toggle">
+        <div class="note-icon">
+          <h2> notes that mention this note (1)</h2>
+        </div>
+      </button>
+      
+      <div class="backlinks-content" style="display: none;">
+        <ul class="backlinks-list">
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-overview&#x2F;">
+                
+                  Folk Horror: An Overview
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  
+
+
+
+    
+      
+      </article>
+  </main>
+  
+
+
+        
+            
+        
+
+        
+    </div>
+
+
+    <hr>
+
+    <div class="footer">
+        <p>
+            <span class="og"><a href="https://nonmodernist.com">🏠</a> ☕ 🌁 <span id="launch-counter">875</span> 🎂 ☕ 🌁 🔍 📷 👓 🌁🌁 💠 📩 🌁 🌁🌁 <a href="https://nonmodernist.com/uses">⚡︎</a> 💓 <a href="https://nonmodernist.com/log"><span id="movies-counter">2736</span> 📺</a> 🌁🌁🌁 a 🌁 🌙 <a href="https://nonmodernist.com/readinglog"><span id="books-counter">974</span> 📖</a></span>
+        </p>
+    </div>
+    
+
+
+</html>
