@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https:&#x2F;&#x2F;nonmodernist.com">
+
+    <link rel="me" href="https://github.com/nonmodernist" />
+    <link rel="me" href="https://bsky.app/profile/nonmodernist.bsky.social" />
+    <link rel="webmention" href="https://webmention.io/nonmodernist.com/webmention" />
+
+    
+
+    
+    
+    
+    <title>
+         Text-to-Image Evolution: Computer Shrine
+        
+    </title>
+
+        
+            <meta property="og:title" content="Text-to-Image Evolution: Computer Shrine" />
+        
+     
+
+     
+         
+             <meta property="og:description" content="the internet homebase of dr. alexandra edwards" />
+         
+     
+
+     
+         
+             <meta name="description" content="the internet homebase of dr. alexandra edwards" />
+         
+    
+
+    
+    
+        <link rel="icon" type="image/png" href=&#x2F;favicon.png />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href=&#x2F;favicon.png>
+
+
+    
+    
+        <link href=https://nonmodernist.com/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/codeblock.js></script>
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/toc.js></script>
+    
+    
+    
+    
+        <script src=https://nonmodernist.com/js/note.js></script>
+    
+
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="alexandra edwards, phd" href="https://nonmodernist.com/atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="nonmodernist.com - notes only" href="https://nonmodernist.com/notes/atom.xml">
+
+
+
+    
+    
+        <link rel="stylesheet" type="text/css" href=https://nonmodernist.com/theme/light.css />
+        <link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://nonmodernist.com/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+
+    
+    <script src=https://nonmodernist.com/js/themetoggle.js></script>
+
+        
+        <script>setTheme(getSavedTheme());</script>
+    
+    
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://nonmodernist.com/main.css />
+
+    
+
+    
+        <script defer src="https://nonmodernist.com/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script><script src="https://nonmodernist.com/js/counters.js"></script>
+</head>
+
+    
+<!--
+         wWWWw               wWWWw
+   vVVVv (___) wWWWw         (___)  vVVVv
+   (___)  ~Y~  (___)  vVVVv   ~Y~   (___)
+    ~Y~   \|    ~Y~   (___)    |/    ~Y~
+    \|   \ |/   \| /  \~Y~/   \|    \ |/
+   \\|// \\|// \\|/// \\|//  \\|// \\\|///
+jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-->
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main">
+                
+                    <a href=https:&#x2F;&#x2F;nonmodernist.com>alexandra edwards, phd</a>
+                
+
+
+        <div class="socials">
+            
+        </div>
+    </div>
+
+    <nav>
+        
+            <a href=https://nonmodernist.com/notes style="margin-left: 0.25em">&#x2F;notes</a>
+        
+            <a href=https://nonmodernist.com/teaching style="margin-left: 0.25em">&#x2F;teaching</a>
+        
+            <a href=https://nonmodernist.com/research style="margin-left: 0.25em">&#x2F;research</a>
+        
+            <a href=https://nonmodernist.com/about style="margin-left: 0.25em">&#x2F;about</a>
+        
+
+        
+        <button
+            id="search-button"
+            class="search-button"
+            title="$SHORTCUT to open search"
+        >
+            <img
+                src="https://nonmodernist.com/icons/search.svg"
+                alt="Search"
+                class="search-icon"
+            >
+        </button>
+    
+        <div id="searchModal" class="search-modal js" role="dialog" aria-labelledby="modalTitle">
+            <div id="modal-content">
+                <h1 id="modalTitle" class="page-header">Search</h1>
+                <div id="searchBar">
+                    <input
+                        id="searchInput"
+                        role="combobox"
+                        autocomplete="off"
+                        spellcheck="false"
+                        aria-expanded="false"
+                        aria-controls="results-container"
+                        placeholder="Search..."
+                    />
+                    <button
+                        id="clear-search"
+                        class="clear-button"
+                        title="Clear search"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="results-container">
+                    <div id="results-info">
+                        <span id="zero_results" style="display: none;">No results</span>
+                        <span id="one_result" style="display: none;">1 result</span>
+                        <span id="many_results" style="display: none;">$NUMBER results</span>
+                    </div>
+                    <div id="results" role="listbox"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme(); event.preventDefault();" href="#">
+                <img src=https://nonmodernist.com/icons/sun.svg id="sun-icon" style="filter: invert(1);" alt="Light" />
+                <img src=https://nonmodernist.com/icons/moon.svg id="moon-icon" alt="Dark" />
+            </a>
+
+        <!-- Inititialize the theme toggle icons -->
+        <script>updateItemToggleTheme()</script>
+        
+    </nav>
+</header>
+
+
+        
+        
+    
+  <main>
+      <article class="h-entry readable-content">
+          <div class="title">
+            
+              
+      <div class="page-header">
+          Text-to-Image Evolution: Computer Shrine
+          
+          <span class="moon-phase moon-phase-waxing_gibbous">
+             🌔
+             
+            </span>
+            
+      
+      </div>
+  
+  
+                  <div class="meta">
+                      
+                          
+                          Posted <span class="hidden">by <a rel="author" class="p-author h-card" href="https://nonmodernist.com">alexandra edwards</a></span> on <time class="dt-published"> 2025-05-04</time>
+                      
+  
+                      
+  
+                      
+  
+                      
+                          :: 1133 Words
+                      
+  
+                      
+                      
+                              <span class="tags-label"> :: Tags:</span>
+                              <span class="tags">
+                                      <a href="https://nonmodernist.com/tags/ai/" class="post-tag">ai</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/critical-making/" class="post-tag">critical making</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/image-generation/" class="post-tag">image generation</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/solarpunk/" class="post-tag">solarpunk</a>
+                                  
+                              </span>
+                      
+  
+                      
+                      
+  
+                      
+  
+                  </div>
+          </div>
+  
+          
+          
+              <div class="tldr p-summary">
+                  <strong>tl;dr:</strong>
+                  A four-stage iterative experiment through different AI image generators, tracing the evolution of a computer shrine concept.
+              </div>
+          
+  
+          
+          
+          
+              <div class="toc-container">
+                  <h1 class="toc-title">Table of Contents</h1>
+                  <ul class="toc-list">
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/ai-image-experiment-computer-shrine/#the-evolution-of-a-digital-shrine">The Evolution of a Digital Shrine</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/ai-image-experiment-computer-shrine/#aesthetic-evolution-and-observations">Aesthetic Evolution and Observations</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/ai-image-experiment-computer-shrine/#reflections-on-the-process">Reflections on the Process</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/ai-image-experiment-computer-shrine/#questions-for-further-exploration">Questions for Further Exploration</a>
+                              
+                                  <ul>
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/ai-image-experiment-computer-shrine/#system-boundaries-and-interpretations">System Boundaries and Interpretations</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/ai-image-experiment-computer-shrine/#process-and-methodology">Process and Methodology</a>
+                                          </li>
+  
+                                          
+                                      
+                                  </ul>
+                              
+                          </li>
+                      
+                  </ul>
+              </div>
+          
+          
+  
+          <section class="body"></section>
+          <div>
+              <p>My ongoing exploration of AI image generation includes several experiments that help me understand the capabilities, limitations, and aesthetic tendencies of these systems. This note documents one such experiment: an iterative journey through different AI systems to develop the concept of a computer shrine in a garden setting.</p>
+<h2 id="the-evolution-of-a-digital-shrine"><a class="zola-anchor" href="#the-evolution-of-a-digital-shrine" aria-label="Anchor link for: the-evolution-of-a-digital-shrine">The Evolution of a Digital Shrine</a></h2>
+<figure class="center">
+  <div class="dam">
+    <img src="/images/ai-computer-shrine-deepai.jpeg" alt="A vintage computer with a cosmic display sits in a fantastical garden with vibrant pink and blue trees and colorful flowers. The scene has a night-time feel with deep blue sky contrasting with illuminated flora." width="500px">
+  </div>
+  <figcaption>The starting point: Created with DeepAI using the prompt "Sci-fi Community Computer Garden". This initial output features a vibrant, hyper-saturated aesthetic with a vintage computer nestled in a fantastical garden.</figcaption>
+</figure>
+<p>I began with a simple prompt in DeepAI: "Sci-fi Community Computer Garden." The result featured a vibrant, almost psychedelic garden with a vintage computer displaying a cosmic scene. What caught my attention was how the AI had placed the computer at the end of a stone path, giving it an almost shrine-like quality.</p>
+<figure class="center">
+  <div class="dam">
+    <img src="/images/ai-computer-shrine-2.jpeg" alt="A Japanese-inspired green shrine at the end of a winding stone path, surrounded by lush trees. Sunlight filters through the canopy creating dappled light patterns on the vibrant yellow grass." width="500px">
+  </div>
+  <figcaption>Second iteration: Created with DeepAI using the prompt "A winding path of moss-covered stones leading towards a radiant computer shrine in a vibrant solarpunk garden, bathed in dappled sunlight, cute anime style, intricate details." The AI transformed the computer into something like a traditional Japanese shrine structure.</figcaption>
+</figure>
+<p>Intrigued by this shrine-like interpretation, I refined my prompt to explicitly request "a radiant computer shrine" while adding elements like "moss-covered stones," "dappled sunlight," and "cute anime style." DeepAI responded by generating an image heavily influenced by Studio Ghibli aesthetics, featuring a traditional Japanese shrine at the end of a stone path. While aesthetically pleasing, I found this image to be boring and too derivative.</p>
+<figure class="center">
+  <div class="dam">
+    <img src="/images/ai-computer-shrine-3-deepai.jpeg" alt="A minimalist black and white illustration showing an old computer beneath a small solar panel roof, situated in a stylized garden with graphic floral elements. A stone path leads to the simple structure." width="500px">
+  </div>
+  <figcaption>Third iteration: Created with DeepAI using the prompt "A computer shrine powered by solar panels, situated at the end of a winding stone path lined with bioluminescent plants, within a whimsical solarpunk garden, linocut". This produced a striking minimalist interpretation with a graphic, printmaking quality.</figcaption>
+</figure>
+<p>For my third attempt, I kept the core concept but added more technological elements and specified a different artistic style: "A computer shrine powered by solar panels... whimsical solarpunk garden, linocut." This resulted in a dramatic stylistic shift—a minimalist, graphic illustration reminiscent of linocut prints, featuring a vintage computer beneath a solar panel.</p>
+<p>The image includes a generated nonsense label or title and an approximation of a copyright mark. This suggests that the AI is attempting to create a more 'authentic' artifact, but it also points to the likelihood of DeepAI's training data including copyrighted material.</p>
+<figure class="center">
+  <div class="dam">
+    <img src="/images/ai-computer-shrine-adobe.png" alt="A detailed illustration of a retrofuturistic technology structure with solar panels and multiple screens showing cosmic imagery. Rich orange sunflowers contrast against a blue-green background. The scene combines digital and natural elements with textured line work." width="500px">
+  </div>
+  <figcaption>Final iteration: Created by feeding Image 3 to Adobe's Text-to-Image generator. The result maintains the core symbolic elements while developing a richer aesthetic with detailed texturing, retrofuturist styling, and a more complex visual narrative.</figcaption>
+</figure>
+<p>For the final iteration, I fed the third image into Adobe's Text-to-Image generator. The result was a synthesis and evolution—maintaining the core elements (computer, solar panel, garden path) while developing a more sophisticated aesthetic with detailed texturing, retrofuturist styling, and a cosmic portal displayed on the screen. The flowers became more prominent, creating a striking color contrast with the predominantly blue-green scene.</p>
+<!-- FM:Snippet:Start data:{"id":"Dividers","fields":[{"name":"style","value":""}]} -->
+
+  
+
+
+
+<div class="divider-quarter">
+  <div class="quarter-moon-container">
+    <div class="quarter-moon"></div>
+  </div>
+</div>
+<!-- FM:Snippet:End -->
+<h2 id="aesthetic-evolution-and-observations"><a class="zola-anchor" href="#aesthetic-evolution-and-observations" aria-label="Anchor link for: aesthetic-evolution-and-observations">Aesthetic Evolution and Observations</a></h2>
+<p>This experiment reveals several interesting aspects of AI image generation:</p>
+<ol>
+<li>
+<p><strong>Aesthetic Progression</strong>: The images move from fantasy-like saturation to traditional serenity to graphic minimalism to detailed retrofuturism—demonstrating how different systems interpret similar concepts through distinct visual languages.</p>
+</li>
+<li>
+<p><strong>Symbolic Consistency</strong>: The stone pathway remains a consistent compositional element across all iterations, though its rendering evolves in the final iteration.</p>
+</li>
+<li>
+<p><strong>Concept Transformation</strong>: The representation of technology shifts from literal (vintage computer) to metaphorical (shrine) and back to literal but progressively more abstract and cosmic.</p>
+</li>
+<li>
+<p><strong>Color Evolution</strong>: The color palettes vary significantly—from vibrant complementary colors in the first image, to natural greens and yellows in the second, to restrained black and white in the third, to rich blues and oranges with textural depth in the fourth.</p>
+</li>
+</ol>
+<h2 id="reflections-on-the-process"><a class="zola-anchor" href="#reflections-on-the-process" aria-label="Anchor link for: reflections-on-the-process">Reflections on the Process</a></h2>
+<p>For me, this experiment demonstrates how AI image generation can be used in a critical making process, with each output informing subsequent prompts and systems. It reveals both the constraints of these systems (how they interpret and sometimes transform conceptual elements into derivative depictions) and their creative potential when used in an exploratory fashion.</p>
+<p>Given the likelihood of DeepAI's training data including copyrighted material, I find myself unlikely to use it for "final" versions of images. I feel more comfortable using Adobe's system, which has been trained on their stock image library, suggesting artists have been at least somewhat compensated for their work.</p>
+<p>The next step in this experiment will likely involve using the final generated image as a "prompt" for my own drawing or painting, allowing me to explore the intersection of AI-generated imagery and human creativity. This could lead to a more nuanced understanding of how these systems can inform and inspire traditional artistic practices.</p>
+
+  
+
+
+
+<div class="divider-default">
+  <div class="moon-phases">
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+  </div>
+</div>
+<h2 id="questions-for-further-exploration"><a class="zola-anchor" href="#questions-for-further-exploration" aria-label="Anchor link for: questions-for-further-exploration">Questions for Further Exploration</a></h2>
+<h3 id="system-boundaries-and-interpretations"><a class="zola-anchor" href="#system-boundaries-and-interpretations" aria-label="Anchor link for: system-boundaries-and-interpretations">System Boundaries and Interpretations</a></h3>
+<ul>
+<li>How do different AI systems prioritize elements in complex prompts?</li>
+<li>When does a system choose to transform a concept rather than represent it literally?</li>
+<li>How do aesthetics from different traditions get encoded in and reproduced by these systems?</li>
+</ul>
+<h3 id="process-and-methodology"><a class="zola-anchor" href="#process-and-methodology" aria-label="Anchor link for: process-and-methodology">Process and Methodology</a></h3>
+<ul>
+<li>What are the advantages of iterative approaches to AI image generation?</li>
+<li>How might using multiple systems in sequence enhance creative possibilities?</li>
+<li>What is lost and gained as images move between systems and prompts?</li>
+</ul>
+
+  
+
+
+
+<div class="divider-ornate">
+  <div class="center-element">
+    <div class="small-star"></div>
+    <div class="small-star"></div>
+    <div class="small-star"></div>
+    <div class="big-star"></div>
+    <div class="small-star"></div>
+    <div class="small-star"></div>
+    <div class="small-star"></div>
+    <div class="pixel-crescent"></div>
+    <div class="pixel-crescent"></div>
+  </div>
+</div>
+<p><em>This exploration connects to my broader investigations of <a href="https://nonmodernist.com/notes/ai-image-experiment/">AI aesthetics</a> and <a href="https://nonmodernist.com/notes/solarpunk/">solarpunk as pedagogy</a>.</em></p>
+
+          </div> 
+      </section>
+  
+    
+  
+  
+  
+  
+    
+      
+    
+  
+  
+  
+    <div class="backlinks">
+      <button class="note-toggle">
+        <div class="note-icon">
+          <h2> notes that mention this note (1)</h2>
+        </div>
+      </button>
+      
+      <div class="backlinks-content" style="display: none;">
+        <ul class="backlinks-list">
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;ai-image-experiment&#x2F;">
+                
+                  Text-to-Image Generation: A Critical Experiment
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  
+
+
+
+    
+      
+      </article>
+  </main>
+  
+
+
+        
+            
+        
+
+        
+    </div>
+
+
+    <hr>
+
+    <div class="footer">
+        <p>
+            <span class="og"><a href="https://nonmodernist.com">🏠</a> ☕ 🌁 <span id="launch-counter">875</span> 🎂 ☕ 🌁 🔍 📷 👓 🌁🌁 💠 📩 🌁 🌁🌁 <a href="https://nonmodernist.com/uses">⚡︎</a> 💓 <a href="https://nonmodernist.com/log"><span id="movies-counter">2736</span> 📺</a> 🌁🌁🌁 a 🌁 🌙 <a href="https://nonmodernist.com/readinglog"><span id="books-counter">974</span> 📖</a></span>
+        </p>
+    </div>
+    
+
+
+</html>
