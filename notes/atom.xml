@@ -1,0 +1,1370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>alexandra edwards, phd - notes</title>
+    <subtitle>the internet homebase of dr. alexandra edwards</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://nonmodernist.com/notes/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-05-04T15:24:39.060+00:00</updated>
+    <id>https://nonmodernist.com/notes/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Text-to-Image Evolution: Computer Shrine</title>
+        <published>2025-05-04T15:24:39.060+00:00</published>
+        <updated>2025-05-04T15:24:39.060+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/ai-image-experiment-computer-shrine/"/>
+        <id>https://nonmodernist.com/notes/ai-image-experiment-computer-shrine/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/ai-image-experiment-computer-shrine/">&lt;p&gt;My ongoing exploration of AI image generation includes several experiments that help me understand the capabilities, limitations, and aesthetic tendencies of these systems. This note documents one such experiment: an iterative journey through different AI systems to develop the concept of a computer shrine in a garden setting.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-evolution-of-a-digital-shrine&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-evolution-of-a-digital-shrine&quot; aria-label=&quot;Anchor link for: the-evolution-of-a-digital-shrine&quot;&gt;The Evolution of a Digital Shrine&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;figure class=&quot;center&quot;&gt;
+  &lt;div class=&quot;dam&quot;&gt;
+    &lt;img src=&quot;&#x2F;images&#x2F;ai-computer-shrine-deepai.jpeg&quot; alt=&quot;A vintage computer with a cosmic display sits in a fantastical garden with vibrant pink and blue trees and colorful flowers. The scene has a night-time feel with deep blue sky contrasting with illuminated flora.&quot; width=&quot;500px&quot;&gt;
+  &lt;&#x2F;div&gt;
+  &lt;figcaption&gt;The starting point: Created with DeepAI using the prompt &quot;Sci-fi Community Computer Garden&quot;. This initial output features a vibrant, hyper-saturated aesthetic with a vintage computer nestled in a fantastical garden.&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;I began with a simple prompt in DeepAI: &quot;Sci-fi Community Computer Garden.&quot; The result featured a vibrant, almost psychedelic garden with a vintage computer displaying a cosmic scene. What caught my attention was how the AI had placed the computer at the end of a stone path, giving it an almost shrine-like quality.&lt;&#x2F;p&gt;
+&lt;figure class=&quot;center&quot;&gt;
+  &lt;div class=&quot;dam&quot;&gt;
+    &lt;img src=&quot;&#x2F;images&#x2F;ai-computer-shrine-2.jpeg&quot; alt=&quot;A Japanese-inspired green shrine at the end of a winding stone path, surrounded by lush trees. Sunlight filters through the canopy creating dappled light patterns on the vibrant yellow grass.&quot; width=&quot;500px&quot;&gt;
+  &lt;&#x2F;div&gt;
+  &lt;figcaption&gt;Second iteration: Created with DeepAI using the prompt &quot;A winding path of moss-covered stones leading towards a radiant computer shrine in a vibrant solarpunk garden, bathed in dappled sunlight, cute anime style, intricate details.&quot; The AI transformed the computer into something like a traditional Japanese shrine structure.&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;Intrigued by this shrine-like interpretation, I refined my prompt to explicitly request &quot;a radiant computer shrine&quot; while adding elements like &quot;moss-covered stones,&quot; &quot;dappled sunlight,&quot; and &quot;cute anime style.&quot; DeepAI responded by generating an image heavily influenced by Studio Ghibli aesthetics, featuring a traditional Japanese shrine at the end of a stone path. While aesthetically pleasing, I found this image to be boring and too derivative.&lt;&#x2F;p&gt;
+&lt;figure class=&quot;center&quot;&gt;
+  &lt;div class=&quot;dam&quot;&gt;
+    &lt;img src=&quot;&#x2F;images&#x2F;ai-computer-shrine-3-deepai.jpeg&quot; alt=&quot;A minimalist black and white illustration showing an old computer beneath a small solar panel roof, situated in a stylized garden with graphic floral elements. A stone path leads to the simple structure.&quot; width=&quot;500px&quot;&gt;
+  &lt;&#x2F;div&gt;
+  &lt;figcaption&gt;Third iteration: Created with DeepAI using the prompt &quot;A computer shrine powered by solar panels, situated at the end of a winding stone path lined with bioluminescent plants, within a whimsical solarpunk garden, linocut&quot;. This produced a striking minimalist interpretation with a graphic, printmaking quality.&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;For my third attempt, I kept the core concept but added more technological elements and specified a different artistic style: &quot;A computer shrine powered by solar panels... whimsical solarpunk garden, linocut.&quot; This resulted in a dramatic stylistic shift—a minimalist, graphic illustration reminiscent of linocut prints, featuring a vintage computer beneath a solar panel.&lt;&#x2F;p&gt;
+&lt;p&gt;The image includes a generated nonsense label or title and an approximation of a copyright mark. This suggests that the AI is attempting to create a more &#x27;authentic&#x27; artifact, but it also points to the likelihood of DeepAI&#x27;s training data including copyrighted material.&lt;&#x2F;p&gt;
+&lt;figure class=&quot;center&quot;&gt;
+  &lt;div class=&quot;dam&quot;&gt;
+    &lt;img src=&quot;&#x2F;images&#x2F;ai-computer-shrine-adobe.png&quot; alt=&quot;A detailed illustration of a retrofuturistic technology structure with solar panels and multiple screens showing cosmic imagery. Rich orange sunflowers contrast against a blue-green background. The scene combines digital and natural elements with textured line work.&quot; width=&quot;500px&quot;&gt;
+  &lt;&#x2F;div&gt;
+  &lt;figcaption&gt;Final iteration: Created by feeding Image 3 to Adobe&#x27;s Text-to-Image generator. The result maintains the core symbolic elements while developing a richer aesthetic with detailed texturing, retrofuturist styling, and a more complex visual narrative.&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;For the final iteration, I fed the third image into Adobe&#x27;s Text-to-Image generator. The result was a synthesis and evolution—maintaining the core elements (computer, solar panel, garden path) while developing a more sophisticated aesthetic with detailed texturing, retrofuturist styling, and a cosmic portal displayed on the screen. The flowers became more prominent, creating a striking color contrast with the predominantly blue-green scene.&lt;&#x2F;p&gt;
+&lt;!-- FM:Snippet:Start data:{&quot;id&quot;:&quot;Dividers&quot;,&quot;fields&quot;:[{&quot;name&quot;:&quot;style&quot;,&quot;value&quot;:&quot;&quot;}]} --&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-quarter&quot;&gt;
+  &lt;div class=&quot;quarter-moon-container&quot;&gt;
+    &lt;div class=&quot;quarter-moon&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;!-- FM:Snippet:End --&gt;
+&lt;h2 id=&quot;aesthetic-evolution-and-observations&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#aesthetic-evolution-and-observations&quot; aria-label=&quot;Anchor link for: aesthetic-evolution-and-observations&quot;&gt;Aesthetic Evolution and Observations&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;This experiment reveals several interesting aspects of AI image generation:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Aesthetic Progression&lt;&#x2F;strong&gt;: The images move from fantasy-like saturation to traditional serenity to graphic minimalism to detailed retrofuturism—demonstrating how different systems interpret similar concepts through distinct visual languages.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Symbolic Consistency&lt;&#x2F;strong&gt;: The stone pathway remains a consistent compositional element across all iterations, though its rendering evolves in the final iteration.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Concept Transformation&lt;&#x2F;strong&gt;: The representation of technology shifts from literal (vintage computer) to metaphorical (shrine) and back to literal but progressively more abstract and cosmic.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Color Evolution&lt;&#x2F;strong&gt;: The color palettes vary significantly—from vibrant complementary colors in the first image, to natural greens and yellows in the second, to restrained black and white in the third, to rich blues and oranges with textural depth in the fourth.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;reflections-on-the-process&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#reflections-on-the-process&quot; aria-label=&quot;Anchor link for: reflections-on-the-process&quot;&gt;Reflections on the Process&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;For me, this experiment demonstrates how AI image generation can be used in a critical making process, with each output informing subsequent prompts and systems. It reveals both the constraints of these systems (how they interpret and sometimes transform conceptual elements into derivative depictions) and their creative potential when used in an exploratory fashion.&lt;&#x2F;p&gt;
+&lt;p&gt;Given the likelihood of DeepAI&#x27;s training data including copyrighted material, I find myself unlikely to use it for &quot;final&quot; versions of images. I feel more comfortable using Adobe&#x27;s system, which has been trained on their stock image library, suggesting artists have been at least somewhat compensated for their work.&lt;&#x2F;p&gt;
+&lt;p&gt;The next step in this experiment will likely involve using the final generated image as a &quot;prompt&quot; for my own drawing or painting, allowing me to explore the intersection of AI-generated imagery and human creativity. This could lead to a more nuanced understanding of how these systems can inform and inspire traditional artistic practices.&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-default&quot;&gt;
+  &lt;div class=&quot;moon-phases&quot;&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;questions-for-further-exploration&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#questions-for-further-exploration&quot; aria-label=&quot;Anchor link for: questions-for-further-exploration&quot;&gt;Questions for Further Exploration&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;system-boundaries-and-interpretations&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#system-boundaries-and-interpretations&quot; aria-label=&quot;Anchor link for: system-boundaries-and-interpretations&quot;&gt;System Boundaries and Interpretations&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;How do different AI systems prioritize elements in complex prompts?&lt;&#x2F;li&gt;
+&lt;li&gt;When does a system choose to transform a concept rather than represent it literally?&lt;&#x2F;li&gt;
+&lt;li&gt;How do aesthetics from different traditions get encoded in and reproduced by these systems?&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;process-and-methodology&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#process-and-methodology&quot; aria-label=&quot;Anchor link for: process-and-methodology&quot;&gt;Process and Methodology&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;What are the advantages of iterative approaches to AI image generation?&lt;&#x2F;li&gt;
+&lt;li&gt;How might using multiple systems in sequence enhance creative possibilities?&lt;&#x2F;li&gt;
+&lt;li&gt;What is lost and gained as images move between systems and prompts?&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-ornate&quot;&gt;
+  &lt;div class=&quot;center-element&quot;&gt;
+    &lt;div class=&quot;small-star&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;small-star&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;small-star&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;big-star&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;small-star&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;small-star&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;small-star&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-crescent&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-crescent&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;em&gt;This exploration connects to my broader investigations of &lt;a href=&quot;https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;ai-image-experiment&#x2F;&quot;&gt;AI aesthetics&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;solarpunk&#x2F;&quot;&gt;solarpunk as pedagogy&lt;&#x2F;a&gt;.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Solarpunk Futures</title>
+        <published>2025-05-03T00:00:00+00:00</published>
+        <updated>2025-05-03T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/solarpunk/"/>
+        <id>https://nonmodernist.com/notes/solarpunk/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/solarpunk/">&lt;p&gt;&lt;span class=&quot;og&quot;&gt;☀&lt;&#x2F;span&gt; Last time I taught a class about solarpunk, my students built an emergency off-grid intranet that I still have sitting in a weatherproof box in my office. Next semester I&#x27;ll bring it in for a new cohort to play with. I hope that physically handling someone else&#x27;s prototype of digital infrastructure for climate resilience can make speculative futures feel more tangible for my students.&lt;&#x2F;p&gt;
+&lt;p&gt;The box in my office contains more than just wires and circuit boards and a cheap solar panel. It holds the tangible proof that another world is not only possible but already being built, one student project at a time.&lt;&#x2F;p&gt;
+&lt;figure class=&quot;center&quot;&gt;
+  &lt;div class=&quot;pixel-corners--wrapper&quot;&gt;
+    &lt;img src=&quot;&#x2F;images&#x2F;ai-digital-garden.png&quot; alt=&quot;AI-generated watercolor and linocut-style illustration showing a greenhouse workspace where vintage computers and monitors grow like plants among lush tropical foliage. A modern iMac sits on a wooden desk surrounded by flourishing flowers and vines, while old CRT monitors are mounted on poles like tree trunks. Cables snake across the floor like roots. The arched glass ceiling frames this fusion of technology and nature in pale colors with detailed ink strokes.&quot; width=&quot;500px&quot;&gt;
+  &lt;&#x2F;div&gt;
+  &lt;figcaption&gt;This watercolor and linocut approximation was created using Adobe&#x27;s text-to-image generator with the prompt &quot;garden where computers grow.&quot; It captures the essence of both botanical abundance and technological resilience that solarpunk embodies. Where plants and computing power intertwine, we find a practical metaphor for building regenerative digital infrastructure within living systems.&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;h2 id=&quot;solarpunk-as-generative-practice&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#solarpunk-as-generative-practice&quot; aria-label=&quot;Anchor link for: solarpunk-as-generative-practice&quot;&gt;Solarpunk as Generative Practice&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&quot;Solarpunk is about finding ways to make life more wonderful for us right now, and more importantly for the generations that follow us—i.e., extending human life at the species level, rather than individually. Our future must involve repurposing and creating new things from what we already have (instead of 20th century &#x27;destroy it all and build something completely different&#x27; modernism). Our futurism is not nihilistic... it is about &lt;strong&gt;ingenuity, generativity... and community.&lt;&#x2F;strong&gt;&quot;&lt;&#x2F;p&gt;
+&lt;p&gt;—&lt;a href=&quot;https:&#x2F;&#x2F;hieroglyph.asu.edu&#x2F;2014&#x2F;09&#x2F;solarpunk-notes-toward-a-manifesto&#x2F;&quot;&gt;Adam Flynn, &quot;Solarpunk: Notes toward a manifesto&quot;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;This is what we practiced in class: critical making as a form of applied anarchist theory. Students also kept &quot;field journals for a low-carbon future,&quot; with the rule being that they had to use something they already had at hand or make something from recycled supplies. Field journals became sites for documenting our experiments with degrowth living. The off-grid intranet was our answer to the question: what happens to digital community when the power goes out?&lt;&#x2F;p&gt;
+&lt;p&gt;These weren&#x27;t just academic exercises; they were working prototypes exploring what life and communication might look like when centralized infrastructure fails.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;critical-making-as-solarpunk-praxis&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#critical-making-as-solarpunk-praxis&quot; aria-label=&quot;Anchor link for: critical-making-as-solarpunk-praxis&quot;&gt;Critical Making as Solarpunk Praxis&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;figure class=&quot;center&quot;&gt;
+  &lt;div class=&quot;pixel-corners--wrapper&quot;&gt;
+    &lt;img src=&quot;&#x2F;images&#x2F;ai-computer-garden.png&quot; alt=&quot;AI-generated image showing rows of early Macintosh Plus computers arranged like planted crops in garden beds. Pink coral-colored flowers and green foliage grow abundantly alongside and between the computers. Sheets of paper are scattered like leaves on a pale pink pathway that runs between the rows. The scene is rendered in soft pastels with a dreamlike quality, set against a turquoise sky.&quot; width=&quot;500px&quot;&gt;
+  &lt;&#x2F;div&gt;
+  &lt;figcaption&gt;Another AI-generated vision from the prompt &quot;garden where computers grow&quot;—this time with &quot;layered paper&quot; as a style prompt. The scattered pages on the ground suggest autumn maintenance, while the turquoise sky and coral blooms create an optimistic palette that speaks to the harmony between digital tools and natural ecosystems that solarpunk envisions.&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;Teaching solarpunk means bridging my interests in anarchist theory, nature, and technology. We begin with imagining better futures, and then we practice building them at whatever scale we can. Next semester&#x27;s class on digital infrastructure and climate change continues this thread of my teaching. When my new students hold the prototypes my former students built, they&#x27;ll understand that solarpunk isn&#x27;t just an aesthetic—it&#x27;s about making things that might actually keep us connected when systems fail.&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-default&quot;&gt;
+  &lt;div class=&quot;moon-phases&quot;&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;future-directions-speculative-fiction-as-blueprint&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#future-directions-speculative-fiction-as-blueprint&quot; aria-label=&quot;Anchor link for: future-directions-speculative-fiction-as-blueprint&quot;&gt;Future Directions: Speculative Fiction as Blueprint&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;I&#x27;ve been thinking about eventually developing a science fiction course that would explore solarpunk through storytelling and worldbuilding. HydroponicTrash&#x27;s description resonates with this direction:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&quot;At the moment, we are in the global struggle against capitalism, hierarchy, and domination. But it&#x27;s interesting to read a story about how people made it through, and built a better future around some of the topics and ideas here. It makes it easier to walk in someone else&#x27;s shoes so to speak and imagine yourself say in a democratic confederalist assembly of your community, voicing your opinion on a community action to help preserve endangered wildlife in your area. Or speculating what a degrowth future might look like where we lower our energy demand by creating free and open housing that is passive, and heats and cools itself, and how you might interact in an upcycled and revamped suburb with sprawling public transport that runs off low resource intensive passive solar. These things can be worked out, speculated, and shown as both a fiction, but also a path forward to imagine what the world could look like.&quot;&lt;&#x2F;p&gt;
+&lt;p&gt;—&lt;a href=&quot;https:&#x2F;&#x2F;anarchosolarpunk.substack.com&#x2F;p&#x2F;goodlife&quot;&gt;HydroponicTrash, &quot;The Good Life: Buen Vivir, Hygge, Solarpunk &amp;amp; Degrowth&quot;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;This connects to my growing interest in more-than-human kin networks. Maria Puig de la Bellacasa&#x27;s book &lt;em&gt;Matters of Care: Speculative Ethics in More Than Human Worlds&lt;&#x2F;em&gt; offers a framework that might combine beautifully with solarpunk storytelling—exploring not just how humans might live differently, but how we might reimagine our relationships with all beings in the Anthropocene.&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-default&quot;&gt;
+  &lt;div class=&quot;moon-phases&quot;&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;em&gt;This note connects to my explorations of &lt;a href=&quot;https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;digital-gardens&#x2F;&quot;&gt;digital gardens&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;commonplace-books&#x2F;&quot;&gt;commonplace books&lt;&#x2F;a&gt;.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Text-to-Image Generation: A Critical Experiment</title>
+        <published>2025-05-02T00:00:00+00:00</published>
+        <updated>2025-05-02T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/ai-image-experiment/"/>
+        <id>https://nonmodernist.com/notes/ai-image-experiment/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/ai-image-experiment/">&lt;p&gt;This site uses text-to-image generation to illustrate some of its pages, including my &lt;a href=&quot;https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;commonplace-books&#x2F;&quot;&gt;commonplace books&lt;&#x2F;a&gt; note. This is intended as an experiment in visual communication, conducted in the spirit of critical making.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-is-critical-making&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#what-is-critical-making&quot; aria-label=&quot;Anchor link for: what-is-critical-making&quot;&gt;What is Critical Making?&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Critical making combines the act of creating with critical analysis, fostering a dual engagement in hands-on production and reflective thought. This approach encourages both students and practitioners to explore the broader social, cultural, and ethical dimensions of the artifacts they produce.&lt;&#x2F;p&gt;
+&lt;figure class=&quot;center&quot;&gt;
+  &lt;div class=&quot;pixel-corners--wrapper&quot;&gt;
+    &lt;img src=&quot;&#x2F;images&#x2F;ai-critical-making-adobe.png&quot; alt=&quot;AI-generated image showing a field journal for a low carbon future. The illustration features watercolor sketches of plans for a scifi community computer garden. The hand of the artist is visible, holding a pen as they sketch.&quot; width=&quot;500px&quot;&gt;
+  &lt;&#x2F;div&gt;
+  &lt;figcaption&gt;An AI-generated illustration of &quot;pages from a field journal for a low carbon future. An artist has created watercolor sketches of plans for a scifi community computer garden.&quot; Created by Adobe Text to Image, which uses assets from the extensive Adobe stock image library.&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;By directly working with text-to-image systems rather than just theorizing about them, I hope to develop a more nuanced understanding of their tendencies, limitations, and social impacts.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;methodology&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#methodology&quot; aria-label=&quot;Anchor link for: methodology&quot;&gt;Methodology&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;This is a casual experiment with no formal structure. I use various text-to-image generation tools to create illustrations for select notes in this digital garden. The images are generated using prompts derived from the content of the notes, sometimes with modifications to achieve desired aesthetic results.&lt;&#x2F;p&gt;
+&lt;p&gt;I always include the tool used and the original prompt in the image metadata, which I hope creates transparency around this experiment. My intention is to make the process visible, not to hide the technology behind them or present them as &quot;authentic&quot; images.&lt;&#x2F;p&gt;
+&lt;p&gt;I reflect on both the process of creating these images and their relationship to the text they accompany. Questions that arise during this process become part of the experiment itself, documented here and in related notes.&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-simple&quot;&gt;
+  &lt;div class=&quot;pixel-crescent&quot;&gt;
+    &lt;div class=&quot;hidden-rays&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;experiment-1-botanical-prints&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#experiment-1-botanical-prints&quot; aria-label=&quot;Anchor link for: experiment-1-botanical-prints&quot;&gt;Experiment 1: Botanical Prints&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;I began this experiment with a simple prompt: &quot;field of rudbeckia, warm colors, linocut.&quot; I wanted to see how different systems interpreted this prompt and what aesthetic choices they made. The results varied, showcasing the unique characteristics of each system. Both tools I used—Adobe&#x27;s text-to-image generator and DeepAI—were able to create botanically accurate images, but they also introduced their own stylistic interpretations.&lt;&#x2F;p&gt;
+&lt;figure class=&quot;center&quot;&gt;
+  &lt;div class=&quot;dam&quot;&gt;
+    &lt;img src=&quot;&#x2F;images&#x2F;ai-rudbeckia.jpeg&quot; alt=&quot;&quot; width=&quot;500px&quot;&gt;
+  &lt;&#x2F;div&gt;
+  &lt;figcaption&gt;AI approximation of a &quot;field of rudbeckia, warm colors, linocut,&quot; created with DeepAI. This first image uses a minimalist pop art style, featuring a field of yellow black-eyed susans rendered as almost-geometric patterns against a bold red background. This interpretation prioritizes graphic simplicity and strong color contrast over botanical detail.&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;figure class=&quot;center&quot;&gt;
+  &lt;div class=&quot;dam&quot;&gt;
+    &lt;img src=&quot;&#x2F;images&#x2F;ai-rudbeckia-2.jpeg&quot; alt=&quot;&quot; width=&quot;500px&quot;&gt;
+  &lt;&#x2F;div&gt;
+  &lt;figcaption&gt;Retro-style AI illustration of rudbeckia at sunset, combining 1960s-70s children&#x27;s book aesthetics with warm color harmonies, created with the same prompt and tool as the previous image. The large setting sun creates a nostalgic atmosphere while the flowers, though stylized, display the most accurate leaf shapes.&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;figure class=&quot;center&quot;&gt;
+  &lt;div class=&quot;dam&quot;&gt;
+    &lt;img src=&quot;&#x2F;images&#x2F;ai-rudbeckia-adobe.png&quot; alt=&quot;&quot; width=&quot;500px&quot;&gt;
+  &lt;&#x2F;div&gt;
+  &lt;figcaption&gt;Art Nouveau-inspired AI depiction of rudbeckia with flowing lines and rhythmic patterns. This interpretation, created by Adobe Text to Image, draws from woodblock print traditions with its ornamental mountain backdrop and decorative botanical detail, representing perhaps the most &#x27;artistic&#x27; of AI&#x27;s style interpretations.&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;These three AI-generated images demonstrate how computational image generators, which create visuals through statistical pattern matching rather than genuine understanding, interpret the same subject—fields of black-eyed susans—through different aesthetic lenses. While all three depict repetitive floral landscapes, they range from simplified graphic design to retro illustration to Art Nouveau-inspired decorative arts.&lt;&#x2F;p&gt;
+&lt;p&gt;The first two images, both from DeepAI, notably evoke the work of Ilonka Karász, particularly her &lt;em&gt;New Yorker&lt;&#x2F;em&gt; cover illustrations from the 1940s-60s, with their bold color blocking, flattened perspectives, and warm palette reminiscent of mid-century graphic design. The third image, using Adobe Express, diverges toward a more ornamental, printmaking-inspired style. What&#x27;s particularly fascinating is how each interpretation maintains the core subject matter while expressing different artistic philosophies—from pattern-based minimalism to nostalgic warmth to decorative complexity—revealing the multiple aesthetic &quot;knowledge bases&quot; embedded within AI image generation systems.&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-simple&quot;&gt;
+  &lt;div class=&quot;pixel-crescent&quot;&gt;
+    &lt;div class=&quot;hidden-rays&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;h2 id=&quot;experiment-2-solarpunk-computer-shrine&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#experiment-2-solarpunk-computer-shrine&quot; aria-label=&quot;Anchor link for: experiment-2-solarpunk-computer-shrine&quot;&gt;Experiment 2: Solarpunk Computer Shrine&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;figure class=&quot;center&quot;&gt;
+  &lt;div class=&quot;dam&quot;&gt;
+    &lt;img src=&quot;&#x2F;images&#x2F;ai-computer-shrine-deepai.jpeg&quot; alt=&quot;A vintage computer with a cosmic display sits in a fantastical garden with vibrant pink and blue trees and colorful flowers. The scene has a night-time feel with deep blue sky contrasting with illuminated flora.&quot; width=&quot;500px&quot;&gt;
+  &lt;&#x2F;div&gt;
+  &lt;figcaption&gt;Created with DeepAI using the prompt &quot;Sci-fi Community Computer Garden.&quot; The appearance of the computer like a shrine in a garden inspired me to explore this idea further. &lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;ai-image-experiment-computer-shrine&#x2F;&quot;&gt;Visit the computer shrine.&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;questions-to-explore&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#questions-to-explore&quot; aria-label=&quot;Anchor link for: questions-to-explore&quot;&gt;Questions to Explore&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;aesthetic-considerations&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#aesthetic-considerations&quot; aria-label=&quot;Anchor link for: aesthetic-considerations&quot;&gt;Aesthetic Considerations&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;What visual aesthetics do these systems tend to replicate?&lt;&#x2F;li&gt;
+&lt;li&gt;How do these systems interpret ambiguity and abstraction?&lt;&#x2F;li&gt;
+&lt;li&gt;What happens at the boundary between the describable and the indescribable?&lt;&#x2F;li&gt;
+&lt;li&gt;How do different systems handle the same prompts, and what does this reveal about their training?&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;ethical-concerns&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#ethical-concerns&quot; aria-label=&quot;Anchor link for: ethical-concerns&quot;&gt;Ethical Concerns&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;How do these systems reproduce (or challenge) existing power structures?&lt;&#x2F;li&gt;
+&lt;li&gt;What biases emerge in generated imagery?&lt;&#x2F;li&gt;
+&lt;li&gt;Who benefits from and who is harmed by these technologies?&lt;&#x2F;li&gt;
+&lt;li&gt;Following Dan McQuillan&#x27;s work on AI ethics, how might these systems contribute to algorithmic fascism through aesthetics?&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-default&quot;&gt;
+  &lt;div class=&quot;moon-phases&quot;&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;em&gt;This exploration connects to my broader interest in &lt;a href=&quot;&#x2F;notes&#x2F;pre-cinema-technologies&#x2F;&quot;&gt;pre-cinema technologies&lt;&#x2F;a&gt;, the &lt;a href=&quot;&#x2F;notes&#x2F;early-photography&#x2F;&quot;&gt;development of photography&lt;&#x2F;a&gt;, and how new visual technologies shape our understanding of the world.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Commonplace Books as Gardens of Thought</title>
+        <published>2025-05-02T00:00:00+00:00</published>
+        <updated>2025-05-02T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/commonplace-books/"/>
+        <id>https://nonmodernist.com/notes/commonplace-books/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/commonplace-books/">&lt;p&gt;&lt;span class=&quot;og&quot;&gt;📖&lt;&#x2F;span&gt; My relationship with commonplace books began during my master&#x27;s program, where I worked on transcribing these fascinating historical documents at the library. This interest deepened in 2016 when I participated in an NEH summer seminar focused on commonplace books and scrapbooks while writing my dissertation. That experience fundamentally shaped how I think about knowledge organization and curation—concepts that inform this digital garden.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-is-a-commonplace-book&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#what-is-a-commonplace-book&quot; aria-label=&quot;Anchor link for: what-is-a-commonplace-book&quot;&gt;What is a Commonplace Book?&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A commonplace book is at once a book form and a method of reading. Commonplacing was a system of using books in which readers digested the books they read by extracting, ordering and recording particular phrases or passages in notebooks of their own. This process encouraged readers to atomize books by isolating units that might later be useful in one or another discursive context. While the commonplace book allowed readers to personalize their reading by making it useful, this process of textual engagement was also highly prescribed, &quot;common&quot; in the sense that it filtered one&#x27;s reading through social norms that determined what was textually significant and what not. —&lt;a href=&quot;https:&#x2F;&#x2F;www.lib.uchicago.edu&#x2F;collex&#x2F;exhibits&#x2F;book-use-book-theory-1500-1700&#x2F;parts-and-wholes-matter-method&#x2F;commonplace-thinking&#x2F;&quot;&gt;Commonplace Thinking, UChicago Library&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;These collections began as blank books that gradually filled with quotes, observations, and ideas the owner encountered and wanted to preserve. The practice encouraged atomizing texts—breaking them into useful, reusable fragments that could be referenced later.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;method-and-purpose&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#method-and-purpose&quot; aria-label=&quot;Anchor link for: method-and-purpose&quot;&gt;Method and Purpose&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The commonplace book served multiple functions:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;A personal knowledge repository&lt;&#x2F;li&gt;
+&lt;li&gt;A conversation starter&lt;&#x2F;li&gt;
+&lt;li&gt;A memory aid&lt;&#x2F;li&gt;
+&lt;li&gt;A method of processing what one read&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Unlike modern note-taking, which often organizes by source or chronology, commonplace books organized by theme or topic, creating unexpected juxtapositions between ideas from different sources.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!quote] &lt;a href=&quot;https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20040220112000&#x2F;http:&#x2F;&#x2F;www.futureofthebook.com&#x2F;stories&#x2F;storyReader$207&quot;&gt;Booke and e-book: The Future of the Book&lt;&#x2F;a&gt;
+&quot;The commonplace book began blank. The reader used it to collect premises, arguments and other quotes from the various books read. The commonplace book was always at hand for the next addition or as a conversational prompt. It might well fill up with contradictory snippets.&quot; &lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;This tolerance for contradiction distinguishes commonplace books from more systematic knowledge tools—they weren&#x27;t meant to present a coherent worldview but rather to capture diverse perspectives that might prove useful in different contexts.&lt;&#x2F;p&gt;
+&lt;!-- FM:Snippet:Start data:{&quot;id&quot;:&quot;Dividers&quot;,&quot;fields&quot;:[{&quot;name&quot;:&quot;style&quot;,&quot;value&quot;:&quot;(style=\&quot;quarter\&quot;)&quot;}]} --&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-quarter&quot;&gt;
+  &lt;div class=&quot;quarter-moon-container&quot;&gt;
+    &lt;div class=&quot;quarter-moon&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;!-- FM:Snippet:End --&gt;
+&lt;h2 id=&quot;commonplace-books-and-florilegia&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#commonplace-books-and-florilegia&quot; aria-label=&quot;Anchor link for: commonplace-books-and-florilegia&quot;&gt;Commonplace Books and Florilegia&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The practice of commonplacing connects directly to the medieval tradition of the florilegium (plural: florilegia), literally &quot;a gathering of flowers.&quot; These collections contained excerpts from authoritative texts, usually organized by subject.&lt;&#x2F;p&gt;
+&lt;figure class=&quot;center&quot;&gt;
+  &lt;div class=&quot;pixel-corners--wrapper&quot;&gt;
+    &lt;img src=&quot;&#x2F;florilegium.png&quot; alt=&quot;AI-generated illustration of an open antique book displaying botanical drawings of daisies and wildflowers in a vintage engraving style with decorative borders. The detailed black and white illustration includes fully blooming flowers, stems, and leaves, with subtle touches of yellow in some smaller blooms.&quot; width=&quot;550px&quot;&gt;
+  &lt;&#x2F;div&gt;
+  &lt;figcaption&gt;This botanical book illustration was created using Adobe Express&#x27;s &#x27;Generate Image&#x27; feature. I provided the prompt &#x27;florilegia - a commonplace book of flowers&#x27; and selected the style modifiers &#x27;nostalgic,&#x27; &#x27;beautiful,&#x27; and &#x27;line drawing&#x27; to achieve this vintage engraving-style result with its delicate botanical details and decorative borders. &lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;The metaphor of gathering flowers—selecting the most beautiful or useful parts—perfectly captures the essence of both commonplace books and digital gardens. We cultivate ideas, collect the most vibrant specimens, and arrange them in ways that create new meaning through juxtaposition.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;from-commonplace-books-to-digital-gardens&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#from-commonplace-books-to-digital-gardens&quot; aria-label=&quot;Anchor link for: from-commonplace-books-to-digital-gardens&quot;&gt;From Commonplace Books to Digital Gardens&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The parallels between historical commonplace books and today&#x27;s digital gardens are striking:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hypertextual thinking: Though lacking literal hyperlinks, commonplace books created associative connections between ideas through topical organization.&lt;&#x2F;li&gt;
+&lt;li&gt;Personal curation: Both forms privilege personal relevance over comprehensive coverage.&lt;&#x2F;li&gt;
+&lt;li&gt;Non-linear organization: Neither needs to be read in order from beginning to end.&lt;&#x2F;li&gt;
+&lt;li&gt;Evolving collections: Both grow and change over time as new ideas are encountered.&lt;&#x2F;li&gt;
+&lt;li&gt;Public&#x2F;private balance: Commonplace books, though private, were often shared in social settings as conversation starters—similar to how digital gardens are personal yet publicly accessible.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;digital-gardening-as-modern-commonplacing&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#digital-gardening-as-modern-commonplacing&quot; aria-label=&quot;Anchor link for: digital-gardening-as-modern-commonplacing&quot;&gt;Digital Gardening as Modern Commonplacing&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;My approach to this digital garden is directly inspired by the tradition of commonplace books and florilegia. I view these notes as my own collection of &quot;flowers&quot;—ideas worth preserving and connections worth exploring. Like the commonplace books I studied and transcribed, this space embraces contradiction, prizes interesting juxtapositions, and evolves organically over time.&lt;&#x2F;p&gt;
+&lt;p&gt;The digital medium offers new possibilities that traditional commonplace keepers could only dream of—the ability to easily reorganize, to create explicit rather than implied connections, and to share selectively with others. Yet the core purpose remains the same: to cultivate a personal landscape of knowledge that reflects my intellectual journey.&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-quarter&quot;&gt;
+  &lt;div class=&quot;quarter-moon-container&quot;&gt;
+    &lt;div class=&quot;quarter-moon&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;em&gt;This note is part of my exploration of historical knowledge practices and their modern digital counterparts.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Gold Diggers of 1933: Narrative Structure</title>
+        <published>2025-02-15T00:00:00+00:00</published>
+        <updated>2025-05-01T16:35:06.757+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/gold-diggers-1933/"/>
+        <id>https://nonmodernist.com/notes/gold-diggers-1933/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/gold-diggers-1933/">&lt;p&gt;&lt;span class=&quot;og&quot;&gt;🎪&lt;&#x2F;span&gt; The pre-code, backstage, Depression-era musical &lt;em&gt;Gold Diggers of 1933&lt;&#x2F;em&gt; employs a fascinating &lt;em&gt;contrapposto&lt;&#x2F;em&gt; structure where the film&#x27;s romance plot and the show-within-the-show travel in opposite directions. This creates a narrative in the shape of an X, with interesting implications for how we understand the film&#x27;s commentary on economics during the Great Depression.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;bookending-images&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#bookending-images&quot; aria-label=&quot;Anchor link for: bookending-images&quot;&gt;Bookending Images&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;My high school playwriting teacher once gave us an analytical exercise: take the first and last image of any film and demonstrate how those two images alone tell the story.&lt;&#x2F;p&gt;
+&lt;figure class=&quot;center&quot;&gt;
+  &lt;div class=&quot;pixel-corners--wrapper&quot;&gt;
+    &lt;img src=&quot;&#x2F;golddiggers1933first.png&quot; alt=&quot;The first shot after the credits showing an oversized coin featuring a woman&#x27;s profile&quot; width=&quot;450px&quot;&gt;
+  &lt;&#x2F;div&gt;
+  &lt;figcaption&gt;The first shot after the credits&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;The film opens with a close-up on an oversized coin featuring a woman&#x27;s profile—clearly a prop for the opening musical number &quot;&lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=Bm9hySTVKtY&quot;&gt;We&#x27;re in the Money&lt;&#x2F;a&gt;.&quot; This number is promptly interrupted when police arrive to repossess everything, including the chorus girls&#x27; costumes.&lt;&#x2F;p&gt;
+&lt;figure class=&quot;center&quot;&gt;
+&lt;div class=&quot;pixel-corners--wrapper&quot;&gt;
+  &lt;img src=&quot;&#x2F;golddiggers1933.png&quot; alt=&quot;The final shot of the film showing Joan Blondell as a street sex worker surrounded by downtrodden people&quot; width=&quot;450px&quot;&gt;
+&lt;&#x2F;div&gt;
+  &lt;figcaption&gt;The final shot of the film&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;In contrast, the final shot shows Joan Blondell as a street sex worker surrounded by downtrodden people representing Depression-era suffering. Behind them, World War I soldiers appear in silhouette on arched platforms, with the theatre curtain barely visible at the top of the frame.&lt;&#x2F;p&gt;
+&lt;p&gt;These bookending images might initially seem disconnected from the main plot, where three &quot;gold diggers&quot; (Polly, Carol, and Trixie) go from starving in a one-room apartment to marrying wealthy husbands. But this contrast is precisely the point.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As a result of the Depression, films in the first half of the 30s favored a hard-hitting, anti-establishment mood... only those antics of the monied class caricaturing them as willful, spoilt, manic and otherwise unsympathetic were accepted by moviegoers... this mood reached its climax with films like &lt;em&gt;Public Enemy&lt;&#x2F;em&gt; and &lt;em&gt;Gold Diggers of 1933&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;—John Kobal, &lt;em&gt;Gotta Sing, Gotta Dance&lt;&#x2F;em&gt; p. 93-4&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;narrative-in-the-shape-of-an-x&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#narrative-in-the-shape-of-an-x&quot; aria-label=&quot;Anchor link for: narrative-in-the-shape-of-an-x&quot;&gt;Narrative in the Shape of an X&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The film&#x27;s structure creates a deliberate contrast:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;The romance plot starts with poverty and ends with prosperity&lt;&#x2F;li&gt;
+&lt;li&gt;The show-within-the-show begins with optimistic fantasy (&quot;&lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=Bm9hySTVKtY&quot;&gt;We&#x27;re in the Money&lt;&#x2F;a&gt;&quot;) and concludes with stark social realism (&quot;&lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=5MGYz3vRdzA&quot;&gt;Remember My Forgotten Man&lt;&#x2F;a&gt;&quot;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;This &lt;em&gt;contrapposto&lt;&#x2F;em&gt; structure (borrowing from classical Greek sculpture, meaning &quot;counterpoise&quot;) allows for delayed gratification. After the opening number is interrupted, viewers wait 35 minutes for another full musical sequence, as the film focuses on the struggle to fund the &quot;Forgotten Melody&quot; revue.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;when-plot-interrupts-music&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#when-plot-interrupts-music&quot; aria-label=&quot;Anchor link for: when-plot-interrupts-music&quot;&gt;When Plot Interrupts Music&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Instead of musical numbers interrupting the plot (as we often see in musicals), &lt;em&gt;Gold Diggers of 1933&lt;&#x2F;em&gt; presents the opposite: the plot interrupts the music. This becomes literal in the film&#x27;s third section when Lawrence&#x27;s threat to Brad and Polly&#x27;s romance delays the &quot;Forgotten Man&quot; finale.&lt;&#x2F;p&gt;
+&lt;p&gt;Only when all romantic obstacles are overcome can the film conclude with the &quot;&lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=5MGYz3vRdzA&quot;&gt;Forgotten Man&lt;&#x2F;a&gt;&quot; number—a sequence that returns us to the economic realities of the Depression.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;remember-my-forgotten-man&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#remember-my-forgotten-man&quot; aria-label=&quot;Anchor link for: remember-my-forgotten-man&quot;&gt;&quot;Remember My Forgotten Man&quot;&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Berkeley&#x27;s big numbers, generally sung by Dick Powell, Ruby Keeler, or Joan Blondell, comprised one of the Hollywood musical&#x27;s unique styles, instantly recognizable. Even more basic to these films, however, is the characteristic Warners political reading that shapes them. &lt;em&gt;Gold Diggers of 1933&lt;&#x2F;em&gt; is suffused with Depression panic. Performing is work; one works to eat. And, lest we forget, the film closes with &quot;Remember My Forgotten Man,&quot; a Berkeley phantasmagoria on the socially disinherited war veteran.&lt;&#x2F;p&gt;
+&lt;p&gt;—Ethan Mordden, &lt;em&gt;The Hollywood Studios&lt;&#x2F;em&gt; p. 236&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;The finale serves as more than just a musical spectacle. Despite the romantic plot resolution, the film is &quot;suffused with Depression panic&quot; and closes with &quot;a Berkeley phantasmagoria on the socially disinherited war veteran.&quot;&lt;figure class=&quot;float-right&quot;&gt;&lt;&#x2F;p&gt;
+&lt;div class=&quot;pixel-corners--wrapper&quot;&gt;
+  &lt;  &lt;img src=&quot;&#x2F;golddiggers1933remember.png&quot; alt=&quot;Etta Moten sings in the finale of Gold Diggers of 1933&quot;
+ width=&quot;450px&quot;&gt;
+&lt;&#x2F;div&gt;
+  &lt;figcaption&gt;Etta Moten performs her solo&lt;&#x2F;figcaption&gt;
+&lt;&#x2F;figure&gt;The contrasting narratives comment on each other throughout. The finale isn&#x27;t just about men who returned injured from WWI only to face bread lines during the Depression—it&#x27;s also about women with even fewer options for economic stability. As Etta Moten sings, &quot;forgetting him, you see &#x2F; means you&#x27;re forgetting me.&quot;
+&lt;p&gt;While it&#x27;s entertaining to watch chorus girls manipulate wealthy men, the film&#x27;s structure reminds us of the devastating consequences of America&#x27;s inadequate social safety net. The gold digger and the street sex worker are two sides of the same big, flat, fake coin that opens the film—both strategies women employed to survive economic hardship.&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-default&quot;&gt;
+  &lt;div class=&quot;moon-phases&quot;&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;em&gt;Note: This analysis was inspired by a film teaching exercise where students examine how a film&#x27;s opening and closing images can reveal its narrative and thematic structure.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>on &#x27;nonmodernist&#x27;</title>
+        <published>2025-02-10T00:00:00+00:00</published>
+        <updated>2025-02-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/2025-02-10-on-nonmodernist/"/>
+        <id>https://nonmodernist.com/notes/2025-02-10-on-nonmodernist/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/2025-02-10-on-nonmodernist/">&lt;p&gt;Recently I&#x27;ve been considering launching a dedicated film blog, as an alternative to the &lt;a href=&quot;https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;2024-12-20-do-you-ever-have-an-idea&#x2F;&quot;&gt;teaching wiki idea&lt;&#x2F;a&gt; that I&#x27;ve been mulling over since last year. Two immediate problems arise in my mind: 1) where do I put it? and 2) what do I call it?&lt;&#x2F;p&gt;
+&lt;p&gt;Brainstorming possible names got me thinking about my online identities and how I do or don&#x27;t manage what gets included under their umbrellas. So here are some disorganized thoughts about it.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;what-s-in-a-handle&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#what-s-in-a-handle&quot; aria-label=&quot;Anchor link for: what-s-in-a-handle&quot;&gt;What&#x27;s in a handle?&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;I changed my primary online handle to &quot;nonmodernist&quot; while I was finishing my masters degree. It was a word I found in an academic book I was reading—unfortunately I will likely never remember which one—that called for an expansion of the study of &quot;nonmodernist&quot; literature of the early 20th century. It struck a chord &lt;em&gt;(yes! that is what I wanted to do!)&lt;&#x2F;em&gt; and it has stuck with me as my academic career has progressed and my research agenda has shifted. &quot;nonmodernist&quot; has become not just &lt;em&gt;what&lt;&#x2F;em&gt; I want to do, but the actual foundation of my career. I love modernist literature, but it&#x27;s over-studied, while so much incredible literature and media from the same era hasn&#x27;t been studied enough (if at all!).&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;whither-to-blog&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#whither-to-blog&quot; aria-label=&quot;Anchor link for: whither-to-blog&quot;&gt;Whither to blog?&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The problem is, the nonmodernist.com domain is currently a catch-all for both my academic and personal identities. So while a &quot;nonmodernist&quot; blog might seem like a logical place to put thoughts on the film and literature I study, it also feels a bit too personal. Too casual. A place where I might type in all lowercase and misuse the word &quot;whither.&quot;&lt;&#x2F;p&gt;
+&lt;p&gt;tbh I am probably overthinking all of this and I should just buckle down and start blogging. smh etc etc.&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-simple&quot;&gt;
+  &lt;div class=&quot;pixel-crescent&quot;&gt;
+    &lt;div class=&quot;hidden-rays&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;em&gt;This note captures my thinking about online identity and potential new blogging projects.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Early Sound Recording Technologies</title>
+        <published>2025-01-05T00:00:00+00:00</published>
+        <updated>2025-01-05T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/early-sound-recording/"/>
+        <id>https://nonmodernist.com/notes/early-sound-recording/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/early-sound-recording/">&lt;p&gt;&lt;span class=&quot;og&quot;&gt;🎵&lt;&#x2F;span&gt; While the visual technologies that led to cinema developed throughout the 19th century, parallel innovations in sound recording were laying the groundwork for what would eventually become synchronized sound film. The path to recorded sound followed its own distinct trajectory before eventually converging with moving images.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;early-sound-recording-innovations&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#early-sound-recording-innovations&quot; aria-label=&quot;Anchor link for: early-sound-recording-innovations&quot;&gt;Early Sound Recording Innovations&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;the-phonautograph-1850s&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-phonautograph-1850s&quot; aria-label=&quot;Anchor link for: the-phonautograph-1850s&quot;&gt;The Phonautograph (1850s)&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;The earliest known device for recording sound, called the phonautograph, was invented in France in the 1850s by Édouard-Léon Scott de Martinville. The device recorded a visual representation of soundwaves on paper or glass, but it was not originally designed with playback capabilities.&lt;&#x2F;p&gt;
+&lt;p&gt;Remarkably, it did not occur to anyone before the 1870s that these recordings, called phonautograms, contained enough information about the sound that they could, in theory, be used to recreate it. Because the phonautogram tracing was an insubstantial two-dimensional line, direct physical playback was impossible at the time.&lt;&#x2F;p&gt;
+&lt;p&gt;In a fascinating development from 2008, several phonautograms recorded before 1861 were successfully played as sound by optically scanning them and using computer processing to convert the scans into digital audio files. This allowed us to hear recordings made over 150 years earlier that were never meant to be played back.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;edison-s-phonograph-1870s&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#edison-s-phonograph-1870s&quot; aria-label=&quot;Anchor link for: edison-s-phonograph-1870s&quot;&gt;Edison&#x27;s Phonograph (1870s)&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;In the 1870s, Thomas Edison began working on a device that could both record sound and play it back. His breakthrough came with the phonograph, which used a stylus to inscribe sound vibrations onto a rotating cylinder covered with tinfoil (later wax).&lt;&#x2F;p&gt;
+&lt;p&gt;To play back the recording, another stylus would trace these grooves, with the resulting vibrations amplified through a horn. This physical approach to sound reproduction differed fundamentally from the visual approach of the phonautograph.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;competing-technologies&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#competing-technologies&quot; aria-label=&quot;Anchor link for: competing-technologies&quot;&gt;Competing Technologies&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Throughout the 1880s, various inventors including Alexander Graham Bell and Emile Berliner refined sound recording technologies. Berliner&#x27;s gramophone, which used flat discs rather than cylinders, would eventually become the dominant format for consumer audio.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;connection-to-early-cinema&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#connection-to-early-cinema&quot; aria-label=&quot;Anchor link for: connection-to-early-cinema&quot;&gt;Connection to Early Cinema&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The development of sound recording ran largely parallel to, rather than in conjunction with, the development of motion pictures. When W.K.L. Dickson created what is considered the first experiment in synchronized sound film in 1894 or 1895, he had to use two separate technologies:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;A kinetoscope for the visual component&lt;&#x2F;li&gt;
+&lt;li&gt;A phonograph for the audio component&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;The challenge of synchronizing these separate devices would remain a significant technical hurdle for decades, with various systems attempting to solve the problem before the introduction of optical sound-on-film technology in the late 1920s.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;cultural-impact&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#cultural-impact&quot; aria-label=&quot;Anchor link for: cultural-impact&quot;&gt;Cultural Impact&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Sound recording technologies changed our relationship with time and memory in ways similar to photography. Just as photographs allowed visual moments to be captured and revisited, sound recording permitted aural experiences to be preserved and replayed.&lt;&#x2F;p&gt;
+&lt;p&gt;This ability to capture ephemeral sensory experiences laid important cultural groundwork for the eventual acceptance of cinema as a medium that could reproduce reality in increasingly comprehensive ways.&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-default&quot;&gt;
+  &lt;div class=&quot;moon-phases&quot;&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;em&gt;This note is part of a series exploring the pre-history of cinema.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Optical Toys: Early Animation Technologies</title>
+        <published>2025-01-05T00:00:00+00:00</published>
+        <updated>2025-01-05T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/optical-toys/"/>
+        <id>https://nonmodernist.com/notes/optical-toys/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/optical-toys/">&lt;p&gt;&lt;span class=&quot;og&quot;&gt;🎠&lt;&#x2F;span&gt; Also known as &quot;philosophical toys,&quot; optical toys represent some of the earliest animation technologies available to the public. These devices exploited a phenomenon known as &quot;apparent motion&quot; to create the illusion of continuous motion from a series of static images.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;common-optical-toys&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#common-optical-toys&quot; aria-label=&quot;Anchor link for: common-optical-toys&quot;&gt;Common Optical Toys&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;magic-lantern&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#magic-lantern&quot; aria-label=&quot;Anchor link for: magic-lantern&quot;&gt;Magic Lantern&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;The magic lantern used light shined through transparent colored material to project images onto a surface. While not technically an animation device in its basic form, more advanced versions used movable glass slides to create simple animations. It also became the foundation for optical toys and moving pictures that projected their images on a surface.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;phenakisticope-1832&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#phenakisticope-1832&quot; aria-label=&quot;Anchor link for: phenakisticope-1832&quot;&gt;Phénakisticope (1832)&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;figure class=&quot;center&quot;&gt;
+  &lt;div class=&quot;pixel-corners--wrapper&quot;&gt;
+    &lt;img src=&quot;&#x2F;Phenakistoscope.jpg&quot; alt=&quot;An illustration of a person holding a Phenakisticope up to use it.&quot; width=&quot;500px&quot;&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;figure&gt;
+&lt;p&gt;Invented by Joseph Plateau, the phénakisticope consisted of a disc with slits and a succession of images. When the disc was spun and the viewer looked through the slits into a mirror, the succession of images appeared to merge into a single moving image—an early demonstration of apparent motion.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;zoetrope-1834&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#zoetrope-1834&quot; aria-label=&quot;Anchor link for: zoetrope-1834&quot;&gt;Zoetrope (1834)&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;The zoetrope operated on the same principle as the phénakisticope but removed the need for a mirror. Viewers looked through slits in a rotating cylinder at images arranged around the inside wall. This made the viewing experience more accessible and could be enjoyed by multiple viewers simultaneously.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;kinematoscope-1861&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#kinematoscope-1861&quot; aria-label=&quot;Anchor link for: kinematoscope-1861&quot;&gt;Kinematoscope (1861)&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;The kinematoscope had viewers look through slits at images on the blades of a rotating paddle, which was operated by a hand crank. This variation helped to refine the timing mechanics that would later be important for film projection.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;praxinoscope-1877&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#praxinoscope-1877&quot; aria-label=&quot;Anchor link for: praxinoscope-1877&quot;&gt;Praxinoscope (1877)&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Émile Reynaud improved on the zoetrope by using a set of mirrors to reflect the image, eliminating the need for slits. This innovation significantly brightened the image and reduced the flickering effect, creating a smoother viewing experience.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;zoopraxiscope-1879&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#zoopraxiscope-1879&quot; aria-label=&quot;Anchor link for: zoopraxiscope-1879&quot;&gt;Zoopraxiscope (1879)&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Eadweard Muybridge&#x27;s zoopraxiscope combined the principles of the magic lantern and the phénakisticope to project a succession of images from a spinning glass disc. This device represents a significant step toward modern film projection.&lt;&#x2F;p&gt;
+&lt;p&gt;Muybridge used the zoopraxiscope to display his motion studies of animals and humans. Because the zoopraxiscope caused image distortion when projected, the photographs had to be recreated as illustrations that compensated for this foreshortening effect.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;educational-value&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#educational-value&quot; aria-label=&quot;Anchor link for: educational-value&quot;&gt;Educational Value&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;I first encountered optical toys through a colleague who had a collection of reproductions used for teaching film history. Watching students interact with these devices creates a tangible connection to the technological principles underlying cinema. The hands-on experience of manipulating a zoetrope or praxinoscope helps students understand the persistence of vision phenomenon in a way that digital demonstrations cannot replicate.&lt;&#x2F;p&gt;
+&lt;p&gt;These seemingly simple toys demonstrate the fundamental principles that would eventually lead to cinema: the breaking down of motion into discrete frames and the rapid presentation of those frames to create the illusion of continuous movement.&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-default&quot;&gt;
+  &lt;div class=&quot;moon-phases&quot;&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;em&gt;This note is part of a series exploring the pre-history of cinema.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Pre-Cinema Technologies: An Overview</title>
+        <published>2025-01-03T00:00:00+00:00</published>
+        <updated>2025-01-03T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/pre-cinema-technologies/"/>
+        <id>https://nonmodernist.com/notes/pre-cinema-technologies/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/pre-cinema-technologies/">&lt;p&gt;&lt;span class=&quot;og&quot;&gt;📷&lt;&#x2F;span&gt; When does the history of cinema begin? It sounds like a simple question, but the answer is surprisingly slippery. We could start in December of 1895 when the Lumière brothers presented what was likely the first commercial film screening. Or we could start in late 1894 when W.K.L. Dickson shot &lt;em&gt;The Dickson Experimental Sound Film&lt;&#x2F;em&gt;, creating what was likely the first film with synchronized sound. But we could also start as early as 1888 when Louis Le Prince used a single-lens camera and paper film to create the &lt;em&gt;Roundhay Garden Scene&lt;&#x2F;em&gt;, or in 1878 when Eadweard Muybridge shot his first motion studies, or even in 1874 when Jules Janssen tested if his &quot;photographic revolver&quot; could capture the transit of Venus across the sun.&lt;&#x2F;p&gt;
+&lt;p&gt;In reality, &quot;new&quot; technologies don&#x27;t emerge fully formed in a singular historic moment; they are always the result of numerous previous developments. The process is iterative.&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s no different with cinema: centuries of technological innovation led, eventually, to the invention of moving pictures. These innovations can be grouped into three main categories:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;&#x2F;notes&#x2F;optical-toys&quot;&gt;Optical toys&lt;&#x2F;a&gt; that created the illusion of movement&lt;&#x2F;li&gt;
+&lt;li&gt;Advances in &lt;a href=&quot;&#x2F;notes&#x2F;early-photography&quot;&gt;photography&lt;&#x2F;a&gt; that allowed for capturing moments in time&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;&#x2F;notes&#x2F;early-sound-recording&quot;&gt;Sound recording&lt;&#x2F;a&gt; technologies that developed in parallel&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;By the late 1880s, all of the major components necessary for the invention of moving pictures were in place, ready to be combined into what we now recognize as cinema.&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-default&quot;&gt;
+  &lt;div class=&quot;moon-phases&quot;&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;em&gt;This note is part of a series exploring the pre-history of cinema. Click the links above to explore specific technologies in more detail.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Meet Me in St. Louis: Unexpected Emotions</title>
+        <published>2024-12-24T06:00:00+00:00</published>
+        <updated>2024-12-24T06:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/meet-me-in-st-louis/"/>
+        <id>https://nonmodernist.com/notes/meet-me-in-st-louis/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/meet-me-in-st-louis/">&lt;p&gt;I finally saw &lt;em&gt;&lt;strong&gt;Meet Me in St. Louis&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt; and it was not what I expected. I went through quite a journey while watching it: first I was resistant to the &lt;em&gt;Little Women&lt;&#x2F;em&gt;-esque set up, then I was amused by the trolley song, then entertained by Tootie&#x27;s whole deal, and then before I knew it I was weeping as Judy Garland sang &quot;&lt;a href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;Tt9L2uWFI4Y?si=-d-RVVwFrtWCpXFS&quot;&gt;Have Yourself a Merry Little Christmas&lt;&#x2F;a&gt;.&quot; Arthur Freed, you absolute genius, why did I ever doubt you.&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-default&quot;&gt;
+  &lt;div class=&quot;moon-phases&quot;&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;em&gt;Note: This viewing was part of my ongoing exploration of classic Hollywood musicals. Next on my watchlist: more Vincente Minnelli films, particularly his other collaborations with Judy Garland.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Reading Recommendations: Film and Memoir</title>
+        <published>2024-12-24T06:00:00+00:00</published>
+        <updated>2024-12-24T06:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/reading-recommendations/"/>
+        <id>https://nonmodernist.com/notes/reading-recommendations/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/reading-recommendations/">&lt;p&gt;&lt;span class=&quot;og&quot;&gt;➰&lt;&#x2F;span&gt; There&#x27;s little I love more than a really good sex memoir, especially a &lt;a href=&quot;https:&#x2F;&#x2F;www.theparisreview.org&#x2F;blog&#x2F;2024&#x2F;12&#x2F;16&#x2F;a-sex-memoir&#x2F;&quot;&gt;really good sex memoir written by a queer elder&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I would do anything, look any way, that would get me laid. I couldn&#x27;t believe guys years later would advertise themselves by the boot brand or high-tops they wore. In France I remember men saying they were style &lt;em&gt;santiags&lt;&#x2F;em&gt; (cowboy boots) or &lt;em&gt;crade&lt;&#x2F;em&gt; (unwashed). Wasn&#x27;t the body or even the personality under the look more important than the accessories? I would wear anything from a red hankie back-left pocket (aggressive penetrator) to yellow back-right (piss swallower), if I thought someone, anyone, would like that. I suppose I believed one&#x27;s essence was enduring and unshod and of a neutral color and that accessories, so important to the poor and young, were immaterial.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;mubi.com&#x2F;en&#x2F;notebook&#x2F;posts&#x2F;life-during-wartime-on-the-films-of-jocelyne-saab&quot;&gt;Jocelyne Saab&#x27;s filmography&lt;&#x2F;a&gt; sounds vital for this moment:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;To picture a conflict that violently reconfigured the very fabric of Lebanese society, most visibly in Beirut, Saab broke with established modes of reportage to forge a documentary form that we could describe today as essayistic, which made room for a layered apprehension of the war, its root causes and repercussions.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;I&#x27;m also buying &lt;a href=&quot;https:&#x2F;&#x2F;repeaterbooks.com&#x2F;product&#x2F;corpses-fools-and-monsters-the-history-and-future-of-transness-in-cinema&#x2F;&quot;&gt;&lt;em&gt;&lt;strong&gt;Corpses, Fools, and Monsters: The History and Future of Transness in Cinema&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt;&lt;&#x2F;a&gt; as a holiday treat. I&#x27;m particularly interested in how this work might situate transgender representation within broader film history contexts.&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-default&quot;&gt;
+  &lt;div class=&quot;moon-phases&quot;&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;em&gt;I&#x27;ll update this note with thoughts once I&#x27;ve dug into these materials more deeply. I&#x27;m especially curious about how Saab&#x27;s documentary approach might inform contemporary conversations about representing complex conflicts.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Film Industry History: Subscription Models Aren&#x27;t New</title>
+        <published>2024-12-24T00:00:00+00:00</published>
+        <updated>2024-12-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/film-industry-history/"/>
+        <id>https://nonmodernist.com/notes/film-industry-history/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/film-industry-history/">&lt;p&gt;&lt;span class=&quot;og&quot;&gt;😠&lt;&#x2F;span&gt; Sometimes things make me frowny face so hard that I have to write about them. I call it &quot;the grump.&quot; This grump is about when journalists and essayists write sweeping declarations about film history without actually... studying the history of the film industry!!&lt;&#x2F;p&gt;
+&lt;p&gt;Now, it&#x27;s true that I&#x27;m a contrarian who has built an academic career around &lt;a href=&quot;https:&#x2F;&#x2F;beforefanfiction.com&quot;&gt;studying things that other people think are inconsequential&lt;&#x2F;a&gt; and would probably rather forget. But it&#x27;s also true that it&#x27;s not that hard to read a book about how the film industry operated as a business in the first half of the 20th century. And when a writer doesn&#x27;t do that, that writer can end up making appallingly ahistorical arguments in a major outlet.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-netflix-misconception&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-netflix-misconception&quot; aria-label=&quot;Anchor link for: the-netflix-misconception&quot;&gt;The Netflix Misconception&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Take, for example, &lt;a href=&quot;https:&#x2F;&#x2F;www.nplusonemag.com&#x2F;issue-49&#x2F;essays&#x2F;casual-viewing&#x2F;#rf1-54865&quot;&gt;this claim by Will Tavlin&lt;&#x2F;a&gt; in an &lt;em&gt;n+1&lt;&#x2F;em&gt; essay about how Netflix broke the movies:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For a century, the business of running a Hollywood studio was straightforward. The more people watched films, the more money the studios made. With Netflix, however, audiences don&#x27;t pay for individual films. They pay a subscription to watch everything, and this has enabled a strange phenomenon to take root. Netflix&#x27;s movies don&#x27;t have to abide by any of the norms established over the history of cinema: they don&#x27;t have to be profitable, pretty, sexy, intelligent, funny, well-made, or anything else that pulls audiences into theater seats.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;It sounds reasonably well-argued, and yet it is simply not true. It&#x27;s so not true that the United States government took Paramount Pictures all the way to the Supreme Court about it in 1948. The resulting anti-trust standard, known as the &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;United_States_v._Paramount_Pictures,_Inc.&quot;&gt;Paramount Decree&lt;&#x2F;a&gt;, completely reshaped Hollywood, ended the studio system, paved the way for European, arthouse, and porn cinema to gain popularity in the US, and eventually led (albeit indirectly) to Rudy Giuliani being a man we had to watch sweat out his hair dye in public.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-block-booking-reality&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-block-booking-reality&quot; aria-label=&quot;Anchor link for: the-block-booking-reality&quot;&gt;The Block-Booking Reality&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;When the US won its Supreme Court case against Paramount in 1948, the resulting judgement forced the major movie studios to do a couple of things, including end the long-established practice known as &quot;blind buying,&quot; and reduce the amount of &quot;block booking&quot; they could force exhibitors into. So while an audience member pre-1948 might have paid for an individual film (but more likely a double feature, or a program of shorts and a feature), the theatres themselves were forced to essentially &quot;subscribe&quot; to a block of a studio&#x27;s output, sight unseen.&lt;&#x2F;p&gt;
+&lt;p&gt;The studios loved this pre-1948 arrangement, because it meant they could produce mostly forgettable garbage (film prints were literally thrown away once they had been screened enough times) alongside a small handful of big budget, quality pictures with big stars that were guaranteed to draw audiences. Small theatre chains and independent exhibitors, on the other hand, were trapped in a deal with the devil: if they wanted the big pictures that equaled big ticket sales, they had to junk up their schedules with the dreck, too. Again, this was such a problem that &lt;em&gt;the US Supreme Court had to step in&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;!-- FM:Snippet:Start data:{&quot;id&quot;:&quot;Dividers&quot;,&quot;fields&quot;:[{&quot;name&quot;:&quot;style&quot;,&quot;value&quot;:&quot;&quot;}]} --&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-default&quot;&gt;
+  &lt;div class=&quot;moon-phases&quot;&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;!-- FM:Snippet:End --&gt;
+&lt;h2 id=&quot;quality-vs-quantity-in-studio-output&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#quality-vs-quantity-in-studio-output&quot; aria-label=&quot;Anchor link for: quality-vs-quantity-in-studio-output&quot;&gt;Quality vs. Quantity in Studio Output&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Tavlin goes on to write that &quot;high output alone can&#x27;t account for Netflix&#x27;s garbage quality. In the 1920s and &#x27;30s, studios like Paramount and Warner Bros. put out as many as seventy movies per year,&quot; without asking whether or not all 70 movies in a year would have been good, successful, or even marginally memorable.&lt;&#x2F;p&gt;
+&lt;p&gt;Of course they weren&#x27;t.&lt;&#x2F;p&gt;
+&lt;p&gt;Let&#x27;s take &lt;a href=&quot;https:&#x2F;&#x2F;en.m.wikipedia.org&#x2F;wiki&#x2F;List_of_Paramount_Pictures_films_(1930%E2%80%931939)#1933&quot;&gt;Paramount&#x27;s 1933&lt;&#x2F;a&gt; for example: out of the 60 films the studio released that year, there are some gems, like the Marx Brothers&#x27; &lt;em&gt;&lt;strong&gt;Duck Soup&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt; and Ernst Lubitsch&#x27;s &lt;em&gt;&lt;strong&gt;Design for Living&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt; (the former is now in the Library of Congress, the latter in the Criterion Collection). There are a couple of lesser-known films with historical significance, like the Mae West-Cary Grant sex comedy &lt;em&gt;&lt;strong&gt;She Done Him Wrong&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt; (in the LoC) and the Mae West-Cary Grant sex comedy &lt;em&gt;&lt;strong&gt;I&#x27;m No Angel&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;There&#x27;s also the brutal William Faulkner adaptation &lt;em&gt;&lt;strong&gt;The Story of Temple Drake&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt;, which was only recently restored and made widely available (and is also in the Criterion Collection). But have you ever even heard of &lt;em&gt;&lt;strong&gt;The Thundering Herd&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt; or &lt;em&gt;&lt;strong&gt;College Humor&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt; or &lt;em&gt;&lt;strong&gt;King of the Jungle&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt; or &lt;em&gt;&lt;strong&gt;Hello, Everybody!&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt; or &lt;em&gt;&lt;strong&gt;Big Executive&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt; or &lt;em&gt;&lt;strong&gt;Song of the Eagle&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt;, let alone seen them? How about &lt;em&gt;&lt;strong&gt;International House&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt;, &lt;em&gt;&lt;strong&gt;Tillie and Gus&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt;, or the live-action &lt;em&gt;&lt;strong&gt;Alice in Wonderland&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt;, all of which starred W.C. Fields (who also had 5 short films distributed in theatres during the same year)?&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-mythical-golden-age-of-exhibition&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-mythical-golden-age-of-exhibition&quot; aria-label=&quot;Anchor link for: the-mythical-golden-age-of-exhibition&quot;&gt;The Mythical Golden Age of Exhibition&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;I&#x27;ve grumped too long already but it&#x27;s also worth mentioning that our idea of a quiet, respectful, fully-engaged moviegoing experience (as opposed to the distracted viewing we do at home) is fundamentally ahistorical as well. For most of moviegoing history, the theatre was not a place where we viewed movies without distractions. Quite the opposite, especially in the era when a movie ran back-to-back all day long and patrons could enter and exit at any point. (And then there was the porn theatre era...)&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-default&quot;&gt;
+  &lt;div class=&quot;moon-phases&quot;&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;With all of that said, &lt;a href=&quot;https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;streaming-cinema-quality&#x2F;&quot;&gt;&quot;Tide Pod cinema&quot;&lt;&#x2F;a&gt; is a wonderful phrase, and I do think it describes something important about contemporary streaming cinema. But I maintain that the point could be made without lapsing into ahistoricism!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Quality Question in Streaming Cinema</title>
+        <published>2024-12-24T00:00:00+00:00</published>
+        <updated>2024-12-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/streaming-cinema-quality/"/>
+        <id>https://nonmodernist.com/notes/streaming-cinema-quality/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/streaming-cinema-quality/">&lt;p&gt;&quot;Tide Pod cinema&quot; is a delightfully bitchy phrase coined by Will Tavlin in his otherwise frustrating essay &quot;Casual Viewing&quot;. I think it describes something important about contemporary streaming cinema—content that appears colorful and attractive but is poisonous to a healthy film culture.&lt;&#x2F;p&gt;
+&lt;p&gt;Tavlin uses the phrase to describe Netflix&#x27;s output of &quot;movies that go down best when you&#x27;re not paying attention&quot; or films made &quot;to half-watch while doing laundry.&quot; The term cleverly captures several qualities of streaming-exclusive films:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Algorithmic Optimization&lt;&#x2F;strong&gt;: Movies that feel designed to satisfy platform metrics instead of artistic vision&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Disposability&lt;&#x2F;strong&gt;: Content clearly created with no expectation it will be remembered or revisited in a year&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Superficial Engagement&lt;&#x2F;strong&gt;: Films that prioritize immediate visual appeal over any substantive ideas&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Formulaic Structures&lt;&#x2F;strong&gt;: Stories so predictable you could write the ending after the first five minutes&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;avoiding-ahistorical-critiques&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#avoiding-ahistorical-critiques&quot; aria-label=&quot;Anchor link for: avoiding-ahistorical-critiques&quot;&gt;Avoiding Ahistorical Critiques&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;While I think the &quot;Tide Pod cinema&quot; critique identifies something real, we should avoid nostalgic misconceptions that come with it. Studio-era Hollywood wasn&#x27;t a golden age where every film was &lt;em&gt;Casablanca&lt;&#x2F;em&gt; or &lt;em&gt;Citizen Kane&lt;&#x2F;em&gt;. As I pointed out in my &lt;a href=&quot;https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;film-industry-history&#x2F;&quot;&gt;note on the history of film subscription models&lt;&#x2F;a&gt;, the ratio of forgettable films to classics has always been high.&lt;&#x2F;p&gt;
+&lt;p&gt;Similarly, the notion that theatrical viewing was historically some reverent, distraction-free experience simply isn&#x27;t true. People talked, ate, entered mid-film, and generally treated movie theaters as social spaces rather than temples of cinematic appreciation. (And that&#x27;s not even mentioning porn theatres...)&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;more-productive-criticism&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#more-productive-criticism&quot; aria-label=&quot;Anchor link for: more-productive-criticism&quot;&gt;More Productive Criticism&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;I think there are more interesting angles to explore when critiquing streaming content:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Creative Control&lt;&#x2F;strong&gt;: How do algorithmic recommendations and data-driven development potentially limit artistic risk-taking?&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Preservation Issues&lt;&#x2F;strong&gt;: What happens to streaming-exclusive films when platforms decide they&#x27;re no longer worth hosting?&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Economic Models&lt;&#x2F;strong&gt;: How does creator compensation in streaming differ from traditional models, and what does that mean for the kinds of stories that get told?&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;questions-i-m-still-pondering&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#questions-i-m-still-pondering&quot; aria-label=&quot;Anchor link for: questions-i-m-still-pondering&quot;&gt;Questions I&#x27;m Still Pondering&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;How can we develop critical frameworks that acknowledge both continuity and change in media production?&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;What do we do with Ethan Mordden&#x27;s claim that intense demand for product led to creative innovation during the studio system? Could we make the same claim about streaming?&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-simple&quot;&gt;
+  &lt;div class=&quot;pixel-crescent&quot;&gt;
+    &lt;div class=&quot;hidden-rays&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;em&gt;I&#x27;d like to explore these questions further, perhaps in connection with how physical media constraints have historically influenced both film and television production. The transition from physical to digital distribution may be as significant as the shift from stage to screen was in the early 20th century.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Digital Archiving: Reconnecting with Past Selves</title>
+        <published>2024-12-20T06:00:00+00:00</published>
+        <updated>2024-12-20T06:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/digital-archiving-personal/"/>
+        <id>https://nonmodernist.com/notes/digital-archiving-personal/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/digital-archiving-personal/">&lt;p&gt;I recently found the blog I kept from 2006-2008. I won&#x27;t link it here, but I am working on copying over some of the less cringe entries. Sometimes it&#x27;s nice to spend time with the person you used to be. I, for instance, used to be a person who knew a lot about the [18th-century French aristocracy].&lt;&#x2F;p&gt;
+&lt;p&gt;There&#x27;s something uniquely revealing about encountering your own writing from 15+ years ago. Unlike photographs or physical mementos, personal writing captures not just events but thought processes, priorities, and your particular voice at that time.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;digital-gardens-as-continuity&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#digital-gardens-as-continuity&quot; aria-label=&quot;Anchor link for: digital-gardens-as-continuity&quot;&gt;Digital Gardens as Continuity&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;This experience highlights one value of maintaining a digital garden—creating continuity between past and present selves. Unlike social media&#x27;s emphasis on immediacy and constant updates, digital gardens allow ideas to evolve while preserving their history. The garden format acknowledges that our thinking develops over time, with some ideas growing from seedlings to fully-developed concepts while others may lie dormant before eventually flourishing.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;selective-preservation&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#selective-preservation&quot; aria-label=&quot;Anchor link for: selective-preservation&quot;&gt;Selective Preservation&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Not everything from our past digital lives deserves preservation. I&#x27;m being highly selective about which entries to migrate from the old blog, focusing on those with enduring value or interest rather than those that now make me cringe.&lt;&#x2F;p&gt;
+&lt;p&gt;There&#x27;s a curatorial process in deciding which parts of our past selves to integrate into our current digital identity—which in some ways mirrors how memory itself functions by preserving certain experiences while allowing others to fade.&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-line&quot;&gt;
+  &lt;div class=&quot;pixel-line&quot;&gt;
+    &lt;div class=&quot;pixel-star&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-star&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-star&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-star&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-star&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;em&gt;I&#x27;m considering starting a collection of notes on digital preservation practices and the evolution of online self-representation. There&#x27;s something fascinating about how our relationship with our digital past differs from our relationship with physical artifacts from our history.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Do you ever have an idea?</title>
+        <published>2024-12-20T00:00:00+00:00</published>
+        <updated>2024-12-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/2024-12-20-do-you-ever-have-an-idea/"/>
+        <id>https://nonmodernist.com/notes/2024-12-20-do-you-ever-have-an-idea/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/2024-12-20-do-you-ever-have-an-idea/">&lt;p&gt;&lt;span class=&quot;og&quot;&gt;💡&lt;&#x2F;span&gt; There&#x27;s this idea rattling around in my brain, and I can&#x27;t figure out how to make it work. Do you know that feeling? It&#x27;s exceptionally frustrating.&lt;&#x2F;p&gt;
+&lt;p&gt;The idea is simple: I want to build a wiki that collects the various &lt;em&gt;stuff&lt;&#x2F;em&gt; I use to teach different classes. Things like: the &lt;a href=&quot;https:&#x2F;&#x2F;nonmodernist.my.canva.site&#x2F;optical-toys&quot;&gt;timeline of optical toys&lt;&#x2F;a&gt; that I give my multimedia authoring students, or the &lt;a href=&quot;https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-overview&#x2F;&quot;&gt;list of folk horror tropes&lt;&#x2F;a&gt; that I developed after teaching a genre in film course on the topic.&lt;&#x2F;p&gt;
+&lt;p&gt;There are any number of solutions to this problem, but I can&#x27;t seem to sort out which works best. They all have some kind of friction that prevents me from feeling like, &quot;ah yes, this is right, this works.&quot;&lt;&#x2F;p&gt;
+&lt;p&gt;Maybe the trouble is that I want to skip ahead to the part where I have pages and pages of material, enough that it feels hefty and substantial. I long for my own &lt;a href=&quot;http:&#x2F;&#x2F;filmsite.org&quot;&gt;filmsite.org&lt;&#x2F;a&gt;. And I&#x27;m certainly not there yet.&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-default&quot;&gt;
+  &lt;div class=&quot;moon-phases&quot;&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;em&gt;This note is part of my thinking about digital teaching resources and website organization.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Owning My Data</title>
+        <published>2024-12-07T00:00:00+00:00</published>
+        <updated>2024-12-07T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/owning-my-data/"/>
+        <id>https://nonmodernist.com/notes/owning-my-data/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/owning-my-data/">&lt;p&gt;One project I have been working on slowly over the past couple of years is &quot;owning my own data&quot;—in other words, making sure that I have local &amp;amp; backed up copies of the stuff I post to the internet. It started when I got off Goodreads. First I switched to StoryGraph, and then I decided that I wasn&#x27;t using any of the site&#x27;s features, and that I was better off just keeping my &lt;a href=&quot;https:&#x2F;&#x2F;nonmodernist.com&#x2F;readinglog&#x2F;&quot;&gt;reading log&lt;&#x2F;a&gt; in a text file. It has lived in my Obsidian notes for a long while, but now it also lives here on this website. Since I don&#x27;t finish many books these days, it&#x27;s easy enough to update the file when I do.&lt;&#x2F;p&gt;
+&lt;p&gt;(At first I wrote &quot;since I don&#x27;t read a lot these days,&quot; but that&#x27;s not true. I don&#x27;t read as much as when I was in grad school, but I do read a lot. It&#x27;s mostly for work, though, which means I&#x27;m usually hunting and gathering for what I need to teach a class or write an essay. I rarely finish a whole book, and I rarely log the dozens of books I one-third read for work reasons.)&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-simple&quot;&gt;
+  &lt;div class=&quot;pixel-crescent&quot;&gt;
+    &lt;div class=&quot;hidden-rays&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;I have a .csv of my historical Letterboxd data too, but it&#x27;s going to take me a while to get it into a useful format that can be shared outside their platform. But today while poking around the IndieWeb, I discovered that Letterboxd creates an RSS feed of a user&#x27;s recent activity, which means I can &lt;a href=&quot;https:&#x2F;&#x2F;nonmodernist.com&#x2F;log&#x2F;&quot;&gt;echo that feed here&lt;&#x2F;a&gt;. I&#x27;m using &lt;a href=&quot;https:&#x2F;&#x2F;echofeed.app&quot;&gt;echofeed&lt;&#x2F;a&gt; to accomplish this. The service will grab any new movies I log; we&#x27;ll see how much historical data I end up wanting to add by hand. I am going to guess it will not be the full 1,350 movies in my Letterboxd diary.&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-default&quot;&gt;
+  &lt;div class=&quot;moon-phases&quot;&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;em&gt;This note documents my evolving relationship with Web 2.0-style social media platforms.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Generating Patterns with Doodad.dev</title>
+        <published>2024-12-05T00:00:00+00:00</published>
+        <updated>2024-12-05T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/patterns/"/>
+        <id>https://nonmodernist.com/notes/patterns/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/patterns/">&lt;p&gt;&lt;span class=&quot;og&quot;&gt;🎨&lt;&#x2F;span&gt; I&#x27;ve been fighting with images on the &lt;a href=&quot;https:&#x2F;&#x2F;nonmodernist.com&#x2F;teaching&#x2F;&quot;&gt;teaching&lt;&#x2F;a&gt; page of this site (mostly related to sizing and having things look nice yet be responsive), so I decided to replace them with SVG patterns generated at &lt;a href=&quot;http:&#x2F;&#x2F;doodad.dev&quot;&gt;Doodad.dev&lt;&#x2F;a&gt;. Since the Apollo theme used for this site allows me to call any URL as an image on a page with &quot;cards,&quot; I was able to replace the images I had been hosting with the URI generated by the &quot;CSS background image&quot; selection on the &lt;a href=&quot;https:&#x2F;&#x2F;doodad.dev&#x2F;pattern-generator&#x2F;&quot;&gt;pattern generator&lt;&#x2F;a&gt;. I don&#x27;t totally understand the &lt;a href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;SVG&#x2F;Tutorial&#x2F;Introduction&quot;&gt;magic of SVG&lt;&#x2F;a&gt;, but that&#x27;s okay.&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-simple&quot;&gt;
+  &lt;div class=&quot;pixel-crescent&quot;&gt;
+    &lt;div class=&quot;hidden-rays&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;The pattern generator itself is fun to play with, and I&#x27;ve been amazed by how a small change to the components can create an entirely new pattern.&lt;&#x2F;p&gt;
+&lt;p&gt;For example, dots in circles become flowers, just by increasing the size of each dot.&lt;&#x2F;p&gt;
+&lt;div class=&quot;pixel-corners--wrapper center&quot;&gt;
+&lt;img src=&quot;data:image&#x2F;svg+xml,%3Csvg xmlns=&#x27;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&#x27; height=&#x27;100%25&#x27; width=&#x27;100%25&#x27;%3E%3Cdefs%3E%3Cpattern id=&#x27;doodad&#x27; width=&#x27;100&#x27; height=&#x27;100&#x27; viewBox=&#x27;0 0 40 40&#x27; patternUnits=&#x27;userSpaceOnUse&#x27; patternTransform=&#x27;rotate(45)&#x27;%3E%3Crect width=&#x27;100%25&#x27; height=&#x27;100%25&#x27; fill=&#x27;%232d3748&#x27;&#x2F;%3E%3Ccircle cx=&#x27;34&#x27; cy=&#x27;20&#x27; r=&#x27;4&#x27; fill=&#x27;%234a5568&#x27;&#x2F;%3E%3Ccircle cx=&#x27;6&#x27; cy=&#x27;20&#x27; r=&#x27;4&#x27; fill=&#x27;%234a5568&#x27;&#x2F;%3E%3Ccircle cx=&#x27;20&#x27; cy=&#x27;34&#x27; r=&#x27;4&#x27; fill=&#x27;%234a5568&#x27;&#x2F;%3E%3Ccircle cx=&#x27;20&#x27; cy=&#x27;6&#x27; r=&#x27;4&#x27; fill=&#x27;%234a5568&#x27;&#x2F;%3E%3Ccircle cx=&#x27;27&#x27; cy=&#x27;13&#x27; r=&#x27;4&#x27; fill=&#x27;%231a202c&#x27;&#x2F;%3E%3Ccircle cx=&#x27;13&#x27; cy=&#x27;27&#x27; r=&#x27;4&#x27; fill=&#x27;%231a202c&#x27;&#x2F;%3E%3Ccircle cx=&#x27;27&#x27; cy=&#x27;27&#x27; r=&#x27;4&#x27; fill=&#x27;%231a202c&#x27;&#x2F;%3E%3Ccircle cx=&#x27;13&#x27; cy=&#x27;13&#x27; r=&#x27;4&#x27; fill=&#x27;%231a202c&#x27;&#x2F;%3E%3C&#x2F;pattern%3E%3C&#x2F;defs%3E%3Crect fill=&#x27;url(%23doodad)&#x27; height=&#x27;200%25&#x27; width=&#x27;200%25&#x27;&#x2F;%3E%3C&#x2F;svg%3E&quot; alt=&quot;a pattern of dots arranged in circles, all in shades of blue&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;pixel-corners--wrapper center&quot;&gt;
+&lt;img src=&quot;data:image&#x2F;svg+xml,%3Csvg xmlns=&#x27;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&#x27; height=&#x27;100%25&#x27; width=&#x27;100%25&#x27;%3E%3Cdefs%3E%3Cpattern id=&#x27;doodad&#x27; width=&#x27;73&#x27; height=&#x27;73&#x27; viewBox=&#x27;0 0 40 40&#x27; patternUnits=&#x27;userSpaceOnUse&#x27; patternTransform=&#x27;rotate(45)&#x27;%3E%3Crect width=&#x27;100%25&#x27; height=&#x27;100%25&#x27; fill=&#x27;%232d3748&#x27;&#x2F;%3E%3Ccircle cx=&#x27;35&#x27; cy=&#x27;20&#x27; r=&#x27;9&#x27; fill=&#x27;%234a5568&#x27;&#x2F;%3E%3Ccircle cx=&#x27;5&#x27; cy=&#x27;20&#x27; r=&#x27;9&#x27; fill=&#x27;%234a5568&#x27;&#x2F;%3E%3Ccircle cx=&#x27;20&#x27; cy=&#x27;35&#x27; r=&#x27;9&#x27; fill=&#x27;%234a5568&#x27;&#x2F;%3E%3Ccircle cx=&#x27;20&#x27; cy=&#x27;5&#x27; r=&#x27;9&#x27; fill=&#x27;%234a5568&#x27;&#x2F;%3E%3Ccircle cx=&#x27;27&#x27; cy=&#x27;13&#x27; r=&#x27;9&#x27; fill=&#x27;%231a202c&#x27;&#x2F;%3E%3Ccircle cx=&#x27;13&#x27; cy=&#x27;27&#x27; r=&#x27;9&#x27; fill=&#x27;%231a202c&#x27;&#x2F;%3E%3Ccircle cx=&#x27;27&#x27; cy=&#x27;27&#x27; r=&#x27;9&#x27; fill=&#x27;%231a202c&#x27;&#x2F;%3E%3Ccircle cx=&#x27;13&#x27; cy=&#x27;13&#x27; r=&#x27;9&#x27; fill=&#x27;%231a202c&#x27;&#x2F;%3E%3C&#x2F;pattern%3E%3C&#x2F;defs%3E%3Crect fill=&#x27;url(%23doodad)&#x27; height=&#x27;200%25&#x27; width=&#x27;200%25&#x27;&#x2F;%3E%3C&#x2F;svg%3E&quot; alt=&quot;a pattern of dots arranged to look like four-petal flowers, all in shades of blue&quot;&gt;
+&lt;&#x2F;div&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-default&quot;&gt;
+  &lt;div class=&quot;moon-phases&quot;&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;em&gt;This note documents a design solution I found for my teaching page, using generated SVG patterns instead of traditional images.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Folk Horror: Ancient Sacred Sites</title>
+        <published>2024-11-10T00:00:00+00:00</published>
+        <updated>2024-11-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/folk-horror-sacred-sites/"/>
+        <id>https://nonmodernist.com/notes/folk-horror-sacred-sites/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/folk-horror-sacred-sites/">&lt;h1 id=&quot;ancient-sacred-sites&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#ancient-sacred-sites&quot; aria-label=&quot;Anchor link for: ancient-sacred-sites&quot;&gt;Ancient Sacred Sites&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;span class=&quot;og&quot;&gt;🌀&lt;&#x2F;span&gt; Ancient sacred sites create a tangible connection between past and present in folk horror, serving as physical manifestations of forgotten or suppressed beliefs. These locations often become catalysts for supernatural events, portals between worlds, or the focal points for rituals.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;purpose-of-visits-to-sacred-sites&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#purpose-of-visits-to-sacred-sites&quot; aria-label=&quot;Anchor link for: purpose-of-visits-to-sacred-sites&quot;&gt;Purpose of Visits to Sacred Sites&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;research&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#research&quot; aria-label=&quot;Anchor link for: research&quot;&gt;Research&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Academic research at ancient sites often becomes the entry point for horror:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Night of the Demon&lt;&#x2F;em&gt; (1957, UK)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Born of Fire&lt;&#x2F;em&gt; (1987, UK)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;These investigations typically uncover forbidden knowledge or disturb dormant forces.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;rituals&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#rituals&quot; aria-label=&quot;Anchor link for: rituals&quot;&gt;Rituals&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Sacred sites serve as the natural location for ritual practices:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Blood on Satan&#x27;s Claw&lt;&#x2F;em&gt; (1971, UK)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Alison&#x27;s Birthday&lt;&#x2F;em&gt; (1981, Australia)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The power of these locations is seen as amplifying ritual effectiveness, connecting practitioners to ancient energies.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;tourism&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#tourism&quot; aria-label=&quot;Anchor link for: tourism&quot;&gt;Tourism&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Visitors to sacred sites as tourists or casual explorers:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Picnic at Hanging Rock&lt;&#x2F;em&gt; (1975, Australia)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Lake Mungo&lt;&#x2F;em&gt; (2008, Australia)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;div class=&quot;pixel-corners--wrapper&quot;&gt;&lt;img src=&quot;&#x2F;picnic.jpg&quot; alt=&quot;A girl dressed in Victorian clothing stands atop a rock formation.&quot; width=&quot;100%&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;In &lt;em&gt;Picnic at Hanging Rock&lt;&#x2F;em&gt;, the imposing geological formation becomes a mysterious force that consumes several schoolgirls during an outing.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-indian-burial-ground-trope&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-indian-burial-ground-trope&quot; aria-label=&quot;Anchor link for: the-indian-burial-ground-trope&quot;&gt;The &quot;Indian Burial Ground&quot; Trope&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Many horror films from settler colonial countries feature the problematic &quot;Indian burial ground&quot; trope:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;The Last Wave&lt;&#x2F;em&gt; (1977, Australia)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;The Amityville Horror&lt;&#x2F;em&gt; (1979, US)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;The Shining&lt;&#x2F;em&gt; (1980, US)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Eyes of Fire&lt;&#x2F;em&gt; (1983, US)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Kadaicha&lt;&#x2F;em&gt; (1988, Australia)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Pet Sematary&lt;&#x2F;em&gt; (1989, US)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Grim Prairie Tales&lt;&#x2F;em&gt; (1990, US)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;As Jesse Wente notes, &quot;there is no such thing as an Indian burial ground… [That is] a figment of the Western imagination.&quot; This trope reduces diverse indigenous nations into one fictional category, &quot;Indian,&quot; while appropriating and distorting cultural beliefs for shock value.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;types-of-sacred-sites&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#types-of-sacred-sites&quot; aria-label=&quot;Anchor link for: types-of-sacred-sites&quot;&gt;Types of Sacred Sites&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;stone-circles-and-megaliths&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#stone-circles-and-megaliths&quot; aria-label=&quot;Anchor link for: stone-circles-and-megaliths&quot;&gt;Stone Circles and Megaliths&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Prehistoric stone monuments feature prominently:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Children of the Stones&lt;&#x2F;em&gt; (1977, UK)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;The Third Eye&lt;&#x2F;em&gt; (1966, Italy)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;The Stone Tape&lt;&#x2F;em&gt; (1972, UK)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;ancient-tombs-and-burial-sites&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#ancient-tombs-and-burial-sites&quot; aria-label=&quot;Anchor link for: ancient-tombs-and-burial-sites&quot;&gt;Ancient Tombs and Burial Sites&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Disturbed graves and ancient tombs:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;A Warning to the Curious&lt;&#x2F;em&gt; (1972, UK)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;The Omen&lt;&#x2F;em&gt; (1976, US)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;natural-formations&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#natural-formations&quot; aria-label=&quot;Anchor link for: natural-formations&quot;&gt;Natural Formations&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Distinctive natural features considered sacred:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Picnic at Hanging Rock&lt;&#x2F;em&gt; (1975, Australia)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;The Dark and the Wicked&lt;&#x2F;em&gt; (2020, US)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;sacred-trees-and-groves&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#sacred-trees-and-groves&quot; aria-label=&quot;Anchor link for: sacred-trees-and-groves&quot;&gt;Sacred Trees and Groves&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Trees and forests with religious or cultural significance:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;The Guardian&lt;&#x2F;em&gt; (1990, US)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Clearcut&lt;&#x2F;em&gt; (1991, US)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;The Ritual&lt;&#x2F;em&gt; (2017, UK)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;cultural-context&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#cultural-context&quot; aria-label=&quot;Anchor link for: cultural-context&quot;&gt;Cultural Context&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The treatment of sacred sites in folk horror often reflects colonial attitudes toward indigenous beliefs and sacred spaces. The desecration of these sites - whether through academic study, tourism, or development - frequently triggers supernatural retribution, which can be read as a metaphor for cultural guilt or anxiety about the destruction of traditional ways of life.&lt;&#x2F;p&gt;
+&lt;p&gt;At the same time, these sites represent continuity - places where the past remains present and ancient forces continue to exert influence despite attempts to relegate them to history.&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-default&quot;&gt;
+  &lt;div class=&quot;moon-phases&quot;&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;em&gt;This note is part of a series exploring folk horror in cinema. Return to the &lt;a href=&quot;https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-overview&#x2F;&quot;&gt;main Folk Horror overview&lt;&#x2F;a&gt; to explore other tropes.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Folk Horror: Witchcraft and Folk Magic</title>
+        <published>2024-11-10T00:00:00+00:00</published>
+        <updated>2024-11-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/folk-horror-witchcraft/"/>
+        <id>https://nonmodernist.com/notes/folk-horror-witchcraft/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/folk-horror-witchcraft/">&lt;p&gt;&lt;span class=&quot;og&quot;&gt;✨&lt;&#x2F;span&gt; Magical practices form a cornerstone of folk horror, representing the survival of pre-modern beliefs into contemporary times. These traditions take different forms across cultures but share common themes of hidden knowledge, power derived from nature or spirits, and practices that exist outside mainstream religious institutions.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;witchcraft-in-folk-horror&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#witchcraft-in-folk-horror&quot; aria-label=&quot;Anchor link for: witchcraft-in-folk-horror&quot;&gt;Witchcraft in Folk Horror&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;surviving-traditions&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#surviving-traditions&quot; aria-label=&quot;Anchor link for: surviving-traditions&quot;&gt;Surviving Traditions&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Witchcraft in folk horror is often treated as an ancient practice that has been carried on through the centuries, surviving despite modernization:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;The City of the Dead&lt;&#x2F;em&gt; (1960, UK)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Don&#x27;t Torture a Duckling&lt;&#x2F;em&gt; (1972, Italy)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Alison&#x27;s Birthday&lt;&#x2F;em&gt; (1981, Australia)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;These films present witchcraft as something that has endured in secret, often in rural or isolated communities.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;resurrected-practices&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#resurrected-practices&quot; aria-label=&quot;Anchor link for: resurrected-practices&quot;&gt;Resurrected Practices&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Some folk horror depicts witchcraft as something that has been resurrected from a time long gone:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;The Wicker Man&lt;&#x2F;em&gt; (1972, UK)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;In these narratives, contemporary characters deliberately revive ancient practices, often as a rejection of modernity.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;pagan-vs-diabolical&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#pagan-vs-diabolical&quot; aria-label=&quot;Anchor link for: pagan-vs-diabolical&quot;&gt;Pagan vs. Diabolical&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Witchcraft in folk horror is sometimes presented as part of a region&#x27;s pagan past:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Lokis&lt;&#x2F;em&gt; (1970, Poland)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;The Juniper Tree&lt;&#x2F;em&gt; (1990, Iceland)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;November&lt;&#x2F;em&gt; (2017, Estonia)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;In other films, it&#x27;s explicitly framed as devil worship:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Häxan&lt;&#x2F;em&gt; (1922, Sweden)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;The Witches&lt;&#x2F;em&gt; (1966, UK)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Viy&lt;&#x2F;em&gt; (1967, USSR)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Witchfinder General&lt;&#x2F;em&gt; (1968, UK)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Witchhammer&lt;&#x2F;em&gt; (1970, Czechoslovakia)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;History of the Occult&lt;&#x2F;em&gt; (2020, Argentina)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;This distinction often reflects historical attitudes toward folk beliefs, which were frequently reframed as satanic by religious authorities.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;the-devil-in-folk-horror&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#the-devil-in-folk-horror&quot; aria-label=&quot;Anchor link for: the-devil-in-folk-horror&quot;&gt;The Devil in Folk Horror&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Films where the Devil literally appears differ from those focused on witchcraft:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;The Devil and Daniel Webster&lt;&#x2F;em&gt; (1941, US)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Satan&#x27;s Feats in the Village of Leva-e-Traz&lt;&#x2F;em&gt; (1967, Brazil)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Blood on Satan&#x27;s Claw&lt;&#x2F;em&gt; (1971, UK)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Nazareno Cruz and the Wolf&lt;&#x2F;em&gt; (1975, Argentina)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;The Legend of Hillbilly John&lt;&#x2F;em&gt; (1974, US)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Born of Fire&lt;&#x2F;em&gt; (1987, UK)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;shamanism&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#shamanism&quot; aria-label=&quot;Anchor link for: shamanism&quot;&gt;Shamanism&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Shamanic practices appear in folk horror films from cultures with shamanic traditions:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;The White Reindeer&lt;&#x2F;em&gt; (1952, Finland)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Io Island&lt;&#x2F;em&gt; (1977, South Korea)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;The Medium&lt;&#x2F;em&gt; (2021, Thailand)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;These films often explore the ambiguous role of shamans as mediators between human and spirit worlds, capable of both healing and harm.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;other-forms-of-folk-magic&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#other-forms-of-folk-magic&quot; aria-label=&quot;Anchor link for: other-forms-of-folk-magic&quot;&gt;Other Forms of Folk Magic&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;hoodoo-and-rootwork&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#hoodoo-and-rootwork&quot; aria-label=&quot;Anchor link for: hoodoo-and-rootwork&quot;&gt;Hoodoo and Rootwork&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;African diaspora traditions in the Americas:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;I Walked with a Zombie&lt;&#x2F;em&gt; (1943, US)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Angel Heart&lt;&#x2F;em&gt; (1987, US)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;The Serpent and the Rainbow&lt;&#x2F;em&gt; (1988, US)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;These films often mistakenly label these practices as &quot;voodoo,&quot; conflating distinct traditions.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;brujeria&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#brujeria&quot; aria-label=&quot;Anchor link for: brujeria&quot;&gt;Brujeria&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Latin American magical traditions:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;The Amulet of Ogum&lt;&#x2F;em&gt; (1974, Brazil)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Voodoo Black Exorcist&lt;&#x2F;em&gt; (1974, Spain)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;The Believers&lt;&#x2F;em&gt; (1987, US)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;gender-and-witchcraft&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#gender-and-witchcraft&quot; aria-label=&quot;Anchor link for: gender-and-witchcraft&quot;&gt;Gender and Witchcraft&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Folk horror often reflects historical gender dynamics in its portrayal of witchcraft. Female practitioners are frequently depicted as either malevolent crones or seductive temptresses, reflecting centuries of misogynistic stereotypes about women with power. Male practitioners, by contrast, are more often portrayed as scholars or leaders.&lt;&#x2F;p&gt;
+&lt;p&gt;Some modern folk horror films have begun to subvert these dynamics, presenting witchcraft as a form of feminine empowerment against patriarchal oppression.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;historical-context&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#historical-context&quot; aria-label=&quot;Anchor link for: historical-context&quot;&gt;Historical Context&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The witch trials of early modern Europe and colonial America cast a long shadow over folk horror&#x27;s treatment of witchcraft. Films like &lt;em&gt;Witchfinder General&lt;&#x2F;em&gt; (1968, UK) and &lt;em&gt;The Witch&lt;&#x2F;em&gt; (2015, US) directly engage with this historical context, exploring how religious fear, gender politics, and social control intersected in the persecution of supposed witches.&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-default&quot;&gt;
+  &lt;div class=&quot;moon-phases&quot;&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;em&gt;This note is part of a series exploring folk horror in cinema. Return to the &lt;a href=&quot;https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-overview&#x2F;&quot;&gt;main Folk Horror overview&lt;&#x2F;a&gt; to explore other tropes.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Folk Horror: Vengeful Ghosts</title>
+        <published>2024-11-09T00:00:00+00:00</published>
+        <updated>2024-11-09T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Alexandra Edwards
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://nonmodernist.com/notes/folk-horror-vengeful-ghosts/"/>
+        <id>https://nonmodernist.com/notes/folk-horror-vengeful-ghosts/</id>
+        
+        <content type="html" xml:base="https://nonmodernist.com/notes/folk-horror-vengeful-ghosts/">&lt;p&gt;&lt;span class=&quot;og&quot;&gt;😠&lt;&#x2F;span&gt; Vengeful ghosts appear across global folk horror traditions, but what distinguishes them within the genre is their deep connection to specific cultural contexts. These spirits typically emerge from local folkloric traditions and often represent historical traumas or unresolved injustices particular to their regions of origin.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;regional-ghost-traditions-in-folk-horror&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#regional-ghost-traditions-in-folk-horror&quot; aria-label=&quot;Anchor link for: regional-ghost-traditions-in-folk-horror&quot;&gt;Regional Ghost Traditions in Folk Horror&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;japanese-ghost-traditions&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#japanese-ghost-traditions&quot; aria-label=&quot;Anchor link for: japanese-ghost-traditions&quot;&gt;Japanese Ghost Traditions&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Japanese folk horror features several distinct types of vengeful spirits:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Bakeneko: A Vengeful Spirit&lt;&#x2F;em&gt; (1968, Japan) - The ghost cat tradition where women return as feline spirits to seek revenge&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Kuroneko&lt;&#x2F;em&gt; (1968, Japan) - Another ghost cat narrative emphasizing female vengeance&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Onibaba&lt;&#x2F;em&gt; (1964, Japan) - While not strictly a ghost story, it draws on demon-woman folklore&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Japanese vengeful spirits (&lt;em&gt;onryō&lt;&#x2F;em&gt;) typically arise from those who suffered injustice in life, especially women who experienced betrayal or violence.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;southeast-asian-ghost-traditions&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#southeast-asian-ghost-traditions&quot; aria-label=&quot;Anchor link for: southeast-asian-ghost-traditions&quot;&gt;Southeast Asian Ghost Traditions&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Southeast Asian folk horror draws on rich regional ghost beliefs:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;The Rites of May&lt;&#x2F;em&gt; (1976, Philippines)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Sundelbolong&lt;&#x2F;em&gt; (1981, Indonesia)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Pontianak Harum Sundal Malam&lt;&#x2F;em&gt; (2004, Malaysia)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;These films often feature female spirits tied to childbirth, maternal grief, or sexual violence.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;european-ghost-traditions&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#european-ghost-traditions&quot; aria-label=&quot;Anchor link for: european-ghost-traditions&quot;&gt;European Ghost Traditions&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;European folk horror incorporates regional ghost folklore:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Demon&lt;&#x2F;em&gt; (2015, Poland) - Drawing on the dybbuk tradition from Jewish folklore&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;em&gt;Lake of the Dead&lt;&#x2F;em&gt; (1958, Norway) - Featuring Nordic ghost traditions&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;latin-american-ghost-traditions&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#latin-american-ghost-traditions&quot; aria-label=&quot;Anchor link for: latin-american-ghost-traditions&quot;&gt;Latin American Ghost Traditions&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;La Llorona&lt;&#x2F;em&gt; (2019, Guatemala) - Reinterprets the widespread &quot;Weeping Woman&quot; legend through the context of Guatemala&#x27;s genocide against indigenous peoples&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;common-features&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#common-features&quot; aria-label=&quot;Anchor link for: common-features&quot;&gt;Common Features&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Despite their cultural specificity, vengeful ghosts in folk horror often share certain characteristics:&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;unresolved-trauma&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#unresolved-trauma&quot; aria-label=&quot;Anchor link for: unresolved-trauma&quot;&gt;Unresolved Trauma&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;The spirits typically emerge from historical or personal traumas that have not been properly addressed or resolved.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;cultural-memory&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#cultural-memory&quot; aria-label=&quot;Anchor link for: cultural-memory&quot;&gt;Cultural Memory&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;They frequently embody aspects of collective memory or cultural history that mainstream narratives have attempted to suppress or forget.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;liminal-existence&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#liminal-existence&quot; aria-label=&quot;Anchor link for: liminal-existence&quot;&gt;Liminal Existence&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;These ghosts often inhabit liminal spaces - thresholds between worlds, between life and death, between past and present.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;moral-ambiguity&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#moral-ambiguity&quot; aria-label=&quot;Anchor link for: moral-ambiguity&quot;&gt;Moral Ambiguity&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Unlike in many mainstream horror films, vengeful ghosts in folk horror are frequently portrayed with moral ambiguity - victims as well as threats.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;political-dimensions&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#political-dimensions&quot; aria-label=&quot;Anchor link for: political-dimensions&quot;&gt;Political Dimensions&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Many contemporary folk horror films use culturally-specific ghost traditions to address political themes:&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;historical-justice&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#historical-justice&quot; aria-label=&quot;Anchor link for: historical-justice&quot;&gt;Historical Justice&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Vengeful ghosts often represent demands for historical justice or recognition of past atrocities.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;colonial-legacy&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#colonial-legacy&quot; aria-label=&quot;Anchor link for: colonial-legacy&quot;&gt;Colonial Legacy&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;In many postcolonial contexts, vengeful spirits embody resistance to colonial narratives and the persistence of indigenous knowledge.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;gendered-violence&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#gendered-violence&quot; aria-label=&quot;Anchor link for: gendered-violence&quot;&gt;Gendered Violence&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Female vengeful spirits frequently highlight issues of gendered violence and patriarchal oppression.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;examples-of-political-folk-horror-ghosts&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#examples-of-political-folk-horror-ghosts&quot; aria-label=&quot;Anchor link for: examples-of-political-folk-horror-ghosts&quot;&gt;Examples of Political Folk Horror Ghosts&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;em&gt;La Llorona&lt;&#x2F;em&gt; (2019, Guatemala) exemplifies the political potential of the vengeful ghost trope. Director Jayro Bustamante reimagines the traditional Weeping Woman as the spirit of an indigenous woman killed during Guatemala&#x27;s civil war, haunting a former military general responsible for genocide. The film uses folk horror conventions to address historical trauma and the ongoing struggle for justice.&lt;&#x2F;p&gt;
+&lt;p&gt;Similarly, the Thai film &lt;em&gt;Rang Song&lt;&#x2F;em&gt; (&lt;em&gt;The Medium&lt;&#x2F;em&gt;, 2021) uses traditional beliefs about spirit possession to explore intergenerational trauma and the tensions between traditional practices and modernity in northern Thailand.&lt;&#x2F;p&gt;
+
+  
+
+
+
+&lt;div class=&quot;divider-default&quot;&gt;
+  &lt;div class=&quot;moon-phases&quot;&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+    &lt;div class=&quot;pixel-moon&quot;&gt;&lt;&#x2F;div&gt;
+  &lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;em&gt;This note is part of a series exploring folk horror in cinema. Return to the &lt;a href=&quot;https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-overview&#x2F;&quot;&gt;main Folk Horror overview&lt;&#x2F;a&gt; to explore other tropes.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

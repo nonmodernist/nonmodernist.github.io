@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https:&#x2F;&#x2F;nonmodernist.com">
+
+    <link rel="me" href="https://github.com/nonmodernist" />
+    <link rel="me" href="https://bsky.app/profile/nonmodernist.bsky.social" />
+    <link rel="webmention" href="https://webmention.io/nonmodernist.com/webmention" />
+
+    
+
+    
+    
+    
+    <title>
+         Folk Horror: An Overview
+        
+    </title>
+
+        
+            <meta property="og:title" content="Folk Horror: An Overview" />
+        
+     
+
+     
+         
+             <meta property="og:description" content="the internet homebase of dr. alexandra edwards" />
+         
+     
+
+     
+         
+             <meta name="description" content="the internet homebase of dr. alexandra edwards" />
+         
+    
+
+    
+    
+        <link rel="icon" type="image/png" href=&#x2F;favicon.png />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href=&#x2F;favicon.png>
+
+
+    
+    
+        <link href=https://nonmodernist.com/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/codeblock.js></script>
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/toc.js></script>
+    
+    
+    
+    
+        <script src=https://nonmodernist.com/js/note.js></script>
+    
+
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="alexandra edwards, phd" href="https://nonmodernist.com/atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="nonmodernist.com - notes only" href="https://nonmodernist.com/notes/atom.xml">
+
+
+
+    
+    
+        <link rel="stylesheet" type="text/css" href=https://nonmodernist.com/theme/light.css />
+        <link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://nonmodernist.com/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+
+    
+    <script src=https://nonmodernist.com/js/themetoggle.js></script>
+
+        
+        <script>setTheme(getSavedTheme());</script>
+    
+    
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://nonmodernist.com/main.css />
+
+    
+
+    
+        <script defer src="https://nonmodernist.com/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script><script src="https://nonmodernist.com/js/counters.js"></script>
+</head>
+
+    
+<!--
+         wWWWw               wWWWw
+   vVVVv (___) wWWWw         (___)  vVVVv
+   (___)  ~Y~  (___)  vVVVv   ~Y~   (___)
+    ~Y~   \|    ~Y~   (___)    |/    ~Y~
+    \|   \ |/   \| /  \~Y~/   \|    \ |/
+   \\|// \\|// \\|/// \\|//  \\|// \\\|///
+jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-->
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main">
+                
+                    <a href=https:&#x2F;&#x2F;nonmodernist.com>alexandra edwards, phd</a>
+                
+
+
+        <div class="socials">
+            
+        </div>
+    </div>
+
+    <nav>
+        
+            <a href=https://nonmodernist.com/notes style="margin-left: 0.25em">&#x2F;notes</a>
+        
+            <a href=https://nonmodernist.com/teaching style="margin-left: 0.25em">&#x2F;teaching</a>
+        
+            <a href=https://nonmodernist.com/research style="margin-left: 0.25em">&#x2F;research</a>
+        
+            <a href=https://nonmodernist.com/about style="margin-left: 0.25em">&#x2F;about</a>
+        
+
+        
+        <button
+            id="search-button"
+            class="search-button"
+            title="$SHORTCUT to open search"
+        >
+            <img
+                src="https://nonmodernist.com/icons/search.svg"
+                alt="Search"
+                class="search-icon"
+            >
+        </button>
+    
+        <div id="searchModal" class="search-modal js" role="dialog" aria-labelledby="modalTitle">
+            <div id="modal-content">
+                <h1 id="modalTitle" class="page-header">Search</h1>
+                <div id="searchBar">
+                    <input
+                        id="searchInput"
+                        role="combobox"
+                        autocomplete="off"
+                        spellcheck="false"
+                        aria-expanded="false"
+                        aria-controls="results-container"
+                        placeholder="Search..."
+                    />
+                    <button
+                        id="clear-search"
+                        class="clear-button"
+                        title="Clear search"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="results-container">
+                    <div id="results-info">
+                        <span id="zero_results" style="display: none;">No results</span>
+                        <span id="one_result" style="display: none;">1 result</span>
+                        <span id="many_results" style="display: none;">$NUMBER results</span>
+                    </div>
+                    <div id="results" role="listbox"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme(); event.preventDefault();" href="#">
+                <img src=https://nonmodernist.com/icons/sun.svg id="sun-icon" style="filter: invert(1);" alt="Light" />
+                <img src=https://nonmodernist.com/icons/moon.svg id="moon-icon" alt="Dark" />
+            </a>
+
+        <!-- Inititialize the theme toggle icons -->
+        <script>updateItemToggleTheme()</script>
+        
+    </nav>
+</header>
+
+
+        
+        
+    
+  <main>
+      <article class="h-entry readable-content">
+          <div class="title">
+            
+              
+      <div class="page-header">
+          Folk Horror: An Overview
+          
+          <span class="moon-phase moon-phase-waxing_gibbous">
+             🌔
+             
+            </span>
+            
+      
+      </div>
+  
+  
+                  <div class="meta">
+                      
+                          
+                          Posted <span class="hidden">by <a rel="author" class="p-author h-card" href="https://nonmodernist.com">alexandra edwards</a></span> on <time class="dt-published"> 2024-11-01</time>
+                      
+  
+                      
+  
+                      
+  
+                      
+                          :: 504 Words
+                      
+  
+                      
+                      
+                              <span class="tags-label"> :: Tags:</span>
+                              <span class="tags">
+                                      <a href="https://nonmodernist.com/tags/film/" class="post-tag">film</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/folk-horror/" class="post-tag">folk horror</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/genre/" class="post-tag">genre</a>
+                                  
+                              </span>
+                      
+  
+                      
+                      
+  
+                      
+  
+                  </div>
+          </div>
+  
+          
+          
+              <div class="tldr p-summary">
+                  <strong>tl;dr:</strong>
+                  An exploration of folk horror as a film genre, its international manifestations, and common tropes.
+              </div>
+          
+  
+          
+          
+          
+              <div class="toc-container">
+                  <h1 class="toc-title">Table of Contents</h1>
+                  <ul class="toc-list">
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/folk-horror-overview/#what-is-folk-horror">What is Folk Horror?</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/folk-horror-overview/#folk-horror-tropes">Folk Horror Tropes</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/folk-horror-overview/#the-folk-horror-chain">The Folk Horror Chain</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/folk-horror-overview/#key-films-to-explore">Key Films to Explore</a>
+                              
+                          </li>
+                      
+                  </ul>
+              </div>
+          
+          
+  
+          <section class="body"></section>
+          <div>
+              <p><span class="og">🎄</span> Though the "folk horror" genre dates back to the silent era (<em>Häxan</em>, 1922, Sweden), recent films like <em>Midsommar</em> (2019, US/Sweden), <em>La Llorona</em> (2019, Guatemala), and <em>The Medium</em>/ร่างทรง <em>Rang Song</em> (2021, Thailand) demonstrate a renewed interest in folkloric horror stories from around the world.</p>
+<p>As the editors of <em>Folk Horror: New Global Pathways</em> explain, "folk horror derives from folklore—from the roots of community and communal fears. And as such, one would assume that it has to be global, composed of variegated regional formations."</p>
+<p>In 2021, Kier-La Janisse and Severin Films released an extensive documentary about the history of folk horror, titled <em>Woodlands Dark and Days Bewitched</em>, along with an accompanying boxset called <em>All the Haunts Be Ours</em>, which contains 20 feature films. In 2024, Severin Films followed this up with <em>All the Haunts Be Ours</em> volume 2, containing 24 feature films. Both boxsets also contain a wealth of special features, including interviews, short films, and more.</p>
+<h2 id="what-is-folk-horror"><a class="zola-anchor" href="#what-is-folk-horror" aria-label="Anchor link for: what-is-folk-horror">What is Folk Horror?</a></h2>
+<p>Folk horror intertwines several elements:</p>
+<ul>
+<li>Cultural folklore and local superstitions</li>
+<li>Rural isolation and community dynamics</li>
+<li>Ancient practices surviving into modern times</li>
+<li>Conflict between modernity and tradition</li>
+<li>Connection to land, nature, and seasons</li>
+</ul>
+<p>Rather than a rigid genre definition, folk horror may be better understood as a collection of interrelated tropes and themes that emphasize the horror inherent in folk traditions, pagan practices, and deeply rooted cultural fears.</p>
+<h2 id="folk-horror-tropes"><a class="zola-anchor" href="#folk-horror-tropes" aria-label="Anchor link for: folk-horror-tropes">Folk Horror Tropes</a></h2>
+<p>Here are the key tropes that define folk horror films:</p>
+<ul>
+<li><a href="https://nonmodernist.com/notes/folk-horror-rural-settings/">Rural communities and isolated locations</a></li>
+<li><a href="https://nonmodernist.com/notes/folk-horror-outsider/">The Outsider, Skeptic, or Ethnographer</a></li>
+<li><a href="https://nonmodernist.com/notes/folk-horror-sacred-sites/">Ancient sacred sites</a></li>
+<li><a href="https://nonmodernist.com/notes/folk-horror-witchcraft/">Witchcraft, shamanism, and folk magic</a></li>
+<li><a href="https://nonmodernist.com/notes/folk-horror-cults/">Cults and extreme religious practices</a></li>
+<li><a href="https://nonmodernist.com/notes/folk-horror-human-sacrifice/">Human sacrifice</a></li>
+<li><a href="https://nonmodernist.com/notes/folk-horror-animal-transformation/">Animal transformation</a></li>
+<li><a href="https://nonmodernist.com/notes/folk-horror-vampirism/">Vampirism in folk contexts</a></li>
+<li><a href="https://nonmodernist.com/notes/folk-horror-vengeful-ghosts/">Culturally-specific vengeful ghosts</a></li>
+</ul>
+
+  
+
+
+
+<div class="divider-default">
+  <div class="moon-phases">
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+  </div>
+</div>
+<h2 id="the-folk-horror-chain"><a class="zola-anchor" href="#the-folk-horror-chain" aria-label="Anchor link for: the-folk-horror-chain">The Folk Horror Chain</a></h2>
+<p>In contrast to the above tropes, Adam Scovell's "folk horror chain" is a narrative theory that suggests folk horror films are united by "a linking set of narrative traits that have causational and interlinking consequences." The four elements of the folk horror chain are:</p>
+<ol>
+<li><strong>Landscape</strong> - Folk horror films emphasize the landscape in which they are set.</li>
+<li><strong>Isolation</strong> - The landscape leads to the isolation of the characters.</li>
+<li><strong>Skewed morals</strong> - Isolation leads to a skewed sense of morals or beliefs.</li>
+<li><strong>The happening</strong> - The skewed morals or beliefs of the community lead to a happening (often a summoning).</li>
+</ol>
+<h2 id="key-films-to-explore"><a class="zola-anchor" href="#key-films-to-explore" aria-label="Anchor link for: key-films-to-explore">Key Films to Explore</a></h2>
+<ul>
+<li><em>Häxan</em> (1922, Sweden)</li>
+<li><em>The Wicker Man</em> (1972, UK)</li>
+<li><em>Blood on Satan's Claw</em> (1971, UK)</li>
+<li><em>Witchfinder General</em> (1968, UK)</li>
+<li><em>Kuroneko</em> (1968, Japan)</li>
+<li><em>Ganja &amp; Hess</em> (1973, US)</li>
+<li><em>The White Reindeer</em> (1952, Finland)</li>
+<li><em>Midsommar</em> (2019, US/Sweden)</li>
+<li><em>La Llorona</em> (2019, Guatemala)</li>
+<li><em>The Medium</em> (2021, Thailand)</li>
+</ul>
+
+  
+
+
+
+<div class="divider-default">
+  <div class="moon-phases">
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+  </div>
+</div>
+<p><em>This note is part of a series exploring folk horror in cinema. Click the links above to explore specific tropes in more detail.</em></p>
+
+          </div> 
+      </section>
+  
+    
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+  
+    <div class="backlinks">
+      <button class="note-toggle">
+        <div class="note-icon">
+          <h2> notes that mention this note (11)</h2>
+        </div>
+      </button>
+      
+      <div class="backlinks-content" style="display: none;">
+        <ul class="backlinks-list">
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;2024-12-20-do-you-ever-have-an-idea&#x2F;">
+                
+                  Do you ever have an idea?
+                
+              </a>
+            </li>
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-animal-transformation&#x2F;">
+                
+                  Folk Horror: Animal Transformation
+                
+              </a>
+            </li>
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-cults&#x2F;">
+                
+                  Folk Horror: Cults
+                
+              </a>
+            </li>
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-human-sacrifice&#x2F;">
+                
+                  Folk Horror: Human Sacrifice
+                
+              </a>
+            </li>
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-outsider&#x2F;">
+                
+                  Folk Horror: The Outsider
+                
+              </a>
+            </li>
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-rural-settings&#x2F;">
+                
+                  Folk Horror: Rural Settings
+                
+              </a>
+            </li>
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-sacred-sites&#x2F;">
+                
+                  Folk Horror: Ancient Sacred Sites
+                
+              </a>
+            </li>
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-vampirism&#x2F;">
+                
+                  Folk Horror: Vampirism
+                
+              </a>
+            </li>
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-vengeful-ghosts&#x2F;">
+                
+                  Folk Horror: Vengeful Ghosts
+                
+              </a>
+            </li>
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-witchcraft&#x2F;">
+                
+                  Folk Horror: Witchcraft and Folk Magic
+                
+              </a>
+            </li>
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;villages-folk-horror&#x2F;">
+                
+                  Villages in Folk Horror: The Lost Commons
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  
+
+
+
+    
+      
+      </article>
+  </main>
+  
+
+
+        
+            
+        
+
+        
+    </div>
+
+
+    <hr>
+
+    <div class="footer">
+        <p>
+            <span class="og"><a href="https://nonmodernist.com">🏠</a> ☕ 🌁 <span id="launch-counter">875</span> 🎂 ☕ 🌁 🔍 📷 👓 🌁🌁 💠 📩 🌁 🌁🌁 <a href="https://nonmodernist.com/uses">⚡︎</a> 💓 <a href="https://nonmodernist.com/log"><span id="movies-counter">2736</span> 📺</a> 🌁🌁🌁 a 🌁 🌙 <a href="https://nonmodernist.com/readinglog"><span id="books-counter">974</span> 📖</a></span>
+        </p>
+    </div>
+    
+
+
+</html>

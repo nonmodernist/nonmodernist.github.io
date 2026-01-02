@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https:&#x2F;&#x2F;nonmodernist.com">
+
+    <link rel="me" href="https://github.com/nonmodernist" />
+    <link rel="me" href="https://bsky.app/profile/nonmodernist.bsky.social" />
+    <link rel="webmention" href="https://webmention.io/nonmodernist.com/webmention" />
+
+    
+
+    
+    
+    
+    <title>
+         The Quality Question in Streaming Cinema
+        
+    </title>
+
+        
+            <meta property="og:title" content="The Quality Question in Streaming Cinema" />
+        
+     
+
+     
+         
+             <meta property="og:description" content="the internet homebase of dr. alexandra edwards" />
+         
+     
+
+     
+         
+             <meta name="description" content="the internet homebase of dr. alexandra edwards" />
+         
+    
+
+    
+    
+        <link rel="icon" type="image/png" href=&#x2F;favicon.png />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href=&#x2F;favicon.png>
+
+
+    
+    
+        <link href=https://nonmodernist.com/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/codeblock.js></script>
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/toc.js></script>
+    
+    
+    
+    
+        <script src=https://nonmodernist.com/js/note.js></script>
+    
+
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="alexandra edwards, phd" href="https://nonmodernist.com/atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="nonmodernist.com - notes only" href="https://nonmodernist.com/notes/atom.xml">
+
+
+
+    
+    
+        <link rel="stylesheet" type="text/css" href=https://nonmodernist.com/theme/light.css />
+        <link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://nonmodernist.com/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+
+    
+    <script src=https://nonmodernist.com/js/themetoggle.js></script>
+
+        
+        <script>setTheme(getSavedTheme());</script>
+    
+    
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://nonmodernist.com/main.css />
+
+    
+
+    
+        <script defer src="https://nonmodernist.com/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script><script src="https://nonmodernist.com/js/counters.js"></script>
+</head>
+
+    
+<!--
+         wWWWw               wWWWw
+   vVVVv (___) wWWWw         (___)  vVVVv
+   (___)  ~Y~  (___)  vVVVv   ~Y~   (___)
+    ~Y~   \|    ~Y~   (___)    |/    ~Y~
+    \|   \ |/   \| /  \~Y~/   \|    \ |/
+   \\|// \\|// \\|/// \\|//  \\|// \\\|///
+jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-->
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main">
+                
+                    <a href=https:&#x2F;&#x2F;nonmodernist.com>alexandra edwards, phd</a>
+                
+
+
+        <div class="socials">
+            
+        </div>
+    </div>
+
+    <nav>
+        
+            <a href=https://nonmodernist.com/notes style="margin-left: 0.25em">&#x2F;notes</a>
+        
+            <a href=https://nonmodernist.com/teaching style="margin-left: 0.25em">&#x2F;teaching</a>
+        
+            <a href=https://nonmodernist.com/research style="margin-left: 0.25em">&#x2F;research</a>
+        
+            <a href=https://nonmodernist.com/about style="margin-left: 0.25em">&#x2F;about</a>
+        
+
+        
+        <button
+            id="search-button"
+            class="search-button"
+            title="$SHORTCUT to open search"
+        >
+            <img
+                src="https://nonmodernist.com/icons/search.svg"
+                alt="Search"
+                class="search-icon"
+            >
+        </button>
+    
+        <div id="searchModal" class="search-modal js" role="dialog" aria-labelledby="modalTitle">
+            <div id="modal-content">
+                <h1 id="modalTitle" class="page-header">Search</h1>
+                <div id="searchBar">
+                    <input
+                        id="searchInput"
+                        role="combobox"
+                        autocomplete="off"
+                        spellcheck="false"
+                        aria-expanded="false"
+                        aria-controls="results-container"
+                        placeholder="Search..."
+                    />
+                    <button
+                        id="clear-search"
+                        class="clear-button"
+                        title="Clear search"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="results-container">
+                    <div id="results-info">
+                        <span id="zero_results" style="display: none;">No results</span>
+                        <span id="one_result" style="display: none;">1 result</span>
+                        <span id="many_results" style="display: none;">$NUMBER results</span>
+                    </div>
+                    <div id="results" role="listbox"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme(); event.preventDefault();" href="#">
+                <img src=https://nonmodernist.com/icons/sun.svg id="sun-icon" style="filter: invert(1);" alt="Light" />
+                <img src=https://nonmodernist.com/icons/moon.svg id="moon-icon" alt="Dark" />
+            </a>
+
+        <!-- Inititialize the theme toggle icons -->
+        <script>updateItemToggleTheme()</script>
+        
+    </nav>
+</header>
+
+
+        
+        
+    
+  <main>
+      <article class="h-entry readable-content">
+          <div class="title">
+            
+              
+      <div class="page-header">
+          The Quality Question in Streaming Cinema
+          
+          <span class="moon-phase moon-phase-waxing_crescent">
+             🌙
+             
+            </span>
+            
+      
+      </div>
+  
+  
+                  <div class="meta">
+                      
+                          
+                          Posted <span class="hidden">by <a rel="author" class="p-author h-card" href="https://nonmodernist.com">alexandra edwards</a></span> on <time class="dt-published"> 2024-12-24</time>
+                      
+  
+                      
+  
+                      
+  
+                      
+                          :: 425 Words
+                      
+  
+                      
+                      
+                              <span class="tags-label"> :: Tags:</span>
+                              <span class="tags">
+                                      <a href="https://nonmodernist.com/tags/film/" class="post-tag">film</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/streaming/" class="post-tag">streaming</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/netflix/" class="post-tag">netflix</a>
+                                  
+                              </span>
+                      
+  
+                      
+                      
+  
+                      
+  
+                  </div>
+          </div>
+  
+          
+          
+  
+          
+          
+          
+              <div class="toc-container">
+                  <h1 class="toc-title">Table of Contents</h1>
+                  <ul class="toc-list">
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/streaming-cinema-quality/#avoiding-ahistorical-critiques">Avoiding Ahistorical Critiques</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/streaming-cinema-quality/#more-productive-criticism">More Productive Criticism</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/streaming-cinema-quality/#questions-i-m-still-pondering">Questions I&#x27;m Still Pondering</a>
+                              
+                          </li>
+                      
+                  </ul>
+              </div>
+          
+          
+  
+          <section class="body"></section>
+          <div>
+              <p>"Tide Pod cinema" is a delightfully bitchy phrase coined by Will Tavlin in his otherwise frustrating essay "Casual Viewing". I think it describes something important about contemporary streaming cinema—content that appears colorful and attractive but is poisonous to a healthy film culture.</p>
+<p>Tavlin uses the phrase to describe Netflix's output of "movies that go down best when you're not paying attention" or films made "to half-watch while doing laundry." The term cleverly captures several qualities of streaming-exclusive films:</p>
+<ol>
+<li>
+<p><strong>Algorithmic Optimization</strong>: Movies that feel designed to satisfy platform metrics instead of artistic vision</p>
+</li>
+<li>
+<p><strong>Disposability</strong>: Content clearly created with no expectation it will be remembered or revisited in a year</p>
+</li>
+<li>
+<p><strong>Superficial Engagement</strong>: Films that prioritize immediate visual appeal over any substantive ideas</p>
+</li>
+<li>
+<p><strong>Formulaic Structures</strong>: Stories so predictable you could write the ending after the first five minutes</p>
+</li>
+</ol>
+<h2 id="avoiding-ahistorical-critiques"><a class="zola-anchor" href="#avoiding-ahistorical-critiques" aria-label="Anchor link for: avoiding-ahistorical-critiques">Avoiding Ahistorical Critiques</a></h2>
+<p>While I think the "Tide Pod cinema" critique identifies something real, we should avoid nostalgic misconceptions that come with it. Studio-era Hollywood wasn't a golden age where every film was <em>Casablanca</em> or <em>Citizen Kane</em>. As I pointed out in my <a href="https://nonmodernist.com/notes/film-industry-history/">note on the history of film subscription models</a>, the ratio of forgettable films to classics has always been high.</p>
+<p>Similarly, the notion that theatrical viewing was historically some reverent, distraction-free experience simply isn't true. People talked, ate, entered mid-film, and generally treated movie theaters as social spaces rather than temples of cinematic appreciation. (And that's not even mentioning porn theatres...)</p>
+<h2 id="more-productive-criticism"><a class="zola-anchor" href="#more-productive-criticism" aria-label="Anchor link for: more-productive-criticism">More Productive Criticism</a></h2>
+<p>I think there are more interesting angles to explore when critiquing streaming content:</p>
+<ol>
+<li>
+<p><strong>Creative Control</strong>: How do algorithmic recommendations and data-driven development potentially limit artistic risk-taking?</p>
+</li>
+<li>
+<p><strong>Preservation Issues</strong>: What happens to streaming-exclusive films when platforms decide they're no longer worth hosting?</p>
+</li>
+<li>
+<p><strong>Economic Models</strong>: How does creator compensation in streaming differ from traditional models, and what does that mean for the kinds of stories that get told?</p>
+</li>
+</ol>
+<h2 id="questions-i-m-still-pondering"><a class="zola-anchor" href="#questions-i-m-still-pondering" aria-label="Anchor link for: questions-i-m-still-pondering">Questions I'm Still Pondering</a></h2>
+<ul>
+<li>
+<p>How can we develop critical frameworks that acknowledge both continuity and change in media production?</p>
+</li>
+<li>
+<p>What do we do with Ethan Mordden's claim that intense demand for product led to creative innovation during the studio system? Could we make the same claim about streaming?</p>
+</li>
+</ul>
+
+  
+
+
+
+<div class="divider-simple">
+  <div class="pixel-crescent">
+    <div class="hidden-rays"></div>
+  </div>
+</div>
+<p><em>I'd like to explore these questions further, perhaps in connection with how physical media constraints have historically influenced both film and television production. The transition from physical to digital distribution may be as significant as the shift from stage to screen was in the early 20th century.</em></p>
+
+          </div> 
+      </section>
+  
+    
+  
+  
+  
+  
+    
+      
+    
+  
+  
+  
+    <div class="backlinks">
+      <button class="note-toggle">
+        <div class="note-icon">
+          <h2> notes that mention this note (1)</h2>
+        </div>
+      </button>
+      
+      <div class="backlinks-content" style="display: none;">
+        <ul class="backlinks-list">
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;film-industry-history&#x2F;">
+                
+                  Film Industry History: Subscription Models Aren&#x27;t New
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  
+
+
+
+    
+      
+      </article>
+  </main>
+  
+
+
+        
+            
+        
+
+        
+    </div>
+
+
+    <hr>
+
+    <div class="footer">
+        <p>
+            <span class="og"><a href="https://nonmodernist.com">🏠</a> ☕ 🌁 <span id="launch-counter">875</span> 🎂 ☕ 🌁 🔍 📷 👓 🌁🌁 💠 📩 🌁 🌁🌁 <a href="https://nonmodernist.com/uses">⚡︎</a> 💓 <a href="https://nonmodernist.com/log"><span id="movies-counter">2736</span> 📺</a> 🌁🌁🌁 a 🌁 🌙 <a href="https://nonmodernist.com/readinglog"><span id="books-counter">974</span> 📖</a></span>
+        </p>
+    </div>
+    
+
+
+</html>

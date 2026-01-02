@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https:&#x2F;&#x2F;nonmodernist.com">
+
+    <link rel="me" href="https://github.com/nonmodernist" />
+    <link rel="me" href="https://bsky.app/profile/nonmodernist.bsky.social" />
+    <link rel="webmention" href="https://webmention.io/nonmodernist.com/webmention" />
+
+    
+
+    
+    
+    
+    <title>
+         A pedagogy of transformative works
+        
+    </title>
+
+        
+            <meta property="og:title" content="A pedagogy of transformative works" />
+        
+     
+
+     
+         
+             <meta property="og:description" content="My teaching philosophy" />
+         
+     
+
+     
+         
+             <meta name="description" content="My teaching philosophy" />
+         
+    
+
+    
+    
+        <link rel="icon" type="image/png" href=&#x2F;favicon.png />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href=&#x2F;favicon.png>
+
+
+    
+    
+        <link href=https://nonmodernist.com/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/codeblock.js></script>
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/toc.js></script>
+    
+    
+    
+    
+        <script src=https://nonmodernist.com/js/note.js></script>
+    
+
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="alexandra edwards, phd" href="https://nonmodernist.com/atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="nonmodernist.com - notes only" href="https://nonmodernist.com/notes/atom.xml">
+
+
+
+    
+    
+        <link rel="stylesheet" type="text/css" href=https://nonmodernist.com/theme/light.css />
+        <link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://nonmodernist.com/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+
+    
+    <script src=https://nonmodernist.com/js/themetoggle.js></script>
+
+        
+        <script>setTheme(getSavedTheme());</script>
+    
+    
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://nonmodernist.com/main.css />
+
+    
+
+    
+        <script defer src="https://nonmodernist.com/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script><script src="https://nonmodernist.com/js/counters.js"></script>
+</head>
+
+    
+<!--
+         wWWWw               wWWWw
+   vVVVv (___) wWWWw         (___)  vVVVv
+   (___)  ~Y~  (___)  vVVVv   ~Y~   (___)
+    ~Y~   \|    ~Y~   (___)    |/    ~Y~
+    \|   \ |/   \| /  \~Y~/   \|    \ |/
+   \\|// \\|// \\|/// \\|//  \\|// \\\|///
+jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-->
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main">
+                
+                    <a href=https:&#x2F;&#x2F;nonmodernist.com>alexandra edwards, phd</a>
+                
+
+
+        <div class="socials">
+            
+        </div>
+    </div>
+
+    <nav>
+        
+            <a href=https://nonmodernist.com/notes style="margin-left: 0.25em">&#x2F;notes</a>
+        
+            <a href=https://nonmodernist.com/teaching style="margin-left: 0.25em">&#x2F;teaching</a>
+        
+            <a href=https://nonmodernist.com/research style="margin-left: 0.25em">&#x2F;research</a>
+        
+            <a href=https://nonmodernist.com/about style="margin-left: 0.25em">&#x2F;about</a>
+        
+
+        
+        <button
+            id="search-button"
+            class="search-button"
+            title="$SHORTCUT to open search"
+        >
+            <img
+                src="https://nonmodernist.com/icons/search.svg"
+                alt="Search"
+                class="search-icon"
+            >
+        </button>
+    
+        <div id="searchModal" class="search-modal js" role="dialog" aria-labelledby="modalTitle">
+            <div id="modal-content">
+                <h1 id="modalTitle" class="page-header">Search</h1>
+                <div id="searchBar">
+                    <input
+                        id="searchInput"
+                        role="combobox"
+                        autocomplete="off"
+                        spellcheck="false"
+                        aria-expanded="false"
+                        aria-controls="results-container"
+                        placeholder="Search..."
+                    />
+                    <button
+                        id="clear-search"
+                        class="clear-button"
+                        title="Clear search"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="results-container">
+                    <div id="results-info">
+                        <span id="zero_results" style="display: none;">No results</span>
+                        <span id="one_result" style="display: none;">1 result</span>
+                        <span id="many_results" style="display: none;">$NUMBER results</span>
+                    </div>
+                    <div id="results" role="listbox"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme(); event.preventDefault();" href="#">
+                <img src=https://nonmodernist.com/icons/sun.svg id="sun-icon" style="filter: invert(1);" alt="Light" />
+                <img src=https://nonmodernist.com/icons/moon.svg id="moon-icon" alt="Dark" />
+            </a>
+
+        <!-- Inititialize the theme toggle icons -->
+        <script>updateItemToggleTheme()</script>
+        
+    </nav>
+</header>
+
+
+        
+        
+    
+  <main>
+      <article class="h-entry readable-content">
+          <div class="title">
+            
+              
+      <div class="page-header">
+          A pedagogy of transformative works
+              
+            <span class="og" style="font-size: .4em">⤵</span>
+      
+      
+      </div>
+  
+  
+                  <div class="meta">
+                      
+  
+                      
+  
+                      
+  
+                      
+                          :: 849 Words
+                      
+  
+                      
+                      
+  
+                      
+                      
+  
+                      
+  
+                  </div>
+          </div>
+  
+          
+          
+              <div class="tldr p-summary">
+                  <strong>tl;dr:</strong>
+                  My teaching philosophy is about a commitment to transform the world, side by side with my students.
+              </div>
+          
+  
+          
+          
+          
+          
+  
+          <section class="body"></section>
+          <div>
+              <p><span class="og">✨</span></p>
+<p>In my campus office, I keep an archive of my students’ work. It’s not just a filing cabinet stuffed with papers; it’s more like a gallery collection displayed all around me, and it grows each year.</p>
+<p>On one wall, large posters describe the careers of Anita Loos, Vera Caspary, and Edna Ferber, and on a ledge nearby, a 3D-printed model of a 1950s film camera is accompanied by a tag explaining that this model camera was used to film the Ferber adaptation <em>Giant</em>. My bookshelves are filled with students’ handmade accordion books containing hand-drawn data visualizations.</p>
+<p>There’s also a board game about student debt, a <a href="https://nonmodernist.com/docs/teaching/theories-of-cinema/zine/"><strong>100-page feminist film theory mega-zine</strong></a>, and a plastic box that contains the components and instructions for assembling an emergency off-grid intranet that can be used to share information during natural disasters. I never design a class without considering what I can invite my students to make next.</p>
+<p>I model my classroom on the cultural networks I research—for example, the transformative fan communities and creators that I wrote about in <a href="http://beforefanfiction.com"><strong>my first book</strong></a>. Transformative fandom lives in spaces of possibility, where the smallest detail of a text can become a window into a new universe. My students and I crawl through such windows together: conducting stealth missions into the landscapes of film and literature, gleaning insights and resistances, and bringing them back to our campus and our lives to be shared, and, ultimately, transformed.</p>
+<p>In past years, those windows have taken us into the history of Hollywood film adaptation, where my students have been hunting for lost films and forgotten women writers. This research and writing project turns students loose with the goal of recovering as much information as possible about one film adapted from the work of an American woman writer. In the process, students have a chance to design a research question, practice broadly transferable research and writing skills, and contribute their recovered knowledge to the public commons through platforms like Wikipedia, hand-coded web archives, and on-campus exhibitions.</p>
+<p>Sometimes, they stumble onto mysteries that would flummox even the hardest-boiled film detective and end up writing blog posts with titles like, <strong>“Sylvia Tate: Does She Even Exist?”</strong></p>
+<p>Students are thrilled by the prospect of writing to expand or transform public knowledge, because it makes their effort and experiences reverberate beyond the walls of the classroom. As one of my students wrote in a reflection essay:</p>
+<blockquote>
+<p>For the first time, I felt like a course had a greater purpose that went far beyond what was on the syllabus. When I learned that we would be editing Wikipedia pages, I thought to myself, ‘Why is my professor so excited about this?’</p>
+<p>I later realized that we were slowly adding to and changing something greater than us. We were shining a light back onto the lives and stories of forgotten female authors and screenwriters who helped change the film industry. By adding those Wikipedia pages, we were sharing their stories and making sure they were not forgotten…</p>
+<p>Although the 300 words I added did not seem like much, it was reassuring to know that people after me will add to what I contributed and together we will rewrite the story of some amazing female authors.</p>
+</blockquote>
+<p>Valuing student labor in and beyond the classroom is a central tenet of my pedagogy; the “work” of “transformative works” is just as important as the “transformative.”</p>
+<p>This means that students themselves often get to define what they want to create and how they’ll go about it, which ensures that they have the chance to use their existing skillsets and to connect their work to their other courses and interests. To conclude such self-directed projects, I ask students to write up detailed self-assessments that help them articulate their strengths and consider how they might improve upon their weaknesses in the future.</p>
+<p>Several of my students have gone on to win competitive scholarships and join distinguished graduate programs, but more importantly to me, all of them have had a chance to see their writing matter in the context of a global scholarly conversation about literature, media, and culture. They have updated hundreds of Wikipedia articles and made connections with scholars and local historians across the country.</p>
+<p>Their research has also inspired and assisted my work outside the classroom; <em>Feminist Media Histories</em> published my article based on the research of nine of my students into the film adaptations of Gene Stratton-Porter. Seeing their names in print was among my proudest moments as an educator.</p>
+<p>Practicing a pedagogy of transformative works also helps me to intentionally align my teaching with the “transformative pedagogy” of teacher-scholars around the world who build on the critical pedagogy of Paolo Friere and the transgressive, engaged pedagogy of bell hooks.</p>
+<p>My commitment to transformation as classroom methodology is a commitment to the transformation of our entire world—a commitment to build something, not just for my students, but side by side with them.</p>
+
+          </div> 
+      </section>
+  
+    
+  
+
+
+    
+      
+      </article>
+  </main>
+  
+
+
+        
+            
+        
+
+        
+    </div>
+
+
+    <hr>
+
+    <div class="footer">
+        <p>
+            <span class="og"><a href="https://nonmodernist.com">🏠</a> ☕ 🌁 <span id="launch-counter">875</span> 🎂 ☕ 🌁 🔍 📷 👓 🌁🌁 💠 📩 🌁 🌁🌁 <a href="https://nonmodernist.com/uses">⚡︎</a> 💓 <a href="https://nonmodernist.com/log"><span id="movies-counter">2736</span> 📺</a> 🌁🌁🌁 a 🌁 🌙 <a href="https://nonmodernist.com/readinglog"><span id="books-counter">974</span> 📖</a></span>
+        </p>
+    </div>
+    
+
+
+</html>
