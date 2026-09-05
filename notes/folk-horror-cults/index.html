@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https:&#x2F;&#x2F;nonmodernist.com">
+
+    <link rel="me" href="https://github.com/nonmodernist" />
+    <link rel="me" href="https://bsky.app/profile/nonmodernist.bsky.social" />
+    <link rel="webmention" href="https://webmention.io/nonmodernist.com/webmention" />
+
+    
+
+    
+    
+    
+    <title>
+         Folk Horror: Cults
+        
+    </title>
+
+        
+            <meta property="og:title" content="Folk Horror: Cults" />
+        
+     
+
+     
+         
+             <meta property="og:description" content="Isolated religious communities with extreme beliefs are a central component of many folk horror narratives." />
+         
+     
+
+     
+         
+             <meta name="description" content="Isolated religious communities with extreme beliefs are a central component of many folk horror narratives." />
+         
+    
+
+    
+    
+        <link rel="icon" type="image/png" href=&#x2F;favicon.png />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href=&#x2F;favicon.png>
+
+
+    
+    
+        <link href=https://nonmodernist.com/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/codeblock.js></script>
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/toc.js></script>
+    
+    
+    
+    
+        <script src=https://nonmodernist.com/js/note.js></script>
+    
+
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="alexandra edwards, phd" href="https://nonmodernist.com/atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="nonmodernist.com - notes only" href="https://nonmodernist.com/notes/atom.xml">
+
+
+
+    
+    
+        <link rel="stylesheet" type="text/css" href=https://nonmodernist.com/theme/light.css />
+        <link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://nonmodernist.com/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+
+    
+    <script src=https://nonmodernist.com/js/themetoggle.js></script>
+
+        
+        <script>setTheme(getSavedTheme());</script>
+    
+    
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://nonmodernist.com/main.css />
+
+    
+
+    
+        <script defer src="https://nonmodernist.com/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script><script src="https://nonmodernist.com/js/counters.js"></script>
+</head>
+
+    
+<!--
+         wWWWw               wWWWw
+   vVVVv (___) wWWWw         (___)  vVVVv
+   (___)  ~Y~  (___)  vVVVv   ~Y~   (___)
+    ~Y~   \|    ~Y~   (___)    |/    ~Y~
+    \|   \ |/   \| /  \~Y~/   \|    \ |/
+   \\|// \\|// \\|/// \\|//  \\|// \\\|///
+jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-->
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main">
+                
+                    <a href=https:&#x2F;&#x2F;nonmodernist.com>alexandra edwards, phd</a>
+                
+
+
+        <div class="socials">
+            
+        </div>
+    </div>
+
+    <nav>
+        
+            <a href=https://nonmodernist.com/notes style="margin-left: 0.25em">&#x2F;notes</a>
+        
+            <a href=https://nonmodernist.com/teaching style="margin-left: 0.25em">&#x2F;teaching</a>
+        
+            <a href=https://nonmodernist.com/research style="margin-left: 0.25em">&#x2F;research</a>
+        
+            <a href=https://nonmodernist.com/about style="margin-left: 0.25em">&#x2F;about</a>
+        
+
+        
+        <button
+            id="search-button"
+            class="search-button"
+            title="$SHORTCUT to open search"
+        >
+            <img
+                src="https://nonmodernist.com/icons/search.svg"
+                alt="Search"
+                class="search-icon"
+            >
+        </button>
+    
+        <div id="searchModal" class="search-modal js" role="dialog" aria-labelledby="modalTitle">
+            <div id="modal-content">
+                <h1 id="modalTitle" class="page-header">Search</h1>
+                <div id="searchBar">
+                    <input
+                        id="searchInput"
+                        role="combobox"
+                        autocomplete="off"
+                        spellcheck="false"
+                        aria-expanded="false"
+                        aria-controls="results-container"
+                        placeholder="Search..."
+                    />
+                    <button
+                        id="clear-search"
+                        class="clear-button"
+                        title="Clear search"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="results-container">
+                    <div id="results-info">
+                        <span id="zero_results" style="display: none;">No results</span>
+                        <span id="one_result" style="display: none;">1 result</span>
+                        <span id="many_results" style="display: none;">$NUMBER results</span>
+                    </div>
+                    <div id="results" role="listbox"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme(); event.preventDefault();" href="#">
+                <img src=https://nonmodernist.com/icons/sun.svg id="sun-icon" style="filter: invert(1);" alt="Light" />
+                <img src=https://nonmodernist.com/icons/moon.svg id="moon-icon" alt="Dark" />
+            </a>
+
+        <!-- Inititialize the theme toggle icons -->
+        <script>updateItemToggleTheme()</script>
+        
+    </nav>
+</header>
+
+
+        
+        
+    
+  <main>
+      <article class="h-entry readable-content">
+          <div class="title">
+            
+              
+      <div class="page-header">
+          Folk Horror: Cults
+          
+          <span class="moon-phase moon-phase-waxing_gibbous">
+             🌔
+             
+            </span>
+            
+      
+      </div>
+  
+  
+                  <div class="meta">
+                      
+                          
+                          Posted <span class="hidden">by <a rel="author" class="p-author h-card" href="https://nonmodernist.com">alexandra edwards</a></span> on <time class="dt-published"> 2024-11-05</time>
+                      
+  
+                      
+  
+                      
+  
+                      
+                          :: 468 Words
+                      
+  
+                      
+                      
+                              <span class="tags-label"> :: Tags:</span>
+                              <span class="tags">
+                                      <a href="https://nonmodernist.com/tags/film/" class="post-tag">film</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/folk-horror/" class="post-tag">folk horror</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/ritual/" class="post-tag">ritual</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/cults/" class="post-tag">cults</a>
+                                  
+                              </span>
+                      
+  
+                      
+                      
+  
+                      
+  
+                  </div>
+          </div>
+  
+          
+          
+              <div class="tldr p-summary">
+                  <strong>tl;dr:</strong>
+                  Isolated religious communities with extreme beliefs are a central component of many folk horror narratives.
+              </div>
+          
+  
+          
+          
+          
+              <div class="toc-container">
+                  <h1 class="toc-title">Table of Contents</h1>
+                  <ul class="toc-list">
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/folk-horror-cults/#cults-and-extreme-religious-practices">Cults and Extreme Religious Practices</a>
+                              
+                                  <ul>
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-cults/#characteristics-of-folk-horror-cults">Characteristics of Folk Horror Cults</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-cults/#notable-folk-horror-cults">Notable Folk Horror Cults</a>
+                                          </li>
+  
+                                          
+                                              <ul>
+                                                  
+                                                      <li>
+                                                          <a href="https://nonmodernist.com/notes/folk-horror-cults/#the-heathen-community-of-summerisle">The Heathen Community of Summerisle</a>
+                                                      </li>
+                                                  
+                                                      <li>
+                                                          <a href="https://nonmodernist.com/notes/folk-horror-cults/#the-children-of-the-corn">The Children of the Corn</a>
+                                                      </li>
+                                                  
+                                                      <li>
+                                                          <a href="https://nonmodernist.com/notes/folk-horror-cults/#the-harga">The Hårga</a>
+                                                      </li>
+                                                  
+                                              </ul>
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-cults/#common-narrative-patterns">Common Narrative Patterns</a>
+                                          </li>
+  
+                                          
+                                              <ul>
+                                                  
+                                                      <li>
+                                                          <a href="https://nonmodernist.com/notes/folk-horror-cults/#the-infiltration">The Infiltration</a>
+                                                      </li>
+                                                  
+                                                      <li>
+                                                          <a href="https://nonmodernist.com/notes/folk-horror-cults/#the-discovery">The Discovery</a>
+                                                      </li>
+                                                  
+                                                      <li>
+                                                          <a href="https://nonmodernist.com/notes/folk-horror-cults/#the-inheritance">The Inheritance</a>
+                                                      </li>
+                                                  
+                                              </ul>
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-cults/#cultural-variations">Cultural Variations</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-cults/#sociological-readings">Sociological Readings</a>
+                                          </li>
+  
+                                          
+                                      
+                                  </ul>
+                              
+                          </li>
+                      
+                  </ul>
+              </div>
+          
+          
+  
+          <section class="body"></section>
+          <div>
+              <h1 id="cults-and-extreme-religious-practices"><a class="zola-anchor" href="#cults-and-extreme-religious-practices" aria-label="Anchor link for: cults-and-extreme-religious-practices">Cults and Extreme Religious Practices</a></h1>
+<p><span class="og">✌︎</span> Isolated religious communities that develop extreme beliefs and practices are a staple of folk horror. These groups typically maintain belief systems that have diverged from mainstream religion, often incorporating elements of paganism, nature worship, or extreme interpretations of established faiths.</p>
+<h2 id="characteristics-of-folk-horror-cults"><a class="zola-anchor" href="#characteristics-of-folk-horror-cults" aria-label="Anchor link for: characteristics-of-folk-horror-cults">Characteristics of Folk Horror Cults</a></h2>
+<p>Folk horror cults typically share several characteristics:</p>
+<ol>
+<li><strong>Isolation</strong> - Physical or social separation from mainstream society</li>
+<li><strong>Hierarchy</strong> - Clear power structures, often with charismatic leaders</li>
+<li><strong>Rituals</strong> - Distinctive ceremonial practices central to their belief system</li>
+<li><strong>Sacrifice</strong> - Willingness to sacrifice for the greater good of the community</li>
+<li><strong>Secrecy</strong> - Hidden knowledge or practices concealed from outsiders</li>
+</ol>
+<h2 id="notable-folk-horror-cults"><a class="zola-anchor" href="#notable-folk-horror-cults" aria-label="Anchor link for: notable-folk-horror-cults">Notable Folk Horror Cults</a></h2>
+<h3 id="the-heathen-community-of-summerisle"><a class="zola-anchor" href="#the-heathen-community-of-summerisle" aria-label="Anchor link for: the-heathen-community-of-summerisle">The Heathen Community of Summerisle</a></h3>
+<p><em>The Wicker Man</em> (1972, UK) presents perhaps the most iconic folk horror cult. Led by Lord Summerisle, the inhabitants of this remote Scottish island have revived ancient pagan practices to ensure agricultural fertility.</p>
+<h3 id="the-children-of-the-corn"><a class="zola-anchor" href="#the-children-of-the-corn" aria-label="Anchor link for: the-children-of-the-corn">The Children of the Corn</a></h3>
+<p>In <em>Children of the Corn</em> (1984, US), based on Stephen King's story, rural children form a cult that worships "He Who Walks Behind the Rows," sacrificing adults to ensure bountiful corn harvests.</p>
+<h3 id="the-harga"><a class="zola-anchor" href="#the-harga" aria-label="Anchor link for: the-harga">The Hårga</a></h3>
+<p><em>Midsommar</em> (2019, US/Sweden) depicts the Hårga community, whose seemingly benign midsummer celebrations mask disturbing rituals including human sacrifice and eugenics.</p>
+<figure class="center">
+  <div class="pixel-corners--wrapper">
+    <img src="/Midsommar_045.jpg" alt="Girls dressed in white face the camera." width="550px">
+  </div>
+</figure>
+<h2 id="common-narrative-patterns"><a class="zola-anchor" href="#common-narrative-patterns" aria-label="Anchor link for: common-narrative-patterns">Common Narrative Patterns</a></h2>
+<h3 id="the-infiltration"><a class="zola-anchor" href="#the-infiltration" aria-label="Anchor link for: the-infiltration">The Infiltration</a></h3>
+<p>Many folk horror films follow a structure where outsiders infiltrate or are lured into cult communities:</p>
+<ul>
+<li><em>Eye of the Devil</em> (1966, UK)</li>
+<li><em>The Wicker Man</em> (1972, UK)</li>
+<li><em>Apostle</em> (2018, US)</li>
+<li><em>Midsommar</em> (2019, US)</li>
+</ul>
+<h3 id="the-discovery"><a class="zola-anchor" href="#the-discovery" aria-label="Anchor link for: the-discovery">The Discovery</a></h3>
+<p>Other films feature characters who discover cult activities in seemingly normal communities:</p>
+<ul>
+<li><em>Crowhaven Farm</em> (1970, US)</li>
+<li><em>The Dark Secret of Harvest Home</em> (1978, US)</li>
+<li><em>Alison's Birthday</em> (1981, Australia)</li>
+</ul>
+<h3 id="the-inheritance"><a class="zola-anchor" href="#the-inheritance" aria-label="Anchor link for: the-inheritance">The Inheritance</a></h3>
+<p>Some folk horror narratives involve characters who discover they have inherited a position or role within a cult:</p>
+<ul>
+<li><em>Rosemary's Baby</em> (1968, US)</li>
+<li><em>Hereditary</em> (2018, US)</li>
+<li><em>Incantation</em> (2022, Taiwan)</li>
+</ul>
+<h2 id="cultural-variations"><a class="zola-anchor" href="#cultural-variations" aria-label="Anchor link for: cultural-variations">Cultural Variations</a></h2>
+<p>Folk horror cults reflect the cultural contexts in which they appear:</p>
+<ul>
+<li><strong>British folk horror</strong> often features neo-pagan revivals in rural communities</li>
+<li><strong>American folk horror</strong> frequently explores religious extremism and fundamentalism</li>
+<li><strong>East Asian folk horror</strong> commonly depicts ancestral cults and familial obligations</li>
+<li><strong>Latin American folk horror</strong> often blends indigenous beliefs with Catholicism</li>
+</ul>
+<h2 id="sociological-readings"><a class="zola-anchor" href="#sociological-readings" aria-label="Anchor link for: sociological-readings">Sociological Readings</a></h2>
+<p>Folk horror cults can be interpreted as expressions of anxiety about:</p>
+<ul>
+<li><strong>Social conformity</strong> - The pressure to conform to community expectations</li>
+<li><strong>Modern alienation</strong> - The appeal of belonging to something larger than oneself</li>
+<li><strong>Cultural tradition</strong> - The tension between preserving tradition and embracing progress</li>
+<li><strong>Authority</strong> - The dangers of unquestioning obedience to charismatic leaders</li>
+</ul>
+
+  
+
+
+
+<div class="divider-default">
+  <div class="moon-phases">
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+  </div>
+</div>
+<p><em>This note is part of a series exploring folk horror in cinema. Return to the <a href="https://nonmodernist.com/notes/folk-horror-overview/">main Folk Horror overview</a> to explore other tropes.</em></p>
+
+          </div> 
+      </section>
+  
+    
+  
+  
+  
+  
+    
+      
+    
+  
+  
+  
+    <div class="backlinks">
+      <button class="note-toggle">
+        <div class="note-icon">
+          <h2> notes that mention this note (1)</h2>
+        </div>
+      </button>
+      
+      <div class="backlinks-content" style="display: none;">
+        <ul class="backlinks-list">
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-overview&#x2F;">
+                
+                  Folk Horror: An Overview
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  
+
+
+
+    
+      
+      </article>
+  </main>
+  
+
+
+        
+            
+        
+
+        
+    </div>
+
+
+    <hr>
+
+    <div class="footer">
+        <p>
+            <span class="og"><a href="https://nonmodernist.com">🏠</a> ☕ 🌁 <span id="launch-counter">875</span> 🎂 ☕ 🌁 🔍 📷 👓 🌁🌁 💠 📩 🌁 🌁🌁 <a href="https://nonmodernist.com/uses">⚡︎</a> 💓 <a href="https://nonmodernist.com/log"><span id="movies-counter">2736</span> 📺</a> 🌁🌁🌁 a 🌁 🌙 <a href="https://nonmodernist.com/readinglog"><span id="books-counter">974</span> 📖</a></span>
+        </p>
+    </div>
+    
+
+
+</html>

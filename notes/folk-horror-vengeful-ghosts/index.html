@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https:&#x2F;&#x2F;nonmodernist.com">
+
+    <link rel="me" href="https://github.com/nonmodernist" />
+    <link rel="me" href="https://bsky.app/profile/nonmodernist.bsky.social" />
+    <link rel="webmention" href="https://webmention.io/nonmodernist.com/webmention" />
+
+    
+
+    
+    
+    
+    <title>
+         Folk Horror: Vengeful Ghosts
+        
+    </title>
+
+        
+            <meta property="og:title" content="Folk Horror: Vengeful Ghosts" />
+        
+     
+
+     
+         
+             <meta property="og:description" content="the internet homebase of dr. alexandra edwards" />
+         
+     
+
+     
+         
+             <meta name="description" content="the internet homebase of dr. alexandra edwards" />
+         
+    
+
+    
+    
+        <link rel="icon" type="image/png" href=&#x2F;favicon.png />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href=&#x2F;favicon.png>
+
+
+    
+    
+        <link href=https://nonmodernist.com/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/codeblock.js></script>
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/toc.js></script>
+    
+    
+    
+    
+        <script src=https://nonmodernist.com/js/note.js></script>
+    
+
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="alexandra edwards, phd" href="https://nonmodernist.com/atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="nonmodernist.com - notes only" href="https://nonmodernist.com/notes/atom.xml">
+
+
+
+    
+    
+        <link rel="stylesheet" type="text/css" href=https://nonmodernist.com/theme/light.css />
+        <link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://nonmodernist.com/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+
+    
+    <script src=https://nonmodernist.com/js/themetoggle.js></script>
+
+        
+        <script>setTheme(getSavedTheme());</script>
+    
+    
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://nonmodernist.com/main.css />
+
+    
+
+    
+        <script defer src="https://nonmodernist.com/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script><script src="https://nonmodernist.com/js/counters.js"></script>
+</head>
+
+    
+<!--
+         wWWWw               wWWWw
+   vVVVv (___) wWWWw         (___)  vVVVv
+   (___)  ~Y~  (___)  vVVVv   ~Y~   (___)
+    ~Y~   \|    ~Y~   (___)    |/    ~Y~
+    \|   \ |/   \| /  \~Y~/   \|    \ |/
+   \\|// \\|// \\|/// \\|//  \\|// \\\|///
+jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-->
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main">
+                
+                    <a href=https:&#x2F;&#x2F;nonmodernist.com>alexandra edwards, phd</a>
+                
+
+
+        <div class="socials">
+            
+        </div>
+    </div>
+
+    <nav>
+        
+            <a href=https://nonmodernist.com/notes style="margin-left: 0.25em">&#x2F;notes</a>
+        
+            <a href=https://nonmodernist.com/teaching style="margin-left: 0.25em">&#x2F;teaching</a>
+        
+            <a href=https://nonmodernist.com/research style="margin-left: 0.25em">&#x2F;research</a>
+        
+            <a href=https://nonmodernist.com/about style="margin-left: 0.25em">&#x2F;about</a>
+        
+
+        
+        <button
+            id="search-button"
+            class="search-button"
+            title="$SHORTCUT to open search"
+        >
+            <img
+                src="https://nonmodernist.com/icons/search.svg"
+                alt="Search"
+                class="search-icon"
+            >
+        </button>
+    
+        <div id="searchModal" class="search-modal js" role="dialog" aria-labelledby="modalTitle">
+            <div id="modal-content">
+                <h1 id="modalTitle" class="page-header">Search</h1>
+                <div id="searchBar">
+                    <input
+                        id="searchInput"
+                        role="combobox"
+                        autocomplete="off"
+                        spellcheck="false"
+                        aria-expanded="false"
+                        aria-controls="results-container"
+                        placeholder="Search..."
+                    />
+                    <button
+                        id="clear-search"
+                        class="clear-button"
+                        title="Clear search"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="results-container">
+                    <div id="results-info">
+                        <span id="zero_results" style="display: none;">No results</span>
+                        <span id="one_result" style="display: none;">1 result</span>
+                        <span id="many_results" style="display: none;">$NUMBER results</span>
+                    </div>
+                    <div id="results" role="listbox"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme(); event.preventDefault();" href="#">
+                <img src=https://nonmodernist.com/icons/sun.svg id="sun-icon" style="filter: invert(1);" alt="Light" />
+                <img src=https://nonmodernist.com/icons/moon.svg id="moon-icon" alt="Dark" />
+            </a>
+
+        <!-- Inititialize the theme toggle icons -->
+        <script>updateItemToggleTheme()</script>
+        
+    </nav>
+</header>
+
+
+        
+        
+    
+  <main>
+      <article class="h-entry readable-content">
+          <div class="title">
+            
+              
+      <div class="page-header">
+          Folk Horror: Vengeful Ghosts
+          
+          <span class="moon-phase moon-phase-waxing_gibbous">
+             🌔
+             
+            </span>
+            
+      
+      </div>
+  
+  
+                  <div class="meta">
+                      
+                          
+                          Posted <span class="hidden">by <a rel="author" class="p-author h-card" href="https://nonmodernist.com">alexandra edwards</a></span> on <time class="dt-published"> 2024-11-09</time>
+                      
+  
+                      
+  
+                      
+  
+                      
+                          :: 512 Words
+                      
+  
+                      
+                      
+                              <span class="tags-label"> :: Tags:</span>
+                              <span class="tags">
+                                      <a href="https://nonmodernist.com/tags/film/" class="post-tag">film</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/folk-horror/" class="post-tag">folk horror</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/ghosts/" class="post-tag">ghosts</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/vengeful-spirits/" class="post-tag">vengeful spirits</a>
+                                  
+                              </span>
+                      
+  
+                      
+                      
+  
+                      
+  
+                  </div>
+          </div>
+  
+          
+          
+              <div class="tldr p-summary">
+                  <strong>tl;dr:</strong>
+                  Culturally-specific vengeful ghosts in folk horror often represent historical trauma and unresolved injustice.
+              </div>
+          
+  
+          
+          
+          
+              <div class="toc-container">
+                  <h1 class="toc-title">Table of Contents</h1>
+                  <ul class="toc-list">
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/folk-horror-vengeful-ghosts/#regional-ghost-traditions-in-folk-horror">Regional Ghost Traditions in Folk Horror</a>
+                              
+                                  <ul>
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-vengeful-ghosts/#japanese-ghost-traditions">Japanese Ghost Traditions</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-vengeful-ghosts/#southeast-asian-ghost-traditions">Southeast Asian Ghost Traditions</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-vengeful-ghosts/#european-ghost-traditions">European Ghost Traditions</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-vengeful-ghosts/#latin-american-ghost-traditions">Latin American Ghost Traditions</a>
+                                          </li>
+  
+                                          
+                                      
+                                  </ul>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/folk-horror-vengeful-ghosts/#common-features">Common Features</a>
+                              
+                                  <ul>
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-vengeful-ghosts/#unresolved-trauma">Unresolved Trauma</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-vengeful-ghosts/#cultural-memory">Cultural Memory</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-vengeful-ghosts/#liminal-existence">Liminal Existence</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-vengeful-ghosts/#moral-ambiguity">Moral Ambiguity</a>
+                                          </li>
+  
+                                          
+                                      
+                                  </ul>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/folk-horror-vengeful-ghosts/#political-dimensions">Political Dimensions</a>
+                              
+                                  <ul>
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-vengeful-ghosts/#historical-justice">Historical Justice</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-vengeful-ghosts/#colonial-legacy">Colonial Legacy</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-vengeful-ghosts/#gendered-violence">Gendered Violence</a>
+                                          </li>
+  
+                                          
+                                      
+                                  </ul>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/folk-horror-vengeful-ghosts/#examples-of-political-folk-horror-ghosts">Examples of Political Folk Horror Ghosts</a>
+                              
+                          </li>
+                      
+                  </ul>
+              </div>
+          
+          
+  
+          <section class="body"></section>
+          <div>
+              <p><span class="og">😠</span> Vengeful ghosts appear across global folk horror traditions, but what distinguishes them within the genre is their deep connection to specific cultural contexts. These spirits typically emerge from local folkloric traditions and often represent historical traumas or unresolved injustices particular to their regions of origin.</p>
+<h2 id="regional-ghost-traditions-in-folk-horror"><a class="zola-anchor" href="#regional-ghost-traditions-in-folk-horror" aria-label="Anchor link for: regional-ghost-traditions-in-folk-horror">Regional Ghost Traditions in Folk Horror</a></h2>
+<h3 id="japanese-ghost-traditions"><a class="zola-anchor" href="#japanese-ghost-traditions" aria-label="Anchor link for: japanese-ghost-traditions">Japanese Ghost Traditions</a></h3>
+<p>Japanese folk horror features several distinct types of vengeful spirits:</p>
+<ul>
+<li><em>Bakeneko: A Vengeful Spirit</em> (1968, Japan) - The ghost cat tradition where women return as feline spirits to seek revenge</li>
+<li><em>Kuroneko</em> (1968, Japan) - Another ghost cat narrative emphasizing female vengeance</li>
+<li><em>Onibaba</em> (1964, Japan) - While not strictly a ghost story, it draws on demon-woman folklore</li>
+</ul>
+<p>Japanese vengeful spirits (<em>onryō</em>) typically arise from those who suffered injustice in life, especially women who experienced betrayal or violence.</p>
+<h3 id="southeast-asian-ghost-traditions"><a class="zola-anchor" href="#southeast-asian-ghost-traditions" aria-label="Anchor link for: southeast-asian-ghost-traditions">Southeast Asian Ghost Traditions</a></h3>
+<p>Southeast Asian folk horror draws on rich regional ghost beliefs:</p>
+<ul>
+<li><em>The Rites of May</em> (1976, Philippines)</li>
+<li><em>Sundelbolong</em> (1981, Indonesia)</li>
+<li><em>Pontianak Harum Sundal Malam</em> (2004, Malaysia)</li>
+</ul>
+<p>These films often feature female spirits tied to childbirth, maternal grief, or sexual violence.</p>
+<h3 id="european-ghost-traditions"><a class="zola-anchor" href="#european-ghost-traditions" aria-label="Anchor link for: european-ghost-traditions">European Ghost Traditions</a></h3>
+<p>European folk horror incorporates regional ghost folklore:</p>
+<ul>
+<li><em>Demon</em> (2015, Poland) - Drawing on the dybbuk tradition from Jewish folklore</li>
+<li><em>Lake of the Dead</em> (1958, Norway) - Featuring Nordic ghost traditions</li>
+</ul>
+<h3 id="latin-american-ghost-traditions"><a class="zola-anchor" href="#latin-american-ghost-traditions" aria-label="Anchor link for: latin-american-ghost-traditions">Latin American Ghost Traditions</a></h3>
+<ul>
+<li><em>La Llorona</em> (2019, Guatemala) - Reinterprets the widespread "Weeping Woman" legend through the context of Guatemala's genocide against indigenous peoples</li>
+</ul>
+<h2 id="common-features"><a class="zola-anchor" href="#common-features" aria-label="Anchor link for: common-features">Common Features</a></h2>
+<p>Despite their cultural specificity, vengeful ghosts in folk horror often share certain characteristics:</p>
+<h3 id="unresolved-trauma"><a class="zola-anchor" href="#unresolved-trauma" aria-label="Anchor link for: unresolved-trauma">Unresolved Trauma</a></h3>
+<p>The spirits typically emerge from historical or personal traumas that have not been properly addressed or resolved.</p>
+<h3 id="cultural-memory"><a class="zola-anchor" href="#cultural-memory" aria-label="Anchor link for: cultural-memory">Cultural Memory</a></h3>
+<p>They frequently embody aspects of collective memory or cultural history that mainstream narratives have attempted to suppress or forget.</p>
+<h3 id="liminal-existence"><a class="zola-anchor" href="#liminal-existence" aria-label="Anchor link for: liminal-existence">Liminal Existence</a></h3>
+<p>These ghosts often inhabit liminal spaces - thresholds between worlds, between life and death, between past and present.</p>
+<h3 id="moral-ambiguity"><a class="zola-anchor" href="#moral-ambiguity" aria-label="Anchor link for: moral-ambiguity">Moral Ambiguity</a></h3>
+<p>Unlike in many mainstream horror films, vengeful ghosts in folk horror are frequently portrayed with moral ambiguity - victims as well as threats.</p>
+<h2 id="political-dimensions"><a class="zola-anchor" href="#political-dimensions" aria-label="Anchor link for: political-dimensions">Political Dimensions</a></h2>
+<p>Many contemporary folk horror films use culturally-specific ghost traditions to address political themes:</p>
+<h3 id="historical-justice"><a class="zola-anchor" href="#historical-justice" aria-label="Anchor link for: historical-justice">Historical Justice</a></h3>
+<p>Vengeful ghosts often represent demands for historical justice or recognition of past atrocities.</p>
+<h3 id="colonial-legacy"><a class="zola-anchor" href="#colonial-legacy" aria-label="Anchor link for: colonial-legacy">Colonial Legacy</a></h3>
+<p>In many postcolonial contexts, vengeful spirits embody resistance to colonial narratives and the persistence of indigenous knowledge.</p>
+<h3 id="gendered-violence"><a class="zola-anchor" href="#gendered-violence" aria-label="Anchor link for: gendered-violence">Gendered Violence</a></h3>
+<p>Female vengeful spirits frequently highlight issues of gendered violence and patriarchal oppression.</p>
+<h2 id="examples-of-political-folk-horror-ghosts"><a class="zola-anchor" href="#examples-of-political-folk-horror-ghosts" aria-label="Anchor link for: examples-of-political-folk-horror-ghosts">Examples of Political Folk Horror Ghosts</a></h2>
+<p><em>La Llorona</em> (2019, Guatemala) exemplifies the political potential of the vengeful ghost trope. Director Jayro Bustamante reimagines the traditional Weeping Woman as the spirit of an indigenous woman killed during Guatemala's civil war, haunting a former military general responsible for genocide. The film uses folk horror conventions to address historical trauma and the ongoing struggle for justice.</p>
+<p>Similarly, the Thai film <em>Rang Song</em> (<em>The Medium</em>, 2021) uses traditional beliefs about spirit possession to explore intergenerational trauma and the tensions between traditional practices and modernity in northern Thailand.</p>
+
+  
+
+
+
+<div class="divider-default">
+  <div class="moon-phases">
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+  </div>
+</div>
+<p><em>This note is part of a series exploring folk horror in cinema. Return to the <a href="https://nonmodernist.com/notes/folk-horror-overview/">main Folk Horror overview</a> to explore other tropes.</em></p>
+
+          </div> 
+      </section>
+  
+    
+  
+  
+  
+  
+    
+      
+    
+  
+  
+  
+    <div class="backlinks">
+      <button class="note-toggle">
+        <div class="note-icon">
+          <h2> notes that mention this note (1)</h2>
+        </div>
+      </button>
+      
+      <div class="backlinks-content" style="display: none;">
+        <ul class="backlinks-list">
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-overview&#x2F;">
+                
+                  Folk Horror: An Overview
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  
+
+
+
+    
+      
+      </article>
+  </main>
+  
+
+
+        
+            
+        
+
+        
+    </div>
+
+
+    <hr>
+
+    <div class="footer">
+        <p>
+            <span class="og"><a href="https://nonmodernist.com">🏠</a> ☕ 🌁 <span id="launch-counter">875</span> 🎂 ☕ 🌁 🔍 📷 👓 🌁🌁 💠 📩 🌁 🌁🌁 <a href="https://nonmodernist.com/uses">⚡︎</a> 💓 <a href="https://nonmodernist.com/log"><span id="movies-counter">2736</span> 📺</a> 🌁🌁🌁 a 🌁 🌙 <a href="https://nonmodernist.com/readinglog"><span id="books-counter">974</span> 📖</a></span>
+        </p>
+    </div>
+    
+
+
+</html>

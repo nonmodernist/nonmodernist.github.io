@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https:&#x2F;&#x2F;nonmodernist.com">
+
+    <link rel="me" href="https://github.com/nonmodernist" />
+    <link rel="me" href="https://bsky.app/profile/nonmodernist.bsky.social" />
+    <link rel="webmention" href="https://webmention.io/nonmodernist.com/webmention" />
+
+    
+
+    
+    
+    
+    <title>
+         Lunar Style Reference Sheet
+        
+    </title>
+
+        
+            <meta property="og:title" content="Lunar Style Reference Sheet" />
+        
+     
+
+     
+         
+             <meta property="og:description" content="Style guide for applying lunar-themed design, covering growth stages, dividers, and color systems." />
+         
+     
+
+     
+         
+             <meta name="description" content="Style guide for applying lunar-themed design, covering growth stages, dividers, and color systems." />
+         
+    
+
+    
+    
+        <link rel="icon" type="image/png" href=&#x2F;favicon.png />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href=&#x2F;favicon.png>
+
+
+    
+    
+        <link href=https://nonmodernist.com/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/codeblock.js></script>
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/toc.js></script>
+    
+    
+    
+    
+        <script src=https://nonmodernist.com/js/note.js></script>
+    
+
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="alexandra edwards, phd" href="https://nonmodernist.com/atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="nonmodernist.com - notes only" href="https://nonmodernist.com/notes/atom.xml">
+
+
+
+    
+    
+        <link rel="stylesheet" type="text/css" href=https://nonmodernist.com/theme/light.css />
+        <link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://nonmodernist.com/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+
+    
+    <script src=https://nonmodernist.com/js/themetoggle.js></script>
+
+        
+        <script>setTheme(getSavedTheme());</script>
+    
+    
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://nonmodernist.com/main.css />
+
+    
+
+    
+        <script defer src="https://nonmodernist.com/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script><script src="https://nonmodernist.com/js/counters.js"></script>
+</head>
+
+    
+<!--
+         wWWWw               wWWWw
+   vVVVv (___) wWWWw         (___)  vVVVv
+   (___)  ~Y~  (___)  vVVVv   ~Y~   (___)
+    ~Y~   \|    ~Y~   (___)    |/    ~Y~
+    \|   \ |/   \| /  \~Y~/   \|    \ |/
+   \\|// \\|// \\|/// \\|//  \\|// \\\|///
+jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-->
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main">
+                
+                    <a href=https:&#x2F;&#x2F;nonmodernist.com>alexandra edwards, phd</a>
+                
+
+
+        <div class="socials">
+            
+        </div>
+    </div>
+
+    <nav>
+        
+            <a href=https://nonmodernist.com/notes style="margin-left: 0.25em">&#x2F;notes</a>
+        
+            <a href=https://nonmodernist.com/teaching style="margin-left: 0.25em">&#x2F;teaching</a>
+        
+            <a href=https://nonmodernist.com/research style="margin-left: 0.25em">&#x2F;research</a>
+        
+            <a href=https://nonmodernist.com/about style="margin-left: 0.25em">&#x2F;about</a>
+        
+
+        
+        <button
+            id="search-button"
+            class="search-button"
+            title="$SHORTCUT to open search"
+        >
+            <img
+                src="https://nonmodernist.com/icons/search.svg"
+                alt="Search"
+                class="search-icon"
+            >
+        </button>
+    
+        <div id="searchModal" class="search-modal js" role="dialog" aria-labelledby="modalTitle">
+            <div id="modal-content">
+                <h1 id="modalTitle" class="page-header">Search</h1>
+                <div id="searchBar">
+                    <input
+                        id="searchInput"
+                        role="combobox"
+                        autocomplete="off"
+                        spellcheck="false"
+                        aria-expanded="false"
+                        aria-controls="results-container"
+                        placeholder="Search..."
+                    />
+                    <button
+                        id="clear-search"
+                        class="clear-button"
+                        title="Clear search"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="results-container">
+                    <div id="results-info">
+                        <span id="zero_results" style="display: none;">No results</span>
+                        <span id="one_result" style="display: none;">1 result</span>
+                        <span id="many_results" style="display: none;">$NUMBER results</span>
+                    </div>
+                    <div id="results" role="listbox"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme(); event.preventDefault();" href="#">
+                <img src=https://nonmodernist.com/icons/sun.svg id="sun-icon" style="filter: invert(1);" alt="Light" />
+                <img src=https://nonmodernist.com/icons/moon.svg id="moon-icon" alt="Dark" />
+            </a>
+
+        <!-- Inititialize the theme toggle icons -->
+        <script>updateItemToggleTheme()</script>
+        
+    </nav>
+</header>
+
+
+        
+        
+    
+  <main>
+      <article class="h-entry readable-content">
+          <div class="title">
+            
+              
+      <div class="page-header">
+          Lunar Style Reference Sheet
+          
+          <span class="moon-phase moon-phase-waxing_gibbous">
+             🌔
+             
+            </span>
+            
+      
+      </div>
+  
+  
+                  <div class="meta">
+                      
+                          
+                          Posted <span class="hidden">by <a rel="author" class="p-author h-card" href="https://nonmodernist.com">alexandra edwards</a></span> on <time class="dt-published"> 2025-05-03</time>
+                      
+  
+                      
+  
+                      
+  
+                      
+                          :: 306 Words
+                      
+  
+                      
+                      
+                              <span class="tags-label"> :: Tags:</span>
+                              <span class="tags">
+                                      <a href="https://nonmodernist.com/tags/meta/" class="post-tag">meta</a>
+                                  
+                              </span>
+                      
+  
+                      
+                      
+  
+                      
+  
+                  </div>
+          </div>
+  
+          
+          
+              <div class="tldr p-summary">
+                  <strong>tl;dr:</strong>
+                  Style guide for applying lunar-themed design, covering growth stages, dividers, and color systems.
+              </div>
+          
+  
+          
+          
+          
+              <div class="toc-container">
+                  <h1 class="toc-title">Table of Contents</h1>
+                  <ul class="toc-list">
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/meta/lunar-system-reference/#growth-stages-moon-phases">Growth Stages &amp; Moon Phases</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/meta/lunar-system-reference/#dividers-by-complexity">Dividers by Complexity</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/meta/lunar-system-reference/#special-indicators">Special Indicators</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/meta/lunar-system-reference/#color-system">Color System</a>
+                              
+                                  <ul>
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/meta/lunar-system-reference/#base-colors">Base Colors</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/meta/lunar-system-reference/#callout-colors-usage">Callout Colors &amp; Usage</a>
+                                          </li>
+  
+                                          
+                                      
+                                  </ul>
+                              
+                          </li>
+                      
+                  </ul>
+              </div>
+          
+          
+  
+          <section class="body"></section>
+          <div>
+              <p>This guide provides a quick reference for applying the lunar-themed design system to this digital garden.</p>
+<h2 id="growth-stages-moon-phases">Growth Stages &amp; Moon Phases</h2>
+<table><thead><tr><th>Stage</th><th>Moon</th><th>Class</th><th>Meaning</th><th>Styling</th></tr></thead><tbody>
+<tr><td><strong>New Moon</strong></td><td>🌑</td><td><code>.moon-phase-new</code></td><td>Brand new ideas, questions, or thoughts</td><td></td></tr>
+<tr><td><strong>Waxing Crescent</strong></td><td>🌒</td><td><code>.moon-phase-waxing_crescent</code></td><td>Growing ideas with some development</td><td></td></tr>
+<tr><td><strong>First Quarter</strong></td><td>🌓</td><td><code>.moon-phase-first_quarter</code></td><td>Half-developed notes with structure</td><td></td></tr>
+<tr><td><strong>Waxing Gibbous</strong></td><td>🌔</td><td><code>.moon-phase-waxing_gibbous</code></td><td>Nearly complete content</td><td></td></tr>
+<tr><td><strong>Full Moon</strong></td><td>🌕</td><td><code>.moon-phase-full</code></td><td>Complete, mature notes</td><td></td></tr>
+</tbody></table>
+<h2 id="dividers-by-complexity">Dividers by Complexity</h2>
+<table><thead><tr><th>Complexity</th><th>Symbol</th><th>Usage</th></tr></thead><tbody>
+<tr><td>Line</td><td><code>⋆ ✧ ⋆ ✧ ⋆</code></td><td>All-purpose</td></tr>
+<tr><td>New Moon</td><td><code>🌑</code></td><td>For new-moon and early-stage content, towards the beginning of documents</td></tr>
+<tr><td>Simple</td><td><code>☽</code></td><td>For crescent moon ideas</td></tr>
+<tr><td>Quarter</td><td><code>🌓 🌓 🌓</code></td><td>For half-formed content and the halfway mark of documents</td></tr>
+<tr><td>Default</td><td><code>🌑 ☽ 🌓 </code></td><td>For nearly complete content, towards the end of documents</td></tr>
+<tr><td>Ornate</td><td><code>✨ 🌕 ✨</code></td><td>For full moon notes and the final divider of a document, or to mark a major section break</td></tr>
+</tbody></table>
+<p>Line/stars divider:</p>
+<!-- FM:Snippet:Start data:{"id":"Dividers","fields":[{"name":"style","value":"line"}]} -->
+
+  
+
+
+
+<div class="divider-line">
+  <div class="pixel-line">
+    <div class="pixel-star"></div>
+    <div class="pixel-star"></div>
+    <div class="pixel-star"></div>
+    <div class="pixel-star"></div>
+    <div class="pixel-star"></div>
+  </div>
+</div>
+<!-- FM:Snippet:End -->
+<p>New moon divider:</p>
+<!-- FM:Snippet:Start data:{"id":"Dividers","fields":[{"name":"style","value":"new_moon"}]} -->
+
+  
+
+
+
+<div class="divider-new-moon">
+  <div class="stars-container">
+    <div class="new-moon-outline"></div>
+    <div class="hidden-star"></div>
+  </div>
+</div>
+<!-- FM:Snippet:End -->
+<p>Simple/crescent moon divider:</p>
+<!-- FM:Snippet:Start data:{"id":"Dividers","fields":[{"name":"style","value":"simple"}]} -->
+
+  
+
+
+
+<div class="divider-simple">
+  <div class="pixel-crescent">
+    <div class="hidden-rays"></div>
+  </div>
+</div>
+<!-- FM:Snippet:End -->
+<p>Quarter moon divider:</p>
+<!-- FM:Snippet:Start data:{"id":"Dividers","fields":[{"name":"style","value":"quarter"}]} -->
+
+  
+
+
+
+<div class="divider-quarter">
+  <div class="quarter-moon-container">
+    <div class="quarter-moon"></div>
+  </div>
+</div>
+<!-- FM:Snippet:End -->
+<p>Moon phases divider:</p>
+<!-- FM:Snippet:Start data:{"id":"Dividers","fields":[{"name":"style","value":""}]} -->
+
+  
+
+
+
+<div class="divider-default">
+  <div class="moon-phases">
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+  </div>
+</div>
+<!-- FM:Snippet:End -->
+<p>Ornate/full moon divider:</p>
+<!-- FM:Snippet:Start data:{"id":"Dividers","fields":[{"name":"style","value":"ornate"}]} -->
+
+  
+
+
+
+<div class="divider-ornate">
+  <div class="center-element">
+    <div class="small-star"></div>
+    <div class="small-star"></div>
+    <div class="small-star"></div>
+    <div class="big-star"></div>
+    <div class="small-star"></div>
+    <div class="small-star"></div>
+    <div class="small-star"></div>
+    <div class="pixel-crescent"></div>
+    <div class="pixel-crescent"></div>
+  </div>
+</div>
+<!-- FM:Snippet:End -->
+<h2 id="special-indicators">Special Indicators</h2>
+<table><thead><tr><th>Symbol</th><th>Meaning</th><th>Usage</th></tr></thead><tbody>
+<tr><td>⭐</td><td>Starred content</td><td>Important or featured notes</td></tr>
+<tr><td>✨</td><td>Connected ideas</td><td>Notes with multiple connections</td></tr>
+</tbody></table>
+<h2 id="color-system">Color System</h2>
+<h3 id="base-colors">Base Colors</h3>
+<ul>
+<li><strong>Primary</strong>: #FFC107 (Amber)</li>
+<li><strong>Primary Light</strong>: #FFECB3 (Light amber)</li>
+<li><strong>Primary Dark</strong>: #FF8F00 (Dark amber)</li>
+<li><strong>Background</strong>: #fff (Light background)</li>
+<li><strong>Text</strong>: #212121 (Dark text)</li>
+</ul>
+<h3 id="callout-colors-usage">Callout Colors &amp; Usage</h3>
+<ul>
+<li><strong>Info</strong> (Blue): #007FFF - Reference material, definitions</li>
+<li><strong>Alert</strong> (Red): #fb706e - Critical information, blockers</li>
+<li><strong>Success</strong> (Green): #AAD6A0 - Completed work, proven methods</li>
+<li><strong>Warning</strong> (Orange): #fcb388 - Considerations, potential issues</li>
+</ul>
+
+          </div> 
+      </section>
+  
+    
+  
+  
+  
+  
+    
+      
+    
+  
+  
+  
+    <div class="backlinks">
+      <button class="note-toggle">
+        <div class="note-icon">
+          <h2> notes that mention this note (1)</h2>
+        </div>
+      </button>
+      
+      <div class="backlinks-content" style="display: none;">
+        <ul class="backlinks-list">
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;meta&#x2F;reference&#x2F;">
+                
+                  Site Documentation
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  
+
+
+
+    
+      
+      </article>
+  </main>
+  
+
+
+        
+            
+        
+
+        
+    </div>
+
+
+    <hr>
+
+    <div class="footer">
+        <p>
+            <span class="og"><a href="https://nonmodernist.com">🏠</a> ☕ 🌁 <span id="launch-counter">875</span> 🎂 ☕ 🌁 🔍 📷 👓 🌁🌁 💠 📩 🌁 🌁🌁 <a href="https://nonmodernist.com/uses">⚡︎</a> 💓 <a href="https://nonmodernist.com/log"><span id="movies-counter">2736</span> 📺</a> 🌁🌁🌁 a 🌁 🌙 <a href="https://nonmodernist.com/readinglog"><span id="books-counter">974</span> 📖</a></span>
+        </p>
+    </div>
+    
+
+
+</html>

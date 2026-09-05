@@ -1,0 +1,1883 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https:&#x2F;&#x2F;nonmodernist.com">
+
+    <link rel="me" href="https://github.com/nonmodernist" />
+    <link rel="me" href="https://bsky.app/profile/nonmodernist.bsky.social" />
+    <link rel="webmention" href="https://webmention.io/nonmodernist.com/webmention" />
+
+    
+
+    
+    
+    
+    <title>
+         notes
+        
+    </title>
+
+        
+            <meta property="og:title" content="alexandra edwards, phd" />
+        
+     
+
+     
+         
+             <meta property="og:description" content="the internet homebase of dr. alexandra edwards" />
+         
+     
+
+     
+         
+             <meta name="description" content="the internet homebase of dr. alexandra edwards" />
+         
+    
+
+    
+    
+        <link rel="icon" type="image/png" href=&#x2F;favicon.png />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href=&#x2F;favicon.png>
+
+
+    
+    
+        <link href=https://nonmodernist.com/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/codeblock.js></script>
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/toc.js></script>
+    
+    
+    
+    
+        <script src=https://nonmodernist.com/js/note.js></script>
+    
+
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="alexandra edwards, phd" href="https://nonmodernist.com/atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="nonmodernist.com - notes only" href="https://nonmodernist.com/notes/atom.xml">
+
+
+
+    
+    
+        <link rel="stylesheet" type="text/css" href=https://nonmodernist.com/theme/light.css />
+        <link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://nonmodernist.com/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+
+    
+    <script src=https://nonmodernist.com/js/themetoggle.js></script>
+
+        
+        <script>setTheme(getSavedTheme());</script>
+    
+    
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://nonmodernist.com/main.css />
+
+    
+
+    
+        <script defer src="https://nonmodernist.com/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script><script src="https://nonmodernist.com/js/counters.js"></script>
+</head>
+
+    
+<!--
+         wWWWw               wWWWw
+   vVVVv (___) wWWWw         (___)  vVVVv
+   (___)  ~Y~  (___)  vVVVv   ~Y~   (___)
+    ~Y~   \|    ~Y~   (___)    |/    ~Y~
+    \|   \ |/   \| /  \~Y~/   \|    \ |/
+   \\|// \\|// \\|/// \\|//  \\|// \\\|///
+jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-->
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main">
+                
+                    <a href=https:&#x2F;&#x2F;nonmodernist.com>alexandra edwards, phd</a>
+                
+
+
+        <div class="socials">
+            
+        </div>
+    </div>
+
+    <nav>
+        
+            <a href=https://nonmodernist.com/notes style="margin-left: 0.25em">&#x2F;notes</a>
+        
+            <a href=https://nonmodernist.com/teaching style="margin-left: 0.25em">&#x2F;teaching</a>
+        
+            <a href=https://nonmodernist.com/research style="margin-left: 0.25em">&#x2F;research</a>
+        
+            <a href=https://nonmodernist.com/about style="margin-left: 0.25em">&#x2F;about</a>
+        
+
+        
+        <button
+            id="search-button"
+            class="search-button"
+            title="$SHORTCUT to open search"
+        >
+            <img
+                src="https://nonmodernist.com/icons/search.svg"
+                alt="Search"
+                class="search-icon"
+            >
+        </button>
+    
+        <div id="searchModal" class="search-modal js" role="dialog" aria-labelledby="modalTitle">
+            <div id="modal-content">
+                <h1 id="modalTitle" class="page-header">Search</h1>
+                <div id="searchBar">
+                    <input
+                        id="searchInput"
+                        role="combobox"
+                        autocomplete="off"
+                        spellcheck="false"
+                        aria-expanded="false"
+                        aria-controls="results-container"
+                        placeholder="Search..."
+                    />
+                    <button
+                        id="clear-search"
+                        class="clear-button"
+                        title="Clear search"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="results-container">
+                    <div id="results-info">
+                        <span id="zero_results" style="display: none;">No results</span>
+                        <span id="one_result" style="display: none;">1 result</span>
+                        <span id="many_results" style="display: none;">$NUMBER results</span>
+                    </div>
+                    <div id="results" role="listbox"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme(); event.preventDefault();" href="#">
+                <img src=https://nonmodernist.com/icons/sun.svg id="sun-icon" style="filter: invert(1);" alt="Light" />
+                <img src=https://nonmodernist.com/icons/moon.svg id="moon-icon" alt="Dark" />
+            </a>
+
+        <!-- Inititialize the theme toggle icons -->
+        <script>updateItemToggleTheme()</script>
+        
+    </nav>
+</header>
+
+
+        
+        
+      
+      
+          
+      <div class="page-header">
+          notes
+              
+            <span class="og" style="font-size: .4em">⤵</span>
+      
+      
+      </div>
+  
+      
+  
+      
+      <p class="garden-intro"><p>Welcome to my digital (moon) garden - a space where ideas grow and evolve like the phases of the moon. Unlike a traditional blog, these notes develop organically over time.</p>
+<p>Here, you'll find a collection of thoughts that may not be fully formed but are in the process of growth. Each note represents a unique phase in its development, much like the moon's journey through the night sky.</p>
+<p>Hover over each note to see its current phase or click a phase on the legend to see all notes in that phase. You can also use the search button at top right to find specific topics or themes.</p>
+</p>
+  
+      
+      <div class="moon-phase-filter-container">
+          <div class="moon-phase-legend">
+              <button class="legend-item filter-button" data-phase="new">
+                  <span class="moon-emoji">🌑</span> New idea
+              </button>
+              <button class="legend-item filter-button" data-phase="waxing_crescent">
+                  <span class="moon-emoji">🌙</span> Developing idea
+              </button>
+              <button class="legend-item filter-button" data-phase="first_quarter">
+                  <span class="moon-emoji">🌓</span> Half-developed
+              </button>
+              <button class="legend-item filter-button" data-phase="waxing_gibbous">
+                  <span class="moon-emoji">🌔</span> Nearly complete
+              </button>
+              <button class="legend-item filter-button" data-phase="full">
+                  <span class="moon-emoji">🌕</span> Complete thought
+              </button>
+              <button class="legend-item filter-button filter-all active" data-phase="all">All Notes</button>
+          </div>
+      </div>
+      
+      
+      <div class="notes-count" id="notes-count"></div>
+  
+      
+      <div class="garden-grid">
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-waxing_gibbous" data-phase="waxing_gibbous">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;ai-image-experiment-computer-shrine&#x2F;">Text-to-Image Evolution: Computer Shrine</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌔
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/ai/" class="note-tag">#ai</a>
+                      
+                      <a href="https://nonmodernist.com/tags/critical-making/" class="note-tag">#critical making</a>
+                      
+                      <a href="https://nonmodernist.com/tags/image-generation/" class="note-tag">#image generation</a>
+                      
+                      <a href="https://nonmodernist.com/tags/solarpunk/" class="note-tag">#solarpunk</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2025-05-04</span>
+                      
+                      <span class="note-wordcount">1133 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-waxing_gibbous" data-phase="waxing_gibbous">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;solarpunk&#x2F;">Solarpunk Futures</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌔
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/anarchism/" class="note-tag">#anarchism</a>
+                      
+                      <a href="https://nonmodernist.com/tags/critical-making/" class="note-tag">#critical making</a>
+                      
+                      <a href="https://nonmodernist.com/tags/solarpunk/" class="note-tag">#solarpunk</a>
+                      
+                      <a href="https://nonmodernist.com/tags/teaching/" class="note-tag">#teaching</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2025-05-03</span>
+                      
+                      <span class="note-wordcount">948 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-waxing_crescent" data-phase="waxing_crescent">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;ai-image-experiment&#x2F;">Text-to-Image Generation: A Critical Experiment</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌙
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/ai/" class="note-tag">#ai</a>
+                      
+                      <a href="https://nonmodernist.com/tags/critical-making/" class="note-tag">#critical making</a>
+                      
+                      <a href="https://nonmodernist.com/tags/image-generation/" class="note-tag">#image generation</a>
+                      
+                      <a href="https://nonmodernist.com/tags/technology/" class="note-tag">#technology</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2025-05-02</span>
+                      
+                      <span class="note-wordcount">999 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-first_quarter" data-phase="first_quarter">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;commonplace-books&#x2F;">Commonplace Books as Gardens of Thought</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌓
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/history/" class="note-tag">#history</a>
+                      
+                      <a href="https://nonmodernist.com/tags/digital-gardens/" class="note-tag">#digital gardens</a>
+                      
+                      <a href="https://nonmodernist.com/tags/commonplace-books/" class="note-tag">#commonplace books</a>
+                      
+                      <a href="https://nonmodernist.com/tags/florilegia/" class="note-tag">#florilegia</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2025-05-02</span>
+                      
+                      <span class="note-wordcount">814 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-first_quarter" data-phase="first_quarter">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;gold-diggers-1933&#x2F;">Gold Diggers of 1933: Narrative Structure</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌓
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  <p class="note-excerpt">Plot in the shape of an X.</p>
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/film/" class="note-tag">#film</a>
+                      
+                      <a href="https://nonmodernist.com/tags/musicals/" class="note-tag">#musicals</a>
+                      
+                      <a href="https://nonmodernist.com/tags/pre-code/" class="note-tag">#pre-code</a>
+                      
+                      <a href="https://nonmodernist.com/tags/narrative-structure/" class="note-tag">#narrative structure</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2025-02-15</span>
+                      
+                      <span class="note-wordcount">841 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-waxing_crescent" data-phase="waxing_crescent">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;2025-02-10-on-nonmodernist&#x2F;">on &#x27;nonmodernist&#x27;</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌙
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/identity/" class="note-tag">#identity</a>
+                      
+                      <a href="https://nonmodernist.com/tags/blogging/" class="note-tag">#blogging</a>
+                      
+                      <a href="https://nonmodernist.com/tags/academia/" class="note-tag">#academia</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2025-02-10</span>
+                      
+                      <span class="note-wordcount">316 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-first_quarter" data-phase="first_quarter">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;early-sound-recording&#x2F;">Early Sound Recording Technologies</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌓
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/film-history/" class="note-tag">#film history</a>
+                      
+                      <a href="https://nonmodernist.com/tags/technology/" class="note-tag">#technology</a>
+                      
+                      <a href="https://nonmodernist.com/tags/sound-recording/" class="note-tag">#sound recording</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2025-01-05</span>
+                      
+                      <span class="note-wordcount">494 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-first_quarter" data-phase="first_quarter">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;optical-toys&#x2F;">Optical Toys: Early Animation Technologies</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌓
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/film/" class="note-tag">#film</a>
+                      
+                      <a href="https://nonmodernist.com/tags/technology/" class="note-tag">#technology</a>
+                      
+                      <a href="https://nonmodernist.com/tags/animation/" class="note-tag">#animation</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2025-01-05</span>
+                      
+                      <span class="note-wordcount">497 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-first_quarter" data-phase="first_quarter">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;pre-cinema-technologies&#x2F;">Pre-Cinema Technologies: An Overview</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌓
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/film-history/" class="note-tag">#film history</a>
+                      
+                      <a href="https://nonmodernist.com/tags/technology/" class="note-tag">#technology</a>
+                      
+                      <a href="https://nonmodernist.com/tags/pre-cinema/" class="note-tag">#pre-cinema</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2025-01-03</span>
+                      
+                      <span class="note-wordcount">270 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-waxing_crescent" data-phase="waxing_crescent">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;meet-me-in-st-louis&#x2F;">Meet Me in St. Louis: Unexpected Emotions</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌙
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/film/" class="note-tag">#film</a>
+                      
+                      <a href="https://nonmodernist.com/tags/classic-hollywood/" class="note-tag">#classic hollywood</a>
+                      
+                      <a href="https://nonmodernist.com/tags/musicals/" class="note-tag">#musicals</a>
+                      
+                      <a href="https://nonmodernist.com/tags/judy-garland/" class="note-tag">#judy garland</a>
+                      
+                      <a href="https://nonmodernist.com/tags/arthur-freed/" class="note-tag">#arthur freed</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2024-12-24</span>
+                      
+                      <span class="note-wordcount">114 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-new" data-phase="new">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;reading-recommendations&#x2F;">Reading Recommendations: Film and Memoir</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌑
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/books/" class="note-tag">#books</a>
+                      
+                      <a href="https://nonmodernist.com/tags/reading/" class="note-tag">#reading</a>
+                      
+                      <a href="https://nonmodernist.com/tags/film-studies/" class="note-tag">#film studies</a>
+                      
+                      <a href="https://nonmodernist.com/tags/memoir/" class="note-tag">#memoir</a>
+                      
+                      <a href="https://nonmodernist.com/tags/documentary/" class="note-tag">#documentary</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2024-12-24</span>
+                      
+                      <span class="note-wordcount">303 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-waxing_gibbous" data-phase="waxing_gibbous">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;film-industry-history&#x2F;">Film Industry History: Subscription Models Aren&#x27;t New</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌔
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/film/" class="note-tag">#film</a>
+                      
+                      <a href="https://nonmodernist.com/tags/paramount-decree/" class="note-tag">#paramount decree</a>
+                      
+                      <a href="https://nonmodernist.com/tags/netflix/" class="note-tag">#netflix</a>
+                      
+                      <a href="https://nonmodernist.com/tags/the-grump/" class="note-tag">#the grump</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2024-12-24</span>
+                      
+                      <span class="note-wordcount">935 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-waxing_crescent" data-phase="waxing_crescent">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;streaming-cinema-quality&#x2F;">The Quality Question in Streaming Cinema</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌙
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/film/" class="note-tag">#film</a>
+                      
+                      <a href="https://nonmodernist.com/tags/streaming/" class="note-tag">#streaming</a>
+                      
+                      <a href="https://nonmodernist.com/tags/netflix/" class="note-tag">#netflix</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2024-12-24</span>
+                      
+                      <span class="note-wordcount">425 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-new" data-phase="new">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;digital-archiving-personal&#x2F;">Digital Archiving: Reconnecting with Past Selves</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌑
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/blogging/" class="note-tag">#blogging</a>
+                      
+                      <a href="https://nonmodernist.com/tags/digital-archiving/" class="note-tag">#digital archiving</a>
+                      
+                      <a href="https://nonmodernist.com/tags/digital-gardens/" class="note-tag">#digital gardens</a>
+                      
+                      <a href="https://nonmodernist.com/tags/memory/" class="note-tag">#memory</a>
+                      
+                      <a href="https://nonmodernist.com/tags/identity/" class="note-tag">#identity</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2024-12-20</span>
+                      
+                      <span class="note-wordcount">281 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-waxing_crescent" data-phase="waxing_crescent">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;2024-12-20-do-you-ever-have-an-idea&#x2F;">Do you ever have an idea?</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌙
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/teaching/" class="note-tag">#teaching</a>
+                      
+                      <a href="https://nonmodernist.com/tags/digital-garden/" class="note-tag">#digital garden</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2024-12-20</span>
+                      
+                      <span class="note-wordcount">189 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-first_quarter" data-phase="first_quarter">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;owning-my-data&#x2F;">Owning My Data</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌓
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/data-ownership/" class="note-tag">#data ownership</a>
+                      
+                      <a href="https://nonmodernist.com/tags/indieweb/" class="note-tag">#indieweb</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2024-12-07</span>
+                      
+                      <span class="note-wordcount">324 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-first_quarter" data-phase="first_quarter">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;patterns&#x2F;">Generating Patterns with Doodad.dev</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌓
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/design/" class="note-tag">#design</a>
+                      
+                      <a href="https://nonmodernist.com/tags/tools/" class="note-tag">#tools</a>
+                      
+                      <a href="https://nonmodernist.com/tags/svg/" class="note-tag">#svg</a>
+                      
+                      <a href="https://nonmodernist.com/tags/web-development/" class="note-tag">#web development</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2024-12-05</span>
+                      
+                      <span class="note-wordcount">524 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-waxing_gibbous" data-phase="waxing_gibbous">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-sacred-sites&#x2F;">Folk Horror: Ancient Sacred Sites</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌔
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/film/" class="note-tag">#film</a>
+                      
+                      <a href="https://nonmodernist.com/tags/folk-horror/" class="note-tag">#folk horror</a>
+                      
+                      <a href="https://nonmodernist.com/tags/sacred-sites/" class="note-tag">#sacred sites</a>
+                      
+                      <a href="https://nonmodernist.com/tags/landscape/" class="note-tag">#landscape</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2024-11-10</span>
+                      
+                      <span class="note-wordcount">484 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-waxing_gibbous" data-phase="waxing_gibbous">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-witchcraft&#x2F;">Folk Horror: Witchcraft and Folk Magic</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌔
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/film/" class="note-tag">#film</a>
+                      
+                      <a href="https://nonmodernist.com/tags/folk-horror/" class="note-tag">#folk horror</a>
+                      
+                      <a href="https://nonmodernist.com/tags/witchcraft/" class="note-tag">#witchcraft</a>
+                      
+                      <a href="https://nonmodernist.com/tags/shamanism/" class="note-tag">#shamanism</a>
+                      
+                      <a href="https://nonmodernist.com/tags/folk-magic/" class="note-tag">#folk magic</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2024-11-10</span>
+                      
+                      <span class="note-wordcount">554 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-waxing_gibbous" data-phase="waxing_gibbous">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-vengeful-ghosts&#x2F;">Folk Horror: Vengeful Ghosts</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌔
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/film/" class="note-tag">#film</a>
+                      
+                      <a href="https://nonmodernist.com/tags/folk-horror/" class="note-tag">#folk horror</a>
+                      
+                      <a href="https://nonmodernist.com/tags/ghosts/" class="note-tag">#ghosts</a>
+                      
+                      <a href="https://nonmodernist.com/tags/vengeful-spirits/" class="note-tag">#vengeful spirits</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2024-11-09</span>
+                      
+                      <span class="note-wordcount">512 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-waxing_gibbous" data-phase="waxing_gibbous">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-vampirism&#x2F;">Folk Horror: Vampirism</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌔
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/film/" class="note-tag">#film</a>
+                      
+                      <a href="https://nonmodernist.com/tags/folk-horror/" class="note-tag">#folk horror</a>
+                      
+                      <a href="https://nonmodernist.com/tags/vampirism/" class="note-tag">#vampirism</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2024-11-08</span>
+                      
+                      <span class="note-wordcount">467 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-waxing_gibbous" data-phase="waxing_gibbous">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-outsider&#x2F;">Folk Horror: The Outsider</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌔
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/film/" class="note-tag">#film</a>
+                      
+                      <a href="https://nonmodernist.com/tags/folk-horror/" class="note-tag">#folk horror</a>
+                      
+                      <a href="https://nonmodernist.com/tags/outsider/" class="note-tag">#outsider</a>
+                      
+                      <a href="https://nonmodernist.com/tags/ethnographer/" class="note-tag">#ethnographer</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2024-11-07</span>
+                      
+                      <span class="note-wordcount">463 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-waxing_gibbous" data-phase="waxing_gibbous">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-human-sacrifice&#x2F;">Folk Horror: Human Sacrifice</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌔
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/film/" class="note-tag">#film</a>
+                      
+                      <a href="https://nonmodernist.com/tags/folk-horror/" class="note-tag">#folk horror</a>
+                      
+                      <a href="https://nonmodernist.com/tags/ritual/" class="note-tag">#ritual</a>
+                      
+                      <a href="https://nonmodernist.com/tags/cults/" class="note-tag">#cults</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2024-11-06</span>
+                      
+                      <span class="note-wordcount">445 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-waxing_gibbous" data-phase="waxing_gibbous">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-cults&#x2F;">Folk Horror: Cults</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌔
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  <p class="note-excerpt">Isolated religious communities with extreme beliefs are a central component of many folk horror narratives.</p>
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/film/" class="note-tag">#film</a>
+                      
+                      <a href="https://nonmodernist.com/tags/folk-horror/" class="note-tag">#folk horror</a>
+                      
+                      <a href="https://nonmodernist.com/tags/ritual/" class="note-tag">#ritual</a>
+                      
+                      <a href="https://nonmodernist.com/tags/cults/" class="note-tag">#cults</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2024-11-05</span>
+                      
+                      <span class="note-wordcount">468 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-waxing_gibbous" data-phase="waxing_gibbous">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-animal-transformation&#x2F;">Folk Horror: Animal Transformation</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌔
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/film/" class="note-tag">#film</a>
+                      
+                      <a href="https://nonmodernist.com/tags/folk-horror/" class="note-tag">#folk horror</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2024-11-05</span>
+                      
+                      <span class="note-wordcount">400 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-waxing_gibbous" data-phase="waxing_gibbous">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-rural-settings&#x2F;">Folk Horror: Rural Settings</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌔
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/film/" class="note-tag">#film</a>
+                      
+                      <a href="https://nonmodernist.com/tags/folk-horror/" class="note-tag">#folk horror</a>
+                      
+                      <a href="https://nonmodernist.com/tags/rural-settings/" class="note-tag">#rural settings</a>
+                      
+                      <a href="https://nonmodernist.com/tags/landscape/" class="note-tag">#landscape</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2024-11-03</span>
+                      
+                      <span class="note-wordcount">467 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-waxing_gibbous" data-phase="waxing_gibbous">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-overview&#x2F;">Folk Horror: An Overview</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌔
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/film/" class="note-tag">#film</a>
+                      
+                      <a href="https://nonmodernist.com/tags/folk-horror/" class="note-tag">#folk horror</a>
+                      
+                      <a href="https://nonmodernist.com/tags/genre/" class="note-tag">#genre</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2024-11-01</span>
+                      
+                      <span class="note-wordcount">504 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-first_quarter" data-phase="first_quarter">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;villages-folk-horror&#x2F;">Villages in Folk Horror: The Lost Commons</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌓
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/film/" class="note-tag">#film</a>
+                      
+                      <a href="https://nonmodernist.com/tags/folk-horror/" class="note-tag">#folk horror</a>
+                      
+                      <a href="https://nonmodernist.com/tags/villages/" class="note-tag">#villages</a>
+                      
+                      <a href="https://nonmodernist.com/tags/landscape/" class="note-tag">#landscape</a>
+                      
+                      <a href="https://nonmodernist.com/tags/commons/" class="note-tag">#commons</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2024-08-15</span>
+                      
+                      <span class="note-wordcount">654 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-first_quarter" data-phase="first_quarter">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;early-photography&#x2F;">Early Photography and Motion Studies</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌓
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/film-history/" class="note-tag">#film history</a>
+                      
+                      <a href="https://nonmodernist.com/tags/technology/" class="note-tag">#technology</a>
+                      
+                      <a href="https://nonmodernist.com/tags/photography/" class="note-tag">#photography</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2024-08-12</span>
+                      
+                      <span class="note-wordcount">738 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-waxing_crescent" data-phase="waxing_crescent">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;inside-out&#x2F;">Playboy&#x27;s Inside Out</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌙
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/film/" class="note-tag">#film</a>
+                      
+                      <a href="https://nonmodernist.com/tags/directed-by-women/" class="note-tag">#directed by women</a>
+                      
+                      <a href="https://nonmodernist.com/tags/lizzie-borden/" class="note-tag">#Lizzie Borden</a>
+                      
+                      <a href="https://nonmodernist.com/tags/linda-hassani/" class="note-tag">#Linda Hassani</a>
+                      
+                      <a href="https://nonmodernist.com/tags/softcore/" class="note-tag">#softcore</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2024-04-28</span>
+                      
+                      <span class="note-wordcount">399 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-full" data-phase="full">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;solar-eclipse&#x2F;">When we went to see the solar eclipse</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌕
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  <p class="note-excerpt">A personal account of witnessing the April 8, 2024 solar eclipse.</p>
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/solar-eclipse/" class="note-tag">#solar eclipse</a>
+                      
+                      <a href="https://nonmodernist.com/tags/personal/" class="note-tag">#personal</a>
+                      
+                      <a href="https://nonmodernist.com/tags/nature/" class="note-tag">#nature</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2024-04-08</span>
+                      
+                      <span class="note-wordcount">298 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-waxing_crescent" data-phase="waxing_crescent">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;digital-gardens&#x2F;">Digital Gardens: A Return to Pre-Blog Web?</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌙
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/digital-gardens/" class="note-tag">#digital gardens</a>
+                      
+                      <a href="https://nonmodernist.com/tags/web-history/" class="note-tag">#web history</a>
+                      
+                      <a href="https://nonmodernist.com/tags/metaphors/" class="note-tag">#metaphors</a>
+                      
+                      <a href="https://nonmodernist.com/tags/solarpunk/" class="note-tag">#solarpunk</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2024-04-05</span>
+                      
+                      <span class="note-wordcount">403 words</span>
+                      
+                  </div>
+              </div>
+          
+              
+              
+              
+                  
+              
+              
+              
+              <div class="garden-note moon-phase-waxing_gibbous" data-phase="waxing_gibbous">
+                  <div class="garden-note-header">
+                      <h3><a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;just-around-the-corner&#x2F;">Just Around the Corner: Frances Marion&#x27;s Directorial Debut</a></h3>
+                      
+  
+                      
+                      <span class="moon-phase-indicator">
+                          🌔
+                          
+                      </span>
+                  </div>
+                  
+                  
+                  
+                  <p class="note-excerpt">On Frances Marion&#x27;s 1921 film, from a Fannie Hurst story about working-class women in NYC.</p>
+                  
+                  
+                  
+                  
+                  <div class="note-tags">
+                      
+                      <a href="https://nonmodernist.com/tags/film/" class="note-tag">#film</a>
+                      
+                      <a href="https://nonmodernist.com/tags/silent-film/" class="note-tag">#silent film</a>
+                      
+                      <a href="https://nonmodernist.com/tags/frances-marion/" class="note-tag">#Frances Marion</a>
+                      
+                      <a href="https://nonmodernist.com/tags/directed-by-women/" class="note-tag">#directed by women</a>
+                      
+                      <a href="https://nonmodernist.com/tags/fannie-hurst/" class="note-tag">#Fannie Hurst</a>
+                      
+                  </div>
+                  
+                  
+                  
+                  <div class="note-meta">
+                      <span class="note-date">2022-10-02</span>
+                      
+                      <span class="note-wordcount">707 words</span>
+                      
+                  </div>
+              </div>
+          
+      </div>
+  
+      
+      
+      
+      
+      <div class="back-to-top-container">
+          <button id="back-to-top" class="back-to-top-button" aria-label="Back to top">
+              <span class="og">↑</span>
+          </button>
+      </div>
+    
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterButtons = document.querySelectorAll('.filter-button, .filter-all');
+        const notes = document.querySelectorAll('.garden-note');
+        const notesCount = document.getElementById('notes-count');
+        
+        // Function to update notes count
+        function updateNotesCount() {
+            const visibleNotes = document.querySelectorAll('.garden-note:not([style*="display: none"])');
+            const count = visibleNotes.length;
+            const activeFilter = document.querySelector('.filter-button.active, .filter-all.active');
+            const filterName = activeFilter.dataset.phase === 'all' ? 'All Notes' : 
+                activeFilter.querySelector('.moon-emoji') ? activeFilter.textContent.split(' ').slice(1).join(' ') : 
+                activeFilter.textContent.trim();
+            
+                notesCount.textContent = `Showing ${count} note${count !== 1 ? 's' : ''} (${filterName})`;
+            }
+        
+        // Initial count
+        updateNotesCount();
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const phase = this.dataset.phase;
+                
+                notes.forEach(note => {
+                    if (phase === 'all' || note.dataset.phase === phase) {
+                        note.style.display = '';
+                    } else {
+                        note.style.display = 'none';
+                    }
+                });
+                
+                // Update count after filtering
+                updateNotesCount();
+            });
+        });
+        
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('back-to-top');
+        const footer = document.querySelector('.footer');
+        
+        // Show/hide button and adjust position based on scroll
+        function updateBackToTopPosition() {
+            const scrollPosition = window.pageYOffset;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            
+            // Show button after scrolling 300px
+            if (scrollPosition > 300) {
+                backToTopButton.classList.add('visible');
+                
+                // Calculate distance from bottom
+                const distanceFromBottom = documentHeight - scrollPosition - windowHeight;
+                
+                // Get footer height
+                const footerHeight = footer ? footer.offsetHeight : 0;
+                
+                // If we're close to the footer, adjust the button position
+                if (distanceFromBottom < footerHeight + 20) { // 20px buffer
+                    const pushUp = footerHeight + 20 - distanceFromBottom;
+                    backToTopButton.style.bottom = `${20 + pushUp}px`;
+                } else {
+                    backToTopButton.style.bottom = '2rem'; // Reset to default
+                }
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        }
+        
+        // Update position on scroll
+        window.addEventListener('scroll', updateBackToTopPosition);
+        
+        // Update position on resize (in case viewport changes)
+        window.addEventListener('resize', updateBackToTopPosition);
+        
+        // Scroll to top when button is clicked
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    });
+    </script>
+
+
+        
+            
+        
+
+        
+    </div>
+
+
+    <hr>
+
+    <div class="footer">
+        <p>
+            <span class="og"><a href="https://nonmodernist.com">🏠</a> ☕ 🌁 <span id="launch-counter">875</span> 🎂 ☕ 🌁 🔍 📷 👓 🌁🌁 💠 📩 🌁 🌁🌁 <a href="https://nonmodernist.com/uses">⚡︎</a> 💓 <a href="https://nonmodernist.com/log"><span id="movies-counter">2736</span> 📺</a> 🌁🌁🌁 a 🌁 🌙 <a href="https://nonmodernist.com/readinglog"><span id="books-counter">974</span> 📖</a></span>
+        </p>
+    </div>
+    
+
+
+</html>

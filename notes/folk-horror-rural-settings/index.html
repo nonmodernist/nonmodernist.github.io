@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https:&#x2F;&#x2F;nonmodernist.com">
+
+    <link rel="me" href="https://github.com/nonmodernist" />
+    <link rel="me" href="https://bsky.app/profile/nonmodernist.bsky.social" />
+    <link rel="webmention" href="https://webmention.io/nonmodernist.com/webmention" />
+
+    
+
+    
+    
+    
+    <title>
+         Folk Horror: Rural Settings
+        
+    </title>
+
+        
+            <meta property="og:title" content="Folk Horror: Rural Settings" />
+        
+     
+
+     
+         
+             <meta property="og:description" content="the internet homebase of dr. alexandra edwards" />
+         
+     
+
+     
+         
+             <meta name="description" content="the internet homebase of dr. alexandra edwards" />
+         
+    
+
+    
+    
+        <link rel="icon" type="image/png" href=&#x2F;favicon.png />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href=&#x2F;favicon.png>
+
+
+    
+    
+        <link href=https://nonmodernist.com/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/codeblock.js></script>
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/toc.js></script>
+    
+    
+    
+    
+        <script src=https://nonmodernist.com/js/note.js></script>
+    
+
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="alexandra edwards, phd" href="https://nonmodernist.com/atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="nonmodernist.com - notes only" href="https://nonmodernist.com/notes/atom.xml">
+
+
+
+    
+    
+        <link rel="stylesheet" type="text/css" href=https://nonmodernist.com/theme/light.css />
+        <link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://nonmodernist.com/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+
+    
+    <script src=https://nonmodernist.com/js/themetoggle.js></script>
+
+        
+        <script>setTheme(getSavedTheme());</script>
+    
+    
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://nonmodernist.com/main.css />
+
+    
+
+    
+        <script defer src="https://nonmodernist.com/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script><script src="https://nonmodernist.com/js/counters.js"></script>
+</head>
+
+    
+<!--
+         wWWWw               wWWWw
+   vVVVv (___) wWWWw         (___)  vVVVv
+   (___)  ~Y~  (___)  vVVVv   ~Y~   (___)
+    ~Y~   \|    ~Y~   (___)    |/    ~Y~
+    \|   \ |/   \| /  \~Y~/   \|    \ |/
+   \\|// \\|// \\|/// \\|//  \\|// \\\|///
+jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-->
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main">
+                
+                    <a href=https:&#x2F;&#x2F;nonmodernist.com>alexandra edwards, phd</a>
+                
+
+
+        <div class="socials">
+            
+        </div>
+    </div>
+
+    <nav>
+        
+            <a href=https://nonmodernist.com/notes style="margin-left: 0.25em">&#x2F;notes</a>
+        
+            <a href=https://nonmodernist.com/teaching style="margin-left: 0.25em">&#x2F;teaching</a>
+        
+            <a href=https://nonmodernist.com/research style="margin-left: 0.25em">&#x2F;research</a>
+        
+            <a href=https://nonmodernist.com/about style="margin-left: 0.25em">&#x2F;about</a>
+        
+
+        
+        <button
+            id="search-button"
+            class="search-button"
+            title="$SHORTCUT to open search"
+        >
+            <img
+                src="https://nonmodernist.com/icons/search.svg"
+                alt="Search"
+                class="search-icon"
+            >
+        </button>
+    
+        <div id="searchModal" class="search-modal js" role="dialog" aria-labelledby="modalTitle">
+            <div id="modal-content">
+                <h1 id="modalTitle" class="page-header">Search</h1>
+                <div id="searchBar">
+                    <input
+                        id="searchInput"
+                        role="combobox"
+                        autocomplete="off"
+                        spellcheck="false"
+                        aria-expanded="false"
+                        aria-controls="results-container"
+                        placeholder="Search..."
+                    />
+                    <button
+                        id="clear-search"
+                        class="clear-button"
+                        title="Clear search"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="results-container">
+                    <div id="results-info">
+                        <span id="zero_results" style="display: none;">No results</span>
+                        <span id="one_result" style="display: none;">1 result</span>
+                        <span id="many_results" style="display: none;">$NUMBER results</span>
+                    </div>
+                    <div id="results" role="listbox"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme(); event.preventDefault();" href="#">
+                <img src=https://nonmodernist.com/icons/sun.svg id="sun-icon" style="filter: invert(1);" alt="Light" />
+                <img src=https://nonmodernist.com/icons/moon.svg id="moon-icon" alt="Dark" />
+            </a>
+
+        <!-- Inititialize the theme toggle icons -->
+        <script>updateItemToggleTheme()</script>
+        
+    </nav>
+</header>
+
+
+        
+        
+    
+  <main>
+      <article class="h-entry readable-content">
+          <div class="title">
+            
+              
+      <div class="page-header">
+          Folk Horror: Rural Settings
+          
+          <span class="moon-phase moon-phase-waxing_gibbous">
+             🌔
+             
+            </span>
+            
+      
+      </div>
+  
+  
+                  <div class="meta">
+                      
+                          
+                          Posted <span class="hidden">by <a rel="author" class="p-author h-card" href="https://nonmodernist.com">alexandra edwards</a></span> on <time class="dt-published"> 2024-11-03</time>
+                      
+  
+                      
+  
+                      
+  
+                      
+                          :: 467 Words
+                      
+  
+                      
+                      
+                              <span class="tags-label"> :: Tags:</span>
+                              <span class="tags">
+                                      <a href="https://nonmodernist.com/tags/film/" class="post-tag">film</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/folk-horror/" class="post-tag">folk horror</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/rural-settings/" class="post-tag">rural settings</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/landscape/" class="post-tag">landscape</a>
+                                  
+                              </span>
+                      
+  
+                      
+                      
+  
+                      
+  
+                  </div>
+          </div>
+  
+          
+          
+              <div class="tldr p-summary">
+                  <strong>tl;dr:</strong>
+                  Exploring how rural isolation forms the backbone of folk horror narratives.
+              </div>
+          
+  
+          
+          
+          
+              <div class="toc-container">
+                  <h1 class="toc-title">Table of Contents</h1>
+                  <ul class="toc-list">
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/folk-horror-rural-settings/#rural-communities-and-isolated-locations">Rural Communities and Isolated Locations</a>
+                              
+                                  <ul>
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-rural-settings/#types-of-rural-settings-in-folk-horror">Types of Rural Settings in Folk Horror</a>
+                                          </li>
+  
+                                          
+                                              <ul>
+                                                  
+                                                      <li>
+                                                          <a href="https://nonmodernist.com/notes/folk-horror-rural-settings/#villages-and-small-towns">Villages and Small Towns</a>
+                                                      </li>
+                                                  
+                                                      <li>
+                                                          <a href="https://nonmodernist.com/notes/folk-horror-rural-settings/#farms-and-fields">Farms and Fields</a>
+                                                      </li>
+                                                  
+                                                      <li>
+                                                          <a href="https://nonmodernist.com/notes/folk-horror-rural-settings/#forests">Forests</a>
+                                                      </li>
+                                                  
+                                                      <li>
+                                                          <a href="https://nonmodernist.com/notes/folk-horror-rural-settings/#islands">Islands</a>
+                                                      </li>
+                                                  
+                                                      <li>
+                                                          <a href="https://nonmodernist.com/notes/folk-horror-rural-settings/#isolated-houses">Isolated Houses</a>
+                                                      </li>
+                                                  
+                                                      <li>
+                                                          <a href="https://nonmodernist.com/notes/folk-horror-rural-settings/#vacation-settings">Vacation Settings</a>
+                                                      </li>
+                                                  
+                                              </ul>
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-rural-settings/#urban-folk-horror">Urban Folk Horror</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/folk-horror-rural-settings/#historical-context">Historical Context</a>
+                                          </li>
+  
+                                          
+                                      
+                                  </ul>
+                              
+                          </li>
+                      
+                  </ul>
+              </div>
+          
+          
+  
+          <section class="body"></section>
+          <div>
+              <h1 id="rural-communities-and-isolated-locations"><a class="zola-anchor" href="#rural-communities-and-isolated-locations" aria-label="Anchor link for: rural-communities-and-isolated-locations">Rural Communities and Isolated Locations</a></h1>
+<p><span class="og">⛵</span> Folk horror stories often take place in rural communities and locations, creating an atmosphere of isolation that's essential to the genre. This isolation allows for the development of unique social dynamics, preservation of ancient practices, and the flourishing of beliefs that might be suppressed in more connected communities.</p>
+<h2 id="types-of-rural-settings-in-folk-horror"><a class="zola-anchor" href="#types-of-rural-settings-in-folk-horror" aria-label="Anchor link for: types-of-rural-settings-in-folk-horror">Types of Rural Settings in Folk Horror</a></h2>
+<h3 id="villages-and-small-towns"><a class="zola-anchor" href="#villages-and-small-towns" aria-label="Anchor link for: villages-and-small-towns">Villages and Small Towns</a></h3>
+<p>Small, close-knit communities feature prominently in folk horror, including:</p>
+<ul>
+<li><em>The White Reindeer</em> (1952, Finland)</li>
+<li><em>Satan's Feasts in the Village of Leva-e-Traz</em> (1967, Brazil)</li>
+<li><em>Leptirica</em> (1973, Yugoslavia)</li>
+<li><em>The Dark Secret of Harvest Home</em> (1978, US)</li>
+<li><em>The Witch</em> (2015, US)</li>
+<li><em>The Wailing</em> (2016, South Korea)</li>
+<li><em>When Evil Lurks</em> (2023, Argentina)</li>
+</ul>
+<p>These settings often feature communities that have developed in isolation over generations, allowing unusual or archaic practices to continue unchecked.</p>
+<h3 id="farms-and-fields"><a class="zola-anchor" href="#farms-and-fields" aria-label="Anchor link for: farms-and-fields">Farms and Fields</a></h3>
+<p>Agricultural settings link folk horror to fertility rituals, seasonal cycles, and humanity's connection to the land:</p>
+<ul>
+<li><em>Crowhaven Farm</em> (1970, US)</li>
+<li><em>Blood on Satan's Claw</em> (1971, UK)</li>
+<li><em>Children of the Corn</em> (1984, US)</li>
+<li><em>A Field in England</em> (2013, UK)</li>
+</ul>
+<h3 id="forests"><a class="zola-anchor" href="#forests" aria-label="Anchor link for: forests">Forests</a></h3>
+<p>Forests represent primordial wilderness and untamed nature, serving as liminal spaces where traditional rules break down:</p>
+<ul>
+<li><em>Kuroneko</em> (1968, Japan)</li>
+<li><em>Eyes of Fire</em> (1983, US)</li>
+<li><em>The Enchanted</em> (1984)</li>
+<li><em>The Blair Witch Project</em> (1999, US)</li>
+<li><em>Roh</em> (2019, Malaysia)</li>
+</ul>
+<h3 id="islands"><a class="zola-anchor" href="#islands" aria-label="Anchor link for: islands">Islands</a></h3>
+<p>Islands offer the ultimate isolation, creating microcosms where unique social systems can develop entirely separate from mainstream society:</p>
+<ul>
+<li><em>The Wicker Man</em> (1972, UK)</li>
+<li><em>Io Island</em> (1977, South Korea)</li>
+</ul>
+<h3 id="isolated-houses"><a class="zola-anchor" href="#isolated-houses" aria-label="Anchor link for: isolated-houses">Isolated Houses</a></h3>
+<p>Large, remote houses functioning as outposts on the edge of rural locales create their own form of isolation:</p>
+<ul>
+<li><em>Lokis: A Manuscript of Professor Wittembach</em> (1970, Poland)</li>
+<li><em>Let's Scare Jessica to Death</em> (1971, US)</li>
+<li><em>Ganja &amp; Hess</em> (1973, US)</li>
+<li><em>The Ash Tree</em> (1975, UK)</li>
+<li><em>The Rites of May</em> (1976, Philippines)</li>
+<li><em>La Llorona</em> (2019, Guatemala)</li>
+</ul>
+<h3 id="vacation-settings"><a class="zola-anchor" href="#vacation-settings" aria-label="Anchor link for: vacation-settings">Vacation Settings</a></h3>
+<p>Folk horror frequently exploits the vulnerability of visitors to rural areas:</p>
+<ul>
+<li><em>Lake of the Dead</em> (1958, Norway)</li>
+<li><em>Hour of the Wolf</em> (1968, Sweden)</li>
+<li><em>Deliverance</em> (1972, US)</li>
+<li><em>Butter on the Latch</em> (2015, US)</li>
+<li><em>Midsommar</em> (2019, US/Sweden)</li>
+</ul>
+<h2 id="urban-folk-horror"><a class="zola-anchor" href="#urban-folk-horror" aria-label="Anchor link for: urban-folk-horror">Urban Folk Horror</a></h2>
+<p>While rare, some folk horror films adapt the genre's tropes to urban settings. <em>Candyman</em> (1992, US) is a notable example, though one could argue that the Cabrini-Green housing project in the film functions as an isolated community within the larger urban landscape, effectively serving as the modern equivalent of a remote village.</p>
+<h2 id="historical-context"><a class="zola-anchor" href="#historical-context" aria-label="Anchor link for: historical-context">Historical Context</a></h2>
+<p>Folk horror's focus on rurality connects to the 19th-century origins of folklore studies, when European ethnographers traveled to rural areas to collect folklore from illiterate, poor communities. This history informs the genre's frequent use of the outsider/ethnographer figure observing rural customs.</p>
+
+  
+
+
+
+<div class="divider-default">
+  <div class="moon-phases">
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+  </div>
+</div>
+<p><em>This note is part of a series exploring folk horror in cinema. Return to the <a href="https://nonmodernist.com/notes/folk-horror-overview/">main Folk Horror overview</a> to explore other tropes.</em></p>
+
+          </div> 
+      </section>
+  
+    
+  
+  
+  
+  
+    
+      
+    
+  
+  
+  
+    <div class="backlinks">
+      <button class="note-toggle">
+        <div class="note-icon">
+          <h2> notes that mention this note (1)</h2>
+        </div>
+      </button>
+      
+      <div class="backlinks-content" style="display: none;">
+        <ul class="backlinks-list">
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;folk-horror-overview&#x2F;">
+                
+                  Folk Horror: An Overview
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  
+
+
+
+    
+      
+      </article>
+  </main>
+  
+
+
+        
+            
+        
+
+        
+    </div>
+
+
+    <hr>
+
+    <div class="footer">
+        <p>
+            <span class="og"><a href="https://nonmodernist.com">🏠</a> ☕ 🌁 <span id="launch-counter">875</span> 🎂 ☕ 🌁 🔍 📷 👓 🌁🌁 💠 📩 🌁 🌁🌁 <a href="https://nonmodernist.com/uses">⚡︎</a> 💓 <a href="https://nonmodernist.com/log"><span id="movies-counter">2736</span> 📺</a> 🌁🌁🌁 a 🌁 🌙 <a href="https://nonmodernist.com/readinglog"><span id="books-counter">974</span> 📖</a></span>
+        </p>
+    </div>
+    
+
+
+</html>
