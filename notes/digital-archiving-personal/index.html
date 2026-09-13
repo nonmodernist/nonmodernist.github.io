@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https:&#x2F;&#x2F;nonmodernist.com">
+
+    <link rel="me" href="https://github.com/nonmodernist" />
+    <link rel="me" href="https://bsky.app/profile/nonmodernist.bsky.social" />
+    <link rel="webmention" href="https://webmention.io/nonmodernist.com/webmention" />
+
+    
+
+    
+    
+    
+    <title>
+         Digital Archiving: Reconnecting with Past Selves
+        
+    </title>
+
+        
+            <meta property="og:title" content="Digital Archiving: Reconnecting with Past Selves" />
+        
+     
+
+     
+         
+             <meta property="og:description" content="the internet homebase of dr. alexandra edwards" />
+         
+     
+
+     
+         
+             <meta name="description" content="the internet homebase of dr. alexandra edwards" />
+         
+    
+
+    
+    
+        <link rel="icon" type="image/png" href=&#x2F;favicon.png />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href=&#x2F;favicon.png>
+
+
+    
+    
+        <link href=https://nonmodernist.com/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/codeblock.js></script>
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/toc.js></script>
+    
+    
+    
+    
+        <script src=https://nonmodernist.com/js/note.js></script>
+    
+
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="alexandra edwards, phd" href="https://nonmodernist.com/atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="nonmodernist.com - notes only" href="https://nonmodernist.com/notes/atom.xml">
+
+
+
+    
+    
+        <link rel="stylesheet" type="text/css" href=https://nonmodernist.com/theme/light.css />
+        <link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://nonmodernist.com/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+
+    
+    <script src=https://nonmodernist.com/js/themetoggle.js></script>
+
+        
+        <script>setTheme(getSavedTheme());</script>
+    
+    
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://nonmodernist.com/main.css />
+
+    
+
+    
+        <script defer src="https://nonmodernist.com/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script><script src="https://nonmodernist.com/js/counters.js"></script>
+</head>
+
+    
+<!--
+         wWWWw               wWWWw
+   vVVVv (___) wWWWw         (___)  vVVVv
+   (___)  ~Y~  (___)  vVVVv   ~Y~   (___)
+    ~Y~   \|    ~Y~   (___)    |/    ~Y~
+    \|   \ |/   \| /  \~Y~/   \|    \ |/
+   \\|// \\|// \\|/// \\|//  \\|// \\\|///
+jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-->
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main">
+                
+                    <a href=https:&#x2F;&#x2F;nonmodernist.com>alexandra edwards, phd</a>
+                
+
+
+        <div class="socials">
+            
+        </div>
+    </div>
+
+    <nav>
+        
+            <a href=https://nonmodernist.com/notes style="margin-left: 0.25em">&#x2F;notes</a>
+        
+            <a href=https://nonmodernist.com/teaching style="margin-left: 0.25em">&#x2F;teaching</a>
+        
+            <a href=https://nonmodernist.com/research style="margin-left: 0.25em">&#x2F;research</a>
+        
+            <a href=https://nonmodernist.com/about style="margin-left: 0.25em">&#x2F;about</a>
+        
+
+        
+        <button
+            id="search-button"
+            class="search-button"
+            title="$SHORTCUT to open search"
+        >
+            <img
+                src="https://nonmodernist.com/icons/search.svg"
+                alt="Search"
+                class="search-icon"
+            >
+        </button>
+    
+        <div id="searchModal" class="search-modal js" role="dialog" aria-labelledby="modalTitle">
+            <div id="modal-content">
+                <h1 id="modalTitle" class="page-header">Search</h1>
+                <div id="searchBar">
+                    <input
+                        id="searchInput"
+                        role="combobox"
+                        autocomplete="off"
+                        spellcheck="false"
+                        aria-expanded="false"
+                        aria-controls="results-container"
+                        placeholder="Search..."
+                    />
+                    <button
+                        id="clear-search"
+                        class="clear-button"
+                        title="Clear search"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="results-container">
+                    <div id="results-info">
+                        <span id="zero_results" style="display: none;">No results</span>
+                        <span id="one_result" style="display: none;">1 result</span>
+                        <span id="many_results" style="display: none;">$NUMBER results</span>
+                    </div>
+                    <div id="results" role="listbox"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme(); event.preventDefault();" href="#">
+                <img src=https://nonmodernist.com/icons/sun.svg id="sun-icon" style="filter: invert(1);" alt="Light" />
+                <img src=https://nonmodernist.com/icons/moon.svg id="moon-icon" alt="Dark" />
+            </a>
+
+        <!-- Inititialize the theme toggle icons -->
+        <script>updateItemToggleTheme()</script>
+        
+    </nav>
+</header>
+
+
+        
+        
+    
+  <main>
+      <article class="h-entry readable-content">
+          <div class="title">
+            
+              
+      <div class="page-header">
+          Digital Archiving: Reconnecting with Past Selves
+          
+          <span class="moon-phase moon-phase-new">
+              &nbsp;🌑
+             
+            </span>
+            
+      
+      </div>
+  
+  
+                  <div class="meta">
+                      
+                          
+                          Posted <span class="hidden">by <a rel="author" class="p-author h-card" href="https://nonmodernist.com">alexandra edwards</a></span> on <time class="dt-published"> 2024-12-20</time>
+                      
+  
+                      
+  
+                      
+  
+                      
+                          :: 281 Words
+                      
+  
+                      
+                      
+                              <span class="tags-label"> :: Tags:</span>
+                              <span class="tags">
+                                      <a href="https://nonmodernist.com/tags/blogging/" class="post-tag">blogging</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/digital-archiving/" class="post-tag">digital archiving</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/digital-gardens/" class="post-tag">digital gardens</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/memory/" class="post-tag">memory</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/identity/" class="post-tag">identity</a>
+                                  
+                              </span>
+                      
+  
+                      
+                      
+  
+                      
+  
+                  </div>
+          </div>
+  
+          
+          
+              <div class="tldr p-summary">
+                  <strong>tl;dr:</strong>
+                  Maintaining connections to our past selves through digital archives.
+              </div>
+          
+  
+          
+          
+          
+              <div class="toc-container">
+                  <h1 class="toc-title">Table of Contents</h1>
+                  <ul class="toc-list">
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/digital-archiving-personal/#digital-gardens-as-continuity">Digital Gardens as Continuity</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/digital-archiving-personal/#selective-preservation">Selective Preservation</a>
+                              
+                          </li>
+                      
+                  </ul>
+              </div>
+          
+          
+  
+          <section class="body"></section>
+          <div>
+              <p>I recently found the blog I kept from 2006-2008. I won't link it here, but I am working on copying over some of the less cringe entries. Sometimes it's nice to spend time with the person you used to be. I, for instance, used to be a person who knew a lot about the [18th-century French aristocracy].</p>
+<p>There's something uniquely revealing about encountering your own writing from 15+ years ago. Unlike photographs or physical mementos, personal writing captures not just events but thought processes, priorities, and your particular voice at that time.</p>
+<h2 id="digital-gardens-as-continuity"><a class="zola-anchor" href="#digital-gardens-as-continuity" aria-label="Anchor link for: digital-gardens-as-continuity">Digital Gardens as Continuity</a></h2>
+<p>This experience highlights one value of maintaining a digital garden—creating continuity between past and present selves. Unlike social media's emphasis on immediacy and constant updates, digital gardens allow ideas to evolve while preserving their history. The garden format acknowledges that our thinking develops over time, with some ideas growing from seedlings to fully-developed concepts while others may lie dormant before eventually flourishing.</p>
+<h2 id="selective-preservation"><a class="zola-anchor" href="#selective-preservation" aria-label="Anchor link for: selective-preservation">Selective Preservation</a></h2>
+<p>Not everything from our past digital lives deserves preservation. I'm being highly selective about which entries to migrate from the old blog, focusing on those with enduring value or interest rather than those that now make me cringe.</p>
+<p>There's a curatorial process in deciding which parts of our past selves to integrate into our current digital identity—which in some ways mirrors how memory itself functions by preserving certain experiences while allowing others to fade.</p>
+
+  
+
+
+
+<div class="divider-line">
+  <div class="pixel-line">
+    <div class="pixel-star"></div>
+    <div class="pixel-star"></div>
+    <div class="pixel-star"></div>
+    <div class="pixel-star"></div>
+    <div class="pixel-star"></div>
+  </div>
+</div>
+<p><em>I'm considering starting a collection of notes on digital preservation practices and the evolution of online self-representation. There's something fascinating about how our relationship with our digital past differs from our relationship with physical artifacts from our history.</em></p>
+
+          </div> 
+      </section>
+  
+    
+  
+
+
+    
+      
+      </article>
+  </main>
+  
+
+
+        
+            
+        
+
+        
+    </div>
+
+
+    <hr>
+
+    <div class="footer">
+        <p>
+            <span class="og"><a href="https://nonmodernist.com">🏠</a> ☕ 🌁 <span id="launch-counter">875</span> 🎂 ☕ 🌁 🔍 📷 👓 🌁🌁 💠 📩 🌁 🌁🌁 <a href="https://nonmodernist.com/uses">⚡︎</a> 💓 <a href="https://nonmodernist.com/log"><span id="movies-counter">2736</span> 📺</a> 🌁🌁🌁 a 🌁 🌙 <a href="https://nonmodernist.com/readinglog"><span id="books-counter">974</span> 📖</a></span>
+        </p>
+    </div>
+    
+
+
+</html>

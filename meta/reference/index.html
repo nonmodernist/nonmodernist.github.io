@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https:&#x2F;&#x2F;nonmodernist.com">
+
+    <link rel="me" href="https://github.com/nonmodernist" />
+    <link rel="me" href="https://bsky.app/profile/nonmodernist.bsky.social" />
+    <link rel="webmention" href="https://webmention.io/nonmodernist.com/webmention" />
+
+    
+
+    
+    
+    
+    <title>
+         Site Documentation
+        
+    </title>
+
+        
+            <meta property="og:title" content="Site Documentation" />
+        
+     
+
+     
+         
+             <meta property="og:description" content="Essential site documentation for Zola and the Artemis theme, including commands, templates, and troubleshooting tips." />
+         
+     
+
+     
+         
+             <meta name="description" content="Essential site documentation for Zola and the Artemis theme, including commands, templates, and troubleshooting tips." />
+         
+    
+
+    
+    
+        <link rel="icon" type="image/png" href=&#x2F;favicon.png />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href=&#x2F;favicon.png>
+
+
+    
+    
+        <link href=https://nonmodernist.com/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/codeblock.js></script>
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/toc.js></script>
+    
+    
+    
+    
+        <script src=https://nonmodernist.com/js/note.js></script>
+    
+
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="alexandra edwards, phd" href="https://nonmodernist.com/atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="nonmodernist.com - notes only" href="https://nonmodernist.com/notes/atom.xml">
+
+
+
+    
+    
+        <link rel="stylesheet" type="text/css" href=https://nonmodernist.com/theme/light.css />
+        <link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://nonmodernist.com/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+
+    
+    <script src=https://nonmodernist.com/js/themetoggle.js></script>
+
+        
+        <script>setTheme(getSavedTheme());</script>
+    
+    
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://nonmodernist.com/main.css />
+
+    
+
+    
+        <script defer src="https://nonmodernist.com/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script><script src="https://nonmodernist.com/js/counters.js"></script>
+</head>
+
+    
+<!--
+         wWWWw               wWWWw
+   vVVVv (___) wWWWw         (___)  vVVVv
+   (___)  ~Y~  (___)  vVVVv   ~Y~   (___)
+    ~Y~   \|    ~Y~   (___)    |/    ~Y~
+    \|   \ |/   \| /  \~Y~/   \|    \ |/
+   \\|// \\|// \\|/// \\|//  \\|// \\\|///
+jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-->
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main">
+                
+                    <a href=https:&#x2F;&#x2F;nonmodernist.com>alexandra edwards, phd</a>
+                
+
+
+        <div class="socials">
+            
+        </div>
+    </div>
+
+    <nav>
+        
+            <a href=https://nonmodernist.com/notes style="margin-left: 0.25em">&#x2F;notes</a>
+        
+            <a href=https://nonmodernist.com/teaching style="margin-left: 0.25em">&#x2F;teaching</a>
+        
+            <a href=https://nonmodernist.com/research style="margin-left: 0.25em">&#x2F;research</a>
+        
+            <a href=https://nonmodernist.com/about style="margin-left: 0.25em">&#x2F;about</a>
+        
+
+        
+        <button
+            id="search-button"
+            class="search-button"
+            title="$SHORTCUT to open search"
+        >
+            <img
+                src="https://nonmodernist.com/icons/search.svg"
+                alt="Search"
+                class="search-icon"
+            >
+        </button>
+    
+        <div id="searchModal" class="search-modal js" role="dialog" aria-labelledby="modalTitle">
+            <div id="modal-content">
+                <h1 id="modalTitle" class="page-header">Search</h1>
+                <div id="searchBar">
+                    <input
+                        id="searchInput"
+                        role="combobox"
+                        autocomplete="off"
+                        spellcheck="false"
+                        aria-expanded="false"
+                        aria-controls="results-container"
+                        placeholder="Search..."
+                    />
+                    <button
+                        id="clear-search"
+                        class="clear-button"
+                        title="Clear search"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="results-container">
+                    <div id="results-info">
+                        <span id="zero_results" style="display: none;">No results</span>
+                        <span id="one_result" style="display: none;">1 result</span>
+                        <span id="many_results" style="display: none;">$NUMBER results</span>
+                    </div>
+                    <div id="results" role="listbox"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme(); event.preventDefault();" href="#">
+                <img src=https://nonmodernist.com/icons/sun.svg id="sun-icon" style="filter: invert(1);" alt="Light" />
+                <img src=https://nonmodernist.com/icons/moon.svg id="moon-icon" alt="Dark" />
+            </a>
+
+        <!-- Inititialize the theme toggle icons -->
+        <script>updateItemToggleTheme()</script>
+        
+    </nav>
+</header>
+
+
+        
+        
+    
+  <main>
+      <article class="h-entry readable-content">
+          <div class="title">
+            
+              
+      <div class="page-header">
+          Site Documentation
+          
+          <span class="moon-phase moon-phase-full">
+             🌕
+                  
+            </span>
+            
+      
+      </div>
+  
+  
+                  <div class="meta">
+                      
+                          
+                          Posted <span class="hidden">by <a rel="author" class="p-author h-card" href="https://nonmodernist.com">alexandra edwards</a></span> on <time class="dt-published"> 2025-05-03</time>
+                      
+  
+                      
+  
+                      
+  
+                      
+                          :: 205 Words
+                      
+  
+                      
+                      
+                              <span class="tags-label"> :: Tags:</span>
+                              <span class="tags">
+                                      <a href="https://nonmodernist.com/tags/meta/" class="post-tag">meta</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/zola/" class="post-tag">zola</a>
+                                  
+                              </span>
+                      
+  
+                      
+                      
+  
+                      
+  
+                  </div>
+          </div>
+  
+          
+          
+  
+          
+          
+          
+              <div class="toc-container">
+                  <h1 class="toc-title">Table of Contents</h1>
+                  <ul class="toc-list">
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/meta/reference/#common-commands">Common Commands</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/meta/reference/#frontmatter-templates">Frontmatter Templates</a>
+                              
+                                  <ul>
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/meta/reference/#standard-note-template">Standard Note Template</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/meta/reference/#standard-page-template">Standard Page Template</a>
+                                          </li>
+  
+                                          
+                                      
+                                  </ul>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/meta/reference/#moon-phase-progression-system">Moon Phase Progression System</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/meta/reference/#shortcodes-and-snippets">Shortcodes and Snippets</a>
+                              
+                                  <ul>
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/meta/reference/#valid-og-emojis">Valid OG Emojis</a>
+                                          </li>
+  
+                                          
+                                      
+                                  </ul>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/meta/reference/#site-structure">Site Structure</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/meta/reference/#troubleshooting">Troubleshooting</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/meta/reference/#related-documentation">Related Documentation</a>
+                              
+                          </li>
+                      
+                  </ul>
+              </div>
+          
+          
+  
+          <section class="body"></section>
+          <div>
+              <p>This document contains essential information for maintaining and developing my personal site built with Zola and the Artemis theme.</p>
+<h2 id="common-commands">Common Commands</h2>
+<pre data-lang="bash" style="background-color:#fafafa;color:#61676c;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="font-style:italic;color:#abb0b6;"># Start development server with 
+</span><span style="color:#f29718;">zola</span><span> serve</span><span style="color:#ff8f40;"> --drafts
+</span><span>
+</span><span style="font-style:italic;color:#abb0b6;"># Build site for production
+</span><span style="font-style:italic;color:#abb0b6;"># usually not needed since GitHub Actions handles this
+</span><span style="font-style:italic;color:#abb0b6;"># but useful for local testing
+</span><span style="color:#f29718;">zola</span><span> build
+</span><span>
+</span></code></pre>
+<h1 id="frontmatter-templates">Frontmatter Templates</h1>
+<h2 id="standard-note-template">Standard Note Template</h2>
+<pre data-lang="toml" style="background-color:#fafafa;color:#61676c;" class="language-toml "><code class="language-toml" data-lang="toml"><span style="color:#f51818;">+++
+</span><span style="color:#399ee6;">title </span><span>= </span><span style="color:#86b300;">&quot;Note Title&quot;
+</span><span style="color:#399ee6;">date </span><span>= </span><span style="color:#86b300;">&quot;2025-05-02&quot;
+</span><span style="color:#399ee6;">draft </span><span>= </span><span style="color:#ff8f40;">false
+</span><span style="color:#399ee6;">taxonomies</span><span style="color:#f51818;">:
+</span><span>  </span><span style="color:#399ee6;">tags </span><span>= [</span><span style="color:#86b300;">&quot;tag1&quot;</span><span style="color:#61676ccc;">, </span><span style="color:#86b300;">&quot;tag2&quot;</span><span>]
+</span><span style="color:#399ee6;">extra</span><span style="color:#f51818;">:
+</span><span>  </span><span style="color:#399ee6;">moon_phase </span><span>= </span><span style="color:#86b300;">&quot;waxing_crescent&quot; </span><span style="font-style:italic;color:#abb0b6;"># Options: new, waxing_crescent, first_quarter, waxing_gibbous, full
+</span><span>  </span><span style="color:#399ee6;">tldr </span><span>= </span><span style="color:#86b300;">&quot;A brief summary of this note&#39;s content.&quot;
+</span><span>  </span><span style="color:#399ee6;">related_notes_links </span><span>= [
+</span><span>    {
+</span><span>      </span><span style="color:#f51818;">&quot;url&quot;: &quot;/notes/related-note/&quot;</span><span style="color:#61676ccc;">,
+</span><span>      </span><span style="color:#86b300;">&quot;title&quot;</span><span style="color:#f51818;">: &quot;Related Note Title&quot;</span><span style="color:#61676ccc;">,
+</span><span>      </span><span style="color:#86b300;">&quot;description&quot;</span><span style="color:#f51818;">: &quot;Brief description of the related note&quot;</span><span style="color:#61676ccc;">,
+</span><span>      </span><span style="color:#86b300;">&quot;moon_phase&quot;</span><span style="color:#f51818;">: &quot;first_quarter&quot;
+</span><span>    </span><span style="color:#f51818;">}
+</span><span>  ]
+</span><span style="color:#f51818;">+++
+</span></code></pre>
+<h2 id="standard-page-template">Standard Page Template</h2>
+<pre data-lang="toml" style="background-color:#fafafa;color:#61676c;" class="language-toml "><code class="language-toml" data-lang="toml"><span style="color:#f51818;">+++
+</span><span style="color:#399ee6;">title </span><span>= </span><span style="color:#86b300;">&quot;Page Title&quot;
+</span><span style="color:#399ee6;">date </span><span>= </span><span style="color:#86b300;">&quot;2025-05-02&quot;
+</span><span style="color:#399ee6;">insert_anchor_links </span><span>= </span><span style="color:#86b300;">&quot;heading&quot;
+</span><span style="color:#f51818;">+++
+</span></code></pre>
+<h1 id="moon-phase-progression-system">Moon Phase Progression System</h1>
+<p>For a basic reference, see the table below. For complete design guidelines, see the <a href="https://nonmodernist.com/meta/lunar-system-reference/">Digital Moon Garden Style Guide</a>.</p>
+<table><thead><tr><th>Phase</th><th>Emoji</th><th>Class</th><th>Meaning</th></tr></thead><tbody>
+<tr><td>New Moon</td><td>🌑</td><td><code>moon-phase-new</code></td><td>Brand new ideas, initial thoughts</td></tr>
+<tr><td>Waxing Crescent</td><td>🌙</td><td><code>moon-phase-waxing_crescent</code></td><td>Beginning to take shape</td></tr>
+<tr><td>First Quarter</td><td>🌓</td><td><code>moon-phase-first_quarter</code></td><td>Half-developed</td></tr>
+<tr><td>Waxing Gibbous</td><td>🌔</td><td><code>moon-phase-waxing_gibbous</code></td><td>Mostly formed</td></tr>
+<tr><td>Full Moon</td><td>🌕</td><td><code>moon-phase-full</code></td><td>Complete thought</td></tr>
+</tbody></table>
+<h1 id="shortcodes-and-snippets">Shortcodes and Snippets</h1>
+<p>See the <a href="https://nonmodernist.com/meta/shortcode-examples/">Shortcode Examples</a> for quick reference and the <a href="https://nonmodernist.com/meta/lunar-system-reference/">Lunar Style Guide</a> for more information on divider styles.</p>
+<h2 id="valid-og-emojis">Valid OG Emojis</h2>
+<p>For a complete list of emojis that work with the og class, see the <a href="https://nonmodernist.com/meta/lunar-system-reference/">Lunar Style Guide</a>.</p>
+<h1 id="site-structure">Site Structure</h1>
+<pre style="background-color:#fafafa;color:#61676c;"><code><span>content/            
+</span><span>├── _index.md    # Homepage
+</span><span>├── is/          # Status updates echoed from Bluesky
+</span><span>├── log/         # Movie log echoed from Letterboxd
+</span><span>├── meta/        # Site documentation
+</span><span>├── notes/       # Digital garden notes
+</span><span>├── reading/     # Reading list
+</span><span>├── research/    # CV
+</span><span>└── teaching/    # Index of courses
+</span><span>
+</span><span>
+</span><span>themes/apollo/      
+</span><span>├── templates/      # HTML templates
+</span><span>├── sass/           # Styling
+</span><span>└── static/         # Static assets
+</span><span>    └── images/     # Images
+</span></code></pre>
+<h1 id="troubleshooting">Troubleshooting</h1>
+<ul>
+<li>If styles aren't updating, try clearing your browser cache</li>
+<li>For template changes, restart the Zola server</li>
+<li>Taxonomy issues often require rebuilding the site with <code>zola build</code></li>
+<li>For deployment issues, check GitHub Actions logs</li>
+</ul>
+<h1 id="related-documentation">Related Documentation</h1>
+<ul>
+<li><a href="https://www.getzola.org/documentation/getting-started/overview/">Zola Documentation</a></li>
+<li><a href="https://nonmodernist.com/meta/lunar-system-reference/">Moon Style Guide</a></li>
+</ul>
+
+          </div> 
+      </section>
+  
+    
+  
+
+
+    
+      
+      </article>
+  </main>
+  
+
+
+        
+            
+        
+
+        
+    </div>
+
+
+    <hr>
+
+    <div class="footer">
+        <p>
+            <span class="og"><a href="https://nonmodernist.com">🏠</a> ☕ 🌁 <span id="launch-counter">875</span> 🎂 ☕ 🌁 🔍 📷 👓 🌁🌁 💠 📩 🌁 🌁🌁 <a href="https://nonmodernist.com/uses">⚡︎</a> 💓 <a href="https://nonmodernist.com/log"><span id="movies-counter">2736</span> 📺</a> 🌁🌁🌁 a 🌁 🌙 <a href="https://nonmodernist.com/readinglog"><span id="books-counter">974</span> 📖</a></span>
+        </p>
+    </div>
+    
+
+
+</html>
