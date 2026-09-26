@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https:&#x2F;&#x2F;nonmodernist.com">
+
+    <link rel="me" href="https://github.com/nonmodernist" />
+    <link rel="me" href="https://bsky.app/profile/nonmodernist.bsky.social" />
+    <link rel="webmention" href="https://webmention.io/nonmodernist.com/webmention" />
+
+    
+
+    
+    
+    
+    <title>
+         Villages in Folk Horror: The Lost Commons
+        
+    </title>
+
+        
+            <meta property="og:title" content="Villages in Folk Horror: The Lost Commons" />
+        
+     
+
+     
+         
+             <meta property="og:description" content="the internet homebase of dr. alexandra edwards" />
+         
+     
+
+     
+         
+             <meta name="description" content="the internet homebase of dr. alexandra edwards" />
+         
+    
+
+    
+    
+        <link rel="icon" type="image/png" href=&#x2F;favicon.png />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href=&#x2F;favicon.png>
+
+
+    
+    
+        <link href=https://nonmodernist.com/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/codeblock.js></script>
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/toc.js></script>
+    
+    
+    
+    
+        <script src=https://nonmodernist.com/js/note.js></script>
+    
+
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="alexandra edwards, phd" href="https://nonmodernist.com/atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="nonmodernist.com - notes only" href="https://nonmodernist.com/notes/atom.xml">
+
+
+
+    
+    
+        <link rel="stylesheet" type="text/css" href=https://nonmodernist.com/theme/light.css />
+        <link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://nonmodernist.com/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+
+    
+    <script src=https://nonmodernist.com/js/themetoggle.js></script>
+
+        
+        <script>setTheme(getSavedTheme());</script>
+    
+    
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://nonmodernist.com/main.css />
+
+    
+
+    
+        <script defer src="https://nonmodernist.com/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script><script src="https://nonmodernist.com/js/counters.js"></script>
+</head>
+
+    
+<!--
+         wWWWw               wWWWw
+   vVVVv (___) wWWWw         (___)  vVVVv
+   (___)  ~Y~  (___)  vVVVv   ~Y~   (___)
+    ~Y~   \|    ~Y~   (___)    |/    ~Y~
+    \|   \ |/   \| /  \~Y~/   \|    \ |/
+   \\|// \\|// \\|/// \\|//  \\|// \\\|///
+jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-->
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main">
+                
+                    <a href=https:&#x2F;&#x2F;nonmodernist.com>alexandra edwards, phd</a>
+                
+
+
+        <div class="socials">
+            
+        </div>
+    </div>
+
+    <nav>
+        
+            <a href=https://nonmodernist.com/notes style="margin-left: 0.25em">&#x2F;notes</a>
+        
+            <a href=https://nonmodernist.com/teaching style="margin-left: 0.25em">&#x2F;teaching</a>
+        
+            <a href=https://nonmodernist.com/research style="margin-left: 0.25em">&#x2F;research</a>
+        
+            <a href=https://nonmodernist.com/about style="margin-left: 0.25em">&#x2F;about</a>
+        
+
+        
+        <button
+            id="search-button"
+            class="search-button"
+            title="$SHORTCUT to open search"
+        >
+            <img
+                src="https://nonmodernist.com/icons/search.svg"
+                alt="Search"
+                class="search-icon"
+            >
+        </button>
+    
+        <div id="searchModal" class="search-modal js" role="dialog" aria-labelledby="modalTitle">
+            <div id="modal-content">
+                <h1 id="modalTitle" class="page-header">Search</h1>
+                <div id="searchBar">
+                    <input
+                        id="searchInput"
+                        role="combobox"
+                        autocomplete="off"
+                        spellcheck="false"
+                        aria-expanded="false"
+                        aria-controls="results-container"
+                        placeholder="Search..."
+                    />
+                    <button
+                        id="clear-search"
+                        class="clear-button"
+                        title="Clear search"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="results-container">
+                    <div id="results-info">
+                        <span id="zero_results" style="display: none;">No results</span>
+                        <span id="one_result" style="display: none;">1 result</span>
+                        <span id="many_results" style="display: none;">$NUMBER results</span>
+                    </div>
+                    <div id="results" role="listbox"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme(); event.preventDefault();" href="#">
+                <img src=https://nonmodernist.com/icons/sun.svg id="sun-icon" style="filter: invert(1);" alt="Light" />
+                <img src=https://nonmodernist.com/icons/moon.svg id="moon-icon" alt="Dark" />
+            </a>
+
+        <!-- Inititialize the theme toggle icons -->
+        <script>updateItemToggleTheme()</script>
+        
+    </nav>
+</header>
+
+
+        
+        
+    
+  <main>
+      <article class="h-entry readable-content">
+          <div class="title">
+            
+              
+      <div class="page-header">
+          Villages in Folk Horror: The Lost Commons
+          
+          <span class="moon-phase moon-phase-first_quarter">
+             🌓
+             
+            </span>
+            
+      
+      </div>
+  
+  
+                  <div class="meta">
+                      
+                          
+                          Posted <span class="hidden">by <a rel="author" class="p-author h-card" href="https://nonmodernist.com">alexandra edwards</a></span> on <time class="dt-published"> 2024-08-15</time>
+                      
+  
+                      
+  
+                      
+  
+                      
+                          :: 654 Words
+                      
+  
+                      
+                      
+                              <span class="tags-label"> :: Tags:</span>
+                              <span class="tags">
+                                      <a href="https://nonmodernist.com/tags/film/" class="post-tag">film</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/folk-horror/" class="post-tag">folk horror</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/villages/" class="post-tag">villages</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/landscape/" class="post-tag">landscape</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/commons/" class="post-tag">commons</a>
+                                  
+                              </span>
+                      
+  
+                      
+                      
+  
+                      
+  
+                  </div>
+          </div>
+  
+          
+          
+              <div class="tldr p-summary">
+                  <strong>tl;dr:</strong>
+                  Villages in folk horror represent sites of communal tradition and lost commons, offering both safety and peril as they maintain practices that urban society has abandoned.
+              </div>
+          
+  
+          
+          
+          
+              <div class="toc-container">
+                  <h1 class="toc-title">Table of Contents</h1>
+                  <ul class="toc-list">
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/villages-folk-horror/#what-is-a-village">What Is a Village?</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/villages-folk-horror/#villages-in-folk-horror">Villages in Folk Horror</a>
+                              
+                                  <ul>
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/villages-folk-horror/#time-capsules">Time Capsules</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/villages-folk-horror/#communities-of-shared-knowledge">Communities of Shared Knowledge</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/villages-folk-horror/#contested-spaces">Contested Spaces</a>
+                                          </li>
+  
+                                          
+                                      
+                                  </ul>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/villages-folk-horror/#the-lost-commons">The Lost Commons</a>
+                              
+                          </li>
+                      
+                  </ul>
+              </div>
+          
+          
+  
+          <section class="body"></section>
+          <div>
+              <p>I recently designed a course on genre in film. The theme for the first iteration of the class is folk horror—a genre where villages frequently appear as both settings and symbolic spaces where forgotten traditions persist.</p>
+<figure class="center">
+  <div class="pixel-corners--wrapper">
+    <img src="/images/ai-village-green.png" alt="AI-generated watercolor and linocut illustration of a village green - a large grassy area surrounded by small cottages with pitched roofs. Trees frame the scene, and fluffy clouds fill a blue sky. The illustration uses flowing lines to create a sense of a windy spring day." width="550px">
+  </div>
+  <figcaption>A village green in rural England, watercolor and linocut-style illustration created with Adobe text-to-image. The open communal space surrounded by cottages represents the traditional commons that were central to village life before the enclosure movement.</figcaption>
+</figure>
+<h2 id="what-is-a-village"><a class="zola-anchor" href="#what-is-a-village" aria-label="Anchor link for: what-is-a-village">What Is a Village?</a></h2>
+<p>In the UK, where folk horror came into its own, a village is a compact settlement of houses with a public building like a church, often sited for agriculture. Medieval villages were usually organized around a village green and land would have been farmed communally. This is where the phrase "the commons" comes from—a common place, both physically and conceptually, that belonged to everyone.</p>
+<p>The concept of the "village green" as a common place mirrors the idea of a "<a href="https://nonmodernist.com/notes/commonplace-books/">commonplace book</a>"—a personal collection of important ideas, quotes, and knowledge gathered in one location. Both represent shared repositories of community wisdom, whether physical (the green) or textual (the commonplace book).</p>
+<p>Unfortunately, after the 1600s, the commons were enclosed and private property became the organizing principle of farming and life:</p>
+<blockquote>
+<p>One of the major changes that led to the increased complexity in the form of the British village was the movement away from communal open-field farming (common in medieval times) to the enclosure of land into regular fields which occurred in most of Britain between 1600 and 1800. This had a huge effect on settlements as new patterns of farm holdings developed away from the village centre. In many cases the village structure was weakened as the farming population moved away from the centres of population.</p>
+<p>—<a href="https://web.archive.org/web/20090925003621/http://www.bbc.co.uk/history/programmes/restoration/2006/exploring_brit_villages_03.shtml">Greg Stevenson</a></p>
+</blockquote>
+<h2 id="villages-in-folk-horror"><a class="zola-anchor" href="#villages-in-folk-horror" aria-label="Anchor link for: villages-in-folk-horror">Villages in Folk Horror</a></h2>
+<p>In folk horror, villages often function as:</p>
+<h3 id="time-capsules"><a class="zola-anchor" href="#time-capsules" aria-label="Anchor link for: time-capsules">Time Capsules</a></h3>
+<p>The village frequently represents a space where time has moved differently, preserving beliefs and practices that have been abandoned by urban society:</p>
+<ul>
+<li><em>The Wicker Man</em> (1973, UK)</li>
+<li><em>Children of the Corn</em> (1984, US)</li>
+<li><em>Apostle</em> (2018, UK)</li>
+</ul>
+<h3 id="communities-of-shared-knowledge"><a class="zola-anchor" href="#communities-of-shared-knowledge" aria-label="Anchor link for: communities-of-shared-knowledge">Communities of Shared Knowledge</a></h3>
+<p>Villages maintain collective memories and communal traditions that can be both protective and dangerous:</p>
+<ul>
+<li><em>The White Reindeer</em> (1952, Finland)</li>
+<li><em>The Dark Secret of Harvest Home</em> (1978, US)</li>
+<li><em>Midsommar</em> (2019, US/Sweden)</li>
+</ul>
+<h3 id="contested-spaces"><a class="zola-anchor" href="#contested-spaces" aria-label="Anchor link for: contested-spaces">Contested Spaces</a></h3>
+<p>Many folk horror films explore the tension between communal traditions (the commons) and more modern, individualistic values:</p>
+<ul>
+<li><em>Witchfinder General</em> (1968, UK)</li>
+<li><em>The Medium</em> (2021, Thailand)</li>
+</ul>
+
+  
+
+
+
+<div class="divider-quarter">
+  <div class="quarter-moon-container">
+    <div class="quarter-moon"></div>
+  </div>
+</div>
+<h2 id="the-lost-commons"><a class="zola-anchor" href="#the-lost-commons" aria-label="Anchor link for: the-lost-commons">The Lost Commons</a></h2>
+<p>The concept of "the commons" is particularly significant in folk horror. The enclosure movement of the 16th-18th centuries in Britain transformed communal land into private property, fundamentally changing rural social structures.</p>
+<p>The Diggers, a 17th-century radical Protestant group, resisted these enclosures by establishing communes on unused land. Their defense of the commons could be seen as an early form of agrarian anarchism—a resistance to the privatization that was destroying communal life in favor of capitalism.</p>
+<p>Folk horror often mourns or examines this loss of communal living while simultaneously expressing anxiety about the darker aspects of tight-knit communities. The village becomes both utopian and dystopian—a space where people care for each other collectively, but also where conformity is enforced through tradition and ritual.</p>
+
+  
+
+
+
+<div class="divider-default">
+  <div class="moon-phases">
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+  </div>
+</div>
+<p><em>This note is part of a series exploring <a href="https://nonmodernist.com/notes/folk-horror-overview/">folk horror in cinema</a>. I'm developing these themes for a film genre course focusing on folk horror.</em></p>
+
+          </div> 
+      </section>
+  
+    
+  
+<div class="related-notes">
+  <h2><span class="og">💡</span> Related Notes</h2>
+  <ul class="related-notes-list">
+    
+      <li class="related-note-item">
+        <a href="&#x2F;notes&#x2F;folk-horror-overview&#x2F;" class="related-note-link">Folk Horror: An Overview</a>
+        
+        <span class="moon-phase moon-phase-waxing_gibbous">
+          🌔
+          
+        </span>
+        
+        
+        
+        <p class="related-note-description">An exploration of folk horror as a film genre, its international manifestations, and common tropes.</p>
+        
+      </li>
+    
+      <li class="related-note-item">
+        <a href="&#x2F;notes&#x2F;folk-horror-rural-settings&#x2F;" class="related-note-link">Rural Settings</a>
+        
+        <span class="moon-phase moon-phase-waxing_gibbous">
+          🌔
+          
+        </span>
+        
+        
+        
+        <p class="related-note-description">Exploring how rural isolation forms the backbone of folk horror narratives.</p>
+        
+      </li>
+    
+      <li class="related-note-item">
+        <a href="&#x2F;notes&#x2F;folk-horror-outsider&#x2F;" class="related-note-link">The Outsider</a>
+        
+        <span class="moon-phase moon-phase-waxing_gibbous">
+          🌔
+          
+        </span>
+        
+        
+        
+        <p class="related-note-description">The outsider perspective is a key narrative device in folk horror.</p>
+        
+      </li>
+    
+  </ul>
+</div>
+
+
+
+    
+      
+      </article>
+  </main>
+  
+
+
+        
+            
+        
+
+        
+    </div>
+
+
+    <hr>
+
+    <div class="footer">
+        <p>
+            <span class="og"><a href="https://nonmodernist.com">🏠</a> ☕ 🌁 <span id="launch-counter">875</span> 🎂 ☕ 🌁 🔍 📷 👓 🌁🌁 💠 📩 🌁 🌁🌁 <a href="https://nonmodernist.com/uses">⚡︎</a> 💓 <a href="https://nonmodernist.com/log"><span id="movies-counter">2736</span> 📺</a> 🌁🌁🌁 a 🌁 🌙 <a href="https://nonmodernist.com/readinglog"><span id="books-counter">974</span> 📖</a></span>
+        </p>
+    </div>
+    
+
+
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https:&#x2F;&#x2F;nonmodernist.com">
+
+    <link rel="me" href="https://github.com/nonmodernist" />
+    <link rel="me" href="https://bsky.app/profile/nonmodernist.bsky.social" />
+    <link rel="webmention" href="https://webmention.io/nonmodernist.com/webmention" />
+
+    
+
+    
+    
+    
+    <title>
+         Early Sound Recording Technologies
+        
+    </title>
+
+        
+            <meta property="og:title" content="Early Sound Recording Technologies" />
+        
+     
+
+     
+         
+             <meta property="og:description" content="the internet homebase of dr. alexandra edwards" />
+         
+     
+
+     
+         
+             <meta name="description" content="the internet homebase of dr. alexandra edwards" />
+         
+    
+
+    
+    
+        <link rel="icon" type="image/png" href=&#x2F;favicon.png />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href=&#x2F;favicon.png>
+
+
+    
+    
+        <link href=https://nonmodernist.com/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/codeblock.js></script>
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/toc.js></script>
+    
+    
+    
+    
+        <script src=https://nonmodernist.com/js/note.js></script>
+    
+
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="alexandra edwards, phd" href="https://nonmodernist.com/atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="nonmodernist.com - notes only" href="https://nonmodernist.com/notes/atom.xml">
+
+
+
+    
+    
+        <link rel="stylesheet" type="text/css" href=https://nonmodernist.com/theme/light.css />
+        <link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://nonmodernist.com/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+
+    
+    <script src=https://nonmodernist.com/js/themetoggle.js></script>
+
+        
+        <script>setTheme(getSavedTheme());</script>
+    
+    
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://nonmodernist.com/main.css />
+
+    
+
+    
+        <script defer src="https://nonmodernist.com/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script><script src="https://nonmodernist.com/js/counters.js"></script>
+</head>
+
+    
+<!--
+         wWWWw               wWWWw
+   vVVVv (___) wWWWw         (___)  vVVVv
+   (___)  ~Y~  (___)  vVVVv   ~Y~   (___)
+    ~Y~   \|    ~Y~   (___)    |/    ~Y~
+    \|   \ |/   \| /  \~Y~/   \|    \ |/
+   \\|// \\|// \\|/// \\|//  \\|// \\\|///
+jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-->
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main">
+                
+                    <a href=https:&#x2F;&#x2F;nonmodernist.com>alexandra edwards, phd</a>
+                
+
+
+        <div class="socials">
+            
+        </div>
+    </div>
+
+    <nav>
+        
+            <a href=https://nonmodernist.com/notes style="margin-left: 0.25em">&#x2F;notes</a>
+        
+            <a href=https://nonmodernist.com/teaching style="margin-left: 0.25em">&#x2F;teaching</a>
+        
+            <a href=https://nonmodernist.com/research style="margin-left: 0.25em">&#x2F;research</a>
+        
+            <a href=https://nonmodernist.com/about style="margin-left: 0.25em">&#x2F;about</a>
+        
+
+        
+        <button
+            id="search-button"
+            class="search-button"
+            title="$SHORTCUT to open search"
+        >
+            <img
+                src="https://nonmodernist.com/icons/search.svg"
+                alt="Search"
+                class="search-icon"
+            >
+        </button>
+    
+        <div id="searchModal" class="search-modal js" role="dialog" aria-labelledby="modalTitle">
+            <div id="modal-content">
+                <h1 id="modalTitle" class="page-header">Search</h1>
+                <div id="searchBar">
+                    <input
+                        id="searchInput"
+                        role="combobox"
+                        autocomplete="off"
+                        spellcheck="false"
+                        aria-expanded="false"
+                        aria-controls="results-container"
+                        placeholder="Search..."
+                    />
+                    <button
+                        id="clear-search"
+                        class="clear-button"
+                        title="Clear search"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="results-container">
+                    <div id="results-info">
+                        <span id="zero_results" style="display: none;">No results</span>
+                        <span id="one_result" style="display: none;">1 result</span>
+                        <span id="many_results" style="display: none;">$NUMBER results</span>
+                    </div>
+                    <div id="results" role="listbox"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme(); event.preventDefault();" href="#">
+                <img src=https://nonmodernist.com/icons/sun.svg id="sun-icon" style="filter: invert(1);" alt="Light" />
+                <img src=https://nonmodernist.com/icons/moon.svg id="moon-icon" alt="Dark" />
+            </a>
+
+        <!-- Inititialize the theme toggle icons -->
+        <script>updateItemToggleTheme()</script>
+        
+    </nav>
+</header>
+
+
+        
+        
+    
+  <main>
+      <article class="h-entry readable-content">
+          <div class="title">
+            
+              
+      <div class="page-header">
+          Early Sound Recording Technologies
+          
+          <span class="moon-phase moon-phase-first_quarter">
+             🌓
+             
+            </span>
+            
+      
+      </div>
+  
+  
+                  <div class="meta">
+                      
+                          
+                          Posted <span class="hidden">by <a rel="author" class="p-author h-card" href="https://nonmodernist.com">alexandra edwards</a></span> on <time class="dt-published"> 2025-01-05</time>
+                      
+  
+                      
+  
+                      
+  
+                      
+                          :: 494 Words
+                      
+  
+                      
+                      
+                              <span class="tags-label"> :: Tags:</span>
+                              <span class="tags">
+                                      <a href="https://nonmodernist.com/tags/film-history/" class="post-tag">film history</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/technology/" class="post-tag">technology</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/sound-recording/" class="post-tag">sound recording</a>
+                                  
+                              </span>
+                      
+  
+                      
+                      
+  
+                      
+  
+                  </div>
+          </div>
+  
+          
+          
+              <div class="tldr p-summary">
+                  <strong>tl;dr:</strong>
+                  The parallel development of sound recording technologies that would eventually merge with moving images to create synchronized sound cinema.
+              </div>
+          
+  
+          
+          
+          
+              <div class="toc-container">
+                  <h1 class="toc-title">Table of Contents</h1>
+                  <ul class="toc-list">
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/early-sound-recording/#early-sound-recording-innovations">Early Sound Recording Innovations</a>
+                              
+                                  <ul>
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/early-sound-recording/#the-phonautograph-1850s">The Phonautograph (1850s)</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/early-sound-recording/#edison-s-phonograph-1870s">Edison&#x27;s Phonograph (1870s)</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/early-sound-recording/#competing-technologies">Competing Technologies</a>
+                                          </li>
+  
+                                          
+                                      
+                                  </ul>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/early-sound-recording/#connection-to-early-cinema">Connection to Early Cinema</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/early-sound-recording/#cultural-impact">Cultural Impact</a>
+                              
+                          </li>
+                      
+                  </ul>
+              </div>
+          
+          
+  
+          <section class="body"></section>
+          <div>
+              <p><span class="og">🎵</span> While the visual technologies that led to cinema developed throughout the 19th century, parallel innovations in sound recording were laying the groundwork for what would eventually become synchronized sound film. The path to recorded sound followed its own distinct trajectory before eventually converging with moving images.</p>
+<h2 id="early-sound-recording-innovations"><a class="zola-anchor" href="#early-sound-recording-innovations" aria-label="Anchor link for: early-sound-recording-innovations">Early Sound Recording Innovations</a></h2>
+<h3 id="the-phonautograph-1850s"><a class="zola-anchor" href="#the-phonautograph-1850s" aria-label="Anchor link for: the-phonautograph-1850s">The Phonautograph (1850s)</a></h3>
+<p>The earliest known device for recording sound, called the phonautograph, was invented in France in the 1850s by Édouard-Léon Scott de Martinville. The device recorded a visual representation of soundwaves on paper or glass, but it was not originally designed with playback capabilities.</p>
+<p>Remarkably, it did not occur to anyone before the 1870s that these recordings, called phonautograms, contained enough information about the sound that they could, in theory, be used to recreate it. Because the phonautogram tracing was an insubstantial two-dimensional line, direct physical playback was impossible at the time.</p>
+<p>In a fascinating development from 2008, several phonautograms recorded before 1861 were successfully played as sound by optically scanning them and using computer processing to convert the scans into digital audio files. This allowed us to hear recordings made over 150 years earlier that were never meant to be played back.</p>
+<h3 id="edison-s-phonograph-1870s"><a class="zola-anchor" href="#edison-s-phonograph-1870s" aria-label="Anchor link for: edison-s-phonograph-1870s">Edison's Phonograph (1870s)</a></h3>
+<p>In the 1870s, Thomas Edison began working on a device that could both record sound and play it back. His breakthrough came with the phonograph, which used a stylus to inscribe sound vibrations onto a rotating cylinder covered with tinfoil (later wax).</p>
+<p>To play back the recording, another stylus would trace these grooves, with the resulting vibrations amplified through a horn. This physical approach to sound reproduction differed fundamentally from the visual approach of the phonautograph.</p>
+<h3 id="competing-technologies"><a class="zola-anchor" href="#competing-technologies" aria-label="Anchor link for: competing-technologies">Competing Technologies</a></h3>
+<p>Throughout the 1880s, various inventors including Alexander Graham Bell and Emile Berliner refined sound recording technologies. Berliner's gramophone, which used flat discs rather than cylinders, would eventually become the dominant format for consumer audio.</p>
+<h2 id="connection-to-early-cinema"><a class="zola-anchor" href="#connection-to-early-cinema" aria-label="Anchor link for: connection-to-early-cinema">Connection to Early Cinema</a></h2>
+<p>The development of sound recording ran largely parallel to, rather than in conjunction with, the development of motion pictures. When W.K.L. Dickson created what is considered the first experiment in synchronized sound film in 1894 or 1895, he had to use two separate technologies:</p>
+<ol>
+<li>A kinetoscope for the visual component</li>
+<li>A phonograph for the audio component</li>
+</ol>
+<p>The challenge of synchronizing these separate devices would remain a significant technical hurdle for decades, with various systems attempting to solve the problem before the introduction of optical sound-on-film technology in the late 1920s.</p>
+<h2 id="cultural-impact"><a class="zola-anchor" href="#cultural-impact" aria-label="Anchor link for: cultural-impact">Cultural Impact</a></h2>
+<p>Sound recording technologies changed our relationship with time and memory in ways similar to photography. Just as photographs allowed visual moments to be captured and revisited, sound recording permitted aural experiences to be preserved and replayed.</p>
+<p>This ability to capture ephemeral sensory experiences laid important cultural groundwork for the eventual acceptance of cinema as a medium that could reproduce reality in increasingly comprehensive ways.</p>
+
+  
+
+
+
+<div class="divider-default">
+  <div class="moon-phases">
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+  </div>
+</div>
+<p><em>This note is part of a series exploring the pre-history of cinema.</em></p>
+
+          </div> 
+      </section>
+  
+    
+  
+<div class="related-notes">
+  <h2><span class="og">💡</span> Related Notes</h2>
+  <ul class="related-notes-list">
+    
+      <li class="related-note-item">
+        <a href="&#x2F;notes&#x2F;pre-cinema-technologies&#x2F;" class="related-note-link">Pre-Cinema Technologies: An Overview</a>
+        
+        <span class="moon-phase moon-phase-first_quarter">
+          🌓
+          
+        </span>
+        
+        
+        
+        <p class="related-note-description">An exploration of the technologies that preceded and laid the groundwork for cinema.</p>
+        
+      </li>
+    
+      <li class="related-note-item">
+        <a href="&#x2F;notes&#x2F;optical-toys&#x2F;" class="related-note-link">Optical Toys: Early Animation Technologies</a>
+        
+        <span class="moon-phase moon-phase-first_quarter">
+          🌓
+          
+        </span>
+        
+        
+        
+        <p class="related-note-description">Exploring the 19th century optical toys that laid the groundwork for cinematic animation.</p>
+        
+      </li>
+    
+      <li class="related-note-item">
+        <a href="&#x2F;notes&#x2F;early-photography&#x2F;" class="related-note-link">Early Photography and Motion Studies</a>
+        
+        <span class="moon-phase moon-phase-first_quarter">
+          🌓
+          
+        </span>
+        
+        
+        
+        <p class="related-note-description">The development of photography and its evolution toward capturing motion.</p>
+        
+      </li>
+    
+  </ul>
+</div>
+
+
+
+    
+      
+      </article>
+  </main>
+  
+
+
+        
+            
+        
+
+        
+    </div>
+
+
+    <hr>
+
+    <div class="footer">
+        <p>
+            <span class="og"><a href="https://nonmodernist.com">🏠</a> ☕ 🌁 <span id="launch-counter">875</span> 🎂 ☕ 🌁 🔍 📷 👓 🌁🌁 💠 📩 🌁 🌁🌁 <a href="https://nonmodernist.com/uses">⚡︎</a> 💓 <a href="https://nonmodernist.com/log"><span id="movies-counter">2736</span> 📺</a> 🌁🌁🌁 a 🌁 🌙 <a href="https://nonmodernist.com/readinglog"><span id="books-counter">974</span> 📖</a></span>
+        </p>
+    </div>
+    
+
+
+</html>
