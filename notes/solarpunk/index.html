@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https:&#x2F;&#x2F;nonmodernist.com">
+
+    <link rel="me" href="https://github.com/nonmodernist" />
+    <link rel="me" href="https://bsky.app/profile/nonmodernist.bsky.social" />
+    <link rel="webmention" href="https://webmention.io/nonmodernist.com/webmention" />
+
+    
+
+    
+    
+    
+    <title>
+         Solarpunk Futures
+        
+    </title>
+
+        
+            <meta property="og:title" content="Solarpunk Futures" />
+        
+     
+
+     
+         
+             <meta property="og:description" content="the internet homebase of dr. alexandra edwards" />
+         
+     
+
+     
+         
+             <meta name="description" content="the internet homebase of dr. alexandra edwards" />
+         
+    
+
+    
+    
+        <link rel="icon" type="image/png" href=&#x2F;favicon.png />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href=&#x2F;favicon.png>
+
+
+    
+    
+        <link href=https://nonmodernist.com/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/codeblock.js></script>
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/toc.js></script>
+    
+    
+    
+    
+        <script src=https://nonmodernist.com/js/note.js></script>
+    
+
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="alexandra edwards, phd" href="https://nonmodernist.com/atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="nonmodernist.com - notes only" href="https://nonmodernist.com/notes/atom.xml">
+
+
+
+    
+    
+        <link rel="stylesheet" type="text/css" href=https://nonmodernist.com/theme/light.css />
+        <link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://nonmodernist.com/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+
+    
+    <script src=https://nonmodernist.com/js/themetoggle.js></script>
+
+        
+        <script>setTheme(getSavedTheme());</script>
+    
+    
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://nonmodernist.com/main.css />
+
+    
+
+    
+        <script defer src="https://nonmodernist.com/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script><script src="https://nonmodernist.com/js/counters.js"></script>
+</head>
+
+    
+<!--
+         wWWWw               wWWWw
+   vVVVv (___) wWWWw         (___)  vVVVv
+   (___)  ~Y~  (___)  vVVVv   ~Y~   (___)
+    ~Y~   \|    ~Y~   (___)    |/    ~Y~
+    \|   \ |/   \| /  \~Y~/   \|    \ |/
+   \\|// \\|// \\|/// \\|//  \\|// \\\|///
+jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-->
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main">
+                
+                    <a href=https:&#x2F;&#x2F;nonmodernist.com>alexandra edwards, phd</a>
+                
+
+
+        <div class="socials">
+            
+        </div>
+    </div>
+
+    <nav>
+        
+            <a href=https://nonmodernist.com/notes style="margin-left: 0.25em">&#x2F;notes</a>
+        
+            <a href=https://nonmodernist.com/teaching style="margin-left: 0.25em">&#x2F;teaching</a>
+        
+            <a href=https://nonmodernist.com/research style="margin-left: 0.25em">&#x2F;research</a>
+        
+            <a href=https://nonmodernist.com/about style="margin-left: 0.25em">&#x2F;about</a>
+        
+
+        
+        <button
+            id="search-button"
+            class="search-button"
+            title="$SHORTCUT to open search"
+        >
+            <img
+                src="https://nonmodernist.com/icons/search.svg"
+                alt="Search"
+                class="search-icon"
+            >
+        </button>
+    
+        <div id="searchModal" class="search-modal js" role="dialog" aria-labelledby="modalTitle">
+            <div id="modal-content">
+                <h1 id="modalTitle" class="page-header">Search</h1>
+                <div id="searchBar">
+                    <input
+                        id="searchInput"
+                        role="combobox"
+                        autocomplete="off"
+                        spellcheck="false"
+                        aria-expanded="false"
+                        aria-controls="results-container"
+                        placeholder="Search..."
+                    />
+                    <button
+                        id="clear-search"
+                        class="clear-button"
+                        title="Clear search"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="results-container">
+                    <div id="results-info">
+                        <span id="zero_results" style="display: none;">No results</span>
+                        <span id="one_result" style="display: none;">1 result</span>
+                        <span id="many_results" style="display: none;">$NUMBER results</span>
+                    </div>
+                    <div id="results" role="listbox"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme(); event.preventDefault();" href="#">
+                <img src=https://nonmodernist.com/icons/sun.svg id="sun-icon" style="filter: invert(1);" alt="Light" />
+                <img src=https://nonmodernist.com/icons/moon.svg id="moon-icon" alt="Dark" />
+            </a>
+
+        <!-- Inititialize the theme toggle icons -->
+        <script>updateItemToggleTheme()</script>
+        
+    </nav>
+</header>
+
+
+        
+        
+    
+  <main>
+      <article class="h-entry readable-content">
+          <div class="title">
+            
+              
+      <div class="page-header">
+          Solarpunk Futures
+          
+          <span class="moon-phase moon-phase-waxing_gibbous">
+             🌔
+             
+            </span>
+            
+      
+      </div>
+  
+  
+                  <div class="meta">
+                      
+                          
+                          Posted <span class="hidden">by <a rel="author" class="p-author h-card" href="https://nonmodernist.com">alexandra edwards</a></span> on <time class="dt-published"> 2025-05-03</time>
+                      
+  
+                      
+  
+                      
+  
+                      
+                          :: 948 Words
+                      
+  
+                      
+                      
+                              <span class="tags-label"> :: Tags:</span>
+                              <span class="tags">
+                                      <a href="https://nonmodernist.com/tags/anarchism/" class="post-tag">anarchism</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/critical-making/" class="post-tag">critical making</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/solarpunk/" class="post-tag">solarpunk</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/teaching/" class="post-tag">teaching</a>
+                                  
+                              </span>
+                      
+  
+                      
+                      
+  
+                      
+  
+                  </div>
+          </div>
+  
+          
+          
+              <div class="tldr p-summary">
+                  <strong>tl;dr:</strong>
+                  Reflections on solarpunk principles: community resilience, critical making, and imagining better worlds beyond capitalism
+              </div>
+          
+  
+          
+          
+          
+              <div class="toc-container">
+                  <h1 class="toc-title">Table of Contents</h1>
+                  <ul class="toc-list">
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/solarpunk/#solarpunk-as-generative-practice">Solarpunk as Generative Practice</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/solarpunk/#critical-making-as-solarpunk-praxis">Critical Making as Solarpunk Praxis</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/solarpunk/#future-directions-speculative-fiction-as-blueprint">Future Directions: Speculative Fiction as Blueprint</a>
+                              
+                          </li>
+                      
+                  </ul>
+              </div>
+          
+          
+  
+          <section class="body"></section>
+          <div>
+              <p><span class="og">☀</span> Last time I taught a class about solarpunk, my students built an emergency off-grid intranet that I still have sitting in a weatherproof box in my office. Next semester I'll bring it in for a new cohort to play with. I hope that physically handling someone else's prototype of digital infrastructure for climate resilience can make speculative futures feel more tangible for my students.</p>
+<p>The box in my office contains more than just wires and circuit boards and a cheap solar panel. It holds the tangible proof that another world is not only possible but already being built, one student project at a time.</p>
+<figure class="center">
+  <div class="pixel-corners--wrapper">
+    <img src="/images/ai-digital-garden.png" alt="AI-generated watercolor and linocut-style illustration showing a greenhouse workspace where vintage computers and monitors grow like plants among lush tropical foliage. A modern iMac sits on a wooden desk surrounded by flourishing flowers and vines, while old CRT monitors are mounted on poles like tree trunks. Cables snake across the floor like roots. The arched glass ceiling frames this fusion of technology and nature in pale colors with detailed ink strokes." width="500px">
+  </div>
+  <figcaption>This watercolor and linocut approximation was created using Adobe's text-to-image generator with the prompt "garden where computers grow." It captures the essence of both botanical abundance and technological resilience that solarpunk embodies. Where plants and computing power intertwine, we find a practical metaphor for building regenerative digital infrastructure within living systems.</figcaption>
+</figure>
+<h2 id="solarpunk-as-generative-practice"><a class="zola-anchor" href="#solarpunk-as-generative-practice" aria-label="Anchor link for: solarpunk-as-generative-practice">Solarpunk as Generative Practice</a></h2>
+<blockquote>
+<p>"Solarpunk is about finding ways to make life more wonderful for us right now, and more importantly for the generations that follow us—i.e., extending human life at the species level, rather than individually. Our future must involve repurposing and creating new things from what we already have (instead of 20th century 'destroy it all and build something completely different' modernism). Our futurism is not nihilistic... it is about <strong>ingenuity, generativity... and community.</strong>"</p>
+<p>—<a href="https://hieroglyph.asu.edu/2014/09/solarpunk-notes-toward-a-manifesto/">Adam Flynn, "Solarpunk: Notes toward a manifesto"</a></p>
+</blockquote>
+<p>This is what we practiced in class: critical making as a form of applied anarchist theory. Students also kept "field journals for a low-carbon future," with the rule being that they had to use something they already had at hand or make something from recycled supplies. Field journals became sites for documenting our experiments with degrowth living. The off-grid intranet was our answer to the question: what happens to digital community when the power goes out?</p>
+<p>These weren't just academic exercises; they were working prototypes exploring what life and communication might look like when centralized infrastructure fails.</p>
+<h2 id="critical-making-as-solarpunk-praxis"><a class="zola-anchor" href="#critical-making-as-solarpunk-praxis" aria-label="Anchor link for: critical-making-as-solarpunk-praxis">Critical Making as Solarpunk Praxis</a></h2>
+<figure class="center">
+  <div class="pixel-corners--wrapper">
+    <img src="/images/ai-computer-garden.png" alt="AI-generated image showing rows of early Macintosh Plus computers arranged like planted crops in garden beds. Pink coral-colored flowers and green foliage grow abundantly alongside and between the computers. Sheets of paper are scattered like leaves on a pale pink pathway that runs between the rows. The scene is rendered in soft pastels with a dreamlike quality, set against a turquoise sky." width="500px">
+  </div>
+  <figcaption>Another AI-generated vision from the prompt "garden where computers grow"—this time with "layered paper" as a style prompt. The scattered pages on the ground suggest autumn maintenance, while the turquoise sky and coral blooms create an optimistic palette that speaks to the harmony between digital tools and natural ecosystems that solarpunk envisions.</figcaption>
+</figure>
+<p>Teaching solarpunk means bridging my interests in anarchist theory, nature, and technology. We begin with imagining better futures, and then we practice building them at whatever scale we can. Next semester's class on digital infrastructure and climate change continues this thread of my teaching. When my new students hold the prototypes my former students built, they'll understand that solarpunk isn't just an aesthetic—it's about making things that might actually keep us connected when systems fail.</p>
+
+  
+
+
+
+<div class="divider-default">
+  <div class="moon-phases">
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+  </div>
+</div>
+<h2 id="future-directions-speculative-fiction-as-blueprint"><a class="zola-anchor" href="#future-directions-speculative-fiction-as-blueprint" aria-label="Anchor link for: future-directions-speculative-fiction-as-blueprint">Future Directions: Speculative Fiction as Blueprint</a></h2>
+<p>I've been thinking about eventually developing a science fiction course that would explore solarpunk through storytelling and worldbuilding. HydroponicTrash's description resonates with this direction:</p>
+<blockquote>
+<p>"At the moment, we are in the global struggle against capitalism, hierarchy, and domination. But it's interesting to read a story about how people made it through, and built a better future around some of the topics and ideas here. It makes it easier to walk in someone else's shoes so to speak and imagine yourself say in a democratic confederalist assembly of your community, voicing your opinion on a community action to help preserve endangered wildlife in your area. Or speculating what a degrowth future might look like where we lower our energy demand by creating free and open housing that is passive, and heats and cools itself, and how you might interact in an upcycled and revamped suburb with sprawling public transport that runs off low resource intensive passive solar. These things can be worked out, speculated, and shown as both a fiction, but also a path forward to imagine what the world could look like."</p>
+<p>—<a href="https://anarchosolarpunk.substack.com/p/goodlife">HydroponicTrash, "The Good Life: Buen Vivir, Hygge, Solarpunk &amp; Degrowth"</a></p>
+</blockquote>
+<p>This connects to my growing interest in more-than-human kin networks. Maria Puig de la Bellacasa's book <em>Matters of Care: Speculative Ethics in More Than Human Worlds</em> offers a framework that might combine beautifully with solarpunk storytelling—exploring not just how humans might live differently, but how we might reimagine our relationships with all beings in the Anthropocene.</p>
+
+  
+
+
+
+<div class="divider-default">
+  <div class="moon-phases">
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+  </div>
+</div>
+<p><em>This note connects to my explorations of <a href="https://nonmodernist.com/notes/digital-gardens/">digital gardens</a> and <a href="https://nonmodernist.com/notes/commonplace-books/">commonplace books</a>.</em></p>
+
+          </div> 
+      </section>
+  
+    
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+  
+    <div class="backlinks">
+      <button class="note-toggle">
+        <div class="note-icon">
+          <h2> notes that mention this note (2)</h2>
+        </div>
+      </button>
+      
+      <div class="backlinks-content" style="display: none;">
+        <ul class="backlinks-list">
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;ai-image-experiment-computer-shrine&#x2F;">
+                
+                  Text-to-Image Evolution: Computer Shrine
+                
+              </a>
+            </li>
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;digital-gardens&#x2F;">
+                
+                  Digital Gardens: A Return to Pre-Blog Web?
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  
+
+
+
+    
+      
+      </article>
+  </main>
+  
+
+
+        
+            
+        
+
+        
+    </div>
+
+
+    <hr>
+
+    <div class="footer">
+        <p>
+            <span class="og"><a href="https://nonmodernist.com">🏠</a> ☕ 🌁 <span id="launch-counter">875</span> 🎂 ☕ 🌁 🔍 📷 👓 🌁🌁 💠 📩 🌁 🌁🌁 <a href="https://nonmodernist.com/uses">⚡︎</a> 💓 <a href="https://nonmodernist.com/log"><span id="movies-counter">2736</span> 📺</a> 🌁🌁🌁 a 🌁 🌙 <a href="https://nonmodernist.com/readinglog"><span id="books-counter">974</span> 📖</a></span>
+        </p>
+    </div>
+    
+
+
+</html>

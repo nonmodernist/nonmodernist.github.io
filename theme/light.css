@@ -1,0 +1,1 @@
+:root.light{--text-0: #212121;--text-1: #545454;--text-2: #585858;--bg-0: #fff;--bg-1: #fafafa;--bg-2: #e6e6e6;--border-color: var(--bg-2);--primary-color: #FFC107;--primary-light: #FFECB3;--primary-dark: #FF8F00;--hover-color: white;--callout-info: #007FFF;--callout-alert: #fb706e;--callout-success: #AAD6A0;--callout-warning: #fcb388}:root.light .social :hover{filter:invert(1)}
