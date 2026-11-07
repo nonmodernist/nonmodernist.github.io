@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https:&#x2F;&#x2F;nonmodernist.com">
+
+    <link rel="me" href="https://github.com/nonmodernist" />
+    <link rel="me" href="https://bsky.app/profile/nonmodernist.bsky.social" />
+    <link rel="webmention" href="https://webmention.io/nonmodernist.com/webmention" />
+
+    
+
+    
+    
+    
+    <title>
+         Commonplace Books as Gardens of Thought
+        
+    </title>
+
+        
+            <meta property="og:title" content="Commonplace Books as Gardens of Thought" />
+        
+     
+
+     
+         
+             <meta property="og:description" content="the internet homebase of dr. alexandra edwards" />
+         
+     
+
+     
+         
+             <meta name="description" content="the internet homebase of dr. alexandra edwards" />
+         
+    
+
+    
+    
+        <link rel="icon" type="image/png" href=&#x2F;favicon.png />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href=&#x2F;favicon.png>
+
+
+    
+    
+        <link href=https://nonmodernist.com/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/codeblock.js></script>
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/toc.js></script>
+    
+    
+    
+    
+        <script src=https://nonmodernist.com/js/note.js></script>
+    
+
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="alexandra edwards, phd" href="https://nonmodernist.com/atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="nonmodernist.com - notes only" href="https://nonmodernist.com/notes/atom.xml">
+
+
+
+    
+    
+        <link rel="stylesheet" type="text/css" href=https://nonmodernist.com/theme/light.css />
+        <link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://nonmodernist.com/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+
+    
+    <script src=https://nonmodernist.com/js/themetoggle.js></script>
+
+        
+        <script>setTheme(getSavedTheme());</script>
+    
+    
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://nonmodernist.com/main.css />
+
+    
+
+    
+        <script defer src="https://nonmodernist.com/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script><script src="https://nonmodernist.com/js/counters.js"></script>
+</head>
+
+    
+<!--
+         wWWWw               wWWWw
+   vVVVv (___) wWWWw         (___)  vVVVv
+   (___)  ~Y~  (___)  vVVVv   ~Y~   (___)
+    ~Y~   \|    ~Y~   (___)    |/    ~Y~
+    \|   \ |/   \| /  \~Y~/   \|    \ |/
+   \\|// \\|// \\|/// \\|//  \\|// \\\|///
+jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-->
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main">
+                
+                    <a href=https:&#x2F;&#x2F;nonmodernist.com>alexandra edwards, phd</a>
+                
+
+
+        <div class="socials">
+            
+        </div>
+    </div>
+
+    <nav>
+        
+            <a href=https://nonmodernist.com/notes style="margin-left: 0.25em">&#x2F;notes</a>
+        
+            <a href=https://nonmodernist.com/teaching style="margin-left: 0.25em">&#x2F;teaching</a>
+        
+            <a href=https://nonmodernist.com/research style="margin-left: 0.25em">&#x2F;research</a>
+        
+            <a href=https://nonmodernist.com/about style="margin-left: 0.25em">&#x2F;about</a>
+        
+
+        
+        <button
+            id="search-button"
+            class="search-button"
+            title="$SHORTCUT to open search"
+        >
+            <img
+                src="https://nonmodernist.com/icons/search.svg"
+                alt="Search"
+                class="search-icon"
+            >
+        </button>
+    
+        <div id="searchModal" class="search-modal js" role="dialog" aria-labelledby="modalTitle">
+            <div id="modal-content">
+                <h1 id="modalTitle" class="page-header">Search</h1>
+                <div id="searchBar">
+                    <input
+                        id="searchInput"
+                        role="combobox"
+                        autocomplete="off"
+                        spellcheck="false"
+                        aria-expanded="false"
+                        aria-controls="results-container"
+                        placeholder="Search..."
+                    />
+                    <button
+                        id="clear-search"
+                        class="clear-button"
+                        title="Clear search"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="results-container">
+                    <div id="results-info">
+                        <span id="zero_results" style="display: none;">No results</span>
+                        <span id="one_result" style="display: none;">1 result</span>
+                        <span id="many_results" style="display: none;">$NUMBER results</span>
+                    </div>
+                    <div id="results" role="listbox"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme(); event.preventDefault();" href="#">
+                <img src=https://nonmodernist.com/icons/sun.svg id="sun-icon" style="filter: invert(1);" alt="Light" />
+                <img src=https://nonmodernist.com/icons/moon.svg id="moon-icon" alt="Dark" />
+            </a>
+
+        <!-- Inititialize the theme toggle icons -->
+        <script>updateItemToggleTheme()</script>
+        
+    </nav>
+</header>
+
+
+        
+        
+    
+  <main>
+      <article class="h-entry readable-content">
+          <div class="title">
+            
+              
+      <div class="page-header">
+          Commonplace Books as Gardens of Thought
+          
+          <span class="moon-phase moon-phase-first_quarter">
+             🌓
+             
+            </span>
+            
+      
+      </div>
+  
+  
+                  <div class="meta">
+                      
+                          
+                          Posted <span class="hidden">by <a rel="author" class="p-author h-card" href="https://nonmodernist.com">alexandra edwards</a></span> on <time class="dt-published"> 2025-05-02</time>
+                      
+  
+                      
+  
+                      
+  
+                      
+                          :: 814 Words
+                      
+  
+                      
+                      
+                              <span class="tags-label"> :: Tags:</span>
+                              <span class="tags">
+                                      <a href="https://nonmodernist.com/tags/history/" class="post-tag">history</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/digital-gardens/" class="post-tag">digital gardens</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/commonplace-books/" class="post-tag">commonplace books</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/florilegia/" class="post-tag">florilegia</a>
+                                  
+                              </span>
+                      
+  
+                      
+                      
+  
+                      
+  
+                  </div>
+          </div>
+  
+          
+          
+              <div class="tldr p-summary">
+                  <strong>tl;dr:</strong>
+                  Exploring the connections between historical commonplace books and modern digital gardens as tools for cultivating and organizing knowledge.
+              </div>
+          
+  
+          
+          
+          
+              <div class="toc-container">
+                  <h1 class="toc-title">Table of Contents</h1>
+                  <ul class="toc-list">
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/commonplace-books/#what-is-a-commonplace-book">What is a Commonplace Book?</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/commonplace-books/#method-and-purpose">Method and Purpose</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/commonplace-books/#commonplace-books-and-florilegia">Commonplace Books and Florilegia</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/commonplace-books/#from-commonplace-books-to-digital-gardens">From Commonplace Books to Digital Gardens</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/commonplace-books/#digital-gardening-as-modern-commonplacing">Digital Gardening as Modern Commonplacing</a>
+                              
+                          </li>
+                      
+                  </ul>
+              </div>
+          
+          
+  
+          <section class="body"></section>
+          <div>
+              <p><span class="og">📖</span> My relationship with commonplace books began during my master's program, where I worked on transcribing these fascinating historical documents at the library. This interest deepened in 2016 when I participated in an NEH summer seminar focused on commonplace books and scrapbooks while writing my dissertation. That experience fundamentally shaped how I think about knowledge organization and curation—concepts that inform this digital garden.</p>
+<h2 id="what-is-a-commonplace-book"><a class="zola-anchor" href="#what-is-a-commonplace-book" aria-label="Anchor link for: what-is-a-commonplace-book">What is a Commonplace Book?</a></h2>
+<blockquote>
+<p>A commonplace book is at once a book form and a method of reading. Commonplacing was a system of using books in which readers digested the books they read by extracting, ordering and recording particular phrases or passages in notebooks of their own. This process encouraged readers to atomize books by isolating units that might later be useful in one or another discursive context. While the commonplace book allowed readers to personalize their reading by making it useful, this process of textual engagement was also highly prescribed, "common" in the sense that it filtered one's reading through social norms that determined what was textually significant and what not. —<a href="https://www.lib.uchicago.edu/collex/exhibits/book-use-book-theory-1500-1700/parts-and-wholes-matter-method/commonplace-thinking/">Commonplace Thinking, UChicago Library</a></p>
+</blockquote>
+<p>These collections began as blank books that gradually filled with quotes, observations, and ideas the owner encountered and wanted to preserve. The practice encouraged atomizing texts—breaking them into useful, reusable fragments that could be referenced later.</p>
+<h2 id="method-and-purpose"><a class="zola-anchor" href="#method-and-purpose" aria-label="Anchor link for: method-and-purpose">Method and Purpose</a></h2>
+<p>The commonplace book served multiple functions:</p>
+<ul>
+<li>A personal knowledge repository</li>
+<li>A conversation starter</li>
+<li>A memory aid</li>
+<li>A method of processing what one read</li>
+</ul>
+<p>Unlike modern note-taking, which often organizes by source or chronology, commonplace books organized by theme or topic, creating unexpected juxtapositions between ideas from different sources.</p>
+<blockquote>
+<p>[!quote] <a href="https://web.archive.org/web/20040220112000/http://www.futureofthebook.com/stories/storyReader$207">Booke and e-book: The Future of the Book</a>
+"The commonplace book began blank. The reader used it to collect premises, arguments and other quotes from the various books read. The commonplace book was always at hand for the next addition or as a conversational prompt. It might well fill up with contradictory snippets." </p>
+</blockquote>
+<p>This tolerance for contradiction distinguishes commonplace books from more systematic knowledge tools—they weren't meant to present a coherent worldview but rather to capture diverse perspectives that might prove useful in different contexts.</p>
+<!-- FM:Snippet:Start data:{"id":"Dividers","fields":[{"name":"style","value":"(style=\"quarter\")"}]} -->
+
+  
+
+
+
+<div class="divider-quarter">
+  <div class="quarter-moon-container">
+    <div class="quarter-moon"></div>
+  </div>
+</div>
+<!-- FM:Snippet:End -->
+<h2 id="commonplace-books-and-florilegia"><a class="zola-anchor" href="#commonplace-books-and-florilegia" aria-label="Anchor link for: commonplace-books-and-florilegia">Commonplace Books and Florilegia</a></h2>
+<p>The practice of commonplacing connects directly to the medieval tradition of the florilegium (plural: florilegia), literally "a gathering of flowers." These collections contained excerpts from authoritative texts, usually organized by subject.</p>
+<figure class="center">
+  <div class="pixel-corners--wrapper">
+    <img src="/florilegium.png" alt="AI-generated illustration of an open antique book displaying botanical drawings of daisies and wildflowers in a vintage engraving style with decorative borders. The detailed black and white illustration includes fully blooming flowers, stems, and leaves, with subtle touches of yellow in some smaller blooms." width="550px">
+  </div>
+  <figcaption>This botanical book illustration was created using Adobe Express's 'Generate Image' feature. I provided the prompt 'florilegia - a commonplace book of flowers' and selected the style modifiers 'nostalgic,' 'beautiful,' and 'line drawing' to achieve this vintage engraving-style result with its delicate botanical details and decorative borders. </figcaption>
+</figure>
+<p>The metaphor of gathering flowers—selecting the most beautiful or useful parts—perfectly captures the essence of both commonplace books and digital gardens. We cultivate ideas, collect the most vibrant specimens, and arrange them in ways that create new meaning through juxtaposition.</p>
+<h2 id="from-commonplace-books-to-digital-gardens"><a class="zola-anchor" href="#from-commonplace-books-to-digital-gardens" aria-label="Anchor link for: from-commonplace-books-to-digital-gardens">From Commonplace Books to Digital Gardens</a></h2>
+<p>The parallels between historical commonplace books and today's digital gardens are striking:</p>
+<ul>
+<li>Hypertextual thinking: Though lacking literal hyperlinks, commonplace books created associative connections between ideas through topical organization.</li>
+<li>Personal curation: Both forms privilege personal relevance over comprehensive coverage.</li>
+<li>Non-linear organization: Neither needs to be read in order from beginning to end.</li>
+<li>Evolving collections: Both grow and change over time as new ideas are encountered.</li>
+<li>Public/private balance: Commonplace books, though private, were often shared in social settings as conversation starters—similar to how digital gardens are personal yet publicly accessible.</li>
+</ul>
+<h2 id="digital-gardening-as-modern-commonplacing"><a class="zola-anchor" href="#digital-gardening-as-modern-commonplacing" aria-label="Anchor link for: digital-gardening-as-modern-commonplacing">Digital Gardening as Modern Commonplacing</a></h2>
+<p>My approach to this digital garden is directly inspired by the tradition of commonplace books and florilegia. I view these notes as my own collection of "flowers"—ideas worth preserving and connections worth exploring. Like the commonplace books I studied and transcribed, this space embraces contradiction, prizes interesting juxtapositions, and evolves organically over time.</p>
+<p>The digital medium offers new possibilities that traditional commonplace keepers could only dream of—the ability to easily reorganize, to create explicit rather than implied connections, and to share selectively with others. Yet the core purpose remains the same: to cultivate a personal landscape of knowledge that reflects my intellectual journey.</p>
+
+  
+
+
+
+<div class="divider-quarter">
+  <div class="quarter-moon-container">
+    <div class="quarter-moon"></div>
+  </div>
+</div>
+<p><em>This note is part of my exploration of historical knowledge practices and their modern digital counterparts.</em></p>
+
+          </div> 
+      </section>
+  
+    
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+  
+    <div class="backlinks">
+      <button class="note-toggle">
+        <div class="note-icon">
+          <h2> notes that mention this note (4)</h2>
+        </div>
+      </button>
+      
+      <div class="backlinks-content" style="display: none;">
+        <ul class="backlinks-list">
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;ai-image-experiment&#x2F;">
+                
+                  Text-to-Image Generation: A Critical Experiment
+                
+              </a>
+            </li>
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;digital-gardens&#x2F;">
+                
+                  Digital Gardens: A Return to Pre-Blog Web?
+                
+              </a>
+            </li>
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;solarpunk&#x2F;">
+                
+                  Solarpunk Futures
+                
+              </a>
+            </li>
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;villages-folk-horror&#x2F;">
+                
+                  Villages in Folk Horror: The Lost Commons
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  
+
+
+
+    
+      
+      </article>
+  </main>
+  
+
+
+        
+            
+        
+
+        
+    </div>
+
+
+    <hr>
+
+    <div class="footer">
+        <p>
+            <span class="og"><a href="https://nonmodernist.com">🏠</a> ☕ 🌁 <span id="launch-counter">875</span> 🎂 ☕ 🌁 🔍 📷 👓 🌁🌁 💠 📩 🌁 🌁🌁 <a href="https://nonmodernist.com/uses">⚡︎</a> 💓 <a href="https://nonmodernist.com/log"><span id="movies-counter">2736</span> 📺</a> 🌁🌁🌁 a 🌁 🌙 <a href="https://nonmodernist.com/readinglog"><span id="books-counter">974</span> 📖</a></span>
+        </p>
+    </div>
+    
+
+
+</html>
