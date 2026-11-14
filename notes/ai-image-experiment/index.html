@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https:&#x2F;&#x2F;nonmodernist.com">
+
+    <link rel="me" href="https://github.com/nonmodernist" />
+    <link rel="me" href="https://bsky.app/profile/nonmodernist.bsky.social" />
+    <link rel="webmention" href="https://webmention.io/nonmodernist.com/webmention" />
+
+    
+
+    
+    
+    
+    <title>
+         Text-to-Image Generation: A Critical Experiment
+        
+    </title>
+
+        
+            <meta property="og:title" content="Text-to-Image Generation: A Critical Experiment" />
+        
+     
+
+     
+         
+             <meta property="og:description" content="the internet homebase of dr. alexandra edwards" />
+         
+     
+
+     
+         
+             <meta name="description" content="the internet homebase of dr. alexandra edwards" />
+         
+    
+
+    
+    
+        <link rel="icon" type="image/png" href=&#x2F;favicon.png />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href=&#x2F;favicon.png>
+
+
+    
+    
+        <link href=https://nonmodernist.com/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/codeblock.js></script>
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/toc.js></script>
+    
+    
+    
+    
+        <script src=https://nonmodernist.com/js/note.js></script>
+    
+
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="alexandra edwards, phd" href="https://nonmodernist.com/atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="nonmodernist.com - notes only" href="https://nonmodernist.com/notes/atom.xml">
+
+
+
+    
+    
+        <link rel="stylesheet" type="text/css" href=https://nonmodernist.com/theme/light.css />
+        <link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://nonmodernist.com/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+
+    
+    <script src=https://nonmodernist.com/js/themetoggle.js></script>
+
+        
+        <script>setTheme(getSavedTheme());</script>
+    
+    
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://nonmodernist.com/main.css />
+
+    
+
+    
+        <script defer src="https://nonmodernist.com/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script><script src="https://nonmodernist.com/js/counters.js"></script>
+</head>
+
+    
+<!--
+         wWWWw               wWWWw
+   vVVVv (___) wWWWw         (___)  vVVVv
+   (___)  ~Y~  (___)  vVVVv   ~Y~   (___)
+    ~Y~   \|    ~Y~   (___)    |/    ~Y~
+    \|   \ |/   \| /  \~Y~/   \|    \ |/
+   \\|// \\|// \\|/// \\|//  \\|// \\\|///
+jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-->
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main">
+                
+                    <a href=https:&#x2F;&#x2F;nonmodernist.com>alexandra edwards, phd</a>
+                
+
+
+        <div class="socials">
+            
+        </div>
+    </div>
+
+    <nav>
+        
+            <a href=https://nonmodernist.com/notes style="margin-left: 0.25em">&#x2F;notes</a>
+        
+            <a href=https://nonmodernist.com/teaching style="margin-left: 0.25em">&#x2F;teaching</a>
+        
+            <a href=https://nonmodernist.com/research style="margin-left: 0.25em">&#x2F;research</a>
+        
+            <a href=https://nonmodernist.com/about style="margin-left: 0.25em">&#x2F;about</a>
+        
+
+        
+        <button
+            id="search-button"
+            class="search-button"
+            title="$SHORTCUT to open search"
+        >
+            <img
+                src="https://nonmodernist.com/icons/search.svg"
+                alt="Search"
+                class="search-icon"
+            >
+        </button>
+    
+        <div id="searchModal" class="search-modal js" role="dialog" aria-labelledby="modalTitle">
+            <div id="modal-content">
+                <h1 id="modalTitle" class="page-header">Search</h1>
+                <div id="searchBar">
+                    <input
+                        id="searchInput"
+                        role="combobox"
+                        autocomplete="off"
+                        spellcheck="false"
+                        aria-expanded="false"
+                        aria-controls="results-container"
+                        placeholder="Search..."
+                    />
+                    <button
+                        id="clear-search"
+                        class="clear-button"
+                        title="Clear search"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="results-container">
+                    <div id="results-info">
+                        <span id="zero_results" style="display: none;">No results</span>
+                        <span id="one_result" style="display: none;">1 result</span>
+                        <span id="many_results" style="display: none;">$NUMBER results</span>
+                    </div>
+                    <div id="results" role="listbox"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme(); event.preventDefault();" href="#">
+                <img src=https://nonmodernist.com/icons/sun.svg id="sun-icon" style="filter: invert(1);" alt="Light" />
+                <img src=https://nonmodernist.com/icons/moon.svg id="moon-icon" alt="Dark" />
+            </a>
+
+        <!-- Inititialize the theme toggle icons -->
+        <script>updateItemToggleTheme()</script>
+        
+    </nav>
+</header>
+
+
+        
+        
+    
+  <main>
+      <article class="h-entry readable-content">
+          <div class="title">
+            
+              
+      <div class="page-header">
+          Text-to-Image Generation: A Critical Experiment
+          
+          <span class="moon-phase moon-phase-waxing_crescent">
+             🌙
+             
+            </span>
+            
+      
+      </div>
+  
+  
+                  <div class="meta">
+                      
+                          
+                          Posted <span class="hidden">by <a rel="author" class="p-author h-card" href="https://nonmodernist.com">alexandra edwards</a></span> on <time class="dt-published"> 2025-05-02</time>
+                      
+  
+                      
+  
+                      
+  
+                      
+                          :: 999 Words
+                      
+  
+                      
+                      
+                              <span class="tags-label"> :: Tags:</span>
+                              <span class="tags">
+                                      <a href="https://nonmodernist.com/tags/ai/" class="post-tag">ai</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/critical-making/" class="post-tag">critical making</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/image-generation/" class="post-tag">image generation</a>, 
+                                  
+                                      <a href="https://nonmodernist.com/tags/technology/" class="post-tag">technology</a>
+                                  
+                              </span>
+                      
+  
+                      
+                      
+  
+                      
+  
+                  </div>
+          </div>
+  
+          
+          
+              <div class="tldr p-summary">
+                  <strong>tl;dr:</strong>
+                  Exploring the ethical implications of text-to-image generation as a visual communication tool.
+              </div>
+          
+  
+          
+          
+          
+              <div class="toc-container">
+                  <h1 class="toc-title">Table of Contents</h1>
+                  <ul class="toc-list">
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/ai-image-experiment/#what-is-critical-making">What is Critical Making?</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/ai-image-experiment/#methodology">Methodology</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/ai-image-experiment/#experiment-1-botanical-prints">Experiment 1: Botanical Prints</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/ai-image-experiment/#experiment-2-solarpunk-computer-shrine">Experiment 2: Solarpunk Computer Shrine</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/notes/ai-image-experiment/#questions-to-explore">Questions to Explore</a>
+                              
+                                  <ul>
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/ai-image-experiment/#aesthetic-considerations">Aesthetic Considerations</a>
+                                          </li>
+  
+                                          
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/notes/ai-image-experiment/#ethical-concerns">Ethical Concerns</a>
+                                          </li>
+  
+                                          
+                                      
+                                  </ul>
+                              
+                          </li>
+                      
+                  </ul>
+              </div>
+          
+          
+  
+          <section class="body"></section>
+          <div>
+              <p>This site uses text-to-image generation to illustrate some of its pages, including my <a href="https://nonmodernist.com/notes/commonplace-books/">commonplace books</a> note. This is intended as an experiment in visual communication, conducted in the spirit of critical making.</p>
+<h2 id="what-is-critical-making"><a class="zola-anchor" href="#what-is-critical-making" aria-label="Anchor link for: what-is-critical-making">What is Critical Making?</a></h2>
+<p>Critical making combines the act of creating with critical analysis, fostering a dual engagement in hands-on production and reflective thought. This approach encourages both students and practitioners to explore the broader social, cultural, and ethical dimensions of the artifacts they produce.</p>
+<figure class="center">
+  <div class="pixel-corners--wrapper">
+    <img src="/images/ai-critical-making-adobe.png" alt="AI-generated image showing a field journal for a low carbon future. The illustration features watercolor sketches of plans for a scifi community computer garden. The hand of the artist is visible, holding a pen as they sketch." width="500px">
+  </div>
+  <figcaption>An AI-generated illustration of "pages from a field journal for a low carbon future. An artist has created watercolor sketches of plans for a scifi community computer garden." Created by Adobe Text to Image, which uses assets from the extensive Adobe stock image library.</figcaption>
+</figure>
+<p>By directly working with text-to-image systems rather than just theorizing about them, I hope to develop a more nuanced understanding of their tendencies, limitations, and social impacts.</p>
+<h2 id="methodology"><a class="zola-anchor" href="#methodology" aria-label="Anchor link for: methodology">Methodology</a></h2>
+<p>This is a casual experiment with no formal structure. I use various text-to-image generation tools to create illustrations for select notes in this digital garden. The images are generated using prompts derived from the content of the notes, sometimes with modifications to achieve desired aesthetic results.</p>
+<p>I always include the tool used and the original prompt in the image metadata, which I hope creates transparency around this experiment. My intention is to make the process visible, not to hide the technology behind them or present them as "authentic" images.</p>
+<p>I reflect on both the process of creating these images and their relationship to the text they accompany. Questions that arise during this process become part of the experiment itself, documented here and in related notes.</p>
+
+  
+
+
+
+<div class="divider-simple">
+  <div class="pixel-crescent">
+    <div class="hidden-rays"></div>
+  </div>
+</div>
+<h2 id="experiment-1-botanical-prints"><a class="zola-anchor" href="#experiment-1-botanical-prints" aria-label="Anchor link for: experiment-1-botanical-prints">Experiment 1: Botanical Prints</a></h2>
+<p>I began this experiment with a simple prompt: "field of rudbeckia, warm colors, linocut." I wanted to see how different systems interpreted this prompt and what aesthetic choices they made. The results varied, showcasing the unique characteristics of each system. Both tools I used—Adobe's text-to-image generator and DeepAI—were able to create botanically accurate images, but they also introduced their own stylistic interpretations.</p>
+<figure class="center">
+  <div class="dam">
+    <img src="/images/ai-rudbeckia.jpeg" alt="" width="500px">
+  </div>
+  <figcaption>AI approximation of a "field of rudbeckia, warm colors, linocut," created with DeepAI. This first image uses a minimalist pop art style, featuring a field of yellow black-eyed susans rendered as almost-geometric patterns against a bold red background. This interpretation prioritizes graphic simplicity and strong color contrast over botanical detail.</figcaption>
+</figure>
+<figure class="center">
+  <div class="dam">
+    <img src="/images/ai-rudbeckia-2.jpeg" alt="" width="500px">
+  </div>
+  <figcaption>Retro-style AI illustration of rudbeckia at sunset, combining 1960s-70s children's book aesthetics with warm color harmonies, created with the same prompt and tool as the previous image. The large setting sun creates a nostalgic atmosphere while the flowers, though stylized, display the most accurate leaf shapes.</figcaption>
+</figure>
+<figure class="center">
+  <div class="dam">
+    <img src="/images/ai-rudbeckia-adobe.png" alt="" width="500px">
+  </div>
+  <figcaption>Art Nouveau-inspired AI depiction of rudbeckia with flowing lines and rhythmic patterns. This interpretation, created by Adobe Text to Image, draws from woodblock print traditions with its ornamental mountain backdrop and decorative botanical detail, representing perhaps the most 'artistic' of AI's style interpretations.</figcaption>
+</figure>
+<p>These three AI-generated images demonstrate how computational image generators, which create visuals through statistical pattern matching rather than genuine understanding, interpret the same subject—fields of black-eyed susans—through different aesthetic lenses. While all three depict repetitive floral landscapes, they range from simplified graphic design to retro illustration to Art Nouveau-inspired decorative arts.</p>
+<p>The first two images, both from DeepAI, notably evoke the work of Ilonka Karász, particularly her <em>New Yorker</em> cover illustrations from the 1940s-60s, with their bold color blocking, flattened perspectives, and warm palette reminiscent of mid-century graphic design. The third image, using Adobe Express, diverges toward a more ornamental, printmaking-inspired style. What's particularly fascinating is how each interpretation maintains the core subject matter while expressing different artistic philosophies—from pattern-based minimalism to nostalgic warmth to decorative complexity—revealing the multiple aesthetic "knowledge bases" embedded within AI image generation systems.</p>
+
+  
+
+
+
+<div class="divider-simple">
+  <div class="pixel-crescent">
+    <div class="hidden-rays"></div>
+  </div>
+</div>
+<h2 id="experiment-2-solarpunk-computer-shrine"><a class="zola-anchor" href="#experiment-2-solarpunk-computer-shrine" aria-label="Anchor link for: experiment-2-solarpunk-computer-shrine">Experiment 2: Solarpunk Computer Shrine</a></h2>
+<figure class="center">
+  <div class="dam">
+    <img src="/images/ai-computer-shrine-deepai.jpeg" alt="A vintage computer with a cosmic display sits in a fantastical garden with vibrant pink and blue trees and colorful flowers. The scene has a night-time feel with deep blue sky contrasting with illuminated flora." width="500px">
+  </div>
+  <figcaption>Created with DeepAI using the prompt "Sci-fi Community Computer Garden." The appearance of the computer like a shrine in a garden inspired me to explore this idea further. </figcaption>
+</figure>
+<p><a href="https://nonmodernist.com/notes/ai-image-experiment-computer-shrine/">Visit the computer shrine.</a></p>
+<h2 id="questions-to-explore"><a class="zola-anchor" href="#questions-to-explore" aria-label="Anchor link for: questions-to-explore">Questions to Explore</a></h2>
+<h3 id="aesthetic-considerations"><a class="zola-anchor" href="#aesthetic-considerations" aria-label="Anchor link for: aesthetic-considerations">Aesthetic Considerations</a></h3>
+<ul>
+<li>What visual aesthetics do these systems tend to replicate?</li>
+<li>How do these systems interpret ambiguity and abstraction?</li>
+<li>What happens at the boundary between the describable and the indescribable?</li>
+<li>How do different systems handle the same prompts, and what does this reveal about their training?</li>
+</ul>
+<h3 id="ethical-concerns"><a class="zola-anchor" href="#ethical-concerns" aria-label="Anchor link for: ethical-concerns">Ethical Concerns</a></h3>
+<ul>
+<li>How do these systems reproduce (or challenge) existing power structures?</li>
+<li>What biases emerge in generated imagery?</li>
+<li>Who benefits from and who is harmed by these technologies?</li>
+<li>Following Dan McQuillan's work on AI ethics, how might these systems contribute to algorithmic fascism through aesthetics?</li>
+</ul>
+
+  
+
+
+
+<div class="divider-default">
+  <div class="moon-phases">
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+  </div>
+</div>
+<p><em>This exploration connects to my broader interest in <a href="/notes/pre-cinema-technologies/">pre-cinema technologies</a>, the <a href="/notes/early-photography/">development of photography</a>, and how new visual technologies shape our understanding of the world.</em></p>
+
+          </div> 
+      </section>
+  
+    
+  
+  
+  
+  
+    
+      
+    
+  
+  
+  
+    <div class="backlinks">
+      <button class="note-toggle">
+        <div class="note-icon">
+          <h2> notes that mention this note (1)</h2>
+        </div>
+      </button>
+      
+      <div class="backlinks-content" style="display: none;">
+        <ul class="backlinks-list">
+          
+            <li class="backlink-item">
+              <a href="https:&#x2F;&#x2F;nonmodernist.com&#x2F;notes&#x2F;ai-image-experiment-computer-shrine&#x2F;">
+                
+                  Text-to-Image Evolution: Computer Shrine
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  
+
+
+
+    
+      
+      </article>
+  </main>
+  
+
+
+        
+            
+        
+
+        
+    </div>
+
+
+    <hr>
+
+    <div class="footer">
+        <p>
+            <span class="og"><a href="https://nonmodernist.com">🏠</a> ☕ 🌁 <span id="launch-counter">875</span> 🎂 ☕ 🌁 🔍 📷 👓 🌁🌁 💠 📩 🌁 🌁🌁 <a href="https://nonmodernist.com/uses">⚡︎</a> 💓 <a href="https://nonmodernist.com/log"><span id="movies-counter">2736</span> 📺</a> 🌁🌁🌁 a 🌁 🌙 <a href="https://nonmodernist.com/readinglog"><span id="books-counter">974</span> 📖</a></span>
+        </p>
+    </div>
+    
+
+
+</html>
