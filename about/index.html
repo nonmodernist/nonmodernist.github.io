@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https:&#x2F;&#x2F;nonmodernist.com">
+
+    <link rel="me" href="https://github.com/nonmodernist" />
+    <link rel="me" href="https://bsky.app/profile/nonmodernist.bsky.social" />
+    <link rel="webmention" href="https://webmention.io/nonmodernist.com/webmention" />
+
+    
+
+    
+    
+    
+    <title>
+         about
+        
+    </title>
+
+        
+            <meta property="og:title" content="about" />
+        
+     
+
+     
+         
+             <meta property="og:description" content="the internet homebase of dr. alexandra edwards" />
+         
+     
+
+     
+         
+             <meta name="description" content="the internet homebase of dr. alexandra edwards" />
+         
+    
+
+    
+    
+        <link rel="icon" type="image/png" href=&#x2F;favicon.png />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href=&#x2F;favicon.png>
+
+
+    
+    
+        <link href=https://nonmodernist.com/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/codeblock.js></script>
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/toc.js></script>
+    
+    
+    
+    
+        <script src=https://nonmodernist.com/js/note.js></script>
+    
+
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="alexandra edwards, phd" href="https://nonmodernist.com/atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="nonmodernist.com - notes only" href="https://nonmodernist.com/notes/atom.xml">
+
+
+
+    
+    
+        <link rel="stylesheet" type="text/css" href=https://nonmodernist.com/theme/light.css />
+        <link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://nonmodernist.com/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+
+    
+    <script src=https://nonmodernist.com/js/themetoggle.js></script>
+
+        
+        <script>setTheme(getSavedTheme());</script>
+    
+    
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://nonmodernist.com/main.css />
+
+    
+
+    
+        <script defer src="https://nonmodernist.com/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script><script src="https://nonmodernist.com/js/counters.js"></script>
+</head>
+
+    
+<!--
+         wWWWw               wWWWw
+   vVVVv (___) wWWWw         (___)  vVVVv
+   (___)  ~Y~  (___)  vVVVv   ~Y~   (___)
+    ~Y~   \|    ~Y~   (___)    |/    ~Y~
+    \|   \ |/   \| /  \~Y~/   \|    \ |/
+   \\|// \\|// \\|/// \\|//  \\|// \\\|///
+jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-->
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main">
+                
+                    <a href=https:&#x2F;&#x2F;nonmodernist.com>alexandra edwards, phd</a>
+                
+
+
+        <div class="socials">
+            
+        </div>
+    </div>
+
+    <nav>
+        
+            <a href=https://nonmodernist.com/notes style="margin-left: 0.25em">&#x2F;notes</a>
+        
+            <a href=https://nonmodernist.com/teaching style="margin-left: 0.25em">&#x2F;teaching</a>
+        
+            <a href=https://nonmodernist.com/research style="margin-left: 0.25em">&#x2F;research</a>
+        
+            <a href=https://nonmodernist.com/about style="margin-left: 0.25em">&#x2F;about</a>
+        
+
+        
+        <button
+            id="search-button"
+            class="search-button"
+            title="$SHORTCUT to open search"
+        >
+            <img
+                src="https://nonmodernist.com/icons/search.svg"
+                alt="Search"
+                class="search-icon"
+            >
+        </button>
+    
+        <div id="searchModal" class="search-modal js" role="dialog" aria-labelledby="modalTitle">
+            <div id="modal-content">
+                <h1 id="modalTitle" class="page-header">Search</h1>
+                <div id="searchBar">
+                    <input
+                        id="searchInput"
+                        role="combobox"
+                        autocomplete="off"
+                        spellcheck="false"
+                        aria-expanded="false"
+                        aria-controls="results-container"
+                        placeholder="Search..."
+                    />
+                    <button
+                        id="clear-search"
+                        class="clear-button"
+                        title="Clear search"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="results-container">
+                    <div id="results-info">
+                        <span id="zero_results" style="display: none;">No results</span>
+                        <span id="one_result" style="display: none;">1 result</span>
+                        <span id="many_results" style="display: none;">$NUMBER results</span>
+                    </div>
+                    <div id="results" role="listbox"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme(); event.preventDefault();" href="#">
+                <img src=https://nonmodernist.com/icons/sun.svg id="sun-icon" style="filter: invert(1);" alt="Light" />
+                <img src=https://nonmodernist.com/icons/moon.svg id="moon-icon" alt="Dark" />
+            </a>
+
+        <!-- Inititialize the theme toggle icons -->
+        <script>updateItemToggleTheme()</script>
+        
+    </nav>
+</header>
+
+
+        
+        
+    
+  <main>
+      <article class="h-entry readable-content">
+          <div class="title">
+            
+              
+      <div class="page-header">
+          about
+              
+            <span class="og" style="font-size: .4em">⤵</span>
+      
+      
+      </div>
+  
+  
+                  <div class="meta">
+                      
+  
+                      
+  
+                      
+  
+                      
+                          :: 492 Words
+                      
+  
+                      
+                      
+  
+                      
+                      
+  
+                      
+  
+                  </div>
+          </div>
+  
+          
+          
+  
+          
+          
+          
+              <div class="toc-container">
+                  <h1 class="toc-title">Table of Contents</h1>
+                  <ul class="toc-list">
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/about/#heart-about-alexandra">❤ About Alexandra</a>
+                              
+                          </li>
+                      
+                          <li>
+                              <a href="https://nonmodernist.com/about/#bulb-about-this-site">💡 About this site</a>
+                              
+                                  <ul>
+                                      
+                                          <li>
+                                              <a href="https://nonmodernist.com/about/#circus-tent-sitemap">🎪 Sitemap</a>
+                                          </li>
+  
+                                          
+                                      
+                                  </ul>
+                              
+                          </li>
+                      
+                  </ul>
+              </div>
+          
+          
+  
+          <section class="body"></section>
+          <div>
+              <h1 id="heart-about-alexandra"><a class="zola-anchor" href="#heart-about-alexandra" aria-label="Anchor link for: heart-about-alexandra"><span class="og">❤</span> About Alexandra</a></h1>
+<img src="/headshot-bw.png" alt="alexandra standing on a street, wearing a black tshirt, jeans, and black boots" style="float:right">
+<p>Alexandra teaches in the English department at Texas Christian University. Her research focuses on the intersections of literature, film, and other media in the early 20th century, with a special interest in the historical recovery of neglected women writers and filmmakers.</p>
+<p>Her first book, <a href="https://beforefanfiction.com"><em>Before Fanfiction: Recovering the Literary History of American Media Fandom</em></a>, was released by LSU Press in October 2023, and recently received an honorable mention for the biennial <a href="https://www.mla.org/Resources/Career/MLA-Grants-and-Awards/Winners-of-MLA-Prizes/Biennial-Prize-and-Award-Winners/MLA-Prize-for-Contingent-Faculty-and-Independent-Scholars-Winners">MLA Prize for Contingent Faculty and Independent Scholars</a>.</p>
+<p>Alexandra’s current project, <a href="http://hollywoodregionalism.com"><em>Hollywood Regionalism</em></a>, investigates how the studio system adapted, revised, and transformed dozens of regional novels by American women writers from 1910-1961. She and her students have researched hundreds of these film adaptations, many lost or forgotten, and are working to bring them back into public view.</p>
+<p>In 2024, Alexandra's photo essay "<a href="https://www.thexylom.com/post/perspective-a-walk-through-weelaunee-forest">A Walk Through Weelaunee Forest</a>," was a finalist for an Atlanta Press Club Award. The essay explores the natural and political history of the forest slated to become "Cop City" in Dekalb County, Georgia.</p>
+<p>Alexandra previously <a href="https://anchor.fm/residential-spread">co-hosted a podcast about college and coronavirus</a>, wrote a <a href="https://nonmodernist.itch.io/call-of-the-monsters">poetry chapbook about Godzilla</a>, and won two Primetime Emmys for her work as a transmedia producer creating interactive storytelling experiences.</p>
+<h1 id="bulb-about-this-site"><a class="zola-anchor" href="#bulb-about-this-site" aria-label="Anchor link for: bulb-about-this-site"><span class="og">💡</span> About this site</a></h1>
+<p>This site is built with Zola and uses <a href="https://www.getzola.org/themes/apollo/">Apollo</a>, with modifications by me. It lives on GitHub and is deployed with GitHub Pages. The <a href="https://meowni.ca/posts/og-emoji-font/">super cute emojis</a> were created by Monica Dinculescu and are based on the original Docomo emoji set from 2001, and the favicon is <a href="https://www.flaticon.com/free-icons/november" title="november icons">created by frelayasia</a>. Images are dithered using <a href="https://doodad.dev/dither-me-this/">Dither Me This</a>, making their file sizes smaller. Patterns are generated using <a href="https://doodad.dev/pattern-generator/">Doodad.dev's Pattern Generator</a>. I got the <a href="https://pixelcorners.lukeb.co.uk">pixel corners code</a> for image borders from Luke Bonaccorsi. The <a href="https://nonmodernist.com/log/">movie log</a> is echoed from Letterboxd with <a href="https://echofeed.app">EchoFeed</a>.</p>
+<p>The philosophy behind the site is inspired by the <span class="og">📟</span> small web movement and <span class="og">☀</span> <a href="https://nonmodernist.com/about/@notes/solarpunk.md">solarpunk</a>.</p>
+<h2 id="circus-tent-sitemap"><a class="zola-anchor" href="#circus-tent-sitemap" aria-label="Anchor link for: circus-tent-sitemap"><span class="og">🎪</span> Sitemap</a></h2>
+<p>Looking for something specific? Try this list of the site's pages:</p>
+<ul>
+<li><a href="https://nonmodernist.com/">Home</a></li>
+<li>About (that's this page!)</li>
+<li><a href="https://nonmodernist.com/is/">Is</a></li>
+<li><a href="https://nonmodernist.com/meta/">Meta</a>
+<ul>
+<li><a href="https://nonmodernist.com/meta/dev-journal/">Dev journal</a></li>
+</ul>
+</li>
+<li><a href="https://nonmodernist.com/log/">Movie log</a></li>
+<li><a href="https://nonmodernist.com/notes/">Notes</a>
+<ul>
+<li><a href="../notes/atom.xml">RSS feed</a></li>
+</ul>
+</li>
+<li><a href="https://nonmodernist.com/reading/">Reading list by year</a></li>
+<li><a href="https://nonmodernist.com/research/">Research</a></li>
+<li><a href="../tags">Tags</a></li>
+<li><a href="https://nonmodernist.com/teaching/">Teaching</a></li>
+<li><a href="https://nonmodernist.com/uses/">Uses</a></li>
+</ul>
+
+          </div> 
+      </section>
+  
+    
+  
+
+
+    
+      
+      </article>
+  </main>
+  
+
+
+        
+            
+        
+
+        
+    </div>
+
+
+    <hr>
+
+    <div class="footer">
+        <p>
+            <span class="og"><a href="https://nonmodernist.com">🏠</a> ☕ 🌁 <span id="launch-counter">875</span> 🎂 ☕ 🌁 🔍 📷 👓 🌁🌁 💠 📩 🌁 🌁🌁 <a href="https://nonmodernist.com/uses">⚡︎</a> 💓 <a href="https://nonmodernist.com/log"><span id="movies-counter">2736</span> 📺</a> 🌁🌁🌁 a 🌁 🌙 <a href="https://nonmodernist.com/readinglog"><span id="books-counter">974</span> 📖</a></span>
+        </p>
+    </div>
+    
+
+
+</html>

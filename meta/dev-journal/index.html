@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https:&#x2F;&#x2F;nonmodernist.com">
+
+    <link rel="me" href="https://github.com/nonmodernist" />
+    <link rel="me" href="https://bsky.app/profile/nonmodernist.bsky.social" />
+    <link rel="webmention" href="https://webmention.io/nonmodernist.com/webmention" />
+
+    
+
+    
+    
+    
+    <title>
+         Site Development Journal
+        
+    </title>
+
+        
+            <meta property="og:title" content="Site Development Journal" />
+        
+     
+
+     
+         
+             <meta property="og:description" content="A development journal tracking decisions, problems solved, and future plans for my digital moon garden." />
+         
+     
+
+     
+         
+             <meta name="description" content="A development journal tracking decisions, problems solved, and future plans for my digital moon garden." />
+         
+    
+
+    
+    
+        <link rel="icon" type="image/png" href=&#x2F;favicon.png />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href=&#x2F;favicon.png>
+
+
+    
+    
+        <link href=https://nonmodernist.com/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/codeblock.js></script>
+    
+
+    
+    
+        <script src=https://nonmodernist.com/js/toc.js></script>
+    
+    
+    
+    
+        <script src=https://nonmodernist.com/js/note.js></script>
+    
+
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="alexandra edwards, phd" href="https://nonmodernist.com/atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="nonmodernist.com - notes only" href="https://nonmodernist.com/notes/atom.xml">
+
+
+
+    
+    
+        <link rel="stylesheet" type="text/css" href=https://nonmodernist.com/theme/light.css />
+        <link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://nonmodernist.com/theme/dark.css" />
+    
+
+    <!-- Set the correct theme in the script -->
+
+    
+    <script src=https://nonmodernist.com/js/themetoggle.js></script>
+
+        
+        <script>setTheme(getSavedTheme());</script>
+    
+    
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href=https://nonmodernist.com/main.css />
+
+    
+
+    
+        <script defer src="https://nonmodernist.com/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script><script src="https://nonmodernist.com/js/counters.js"></script>
+</head>
+
+    
+<!--
+         wWWWw               wWWWw
+   vVVVv (___) wWWWw         (___)  vVVVv
+   (___)  ~Y~  (___)  vVVVv   ~Y~   (___)
+    ~Y~   \|    ~Y~   (___)    |/    ~Y~
+    \|   \ |/   \| /  \~Y~/   \|    \ |/
+   \\|// \\|// \\|/// \\|//  \\|// \\\|///
+jgs^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-->
+
+<body>
+    <div class="content">
+        <header>
+    <div class="main">
+                
+                    <a href=https:&#x2F;&#x2F;nonmodernist.com>alexandra edwards, phd</a>
+                
+
+
+        <div class="socials">
+            
+        </div>
+    </div>
+
+    <nav>
+        
+            <a href=https://nonmodernist.com/notes style="margin-left: 0.25em">&#x2F;notes</a>
+        
+            <a href=https://nonmodernist.com/teaching style="margin-left: 0.25em">&#x2F;teaching</a>
+        
+            <a href=https://nonmodernist.com/research style="margin-left: 0.25em">&#x2F;research</a>
+        
+            <a href=https://nonmodernist.com/about style="margin-left: 0.25em">&#x2F;about</a>
+        
+
+        
+        <button
+            id="search-button"
+            class="search-button"
+            title="$SHORTCUT to open search"
+        >
+            <img
+                src="https://nonmodernist.com/icons/search.svg"
+                alt="Search"
+                class="search-icon"
+            >
+        </button>
+    
+        <div id="searchModal" class="search-modal js" role="dialog" aria-labelledby="modalTitle">
+            <div id="modal-content">
+                <h1 id="modalTitle" class="page-header">Search</h1>
+                <div id="searchBar">
+                    <input
+                        id="searchInput"
+                        role="combobox"
+                        autocomplete="off"
+                        spellcheck="false"
+                        aria-expanded="false"
+                        aria-controls="results-container"
+                        placeholder="Search..."
+                    />
+                    <button
+                        id="clear-search"
+                        class="clear-button"
+                        title="Clear search"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="results-container">
+                    <div id="results-info">
+                        <span id="zero_results" style="display: none;">No results</span>
+                        <span id="one_result" style="display: none;">1 result</span>
+                        <span id="many_results" style="display: none;">$NUMBER results</span>
+                    </div>
+                    <div id="results" role="listbox"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+            <a id="dark-mode-toggle" onclick="toggleTheme(); event.preventDefault();" href="#">
+                <img src=https://nonmodernist.com/icons/sun.svg id="sun-icon" style="filter: invert(1);" alt="Light" />
+                <img src=https://nonmodernist.com/icons/moon.svg id="moon-icon" alt="Dark" />
+            </a>
+
+        <!-- Inititialize the theme toggle icons -->
+        <script>updateItemToggleTheme()</script>
+        
+    </nav>
+</header>
+
+
+        
+        
+<main class="dev-journal">
+    <article class="h-entry readable-content">
+        <div class="title">
+            <h1 class="title p-name">
+                <span class="dev-icon">👓</span> Site Development Journal
+            </h1>
+            
+            <div class="meta">
+                
+                    Last updated: <time class="dt-published">2025-05-03</time>
+                
+                
+                
+                    :: 996 Words
+                
+                
+                
+                    <span class="tags-label"> :: Tags:</span>
+                    <span class="tags">
+                            <a href="https://nonmodernist.com/tags/meta/" class="post-tag">meta</a>, 
+                        
+                            <a href="https://nonmodernist.com/tags/development/" class="post-tag">development</a>, 
+                        
+                            <a href="https://nonmodernist.com/tags/zola/" class="post-tag">zola</a>
+                        
+                    </span>
+                
+            </div>
+        </div>
+
+        
+            <div class="tldr p-summary">
+                <strong>tl;dr:</strong> A development journal tracking decisions, problems solved, and future plans for my digital moon garden.
+            </div>
+        
+        
+        <div class="dev-tracker">
+            <div class="dev-tracker-item">
+                <span class="dev-count">6</span>
+                <span class="dev-label">Decisions</span>
+            </div>
+            <div class="dev-tracker-item">
+                <span class="dev-count">2</span>
+                <span class="dev-label">Problems Solved</span>
+            </div>
+            <div class="dev-tracker-item">
+                <span class="dev-count">6</span>
+                <span class="dev-label">Future Ideas</span>
+            </div>
+            <div class="dev-tracker-item">
+                <span class="dev-count">2</span>
+                <span class="dev-label">Breaking Changes</span>
+            </div>
+        </div>
+
+        <section class="body">
+            <div">
+                <p>This is my working journal for site development decisions, problems solved, and ideas for future improvements. It serves as both documentation and a reference for my future self.</p>
+<h2 id="design-decisions">Design Decisions</h2>
+<h3 id="status-updates" class="design-decision">Status Updates</h3>
+<p><strong>Date:</strong> 2025-03-09</p>
+<p>Implemented a status update system to log my current thoughts and activities. This is a simple post type that allows me to jot down quick notes or updates. Inspired by <a href="https://dame.is/">Dame</a> and styled to evoke web 2.0 vibes.</p>
+<p><strong>Why:</strong> I wanted a way to quickly log my current thoughts and activities without needing to create a full note. This allows for more spontaneous updates.</p>
+<p><strong>Implementation:</strong></p>
+<ul>
+<li>Posted to Bluesky through MacOS shortcut</li>
+<li>Echoed to GitHub by EchoFeed</li>
+</ul>
+<h3 id="homepage-counters" class="design-decision">Homepage Counters</h3>
+<p><strong>Date:</strong> 2025-04-27</p>
+<p>Implemented a counter system to the site footer to display days since site launch, number of books read and movies watched:</p>
+<ul>
+<li><span class="og">🎂</span> Days since launch</li>
+<li><span class="og">📺</span> Total movies watched in my lifetime</li>
+<li><span class="og">📖</span> Total books read in my lifetime</li>
+</ul>
+<p><strong>Why:</strong> This provides a quick overview of the kinds of things I used to log on commercial sites like Goodreads and Letterboxd (though I still use Letterboxd, because I love it), but now I can do it in my own space.</p>
+<p><strong>Known Issues:</strong></p>
+<ul>
+<li>Movie and book counts are using fallback values for now</li>
+<li>Need to find a way to automate these counts</li>
+</ul>
+<p><strong>Related Ideas:</strong></p>
+<ul>
+<li>Consider adding a "days since last update" counter</li>
+</ul>
+<h3 id="recent-activity-section" class="design-decision">Recent Activity Section</h3>
+<p><strong>Date:</strong> 2025-04-29</p>
+<p>Implemented a "recent activity" section on the homepage to show my most recent status update, movie logged, and note added.</p>
+<p><strong>Why:</strong> This provides a quick overview of my recent activities and encourages me to keep the site updated. It also makes the homepage feel more dynamic.</p>
+<p><strong>Implementation:</strong></p>
+<ul>
+<li>Added a new section to the homepage template</li>
+<li>Used Zola's built-in <code>recent_posts</code> function to pull in the latest status update, movie, and note</li>
+<li>Styled the section to match the overall theme</li>
+</ul>
+<h3 id="digital-garden-with-moon-phases" class="design-decision">Digital Garden with Moon Phases</h3>
+<p><strong>Date:</strong> 2025-04-29</p>
+<p>Converted <code>/notes/</code> section to digital garden-style collection. Implemented a moon phase progression system to visualize the maturity of notes:</p>
+<ul>
+<li>🌑 New idea (new)</li>
+<li>🌙 Beginning to take shape (waxing_crescent)</li>
+<li>🌓 Half-developed (first_quarter)</li>
+<li>🌔 Mostly formed (waxing_gibbous)</li>
+<li>🌕 Complete thought (full)</li>
+</ul>
+<p><strong>Why:</strong> This provides visual feedback on note maturity and creates a cohesive theme for the digital garden.</p>
+<p><strong>Implementation:</strong></p>
+<pre data-lang="scss" style="background-color:#fafafa;color:#61676c;" class="language-scss "><code class="language-scss" data-lang="scss"><span style="font-style:italic;color:#abb0b6;">// Moon phase styles in _garden.scss
+</span><span style="color:#f29718;">.moon-phase </span><span>{
+</span><span>  </span><span style="color:#55b4d4;">font-size</span><span style="color:#61676ccc;">: </span><span style="color:#ff8f40;">1</span><span style="color:#61676ccc;">.</span><span style="color:#ff8f40;">1</span><span style="color:#fa6e32;">rem</span><span style="color:#61676ccc;">;
+</span><span>  </span><span style="color:#55b4d4;">vertical-align</span><span style="color:#61676ccc;">: </span><span style="font-style:italic;color:#ed9366;">top</span><span style="color:#61676ccc;">;
+</span><span>  </span><span style="color:#55b4d4;">font-family</span><span style="color:#61676ccc;">: </span><span style="color:#f07171;">var</span><span>(</span><span style="font-style:italic;color:#abb0b6;">--</span><span style="font-style:italic;color:#55b4d4;">emoji-font</span><span>)</span><span style="color:#61676ccc;">;
+</span><span>}
+</span><span>
+</span><span style="font-style:italic;color:#abb0b6;">// Create a mixin for the hover tooltip
+</span><span style="color:#fa6e32;">@mixin </span><span style="color:#f29718;">moon-phase-tooltip</span><span>(</span><span style="color:#ff8f40;">$text</span><span>) {
+</span><span>  </span><span style="color:#55b4d4;">position</span><span style="color:#61676ccc;">: </span><span style="font-style:italic;color:#ed9366;">relative</span><span style="color:#61676ccc;">;
+</span><span>  </span><span style="color:#ed9366;">&amp;</span><span>:hover::after {
+</span><span>    </span><span style="color:#55b4d4;">content</span><span style="color:#61676ccc;">: </span><span>$text</span><span style="color:#61676ccc;">;
+</span><span>    </span><span style="color:#55b4d4;">position</span><span style="color:#61676ccc;">: </span><span style="font-style:italic;color:#ed9366;">absolute</span><span style="color:#61676ccc;">;
+</span><span>    </span><span style="color:#55b4d4;">bottom</span><span style="color:#61676ccc;">: </span><span style="color:#ff8f40;">100</span><span style="color:#fa6e32;">%</span><span style="color:#61676ccc;">;
+</span><span>    </span><span style="color:#55b4d4;">left</span><span style="color:#61676ccc;">: </span><span style="color:#ff8f40;">50</span><span style="color:#fa6e32;">%</span><span style="color:#61676ccc;">;
+</span><span>    </span><span style="color:#55b4d4;">transform</span><span style="color:#61676ccc;">: </span><span style="color:#f07171;">translateX</span><span>(</span><span style="color:#ff8f40;">-50</span><span style="color:#fa6e32;">%</span><span>)</span><span style="color:#61676ccc;">;
+</span><span>    </span><span style="color:#55b4d4;">background</span><span style="color:#61676ccc;">: </span><span style="color:#f07171;">var</span><span>(</span><span style="font-style:italic;color:#abb0b6;">--</span><span style="font-style:italic;color:#55b4d4;">bg-2</span><span>)</span><span style="color:#61676ccc;">;
+</span><span>    </span><span style="color:#55b4d4;">padding</span><span style="color:#61676ccc;">: </span><span style="color:#ff8f40;">0</span><span style="color:#61676ccc;">.</span><span style="color:#ff8f40;">2</span><span style="color:#fa6e32;">rem </span><span style="color:#ff8f40;">0</span><span style="color:#61676ccc;">.</span><span style="color:#ff8f40;">5</span><span style="color:#fa6e32;">rem</span><span style="color:#61676ccc;">;
+</span><span>    </span><span style="color:#55b4d4;">border-radius</span><span style="color:#61676ccc;">: </span><span style="color:#ff8f40;">4</span><span style="color:#fa6e32;">px</span><span style="color:#61676ccc;">;
+</span><span>    </span><span style="color:#55b4d4;">font-size</span><span style="color:#61676ccc;">: </span><span style="color:#ff8f40;">0</span><span style="color:#61676ccc;">.</span><span style="color:#ff8f40;">8</span><span style="color:#fa6e32;">rem</span><span style="color:#61676ccc;">;
+</span><span>    </span><span style="color:#55b4d4;">white-space</span><span style="color:#61676ccc;">: </span><span style="font-style:italic;color:#ed9366;">nowrap</span><span style="color:#61676ccc;">;
+</span><span>    </span><span style="color:#55b4d4;">pointer-events</span><span style="color:#61676ccc;">: </span><span style="font-style:italic;color:#ed9366;">none</span><span style="color:#61676ccc;">;
+</span><span>  }
+</span><span>}
+</span></code></pre>
+<h3 id="custom-dividers" class="design-decision">Custom Dividers</h3>
+<p><strong>Date:</strong> 2025-04-30</p>
+<p>Created several divider styles with moon and star motifs to support the celestial theme:</p>
+
+  
+
+
+
+<div class="divider-simple">
+  <div class="pixel-crescent">
+    <div class="hidden-rays"></div>
+  </div>
+</div>
+
+  
+
+
+
+<div class="divider-default">
+  <div class="moon-phases">
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+    <div class="pixel-moon"></div>
+  </div>
+</div>
+
+  
+
+
+
+<div class="divider-ornate">
+  <div class="center-element">
+    <div class="small-star"></div>
+    <div class="small-star"></div>
+    <div class="small-star"></div>
+    <div class="big-star"></div>
+    <div class="small-star"></div>
+    <div class="small-star"></div>
+    <div class="small-star"></div>
+    <div class="pixel-crescent"></div>
+    <div class="pixel-crescent"></div>
+  </div>
+</div>
+<p><strong>Why:</strong> Enhances visual interest while maintaining thematic consistency.</p>
+<p><strong>Implementation:</strong></p>
+<pre data-lang="html" style="background-color:#fafafa;color:#61676c;" class="language-html "><code class="language-html" data-lang="html"><span style="font-style:italic;color:#abb0b6;">&lt;!-- Divider shortcode in templates/shortcodes/divider.html --&gt;
+</span><span>{% if style %}
+</span><span>  {% set divider_style = style %}
+</span><span>{% else %}
+</span><span>  {% set divider_style = &quot;default&quot; %}
+</span><span>{% endif %}
+</span><span>
+</span><span>{% if divider_style == &quot;default&quot; %}
+</span><span>
+</span><span>
+</span></code></pre>
+<h3 id="related-notes-section-and-backlinks" class="design-decision">Related Notes Section and Backlinks</h3>
+<p><strong>Date:</strong> 2025-05-01</p>
+<p>Implemented "related notes" and "backlinks" sections on the note pages to show links to other notes with similar tags or content.</p>
+<p><strong>Why:</strong> This encourages exploration of related content and helps users discover more of my notes.</p>
+<p><strong>Implementation:</strong></p>
+<ul>
+<li><strong>Related Notes:</strong>
+<ul>
+<li>Added new partial to display related notes</li>
+<li>Currently using frontmatter to hardcode related notes, but will automate this in the future</li>
+</ul>
+</li>
+<li><strong>Backlinks:</strong>
+<ul>
+<li>Added a new partial to display backlinks</li>
+<li>Used Zola's built-in <code>backlinks</code> function</li>
+</ul>
+</li>
+</ul>
+<p><strong>Note:</strong> If a note has backlinks, it will not show the related notes section to avoid redundancy.</p>
+<h2 id="problems-solved">Problems Solved</h2>
+<h3 id="safari-rendering-pixel-borders-incorrectly" class="problem-solved">Safari rendering pixel borders incorrectly</h3>
+<p><strong>Date:</strong> 2025-05-03</p>
+<p><strong>Problem:</strong> Safari was rendering the pixel corners incorrectly on images, causing jagged edges and visual artifacts.</p>
+<p><strong>Solution:</strong> Adjusted CSS clip-path to use explicit pixel values rather than percentages:</p>
+<pre data-lang="css" style="background-color:#fafafa;color:#61676c;" class="language-css "><code class="language-css" data-lang="css"><span style="color:#f29718;">.pixel-corners</span><span style="color:#61676ccc;">,
+</span><span style="color:#f29718;">.pixel-corners--wrapper </span><span>{
+</span><span>  </span><span style="color:#55b4d4;">clip-path</span><span style="color:#61676ccc;">: </span><span style="color:#f07171;">polygon</span><span>(</span><span style="color:#ff8f40;">0</span><span style="color:#fa6e32;">px </span><span style="color:#f07171;">calc</span><span>(</span><span style="color:#ff8f40;">100</span><span style="color:#fa6e32;">% </span><span style="color:#ed9366;">- </span><span style="color:#ff8f40;">16</span><span style="color:#fa6e32;">px</span><span>)</span><span style="color:#61676ccc;">,
+</span><span>    </span><span style="color:#ff8f40;">4</span><span style="color:#fa6e32;">px </span><span style="color:#f07171;">calc</span><span>(</span><span style="color:#ff8f40;">100</span><span style="color:#fa6e32;">% </span><span style="color:#ed9366;">- </span><span style="color:#ff8f40;">16</span><span style="color:#fa6e32;">px</span><span>)</span><span style="color:#61676ccc;">,
+</span><span>    </span><span style="color:#ff8f40;">4</span><span style="color:#fa6e32;">px </span><span style="color:#f07171;">calc</span><span>(</span><span style="color:#ff8f40;">100</span><span style="color:#fa6e32;">% </span><span style="color:#ed9366;">- </span><span style="color:#ff8f40;">8</span><span style="color:#fa6e32;">px</span><span>)</span><span style="color:#61676ccc;">,
+</span><span>    </span><span style="color:#ff8f40;">8</span><span style="color:#fa6e32;">px </span><span style="color:#f07171;">calc</span><span>(</span><span style="color:#ff8f40;">100</span><span style="color:#fa6e32;">% </span><span style="color:#ed9366;">- </span><span style="color:#ff8f40;">8</span><span style="color:#fa6e32;">px</span><span>)</span><span style="color:#61676ccc;">,
+</span><span>    </span><span style="color:#ff8f40;">8</span><span style="color:#fa6e32;">px </span><span style="color:#f07171;">calc</span><span>(</span><span style="color:#ff8f40;">100</span><span style="color:#fa6e32;">% </span><span style="color:#ed9366;">- </span><span style="color:#ff8f40;">4</span><span style="color:#fa6e32;">px</span><span>)</span><span style="color:#61676ccc;">,
+</span><span>    </span><span style="color:#ff8f40;">16</span><span style="color:#fa6e32;">px </span><span style="color:#f07171;">calc</span><span>(</span><span style="color:#ff8f40;">100</span><span style="color:#fa6e32;">% </span><span style="color:#ed9366;">- </span><span style="color:#ff8f40;">4</span><span style="color:#fa6e32;">px</span><span>)</span><span style="color:#61676ccc;">,
+</span><span>    </span><span style="color:#ff8f40;">16</span><span style="color:#fa6e32;">px </span><span style="color:#ff8f40;">100</span><span style="color:#fa6e32;">%</span><span style="color:#61676ccc;">,
+</span><span>    </span><span style="font-style:italic;color:#abb0b6;">/* ...rest of the path... */
+</span><span>  )</span><span style="color:#61676ccc;">;
+</span><span>}
+</span></code></pre>
+<p><strong>Files Modified:</strong></p>
+<ul>
+<li><code>sass/parts/_image.scss</code></li>
+</ul>
+<h3 id="unifont-resized-and-converted-to-woff2" class="problem-solved">Unifont resized and converted to woff2</h3>
+<p><strong>Date:</strong> 2025-05-04</p>
+<p><strong>Problem:</strong> The Unifont font was slowing down the site due to its size.</p>
+<p><strong>Solution:</strong> Extracted Latin extended characters to new font file and converted to woff2 format for better performance.</p>
+<p><strong>Files Modified:</strong></p>
+<ul>
+<li><code>sass/fonts.scss</code></li>
+</ul>
+<h2 id="future-improvements">Future Improvements</h2>
+<h3 id="invert-moon-phase-indications-in-dark-mode" class="future-idea">Invert moon phase indications in dark mode</h3>
+<p><strong>Planned:</strong> When in dark mode, invert the moon phase icons being called so that they maintain their meaning.</p>
+<h3 id="create-custom-404-page-with-moon-theme" class="future-idea">Create custom 404 page with moon theme</h3>
+<p><strong>Planned:</strong> Design a themed 404 page that fits with the moon garden concept.</p>
+<p><strong>Ideas:</strong></p>
+<ul>
+<li>Use a "dark side of the moon" visual</li>
+<li>Add a "lost in space" theme</li>
+<li>Include a site map to help users find their way</li>
+</ul>
+<h3 id="automate-movie-and-book-counts" class="future-idea">Automate movie and book counts</h3>
+<p><strong>Planned:</strong> Find a way to automate the movie and book counts in the footer.</p>
+<p><strong>Ideas:</strong></p>
+<ul>
+<li>Use an API to pull in data from Letterboxd</li>
+<li>Refactor <code>/reading/</code> to automatically count books read</li>
+</ul>
+<h3 id="add-a-days-since-last-update-counter" class="future-idea">Add a "days since last update" counter</h3>
+<p><strong>Planned:</strong> Create a counter to show the number of days since the last update.</p>
+<p><strong>Ideas:</strong></p>
+<ul>
+<li>Use a simple JavaScript function to calculate the difference between today and the last update date</li>
+<li>Display the counter in the footer</li>
+<li>Need to figure out how to implement this in Zolas</li>
+</ul>
+<h3 id="add-a-moon-phase-filter-for-notes" class="future-idea">Add a "moon phase" filter for notes</h3>
+<p><strong>Planned:</strong> Create a filter to view notes by their moon phase.</p>
+<p><strong>Ideas:</strong></p>
+<ul>
+<li>Use a dropdown or toggle to select the moon phase</li>
+<li>Filter the notes displayed on the page based on the selected phase</li>
+</ul>
+<h3 id="color-code-emojis" class="future-idea">Color code emojis</h3>
+<p><strong>Planned:</strong> Implement a system to color code OG emojis based on the original DoCoMo emoji colors.</p>
+<h2 id="breaking-changes">Breaking Changes</h2>
+<h3 id="restyled-callouts" class="breaking-change">Restyled callouts</h3>
+<p><strong>Date:</strong> 2025-05-01</p>
+<ul>
+<li>Deleted callout template from <code>templates/partials/note.html</code></li>
+<li>Added new callout styles to <code>_garden.scss</code></li>
+<li>Callouts are now created in html using the <code>callout</code> class</li>
+</ul>
+<p><strong>Reason:</strong> The old callout template was too complex and introduced spacing issues that I could not solve. The new styles are simpler and easier to use.</p>
+<h3 id="updated-scss-structure" class="breaking-change">Updated SCSS structure</h3>
+<p><strong>Date:</strong> 2025-05-03</p>
+<ul>
+<li>Split <code>_garden.scss</code> into separate components</li>
+<li>Changed moon phase class naming convention from <code>phase-new</code> to <code>moon-phase-new</code></li>
+<li>Modified the card styling mixins to use consistent borders</li>
+</ul>
+<p><strong>Migration:</strong> Update any custom templates using the old class names.</p>
+<p><strong>Files Modified:</strong></p>
+<ul>
+<li><code>sass/parts/_garden.scss</code></li>
+<li><code>sass/parts/_variables.scss</code></li>
+<li><code>sass/main.scss</code></li>
+</ul>
+
+  
+
+
+
+<div class="divider-ornate">
+  <div class="center-element">
+    <div class="small-star"></div>
+    <div class="small-star"></div>
+    <div class="small-star"></div>
+    <div class="big-star"></div>
+    <div class="small-star"></div>
+    <div class="small-star"></div>
+    <div class="small-star"></div>
+    <div class="pixel-crescent"></div>
+    <div class="pixel-crescent"></div>
+  </div>
+</div>
+<p><em>This journal is itself a moon garden note that will grow over time.</em></p>
+
+            </div>
+        </section>
+    </article>
+</main>
+
+
+        
+            
+        
+
+        
+    </div>
+
+
+    <hr>
+
+    <div class="footer">
+        <p>
+            <span class="og"><a href="https://nonmodernist.com">🏠</a> ☕ 🌁 <span id="launch-counter">875</span> 🎂 ☕ 🌁 🔍 📷 👓 🌁🌁 💠 📩 🌁 🌁🌁 <a href="https://nonmodernist.com/uses">⚡︎</a> 💓 <a href="https://nonmodernist.com/log"><span id="movies-counter">2736</span> 📺</a> 🌁🌁🌁 a 🌁 🌙 <a href="https://nonmodernist.com/readinglog"><span id="books-counter">974</span> 📖</a></span>
+        </p>
+    </div>
+    
+
+
+</html>
